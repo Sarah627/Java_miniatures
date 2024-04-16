@@ -52,16 +52,16 @@ Throughout this learning journey, I've encountered various challenges, both tech
   5. Strings
 
 ### Part Two: Software Engineering Principles
-1- OOA & OOD
-7- SOLID Principles
-8- Design Patterns
-9- Refactoring Techniques
-10- Software Development Methodologies
+  1- OOA & OOD
+  7- SOLID Principles
+  8- Design Patterns
+  9- Refactoring Techniques
+  10- Software Development Methodologies
 
 ### Part Three: Projects
-1- Small-scale Java Projects
-12- Medium-scale Software Engineering Projects
-13- Real-world Application Examples
+  1- Small-scale Java Projects
+  12- Medium-scale Software Engineering Projects
+  13- Real-world Application Examples
 
 ### Cross-Part knowledge
 ***Challenges and Exercises***
