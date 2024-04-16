@@ -13,29 +13,29 @@ Throughout this learning journey, I've encountered various challenges, both tech
 ## **Table of Contents:**
 
 ### Part One : Pick up your weapon ! *-Java-*
-1- Java Basics
+**1- Java Basics**
   1. Elementary Programming
-  2.Control Structure Part 1: (*Selections*)
-  3 Mathematical Functions,Characters, and Strings
-  4 Control Structure Part 2: (*Iterators*)
-  5 Methods
-  6 Arrays
+  2. Control Structure Part 1: (*Selections*)
+  3. Mathematical Functions,Characters, and Strings
+  4. Control Structure Part 2: (*Iterators*)
+  5. Methods
+  6. Arrays
 
-2- Object-Oriented Programming
+**2- Object-Oriented Programming**
   1. Objects and Classes
   2. Object-Oriented Thinking
   2. Inheritance and Polymorphism
   2. Exception Handling and Text I/O
   2. Abstract Classes and Interfaces
 
-3- Advanced Java Topics
+**3- Advanced Java Topics**
   1. Binary I/O
   3. Generics
   3. Multithreading and Parallel Programming
   3. Networking
   3. Java Database Programming
 
-4- Data Structures:
+**4- Data Structures**
   1. Recursion
   4. Stacks & Queues 
   4. Lists 
@@ -44,7 +44,7 @@ Throughout this learning journey, I've encountered various challenges, both tech
   4. Maps & Hash Tables
   4. Search Trees
 
-5- Algorithms
+**5- Algorithms**
   1. Asymptotic analysis
   5. Sorting
   5. Searching 
@@ -52,21 +52,18 @@ Throughout this learning journey, I've encountered various challenges, both tech
   5. Strings
 
 ### Part Two: Software Engineering Principles
-
-6- OOA & OOD
+1- OOA & OOD
 7- SOLID Principles
 8- Design Patterns
 9- Refactoring Techniques
 10- Software Development Methodologies
 
 ### Part Three: Projects
-
-11- Small-scale Java Projects
+1- Small-scale Java Projects
 12- Medium-scale Software Engineering Projects
 13- Real-world Application Examples
 
 ### Cross-Part knowledge
-
 ***Challenges and Exercises***
   + Coding Challenges
   +  Problem-solving Exercises
