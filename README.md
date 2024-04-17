@@ -78,3 +78,9 @@ Throughout this learning journey, I've encountered various challenges, both tech
   * How to Contribute
   *  Guidelines for Contributors
   * Community Engagement Opportunities
+
+---------------------------------------------------
+## Part One : 1 - Java Basics
+**Getting Started**
+according to Java Docs official website [Oracle Docs](https://docs.oracle.com/en/java/)
+\'Java is a general-purpose, concurrent, strongly typed, class-based object-oriented programming language'
