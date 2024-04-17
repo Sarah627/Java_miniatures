@@ -114,4 +114,4 @@ _**concurrent**_ means the ability of the language to execute mulitple processes
 
 click on the following link and install the latest JDK versions on your own device [oracle](https://www.oracle.com/eg/java/technologies/downloads/)
 
-![screenshot](\Courses\Progress\image.png)
+![screenshot](https://drive.google.com/file/d/1BRhsmHQYnlSCHEbCaPPoF3FYQzavDPdD/view?usp=sharing)
