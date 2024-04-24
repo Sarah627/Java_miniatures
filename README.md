@@ -16,7 +16,7 @@ Throughout this learning journey, I've encountered various challenges, both tech
 <details>
 <summary> <H3>Part One : Pick up your weapon !</H3></summary>
 
-<details><summary><strong>1- Java Basics</strong></summary>
+<details><summary><strong>Java Basics</strong></summary>
 
 1. Elementary Programming
 2. Control Structure Part 1: (_Selections_)
@@ -24,6 +24,30 @@ Throughout this learning journey, I've encountered various challenges, both tech
 4. Control Structure Part 2: (_Iterators_)
 5. Methods
 6. Arrays
+</details>
+
+<details><summary><strong>Java in Action</strong></summary>
+1. Build tools
+
+- Ant
+- Maven
+- Gradle
+
+2. building GUI
+
+- JavaFX
+- Java Swing
+
+3. Web Frameworks
+
+- Spring
+- Springboot
+
+4. ORM
+
+- JPA
+- Hibernate
+
 </details>
 
 <details><summary><strong>Object-Oriented Programming</strong></summary>
