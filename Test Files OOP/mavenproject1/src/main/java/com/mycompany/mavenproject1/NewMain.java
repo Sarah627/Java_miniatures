@@ -59,13 +59,31 @@ public class NewMain {
     }
     /**
      * @param args the command line arguments
+     * 
      */
+    
+    public static String capitalize(String response){
+        char c,s;
+        for(int i = 0; i< response.length();i++){
+            c = response.charAt(i);
+            if(c == ' '){
+                s =response.charAt(i+1);
+                response = response.replaceFirst(s+"", Character.toUpperCase(s)+"");
+                i=+2;
+            }     
+            
+        }
+        
+        return response;
+
+    }
     public static void main(String[] args) {
+        String s = capitalize(" hello my name is sarah");
 
 
     
   
-         System.out.println(alternate("afa"));
+         System.out.println(s);
 
 
     

@@ -26,7 +26,16 @@ Throughout this learning journey, I've encountered various challenges, both tech
 6. Arrays
 </details>
 
+<details><summary><strong>Object-Oriented Programming</strong></summary>
+
+1. Objects and Classes
+2. Object-Oriented Thinking
+3. Inheritance and Polymorphism
+4. Exception Handling and Text I/O
+5. Abstract Classes and Interfaces</details>
+
 <details><summary><strong>Java in Action</strong></summary>
+
 1. Build tools
 
 - Ant
@@ -50,21 +59,14 @@ Throughout this learning journey, I've encountered various challenges, both tech
 
 </details>
 
-<details><summary><strong>Object-Oriented Programming</strong></summary>
-
-1. Objects and Classes
-2. Object-Oriented Thinking
-3. Inheritance and Polymorphism
-4. Exception Handling and Text I/O
-5. Abstract Classes and Interfaces</details>
-
 <details><summary><strong>Advanced Java Topics</strong></summary>
 
 1. Binary I/O
 2. Generics
-3. Multithreading and Parallel Programming
-4. Networking
-5. Java Database Programming</details>
+3. How JVM works
+4. Multithreading and Parallel Programming
+5. Networking
+6. Java Database Programming</details>
 
 <details><summary><strong>Data Structures</strong></summary>
 
