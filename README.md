@@ -127,7 +127,7 @@ Throughout this learning journey, I've encountered various challenges, both tech
 
 ## Part One : 1 - Java Basics
 
-### **Getting Started** :D 🔥
+### **Get Started** :D 🔥
 
 according to Java Docs official website [Oracle Docs](https://docs.oracle.com/en/java/).
 
