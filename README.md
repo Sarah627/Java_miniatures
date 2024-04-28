@@ -195,13 +195,13 @@ Once you downloaded the latest version of JDK here you have two options:
 
 ### **Elementary Programming**
 
-Remember this part mentioned earlier ? [class-based](./README.md/#class-based-object-oriented-means-this-language-structure-is-based-on-object-oriented-concepts-and-use-of-classes)
+Remember this part mentioned earlier ? [class-based](#class-based-object-oriented-means-this-language-structure-is-based-on-object-oriented-concepts-and-use-of-classes)
 
 > Java is a **class-based object-oriented** programming language
 
-Let's see how this concept were applied!
+Let's see how this concept was applied!
 
-_*Writing your first Hello world program!*_ :-D
+_*Writing your first Hello world program!*_:-D
 
 _prerequisites_ ⚠
 
@@ -212,7 +212,7 @@ _prerequisites_ ⚠
 1. If you don't have an IDE: (note: I won't let you stay lazy forever, you'll have to install it)
 
    - create a new directory (folder) for your java practice, right-click, new, text document
-   - yes, that's it just empty document, name this document "HelloWorld.java"
+   - yes, that's it just empty document, rename this document "HelloWorld.java"
    - open the document, as mentioned before java is class based so to write any instructions they **must be** inside classes, now let's type our first class:
 
    > `public class HelloWorld{}`
@@ -257,3 +257,5 @@ _prerequisites_ ⚠
    _and Voila!_
 
 ![program run](/images/hellodeveloper.png)
+
+![what does program looks like](/images/firstHelloprogram.png)
