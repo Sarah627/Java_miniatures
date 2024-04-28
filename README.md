@@ -127,21 +127,23 @@ Throughout this learning journey, I've encountered various challenges, both tech
 
 ## Part One : 1 - Java Basics
 
-### **Get Started** :D 🔥
+### **Get-Started** :D 🔥
 
 according to Java Docs official website [Oracle Docs](https://docs.oracle.com/en/java/).
 
 > \'Java is a general-purpose, concurrent, strongly typed, class-based object-oriented programming language'
 
-- _**general puprose**_ means you can build applications using this language in a wide range of different domains.
+- #### _**general puprose**_ means you can build applications using this language in a wide range of different domains.
 
-- _**concurrent**_ means the ability of the language to execute mulitple processes in the same time
+- #### _**concurrent**_ means the ability of the language to execute mulitple processes in the same time
 
-- **_strongly-typed_** means the strict attatchment of language syntax to define variabels datatypes
+- #### **_strongly-typed_** means the strict attatchment of language syntax to define variabels datatypes
 
-- **_class based object oriented_** means this language structure is based on object oriented concepts and use of classes
+- #### **_class based object oriented_** means this language structure is based on object oriented concepts and use of classes
 
 Don't worry **these charactaristics of the labguage will be more clear as we go in this repo**
+
+---
 
 ### **Installing JDK**
 
@@ -188,3 +190,70 @@ Once you downloaded the latest version of JDK here you have two options:
     _and Voila!_
 
     ![new jdk version is working well](/images/java%20updated%20jdk%20version.png)
+
+---
+
+### **Elementary Programming**
+
+Remember this part mentioned earlier ? [class-based](./README.md/#class-based-object-oriented-means-this-language-structure-is-based-on-object-oriented-concepts-and-use-of-classes)
+
+> Java is a **class-based object-oriented** programming language
+
+Let's see how this concept were applied!
+
+_*Writing your first Hello world program!*_ :-D
+
+_prerequisites_ ⚠
+
+> if you didn't install the jdk yet, go to [this part](#installing-jdk) and install it
+>
+> It's better if you have an IDE, till this point it's not mandatory yet but then it will be as we are not at the age of DOS anymore.
+
+1. If you don't have an IDE: (note: I won't let you stay lazy forever, you'll have to install it)
+
+   - create a new directory (folder) for your java practice, right-click, new, text document
+   - yes, that's it just empty document, name this document "HelloWorld.java"
+   - open the document, as mentioned before java is class based so to write any instructions they **must be** inside classes, now let's type our first class:
+
+   > `public class HelloWorld{}`
+   >
+   > public & class are both keywords all written in lower case letters
+   >
+   > HelloWorld is the name of the classand it must be written in [pascal case](https://www.freecodecamp.org/news/snake-case-vs-camel-case-vs-pascal-case-vs-kebab-case-whats-the-difference/#pascal-case) (the first letter of each word is capital)
+   >
+   > inside the curly braces `{}` we are going to illustrate our code
+
+   - keywords or reserved words are predefined words in a programming language with a specific use, you can't use them for naming (simply, because the compiler will be confused if it's the word used by the language to identify some order to be executed by the program or it's just a programmer defined variable)
+
+   - every java program should at least have one class, to execute the program we should have a _main method_ (in other words method its name is "main")
+   - inside our created class we define the main method as follows:
+     > `public static void main(String[] args){}`
+     >
+     > public, static, void, String are all keywords
+     >
+     > naming methods using [camelCase](https://www.freecodecamp.org/news/snake-case-vs-camel-case-vs-pascal-case-vs-kebab-case-whats-the-difference/#camel-case) in java if it consists of more than one word other wise all lower case
+   - the curly braces `{}` mean block of code, here we write the lines of code that will be executed, their place is after every class, method, control statements, specific keywords e.g. static keyword. They also represent a specific scope (we'll talk about this soon).
+   - inside the curly braces of the main method we will print our first hello world
+     > `System.out.println("Hello World!");`
+     >
+     > **Do Not Forget The Semicolon!**
+     >
+     > any string is enclosed in double quotes
+     >
+     > System.out.println() is the method we'll use for printing anything on the terminal or console screen to user.
+   - to run your program open your cmd `win + R type cmd then enter ↩`, in the same directory, if you cannot navigate to the directory where the java file lies, simply in the address bar of your folder window type cmd as follows:
+     ![cmd of the current directory](/images/cmd%20from%20current%20directory.png)
+
+   - inside cmd type `javac {yourfilename.java}` (don't forget the extension)
+
+   ![cmd](/images/javacompile.png)
+
+   - write the name of the file right with its correct formate or you'll face `error: file not found`
+
+   > **_javac_** stands for java compile, you'll notice that a `.class` file is created on your directory this is the `bytecode`. you compile one time and run the code infinitely.
+
+   - to run the program write `java {yourfilename}` (note here without the extension).
+
+   _and Voila!_
+
+![program run](/images/hellodeveloper.png)
