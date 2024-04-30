@@ -383,3 +383,36 @@ for more on errors types here is a useful link [not for new commers](https://www
   - 'astrisk' `*` is used for multiplication, 'single slash' `/` is used for division, and `%` is called modulus gives you the remainder, e.g.
     > System.out.println(12 % 5) >> 2, as the remainder of dividing 12 over 5 is 2.
   - note that `=` means assignment not equality.
+
+#### taking user input
+
+- for taking custom input from user, either from console or keyboard input, we are going to start using classes.
+
+- In java to take user input using three classes: Console, BufferedReader, and Scanner. For now we will deal with Scanner only.
+
+- first of all we need to import the class, so using the keyword `import` we will invoke the `Scanner` class as follows:
+  > import java.util.Scanner;
+  - note that even in import we don't forget the semi colon :) .
+    ![import scanner](/images/2023_02_Java-Scanner-Class.jpg)
+- Then, we make a new object from Scanner class
+
+  > Scanner input = new Scanner(System.in);
+
+  - we created object of name input of Scanner class using new operator.
+
+  ![Scanner class methods](/images/reading%20input%20methods.jpg)
+
+- importing statement is placed before class declaration.
+
+- simple java program takes input from user to calculate the area of a circle:
+  you can simply see the file here: [ComputeCircleArea.java](/Test%20Files%20Elementary/ComputeArea.java)
+
+  ![circle area](/images/calculate%20circle%20area.png)
+
+- so, at any point you want to take user input:
+  1. `import java.util.Scanner;`
+  2. inside main mathod block of code
+     `Scanner input = new Scanner(System.in);`
+  3. based on what data you want to take, e.g. prompt user to enter integer:
+     `int number = input.nextInt();`
+     and that's it.
