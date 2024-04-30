@@ -262,7 +262,9 @@ _prerequisites_ ⚠
 
 you can check the file here in this directory [Hello.java](/Test%20Files%20Elementary/Hello.java) file.
 
-#### notes:
+#### notes about java syntax:
+
+- every programming language has a syntax define it, simply like grammar in English edfines how you form a sentence has context, simmilarly in programming the syntax allows you to write program instructions correct or with a context for the compiler.
 
 - curly braces`{}` define a block of code -in other words **lines** of code- and also define scope.
 
@@ -289,3 +291,31 @@ you can check the file here in this directory [Hello.java](/Test%20Files%20Eleme
 - java program start execution from main method.
 
 - string is enclosed in double quotes while character is enclosed in single quotes.
+
+#### errors types:
+
+- Syntax errors: mistyping, missing puncituation
+
+- Runtime errors: occur while program is actually running if the IDE indeicated a process cannot be carried out or through input errors.
+
+- Logical errors (semantic) -cruel one😈-:
+  the code actually works fine but doesn't give you the expected output e.g. you wanted to make simple program that multiply numebrs. now look at the followin code:
+
+  > int x = 2, y = 2;
+  >
+  > int result = x + y;
+  >
+  > System.out.println(result); >>>> 4 looks fine nothing wrong, no errors, the result is right :)
+
+  try again making y = 3 instead of 2
+
+  > int x = 2, y = 3;
+  >
+  > int result = x + y;
+  >
+  > System.out.println(result); >>> 5 here there is a problem, the code is working fine as no errors appear but wait a minute 😅, a plus " + " sign where inserted instead of " \* " multiplication sign.
+
+  here where the error takes place, it's not in code it workds fine but doesn't give you the expected results, this type of errors are dedicted and corrected using tests we will come to this point later.
+
+for more on errors types here is a useful link [not for new commers](https://www.geeksforgeeks.org/types-of-errors-in-java-with-examples/)
+, this is nice introduction to errors [types of erros in java](https://www.scaler.com/topics/types-of-errors-in-java/).
