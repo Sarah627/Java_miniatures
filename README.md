@@ -319,3 +319,60 @@ you can check the file here in this directory [Hello.java](/Test%20Files%20Eleme
 
 for more on errors types here is a useful link [not for new commers](https://www.geeksforgeeks.org/types-of-errors-in-java-with-examples/)
 , this is nice introduction to errors [types of erros in java](https://www.scaler.com/topics/types-of-errors-in-java/).
+
+#### variables:
+
+- a variable is used to store data, you can think of variables as where we store values, these values can be numeric, string (group of characetrs), reference, etc.
+
+- basic syntax to declare a variable in java
+
+  > datatype {variable-name} = value;
+
+  - declaring means you announce to your compiler about storage place of name (your variable name) and type (your variable type) and it has to reserve or allocate this amount of memory space.
+  - definition is when you assign a value to this identifier or the variable, equal sign `=` is the assignment operator.
+  - assignment is right-to-lef operation -**this is super important**-, as you say the value 3 is assigned to variable x of type integer for this statement `int x = 3;` .
+  - obviously, we don't have to mention "**not to forget the damn semicolon `;` after each statement you write**", thank you :) .
+
+- naming conventions:
+
+  - camel case.
+  - do not start naming a varable with a number
+  - you can start your variable name with dollar sign `$` or with underscore `_`.
+  - variables cannot be reserverd words, e.g. you cannot name your variable '_static_' gives you syntax error.
+  - for clean code early teaching purpose, choose meaningful names for your variables describe them.
+  - do not contain spaces in your variable name, keep using camel case if your variable name is more than one word.
+
+- data types:
+
+  - In general they are two types numerical or non-numerical, numerical like integers, floating point or decimal numbers, non-numrical like strings "Hello my name is" or boolean like True or False.
+  - In java they are two categories, premitive data types and reference datatypes, they are classified based on how they store data, primitive copies only values while reference hold the address to the value they just copied, if you couldn't understand this no problem it will be clear later.
+  - primitive data types are:
+    - byte
+    - short
+    - int
+    - long
+    - float
+    - double
+    - boolean
+    - char
+  - reference data type -the only one you'll use for now- is String (take care of the capital letter).
+  - data types tell the compiler how much space to reserve for that variable in memory. ![see this](./images/Java%20data%20types%20sizes%20and%20their%20default%20value.png)
+
+- **note** as variable word declares, its value can be changes during the execution of the program, from this point let's get familiar with constants.
+
+- constants cannot change their value, we declare them using `final` keyword then data type follows final then the constant name, e.g.
+  > final float PI = 3.14;
+  - Upper case as naming convention for constants.
+- **note** you cannot re-declare variable but you can re-assign i, e.g.
+
+  > int rad = 1;
+  >
+  > rad = 2;
+  >
+  > value of rad variable is changed from 1 to 2 is allowed ✅
+
+  > int rad = 2;
+  >
+  > int rad = 3;
+  >
+  > this is not allowed ❌
