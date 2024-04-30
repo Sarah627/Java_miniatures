@@ -416,3 +416,17 @@ for more on errors types here is a useful link [not for new commers](https://www
   3. based on what data you want to take, e.g. prompt user to enter integer:
      `int number = input.nextInt();`
      and that's it.
+
+#### Jshell interactive tool as Java REPL (Read, Evaluate, Print, Loop)
+
+- Read-Evaluate-Print Loop (REPL), which evaluates declarations, statements, and expressions as they are entered and immediately shows the results.
+
+- it's an interactive tool for quickly prototyping java code, all without the need for a `public static void main` or the need to compile your code before executing it.
+
+- it's super easy open your cmd or powershell and type jshell
+
+- try simple declaring variable called hello, `var hello = "welcome to jshell"`
+
+![jshell](/images/jshell.png)
+
+- find more on this link [how to use jshell](https://www.infoq.com/articles/jshell-java-repl/)
