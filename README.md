@@ -430,3 +430,9 @@ for more on errors types here is a useful link [not for new commers](https://www
 ![jshell](/images/jshell.png)
 
 - find more on this link [how to use jshell](https://www.infoq.com/articles/jshell-java-repl/)
+
+#### notes:
+
+### First Chapter is Finished!!! :D
+
+---
