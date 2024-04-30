@@ -376,3 +376,10 @@ for more on errors types here is a useful link [not for new commers](https://www
   > int rad = 3;
   >
   > this is not allowed ❌
+
+#### simple operations:
+
+- you can perform simple operations using binary arithmetic operators: `+ , - , * , / , %`
+  - 'astrisk' `*` is used for multiplication, 'single slash' `/` is used for division, and `%` is called modulus gives you the remainder, e.g.
+    > System.out.println(12 % 5) >> 2, as the remainder of dividing 12 over 5 is 2.
+  - note that `=` means assignment not equality.
