@@ -261,3 +261,31 @@ _prerequisites_ ⚠
 ![what does program looks like](/images/firstHelloprogram.png)
 
 you can check the file here in this directory [Hello.java](/Test%20Files%20Elementary/Hello.java) file.
+
+#### notes:
+
+- curly braces`{}` define a block of code -in other words **lines** of code- and also define scope.
+
+- yup, just like C language semicolon is the statements terminator `;`
+
+- `//` double slashes for single line comments and `/* comments lines go here */` for multiple lines of comments (for those who are new to programming, comments are setences or lines won't be treated as code or instruction they will be ignored by the compiler, programmers use comments to clarify points about their code, like comments show imcomplete implementation or reference to the original source code or even to clear confusion about the code they wrote)
+
+- java is case sensitive language (you get syntax error if you mistyped a keyword or wrote its letetr capital rather than small or vice versa), e.g.
+
+  > `Public void fun(){...}` --> syntax error (Public is not a keyword)
+
+- parenthesis `()` follow functions names, flow control keywords like for, while, if...etc.
+
+- while square brackets follow 'Array' types `[]` e.g.
+
+  > `String[]` -> indecates array of type String.
+
+- later in advanced java programming we will get familiar with the ArrayList, we will find the angle brackets `<>` follow ArrayLists keyword in which contain the Type of the ArrayList (ArrayList is simply resizable array) e.g.
+
+  > `ArrayList<String>`.
+
+- every java program must have at least one class.
+
+- java program start execution from main method.
+
+- string is enclosed in double quotes while character is enclosed in single quotes.
