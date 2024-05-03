@@ -179,7 +179,7 @@ Once you downloaded the latest version of JDK here you have two options:
 
       - write the following:
 
-              > `java -version`
+                java -version
 
       ![java version on cmd](/images/java%20version.png)
 
@@ -218,7 +218,7 @@ _prerequisites_ ⚠
     - yes, that's it just empty document, rename this document "HelloWorld.java"
     - open the document, as mentioned before java is class based so to write any instructions they **must be** inside classes, now let's type our first class:
 
-           > `public class HelloWorld{}`
+            public class HelloWorld{}
 
     > public & class are both keywords all written in lower case letters
     >
@@ -231,7 +231,7 @@ _prerequisites_ ⚠
     - every java program should at least have one class, to execute the program we should have a _main method_ (in other words method its name is "main")
     - inside our created class we define the main method as follows:
 
-             > `public static void main(String[] args){}`
+             public static void main(String[] args){}
 
       > public, static, void, String are all keywords
       >
@@ -240,7 +240,7 @@ _prerequisites_ ⚠
     - the curly braces `{}` mean block of code, here we write the lines of code that will be executed, their place is after every class, method, control statements, specific keywords e.g. static keyword. They also represent a specific scope (we'll talk about this soon).
     - inside the curly braces of the main method we will print our first hello world
 
-             > `System.out.println("Hello World!");`
+             System.out.println("Hello World!");
 
       > **Do Not Forget The Semicolon!**
       >
@@ -253,7 +253,7 @@ _prerequisites_ ⚠
 
     - inside cmd type `javac {yourfilename.java}` (don't forget the extension)
 
-           > javac replacethis.java
+            javac replacethis.java
 
     ![cmd](/images/javacompile.png)
 
