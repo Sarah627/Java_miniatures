@@ -193,7 +193,7 @@ Once you downloaded the latest version of JDK here you have two options:
 
 ---
 
-### **Elementary Programming**
+### **1. Elementary Programming**
 
 Remember this part mentioned earlier ? [class-based](#class-based-object-oriented-means-this-language-structure-is-based-on-object-oriented-concepts-and-use-of-classes)
 
@@ -365,23 +365,17 @@ for more on errors types here is a useful link [not for new commers](https://www
   - Upper case as naming convention for constants.
 - **note** you cannot re-declare variable but you can re-assign i, e.g.
 
-  > int rad = 1;
-  >
-  > rad = 2;
-  >
-  > value of rad variable is changed from 1 to 2 is allowed ✅
-
-  > int rad = 2;
-  >
-  > int rad = 3;
-  >
-  > this is not allowed ❌
+  ![redeclaration](./images/redeclaration.png)
+  ![definition](./images/definiyion.png)
 
 #### simple operations:
 
 - you can perform simple operations using binary arithmetic operators: `+ , - , * , / , %`
+
   - 'astrisk' `*` is used for multiplication, 'single slash' `/` is used for division, and `%` is called modulus gives you the remainder, e.g.
-    > System.out.println(12 % 5) >> 2, as the remainder of dividing 12 over 5 is 2.
+
+    ![remainder](./images//remainder.png)
+
   - note that `=` means assignment not equality.
 
 #### taking user input
@@ -391,14 +385,16 @@ for more on errors types here is a useful link [not for new commers](https://www
 - In java to take user input using three classes: Console, BufferedReader, and Scanner. For now we will deal with Scanner only.
 
 - first of all we need to import the class, so using the keyword `import` we will invoke the `Scanner` class as follows:
-  > import java.util.Scanner;
+  ![import scanner class](./images/Scanner%20Class.png)
+
   - note that even in import we don't forget the semi colon :) .
     ![import scanner](/images/2023_02_Java-Scanner-Class.jpg)
-- Then, we make a new object from Scanner class
 
-  > Scanner input = new Scanner(System.in);
+- Then, we create a new object from Scanner class
 
-  - we created object of name input of Scanner class using new operator.
+  ![creating scanner object](./images/creating%20Scanner%20object.png)
+
+  - we created object of name input of Scanner class using **new** operator.
 
   ![Scanner class methods](/images/reading%20input%20methods.jpg)
 
@@ -407,7 +403,7 @@ for more on errors types here is a useful link [not for new commers](https://www
 - simple java program takes input from user to calculate the area of a circle:
   you can simply see the file here: [ComputeCircleArea.java](/Test%20Files%20Elementary/ComputeArea.java)
 
-  ![circle area](/images/calculate%20circle%20area.png)
+  ![circle area](./images/calculate%20circle%20area.png)
 
 - so, at any point you want to take user input:
   1. `import java.util.Scanner;`
@@ -436,3 +432,116 @@ for more on errors types here is a useful link [not for new commers](https://www
 ### First Chapter is Finished!!! :D
 
 ---
+
+### **2. Control Structure Part 1: (_Selections_)**
+
+In this section you will learn **the way you take decision**.
+
+According to documentation:
+
+> control flow statements, break up the flow of execution by employing decision making, looping, and branching, enabling your program to conditionally execute particular blocks of code.
+
+types of control flow statements:
+
+1. Decision making statements.
+2. Iteration (Looping) statements.
+3. Branching statements.
+
+in this section we'll talk about **Selections** | **Conditionals** | **Decision Making statements**.
+
+Conditional keywords: `if`, `else`, `else if`,`switch`,`case`,`break`.
+
+#### 1. If statements:
+
+Conditional statement evaluate a (condition) if it's true or false to perform set of instructions:
+
+![if condition](./images/if%20condition.png)
+
+a boolean expression is expression will yeild true or false, e.g. is 4 + 5 = 9? if their sum equal to nine so the answer is yes otherwise no. so, an expression will be given to be evaluated.
+
+now, the question is how to build a conditional:
+
+before anything let's learn about the second category you hear in this guide, **relational operators**:
+`==`
+`<=`
+`>=`
+`!=`
+`>`
+`<`
+
+> note that assignment operator `=` is not the same as `==` equality operator, equality operator mean if the value of smth **equals** some value on the other hand the assignment oeprator assigns value to variable.
+
+Conditionals evaluate boolean expressions, boolean expression are expression expected to have true or false as answer so we are kinda building comparison statments.
+
+![if example](./images/ifexample.png)
+
+it's simply like saying: is multiplying 7 by 10 equals 70? if yes please print the result and if not do nothing.
+
+- Checking for alternatives:
+  using else if we can check for alternatives, e.g.
+  here is a simple program to check if a number is positive or negative or equal to 0:
+
+  ![conditional example](./images/conditionalsexample.png)
+
+- you can find more examples in Test Files Elemntary, e.g. [addition Quiz](./Test%20Files%20Elementary/AdditionQuiz.java)
+
+we can check using `if` then another `if` but what we hit the goal from first time why do we continue checking? that's why we use else if instead of if to skip the rest of conditional statement checking if we already satisfied one.
+
+#### notes:
+
+- any boolean expression is enclosed by parenthesis `()`.
+- if by mistake you placed a semicolon after if statement `if ( y == x );` is like doing this: `if ( y == x ){}` means do nothing.
+- avoid redundant testing of boolean expression e.g. `if (even == true)` better do this `if (even)`, so if even have a number other than zero it sill evaluate to true or if even a boolean variable it will evaluate to its boolean value.
+- avoid equaltiy test to float variables to avoid percision problem of floating point numbers.
+- you can simplyfy boolean variable assignment:
+  ![dothis](./images/dothis1.png)
+
+now we could build simple conditionals using of, else and if else. What if we want to check two conditions at the same time, can we? actually yes, using compound boolean expressions we can check two conditions at the same time, but first let's get familiar with the logical operators:
+
+`|| OR operator`
+
+`&& AND operator`
+
+`! NOT operator`
+
+`^ XOR operator`
+
+if you are a computer science, or electrical engineering student you are already familiar with thess operators as you took this knowledge in Logic design course -probably it's name nearly like this-, if you or not here's a simple explaination and I'll provide you a link for a video to simplify the concept more:
+
+OR operator `||` check if one of the expressions `at least` is true or both of them.
+e.g. `(5+6 == 11 || 5+7 == 11)` evaluates to true because the first expression is true. it will only evaluates to false if both of them are false.
+
+AND operator `&&` check if both of the expressions `must be true` if one of them is false so the whole evaluation of both of them will be false.
+
+NOT operator `!` is to negate any value to oppose any expression in other words: !(expression) means to flip the evaluation value of this expression if it's evaluated to true the not operator will make it false and so on. same when we use `!=` we mean not equal.
+
+XOR operator `^` is used to check if both expressions evaluates to different answers, simply if both of the expression is evaluated to true or both false it return to us false, if they are different (true , false or false , true) return to us true.
+
+we can use DeMorgan's law to best practise these compound boolean expression conditionals
+
+> !(condition1 && condition2) == ! condition1 && ! condition2 using DeMorgan's.
+
+**note** `&&` and `||` are called lazy operator as they perform short circuit concept as if `false && anything` evaluates to false without checking the second expression same in `true || anything` will evaluate to true without checking the second expression.
+
+#### 1. Switch case statements:
+
+we use switch case statements with menu-like -means many choices- problems, e.g. choosing operation to be done on numerical values, based on day of week choosen perform some action:
+
+![switch case flow chart](./images/switch-statement-flowchart-in-java.jpg)
+
+![switch case syntax](./images/Syntax-of-Switch-Case-Stetement-in-C-Programming.jpg)
+
+This is a simple program perform basic operations on the entered numbers:
+you can check it from here [switch program](./Test%20Files%20Elementary/Calculator.java)
+
+![switch case example](./images/switchcase%20example.png)
+
+- if `break` is not used, switch will evaluate all other cases, we use default if the expression doesn't match any case.
+
+lastly we will learn about the boolean ternary operator `(boolean expression)? (if true)expression1 : (if false)expression2` this oeprator return exp1 if it evaluates to true and exp if it evaluates to false, e.g. :
+
+![ternaryoperator](./images/ternaryoperator.png)
+
+#### notes:
+
+### Second Chapter is Finished!!! :D
