@@ -145,7 +145,7 @@ Don't worry **these charactaristics of the labguage will be more clear as we go 
 
 ---
 
-### **Installing JDK**
+<details><summary><H3><strong>Installing JDK</strong><H3></summary>
 
 click on the following link [oracle](https://www.oracle.com/eg/java/technologies/downloads/) and install the latest JDK versions on your own device
 
@@ -175,25 +175,27 @@ Once you downloaded the latest version of JDK here you have two options:
 
 2.  if you've already installed earlier JDK version
 
-    - open your cmd(win key, type cmd | win key + R then type cmd)
-    - write the following:
+        - open your cmd(win key, type cmd | win key + R then type cmd)
+        - write the following:
 
-      > `java -version`
+          > `java -version`
 
-    ![java version on cmd](/images/java%20version.png)
+        ![java version on cmd](/images/java%20version.png)
 
-    I have JDK version 17 installed on my own, now we are going to switch it to the new version of JDK
+        I have JDK version 17 installed on my own, now we are going to switch it to the new version of JDK
 
-    - we'll repeat the steps of the previous option (editing system environment variables, etc)
-    - Check your java version again in cmd (restart it if you didn't close it already)
+        - we'll repeat the steps of the previous option (editing system environment variables, etc)
+        - Check your java version again in cmd (restart it if you didn't close it already)
 
-    _and Voila!_
+        _and Voila!_
 
-    ![new jdk version is working well](/images/java%20updated%20jdk%20version.png)
+        ![new jdk version is working well](/images/java%20updated%20jdk%20version.png)
+
+    </details>
 
 ---
 
-### **1. Elementary Programming**
+<details><summary><H3><strong>1. Elementary Programming</strong><H3></summary>
 
 Remember this part mentioned earlier ? [class-based](#class-based-object-oriented-means-this-language-structure-is-based-on-object-oriented-concepts-and-use-of-classes)
 
@@ -431,9 +433,11 @@ for more on errors types here is a useful link [not for new commers](https://www
 
 ### First Chapter is Finished!!! :D
 
+</details>
+
 ---
 
-### **2. Control Structure Part 1: (_Selections_)**
+<details><summary><H3><strong>2. Control Structure Part 1: (_Selections_)</strong><H3></summary>
 
 In this section you will learn **the way you take decision**.
 
@@ -545,3 +549,7 @@ lastly we will learn about the boolean ternary operator `(boolean expression)? (
 #### notes:
 
 ### Second Chapter is Finished!!! :D
+
+</details>
+
+---
