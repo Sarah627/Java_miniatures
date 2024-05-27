@@ -560,3 +560,9 @@ lastly we will learn about the boolean ternary operator `(boolean expression)? (
 </details>
 
 ---
+
+<details><summary><H3><strong>3. Mathematical Functions,Characters, and Strings</strong><H3></summary>
+
+In this section you will learn about some built-in mathematical functions in addition to introducing two data types (Character and String).
+
+</details>
