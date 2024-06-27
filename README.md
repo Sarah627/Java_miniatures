@@ -218,7 +218,7 @@ Remember this part mentioned earlier ? [class-based](#class-based-object-oriente
 
 Let's see how this concept was applied!
 
-_*Writing your first Hello world program!*_:-D
+_*Writing your first Hello world program!*_:-D "programmers' traditional custom"
 
 _prerequisites_ ⚠
 
@@ -284,6 +284,9 @@ _prerequisites_ ⚠
 ![what does program looks like](/images/firstHelloprogram.png)
 
 you can check the file here in this directory [Hello.java](/Test%20Files%20Elementary/Hello.java) file.
+
+**Now we consider you a real programmer**
+![queen's knight](</images/Accolade_by_Edmund_Blair_Leighton%20(1).jpg>)
 
 #### notes about java syntax:
 
