@@ -290,7 +290,7 @@ you can check the file here in this directory [Hello.java](/Test%20Files%20Eleme
 
 #### notes about java syntax:
 
-- every programming language has a syntax define it, simply like grammar in English edfines how you form a sentence has context, simmilarly in programming the syntax allows you to write program instructions correct or with a context for the compiler.
+- every programming language has a syntax defines it, simply like grammar in English defines how you form a sentence has context, simmilarly in programming the syntax allows you to write program instructions correct or with a context for the compiler.
 
 - curly braces`{}` define a block of code -in other words **lines** of code- and also define scope.
 
@@ -594,5 +594,144 @@ let's breakdown the concepts we are going to learn:
 - String Reference Type
 - Important methods for dealing with Strings
 - Java String pool
+
+before we go in methods with more details on the next Chapter, we can have quick definition help us to figure out what these block of codes mean.
+
+> Methods can be used to define reusable code and organize and simplify coding, and make code easy to maintain.
+
+We also refer to methods as routines and other words will be mentioned later, for now remember the word "reusable".
+
+note: if you experienced other languages other than java you may find that methods are called functions, but with a programming language which is sticked to Object Oriented concepts you'll find the word 'method' is the convention here.
+
+methods can be:
+
+1. user defined
+2. built-in
+
+Before we go deeper in this
+
+### Why do we need methods?
+
+#### Coffee Shop analogy:
+![coffeeShop](/images/organizational-structure-of-coffee-shop.jpg)
+
+**Imagine we have the following situation:**
+
+Imagine you run a coffee shop. When customers come in and order coffee, the barista follows specific steps to make the coffee. If you have many customers, repeating these steps for each order can be exhausting and time-consuming
+
+
+**Here is the ongoing scenario:**
+
+> 1. 10 customers order coffee.
+> 2. The barista follows the same steps for each coffee order.
+
+**Identifying the problem:**
+steps erpition for every customer in addition to time consumed
+
+**Offered Solution: Introducing a coffee machine**
+
+To improve efficiency, you introduce a coffee machine. The machine has buttons for different types of coffee. Now, the barista simply presses a button, and the coffee machine follows the predefined steps to make the coffee.
+
+**Analogy to Methods:**
+
+* **Without Methods:** The barista repeats the same steps (code) for each customer.
+* **With Methods:** The barista uses the coffee machine (method) to make coffee efficiently.
+
+### Java Code Simulation:
+#### Without Methods (Exhausting Process)
+![withoutmethods](/images/without%20methods.png)
+
+#### With Methods (Effective Process)
+![withmethods](/images/without%20methods.png)
+
+### Analysis to what happened:
+* **DRY Principle:** By using methods, we encapsulate the repetitive steps of making coffee into a single method makeCoffee. This follows the DRY principle by avoiding repetition of the same code.
+
+* **Built-In vs. User-Defined Methods:** 
+  
+  **Built-In Methods:** These are like the common coffee machines available in the market. They perform **common** tasks and are part of the **Java Standard Library**. For example, **`System.out.println`** is a built-in method used to print messages to the console.
+
+  **User-Defined Methods:** These are like the custom coffee machine **designed specifically** for your coffee shop. They perform specific tasks defined by the programmer. In our example, **`makeCoffee`** is a user-defined method that encapsulates the steps to make coffee.
+
+For now in this chapter we're going to discuss built-in methods only.
+<details><summary><strong>more about built-in functions</strong></summary>
+
+  easy definition for these functions foun on NinjaOne blog:
+
+  > Built-in functions refer to those pre-defined functions that come along with a programming language. They are intrinsic components of the language’s library, ready to be used without requiring any additional installation or importation. These functions have been designed to perform common tasks, thus facilitating efficient and swift coding.
+
+  for short: built-in functions or methods are pre-defined methods in the language library itself which are already implemented for you to perform common tasks.
+
+  now let's getting familiar with them, first of all I prefer to categorize them, so it's easily inside my head to choose the suitable one for the suitable situation:
+
+  We'll use **Math** class for this mission, Math class in java contains all mathematical constants and methods you'll need to use, according to Oracle documentation:
+
+  > The class Math contains methods for performing basic numeric operations such as the elementary exponential, logarithm, square root, and trigonometric functions. 
+</details>
+
+1. Trignometric Methods
+2. Exponential Methods
+3. Service Methods (rounding, min-max-abs, random)
+
+
+1- Trignometric Methods:
+| Method | Description |
+| ----------- | ----------- |
+|  `sin(radians)` | Returns the trigonometric sine of an angle in radians. |
+|  `cos(radians)`  | Returns the trigonometric cosine of an angle in radians.|
+|  `tan(radians)` | Returns the trigonometric tangent of an angle in radians. |
+| `toRadians(degree)` | Returns the angle in radians for the angle in degrees. |
+|  `toDegrees(radians)` | Returns the angle in degrees for the angle in radians. |
+| `asin(a)` |Returns the angle in radians for the inverse of sine. |
+| `acos(a)` | Returns the angle in radians for the inverse of cosine. |
+| `atan(a)` | Returns the angle in radians for the inverse of tangent. |
+
+2- Exponential Methods:
+
+| Method | Description |
+| ------ | ----------- |
+|`exp(x)` |Returns e raised to power of x (ex).|
+| `log(x)` | Returns the natural logarithm of x (ln(x) = loge(x)).|
+| `log10(x)` | Returns the base 10 logarithm of x (log10(x)).|
+| `pow(a, b)`| Returns a raised to the power of b (ab).|
+| `sqrt(x)` | Returns the square root of x (2x) for x7 =0.|
+
+3- Service Methods:
+  * Rounding Methods
+  * The min, max, and abs Methods
+  * The random()Method
+
+**Rounding Methods**
+
+The best way to understand rounding methods in Math class in java is by example:
+
+![ciel method](/images/ciel%20method.png)
+
+![floormethod](/images/floor.png)
+
+![rintmethod](/images/rint.png)
+
+![roundmethod](/images/round.png)
+
+**The min, max, and abs Methods**
+
+
+  * The min and max methods return the minimum and maximum numbers of two numbers
+
+  * The abs method returns the absolute value of the number 
+  
+Here is a worked example:
+
+![minmaxabs methods](/images/usignminmaxabs%20methods.png)
+
+**The random() Method**
+
+In my own opinion random method is super important in a lot of situations, for example in programs used for making test models, in the preceding chapters and projects you'll figure this out
+
+> This method generates a random double value greater than or equal to 0.0 and less than 1.0
+
+![randomMethod](/images/random.png)
+
+
 
 </details>
