@@ -587,7 +587,6 @@ let's breakdown the concepts we are going to learn:
 - Methods
 - Important built-in methods
 - example using these methods
-- limitations
 - Character datatype
 - Operations
 - Casting
@@ -731,6 +730,15 @@ In my own opinion random method is super important in a lot of situations, for e
 > This method generates a random double value greater than or equal to 0.0 and less than 1.0
 
 ![randomMethod](/images/random.png)
+
+
+**For now we addressed the following:**
+* **Methods**
+* **Important built-in methods**
+* **example using these methods**
+
+
+
 
 
 
