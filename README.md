@@ -503,7 +503,7 @@ Conditionals evaluate boolean expressions, boolean expression are expression exp
 
 ![if example](./images/ifexample.png)
 
-it's simply like saying: is multiplying 7 by 10 equals 70? if yes please print the result and if not do nothing.
+it's simply like saying: is dividing 7 by 10 equals 70? if yes please print the result and if not do nothing.
 
 - Checking for alternatives:
   using else if we can check for alternatives, e.g.
