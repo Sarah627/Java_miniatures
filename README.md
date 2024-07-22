@@ -236,7 +236,7 @@ _prerequisites_ ⚠
 
     > public & class are both keywords all written in lower case letters
     >
-    > HelloWorld is the name of the classand it must be written in [pascal case](https://www.freecodecamp.org/news/snake-case-vs-camel-case-vs-pascal-case-vs-kebab-case-whats-the-difference/#pascal-case) (the first letter of each word is capital)
+    > HelloWorld is the name of the class and it must be written in [pascal case](https://www.freecodecamp.org/news/snake-case-vs-camel-case-vs-pascal-case-vs-kebab-case-whats-the-difference/#pascal-case) (the first letter of each word is capital)
     >
     > inside the curly braces `{}` we are going to illustrate our code
 
