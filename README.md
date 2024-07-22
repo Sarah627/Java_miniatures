@@ -731,6 +731,11 @@ In my own opinion random method is super important in a lot of situations, for e
 
 ![randomMethod](/images/random.png)
 
+there is a little application "Calculate Theta value" calculates the value of the engle between any two vectors using dot product
+you can take a look on the application here, whereas you can find how can we use **Math Class** built-in functions are used.
+[Calculate Theta](/Test%20Files%20Elementary/CalculateTheta.java)
+
+
 
 **For now we addressed the following:**
 * **Methods**
