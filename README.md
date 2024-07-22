@@ -745,7 +745,63 @@ you can take a look on the application here, whereas you can find how can we use
 * **example using these methods**
 
 -----
-### Character data type and String reference data type
+### Character data type and String reference type:
+
+#### Character Data Type:
+
+Character data type is used to represent single character surrounded by single quotes. `char firstLetter = 'S'`
+
+Caution ⚠
+
+> characters must be surrounded by single qoutes while Strings must be surrounded by double qoutes, thus "S" is a String and 'S' is a character my this is not important in other languages like: Python but here it's essential to differentiate between them as java s a stongly static typed language
+
+If you are not a computer science student or you are not familiar with the idea of how computers deals with data, so expand this section, if you are familiar go to the next points
+
+<details><summary><h4>How computers deal with data</h4></summary>
+
+
+first because you are not familiar with computer science so, I'll recommend you a superior playlist, its videos are short relatively in addition being super informative [Crash Course computer science](https://www.youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo)
+
+`note`: you can watch this playlist for just having an idea about What computer science is and how it has evolved over a decade, you can pick up keywords, history, important names, applications etc. but it's not for study of course :) 
+
+
+- watch the playlist as your daily series, you'll know amazing things about this field which revolutionized the humanity in the last decade!
+
+- another one, but this time you cannot just watch and enjoy, also I want to inform its lectures are long, but super informative recommended from almost everyone and it's considered as one of the most common and best introductions to computer science,
+CS50 - from Harvard [CS50](https://www.youtube.com/playlist?list=PLhQjrBD2T381WAHyx1pq-sBfykqMBI7V4)
+
+`note before watching` you can be familiar with how computers deals with data in this section, honestly these playlists take time -aand no problem, I mean don't finish them first then come back here, you do this in parallel-, if you go and finish them first  you may not continue learning java, then getting bored, then you decide to stop and here you really lost -not because I love java- but the situation here is you wasted your time, at the end you'll find that:  you had an incomplete knowledge about a language can be a reason for your future job offer in addition to wasting your time in which you may enjoyed this time learn how to bake perfect cinnabone 🥯
+
+#### How computers deals with data?
+you need to know what's is a `machine language`, a machine language is the language which actually the computer understands, this language consists of 0's and 1's 
+
+any data represented in 0's and 1's we call it binary data.
+
+so the computers only understand binary data, binary coe or machine language, we represent everything 'data' (text, images, sound, ...) using binary.
+
+today, no one is dealing with 0's and 1's, this is inside the computer hardware and this is super abstracted nowdays.
+
+here is a video will help you so much for understanding the topic:
+[khan academy](https://www.khanacademy.org/computing/computers-and-internet/xcae6f4a7ff015e7d:digital-information/xcae6f4a7ff015e7d:bits-and-bytes/v/khan-academy-and-codeorg-binary-data)
+
+
+good arcticle about how data is stored and how computers deal with it: [How data is stored in computers](https://www.datarecoveryspecialists.co.uk/blog/how-is-data-in-a-computer-stored)
+</details>
+
+- Computers use binary numbers internally. A character is stored in a computer as a sequence of `0s and 1s.` 
+- Mapping a character to its binary representation is called `encoding`. 
+- There are different ways to encode a character. How characters are encoded is defined by an `encoding scheme`.
+- Java supports `Unicode`, an encoding scheme established by the Unicode Consortium to support the interchange, processing, and display of written texts in the world’s diverse languages.
+  
+![unicode](/images/unicode.jpg)
+![unicode](/images/9781682171400_00127.jpeg)
+
+
+
+
+
+
+
 
 
 
