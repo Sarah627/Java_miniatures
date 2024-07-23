@@ -137,13 +137,13 @@ according to Java Docs official website [Oracle Docs](https://docs.oracle.com/en
 
 > \'Java is a general-purpose, concurrent, strongly typed, class-based object-oriented programming language'
 
-- #### _**general puprose**_ means you can build applications using this language in a wide range of different domains (Desktop applications, client/server applications/ web applications, Enterprise applications).
+- #### _**`general puprose`**_ means you can build applications using this language in a wide range of different domains (Desktop applications, client/server applications/ web applications, Enterprise applications).
 
-- #### _**concurrent**_ means the ability of the language to execute mulitple processes in the same time. (This is kinda an advanced concrpt for beginners and maybe cs students in first 2 or three semesters)
+- #### _**`concurrent`**_ means the ability of the language to execute mulitple processes in the same time. (This is kinda an advanced concrpt for beginners and maybe cs students in first 2 or three semesters)
 
-- #### **_strongly-typed_** means the strict attatchment of language syntax to define variabels datatypes. (This will be explained and noticed as we go deep in the language)
+- #### **_`strongly-typed`_** means the strict attatchment of language syntax to define variabels datatypes. (This will be explained and noticed as we go deep in the language)
 
-- #### **_class based object oriented_** means this language structure is based on object oriented concepts and use of classes.
+- #### **_`class based object oriented`_** means this language structure is based on object oriented concepts and use of classes.
 
 Don't worry **these charactaristics of the language will be more clear as we go down in this repo**
 
