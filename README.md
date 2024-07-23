@@ -796,6 +796,33 @@ good arcticle about how data is stored and how computers deal with it: [How data
 ![unicode](/images/unicode.jpg)
 ![unicode](/images/9781682171400_00127.jpeg)
 
+### Character Encoding Analogy! Teaching Colors with a Numbered Painting Sketch
+
+**If we want to teach a child how to get used with colors and their names we use the `Numbered Painting Sketch`**
+- `Encoding`: in the context of `The Numbered Painting Sketch`, Encoding is like the painting sketch where each sector of the drawing is assigned (encoded to) a unique number (1 for red color, two for green, 21 for mint green, etc).
+
+![numbered painting sketch](/images/Color%20by%20number.jpg)
+  
+- Just as each sector in the sketch has a number to indicate which color to use, encoding assigns a unique number to each character so that it can be stored and identified correctly.
+  
+- `Unicode`: **The Color Table**
+  ![color table](/images/Coloring%20Table.jpg)
+  
+  Unicode is like the color table that shows which number corresponds to which color.
+
+  The table ensures that no matter what color you need, there's a specific number assigned to it.
+
+
+  Similarly, Unicode assigns a unique code point to every character in every language, ensuring a universal standard.
+
+- `UTF-8`: The Flexible Coloring Kit
+  
+  UTF-8 is like a coloring kit that adapts to the complexity of the drawing.
+
+  - In the coloring kit: Simple, common colors (like "Red") might be represented by one marker.
+  - More complex, less common colors might be represented by more markers. 
+  - This makes the kit efficient and flexible, capable of handling all sorts of drawings (characters) without wasting resources.
+
 
 
 
