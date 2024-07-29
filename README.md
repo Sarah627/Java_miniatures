@@ -759,45 +759,54 @@ Caution ⚠
 
 If you are not a computer science student or you are not familiar with the idea of how computers deals with data, so expand this section, if you are familiar go to the next points
 
+---
 <details><summary><h4>How computers deal with data</h4></summary>
 
 #### How computers deals with data?
-you need to know what's is a `machine language`, a machine language is the language which actually the computer understands, this language consists of 0's and 1's based on the fact that computers at their core are consisting of transistors which can be switched to two states: ON or OFF (1 or 0) from this point the binary system was born.
+You need to know what machine language is. Machine language is the language that computers actually understand. This language consists of 0's and 1's based on the fact that computers, at their core, consist of transistors that can be switched to two states: ON or OFF (1 or 0). From this, the binary system was born.
+
 ![zeros and ones](/images/zeros%20and%20ones.jpg)
 
-The processes are done in a central processing unit you may heard of is called CPU, this unit perform needed mathimatical operations for processing incoming data, It handles all computing tasks required for running the operating system and applications.
+The processes are carried out in a central processing unit (CPU), which performs the necessary mathematical operations for processing incoming data. It handles all computing tasks required for running the operating system and applications.
 
 ![CPU](/images/CPU.jpeg)
 
-Anything is represented in high level language like "Human Language" computers are so dump to understand here comes the role of this computing component and other components to process this data into something understandable to the computer "machine language". 
+Anything represented in a high-level language, like "Human Language," is too complex for computers to understand directly. This is where the role of the CPU and other computing components comes in, translating this data into something understandable to the computer, known as "machine language." 
 
-In the same way computers doesn't understand what are characters, they need like a translator this can be a long process we are not going to ge deep in this topic, but the main idea is delivered. 
+Similarly, computers don't understand characters directly; they need a translator. This can be a lengthy process that we won't delve into deeply here, but the main idea is conveyed. 
+
+Computers only understand binary data, binary code, or machine language. They represent everything (text, images, sound, etc.) using binary.
 
 
- Computers only understand binary data, binary code or machine language, they represent everything 'data' (text, images, sound, ...) using binary.
-
-today, no one is dealing with 0's and 1's directly, this is inside the computer hardware and this is super abstracted nowdays.
+Today, no one deals with 0's and 1's directly. This level of operation is abstracted within the computer hardware.
 
 Here are videos will help you so much for understanding the topic:
-[khan academy](https://www.khanacademy.org/computing/computers-and-internet/xcae6f4a7ff015e7d:digital-information/xcae6f4a7ff015e7d:bits-and-bytes/v/khan-academy-and-codeorg-binary-data)
-in addition to this one, both are short:
-[How computers Actually work](https://youtube.com/shorts/CZY881WyrB8?si=dGyKynD_p2trawy1), for more details you can watch this [How computers Actually work -The detailed video- ](https://www.youtube.com/watch?v=5f3NJnvnk7k)
 
-Good arcticle about how data is stored and how computers deal with it: [How data is stored in computers](https://www.datarecoveryspecialists.co.uk/blog/how-is-data-in-a-computer-stored)
-
-Because you are not familiar with computer science thus I'll recommend you a superior playlist, its videos are short relatively in addition being super informative [Crash Course computer science](https://www.youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo)
-
-`note`: you can watch this playlist for just having an idea about What computer science is and how it has evolved over a decade, you can pick up keywords, history, important names, applications etc. but it's not for study of course :) 
+- [khan academy](https://www.khanacademy.org/computing/computers-and-internet/xcae6f4a7ff015e7d:digital-information/xcae6f4a7ff015e7d:bits-and-bytes/v/khan-academy-and-codeorg-binary-data) : short and informative
 
 
-- watch the playlist as your daily series, you'll know amazing things about this field which revolutionized the humanity in the last decade!
+- [How computers Actually work](https://youtube.com/shorts/CZY881WyrB8?si=dGyKynD_p2trawy1) : the same
+  
+- [How computers Actually work -The detailed video- ](https://www.youtube.com/watch?v=5f3NJnvnk7k) : for more details 
 
-- another one, but this time you cannot just watch and enjoy, also I want to inform its lectures are long, but super informative recommended from almost everyone and it's considered as one of the most common and best introductions to computer science,
+A good arcticle about how data is stored and how computers deal with it: [How data is stored in computers](https://www.datarecoveryspecialists.co.uk/blog/how-is-data-in-a-computer-stored)
+
+
+Since you may not be familiar with computer science, I'll recommend a superior playlist. The videos are relatively short and very informative:  [Crash Course computer science](https://www.youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo)
+
+- **`note` You can watch this playlist to get an idea of what computer science is and how it has evolved over the decades. It will help you pick up keywords, history, important names, applications, etc. However, it's not for in-depth study.**
+
+- Watch the playlist like your daily series; you'll learn amazing things about this field that has revolutionized humanity in the last decade!
+
+Another one, but this time you cannot just watch and enjoy, also I want to inform its lectures are long, but super informative recommended from almost everyone and it's considered as one of the most common and best introductions to computer science,
 CS50 - from Harvard [CS50](https://www.youtube.com/playlist?list=PLhQjrBD2T381WAHyx1pq-sBfykqMBI7V4)
 
-`note before watching` you don't have to do masters in this topic to understand character data type, all you need is just understand the main idea then after if you want -and it's better specially of you are targetting to learn computer science- to dig deeper go on these playlists and courses, honestly these playlists take time -and no problem of course keep learning, I mean don't finish them first then come back here, you can do both in parallel-, I address the problem of getting bored due to the huge and oftem complicated information for the first time to undestand, wen you got bored; you decide to stop and here you really lost -not because I love java- but the situation here is you wasted your time, at the end you'll find that:  you had an incomplete knowledge about a language can be a reason for your future job offer in addition to wasting your time in which you may enjoyed this time learn how to bake perfect cinnabon 🥯😂
+**`Note`: You don't need to master this topic to understand character data types. Just grasp the main idea. If you want to delve deeper into computer science, these playlists and courses are great resources. These playlists take time, and it's okay to keep learning without finishing them first. You can do both in parallel.**
+
+**I address the problem of getting bored due to the huge and often complicated information for the first time to understand. When you get bored and decide to stop, you risk losing out on important knowledge. You may end up with incomplete knowledge about a language that could be crucial for your future job. Instead, you could spend that time learning something enjoyable, like how to bake the perfect cinnabon! 🥯😂**
 </details>
 
+----
 #### Characters and Encoding
 
 - Computers use binary numbers internally. A character is stored in a computer as a sequence of `0s and 1s.` 
