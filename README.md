@@ -885,9 +885,80 @@ you define the character data type using **`char`** keyword, then give it a name
  from Oracle java tutorial:
  > When an escape sequence is encountered in a print statement, the compiler interprets it accordingly. For example, if you want to put quotes within quotes you must use the escape sequence, \", on the interior quotes. To print the sentence
 
-> She said "Hello!" to me. you would write 
-> 
->System.out.println("She said \"Hello!\" to me.");
+> She said "Hello!" to me. you would write:
+
+
+ ![escape sequence](/images/escape%20sequence.png)
+
+|Character|Name|
+|-----|----|
+|`\b`|**Backspace**|
+|`\t`|**Tab**|
+|`\n`|**Linefeed**|
+|`\f`|**Formfeed**|
+|`\r`|**Carriage Return**|
+|`\\`|**Backslash**|
+|`\"`|**Double Quote**|
+
+**Don't worry if you are not familiar with some terms like "`carriage return`" here is clarification:**
+
+- **`Carriage return`** means to return to the beginning of the current line without advancing downward. (Abbreviated CR)
+
+- **`Linefeed`** means to advance downward to the next line (Abbreviated LF or NL) **`CRLF is used for the pair "\r\n"`**.
+
+- **`Formfeed`** means advance downward to the next "page".
+***
+#### Casting
+Now let's move to new topic (Casting) which will be expanded later when you got familiar with OOP.
+
+> Casting : is a process that converts a variable's data type into another data type, casting may be **implicit** (auto) or **explicit**.
+
+Characters (char) can be converted to numerical data types because characters are internally represented by numeric values according to the Unicode standard, **thus** character data type can be casted into any numeric type and vice versa.
+
+- `note 1`: character data type is `2 bytes` so only the lower 16 bits of data are used when casting from numeric into character
+
+- `note 2`: if you cast a floating number data to character, first the float data will be cated into integer then character
+
+![casting one](/images/character%20casting%20one.png)
+
+When a `char` is cast into a numeric type, the character’s Unicode is cast into the specified numeric type.
+
+![casting two](/images/character%20casting%20two.png)
+
+
+> **`⚠ note`** Implicit casting can be used if the result of a casting fits into the target variable. Otherwise, explicit casting must be used.
+
+- Each data type reserves different amount of space in memory, so it's important to take this in consideration when casting, char is 2 bytes, boolean is one byte while integer is 4 bytes.
+
+- Two characters can be compared using the relational operators just like comparing two numbers. This is done by comparing the Unicodes of the two characters.
+  - for example:
+  
+   ![comparing characters](/images/comparing%20characters.png)
+
+taking the advantage that we got familiar with built-in functions, let's use the built-in functions which can be used to perform some tests on characters:
+
+|Method|Description|
+|---|---|
+|`isDigit(ch)` |Returns true if the specified character is a digit.|
+|`isLetter(ch)` |Returns true if the specified character is a letter.|
+|`isLetterOrDigit(ch)` |Returns true if the specified character is a letter or digit.|
+|`isLowerCase(ch)` |Returns true if the specified character is a lowercase letter.|
+|`isUpperCase(ch)` |Returns true if the specified character is an uppercase letter.|
+|`toLowerCase(ch)` |Returns the lowercase of the specified character.|
+|`toUpperCase(ch)` |Returns the uppercase of the specified character.|
+
+Character data type is finished!!!
+****
+
+#### String reference type
+
+
+
+
+
+  
+
+
 
 
 
