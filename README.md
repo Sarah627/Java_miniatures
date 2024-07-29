@@ -947,10 +947,25 @@ taking the advantage that we got familiar with built-in functions, let's use the
 |`toLowerCase(ch)` |Returns the lowercase of the specified character.|
 |`toUpperCase(ch)` |Returns the uppercase of the specified character.|
 
+**`note`** to use character built-in function, it's like Math class you have to import Character Class as follows:
+
+![Import Character class](/images/import%20Character%20class.png)
+
+
 Character data type is finished!!!
 ****
 
 #### String reference type
+
+A `string` is a sequence of characters.
+
+> "Hello, World!" >>> the most popular string ever in programming world!
+
+Strings are enclosed by double quotes `" "`.
+
+> again and again characters are surrounded by single quotes and it's a must or they will be considered as strings 
+
+
 
 
 
