@@ -668,6 +668,8 @@ For now in this chapter we're going to discuss built-in methods only.
   > The class Math contains methods for performing basic numeric operations such as the elementary exponential, logarithm, square root, and trigonometric functions. 
 </details>
 
+**Built-in Functions in Math Class:**
+
 1. Trignometric Methods
 2. Exponential Methods
 3. Service Methods (rounding, min-max-abs, random)
@@ -733,7 +735,7 @@ In my own opinion random method is super important in a lot of situations, for e
 
 ### Simple Application !
 ![angle between two vectors](/images/Angle-Between-Two-Vectors-01.png)
-there is a little application "Calculate Theta value" calculates the value of the engle between any two vectors using dot product
+there is a little application "Calculate Theta value" calculates the value of the angle between any two vectors using dot product
 you can take a look on the application here, whereas you can find how can we use **Math Class** built-in functions are used.
 [Calculate Theta](/Test%20Files%20Elementary/CalculateTheta.java) 
 
@@ -759,8 +761,31 @@ If you are not a computer science student or you are not familiar with the idea 
 
 <details><summary><h4>How computers deal with data</h4></summary>
 
+#### How computers deals with data?
+you need to know what's is a `machine language`, a machine language is the language which actually the computer understands, this language consists of 0's and 1's based on the fact that computers at their core are consisting of transistors which can be switched to two states: ON or OFF (1 or 0) from this point the binary system was born.
+![zeros and ones](/images/zeros%20and%20ones.jpg)
 
-first because you are not familiar with computer science so, I'll recommend you a superior playlist, its videos are short relatively in addition being super informative [Crash Course computer science](https://www.youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo)
+The processes are done in a central processing unit you may heard of is called CPU, this unit perform needed mathimatical operations for processing incoming data, It handles all computing tasks required for running the operating system and applications.
+
+![CPU](/images/CPU.jpeg)
+
+Anything is represented in high level language like "Human Language" computers are so dump to understand here comes the role of this computing component and other components to process this data into something understandable to the computer "machine language". 
+
+In the same way computers doesn't understand what are characters, they need like a translator this can be a long process we are not going to ge deep in this topic, but the main idea is delivered. 
+
+
+ Computers only understand binary data, binary code or machine language, they represent everything 'data' (text, images, sound, ...) using binary.
+
+today, no one is dealing with 0's and 1's directly, this is inside the computer hardware and this is super abstracted nowdays.
+
+Here are videos will help you so much for understanding the topic:
+[khan academy](https://www.khanacademy.org/computing/computers-and-internet/xcae6f4a7ff015e7d:digital-information/xcae6f4a7ff015e7d:bits-and-bytes/v/khan-academy-and-codeorg-binary-data)
+in addition to this one, both are short:
+[How computers Actually work](https://youtube.com/shorts/CZY881WyrB8?si=dGyKynD_p2trawy1), for more details you can watch this [How computers Actually work -The detailed video- ](https://www.youtube.com/watch?v=5f3NJnvnk7k)
+
+Good arcticle about how data is stored and how computers deal with it: [How data is stored in computers](https://www.datarecoveryspecialists.co.uk/blog/how-is-data-in-a-computer-stored)
+
+Because you are not familiar with computer science thus I'll recommend you a superior playlist, its videos are short relatively in addition being super informative [Crash Course computer science](https://www.youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo)
 
 `note`: you can watch this playlist for just having an idea about What computer science is and how it has evolved over a decade, you can pick up keywords, history, important names, applications etc. but it's not for study of course :) 
 
@@ -770,32 +795,23 @@ first because you are not familiar with computer science so, I'll recommend you 
 - another one, but this time you cannot just watch and enjoy, also I want to inform its lectures are long, but super informative recommended from almost everyone and it's considered as one of the most common and best introductions to computer science,
 CS50 - from Harvard [CS50](https://www.youtube.com/playlist?list=PLhQjrBD2T381WAHyx1pq-sBfykqMBI7V4)
 
-`note before watching` you can be familiar with how computers deals with data in this section, honestly these playlists take time -aand no problem, I mean don't finish them first then come back here, you do this in parallel-, if you go and finish them first  you may not continue learning java, then getting bored, then you decide to stop and here you really lost -not because I love java- but the situation here is you wasted your time, at the end you'll find that:  you had an incomplete knowledge about a language can be a reason for your future job offer in addition to wasting your time in which you may enjoyed this time learn how to bake perfect cinnabone 🥯
-
-#### How computers deals with data?
-you need to know what's is a `machine language`, a machine language is the language which actually the computer understands, this language consists of 0's and 1's 
-
-any data represented in 0's and 1's we call it binary data.
-
-so the computers only understand binary data, binary coe or machine language, we represent everything 'data' (text, images, sound, ...) using binary.
-
-today, no one is dealing with 0's and 1's, this is inside the computer hardware and this is super abstracted nowdays.
-
-here is a video will help you so much for understanding the topic:
-[khan academy](https://www.khanacademy.org/computing/computers-and-internet/xcae6f4a7ff015e7d:digital-information/xcae6f4a7ff015e7d:bits-and-bytes/v/khan-academy-and-codeorg-binary-data)
-
-
-good arcticle about how data is stored and how computers deal with it: [How data is stored in computers](https://www.datarecoveryspecialists.co.uk/blog/how-is-data-in-a-computer-stored)
+`note before watching` you don't have to do masters in this topic to understand character data type, all you need is just understand the main idea then after if you want -and it's better specially of you are targetting to learn computer science- to dig deeper go on these playlists and courses, honestly these playlists take time -and no problem of course keep learning, I mean don't finish them first then come back here, you can do both in parallel-, I address the problem of getting bored due to the huge and oftem complicated information for the first time to undestand, wen you got bored; you decide to stop and here you really lost -not because I love java- but the situation here is you wasted your time, at the end you'll find that:  you had an incomplete knowledge about a language can be a reason for your future job offer in addition to wasting your time in which you may enjoyed this time learn how to bake perfect cinnabon 🥯😂
 </details>
 
+#### Characters and Encoding
+
 - Computers use binary numbers internally. A character is stored in a computer as a sequence of `0s and 1s.` 
-- Mapping a character to its binary representation is called `encoding`. 
+  
+- Mapping a character to its binary representation is called `encoding`. (encoding is converting data from one format to another)
+  
 - There are different ways to encode a character. How characters are encoded is defined by an `encoding scheme`.
+  
 - Java supports `Unicode`, an encoding scheme established by the Unicode Consortium to support the interchange, processing, and display of written texts in the world’s diverse languages.
   
-![unicode](/images/unicode.jpg)
-![unicode](/images/9781682171400_00127.jpeg)
-
+- Before Unicode, ASCII encoding scheme were used; a standard data-encoding format for electronic communication between computersencoding scheme, it was 7 bits (every bit can represent either one or zero) so it could hold only 128 characters English characters with some puncituation and control features then it was expanded to be 8 bits to hold 256 characters.
+  
+- other encoding schemes are widely used today like UTF-8 which is algorithmic mapping in addition to providing backward compatibility with ASCII. 
+  
 ### Character Encoding Analogy! Teaching Colors with a Numbered Painting Sketch
 
 **If we want to teach a child how to get used with colors and their names we use the `Numbered Painting Sketch`**
@@ -805,13 +821,13 @@ good arcticle about how data is stored and how computers deal with it: [How data
   
 - Just as each sector in the sketch has a number to indicate which color to use, encoding assigns a unique number to each character so that it can be stored and identified correctly.
   
-- `Unicode`: **The Color Table**
+- `encoding schema` or `Unicode`: **The Color Table**
+  
   ![color table](/images/Coloring%20Table.jpg)
   
   Unicode is like the color table that shows which number corresponds to which color.
 
   The table ensures that no matter what color you need, there's a specific number assigned to it.
-
 
   Similarly, Unicode assigns a unique code point to every character in every language, ensuring a universal standard.
 
@@ -820,8 +836,52 @@ good arcticle about how data is stored and how computers deal with it: [How data
   UTF-8 is like a coloring kit that adapts to the complexity of the drawing.
 
   - In the coloring kit: Simple, common colors (like "Red") might be represented by one marker.
+  
   - More complex, less common colors might be represented by more markers. 
+
   - This makes the kit efficient and flexible, capable of handling all sorts of drawings (characters) without wasting resources.
+  
+  ![blending colors](/images/blending%20colors.jpg)
+
+------
+#### **Now we can indroduce the data type :)**
+
+you define the character data type using **`char`** keyword, then give it a name and assign a character value to it.
+
+> **Caution**⚠ don't forget that characters must be surrounded by single quotes **`' '`**.
+
+**Why did we indtroduced the character encoding with all this staff? to understand the following**
+ 
+ ![characetrs](/images/characters.png)
+
+
+ **Here you can see that character data type can store numeric value and weird code starts with **`\u`** but how?**
+
+ In Java, the char data type can store numeric values, but these values are not interpreted as numbers by Java. Instead, they are treated as their corresponding ASCII or Unicode characters. For example, the character 'a' has an ASCII value of 97. In Unicode, the same character is represented as \u0061. 
+
+ > **`note`** The increment and decrement operators can also be used on char variables to get the next or preceding Unicode character. For example, the following statements display character b:
+
+ ![character operations increment](/images/characterincrement.png)
+
+ > also numerical operations are allowed but you'll get numeric output
+
+ ![char operations](/images/charops.png)
+
+ #### Escape Sequences for Special Characters
+
+ if you know already C you maybe familiar with these characters 
+
+ `Escape characetr` is a character preceded by a backslash `\` is an escape sequence and has special meaning to the compiler.
+
+ from Oracle java tutorial:
+ > When an escape sequence is encountered in a print statement, the compiler interprets it accordingly. For example, if you want to put quotes within quotes you must use the escape sequence, \", on the interior quotes. To print the sentence
+
+> She said "Hello!" to me. you would write 
+> 
+>System.out.println("She said \"Hello!\" to me.");
+
+
+
 
 
 
