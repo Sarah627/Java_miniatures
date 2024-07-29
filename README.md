@@ -966,6 +966,38 @@ Strings are enclosed by double quotes `" "`.
 > again and again characters are surrounded by single quotes and it's a must or they will be considered as strings 
 
 
+#### Reference Types in Java
+In Java, there are two main categories of data types: **primitive** types and **reference** types.
+
+**`Primitive Types`**: These include `int`, `char`, `boolean`, etc. They store simple values.
+
+**`Reference Types`**: These include objects like **`Strings`**, **`arrays`**, and **`custom classes`**. They store references (or addresses) to the actual data in memory.
+
+In other words, Any class can be used as a `reference type`, and any variable declared using this reference type is called reference variable or an object. 
+
+- For now, the class is like a template and the object is the custom version you make from this template. 
+- Objects and Classes will be discussed in details **LATER** :)
+
+So, like **Scanner** class you have to follow the naming convention and capitalize the first letter of the class name: 
+
+> String sentence = "Hello, Developer!"; 
+
+**STRINGS IS A SUPER IMPORTANT TOPIC IN ALMOST ALL AREAS OF  PROGRAMMING**
+
+**SO, KEEP YOUR FOCUS ON THIS TOPIC**
+
+#### String Operations
+
+Now we are going to discuss the most important concepts that are necessary to know about strings:
+
+- How to get the length of a string
+- Concatenating Strings
+- Trimming Strings
+- Find character/s | substring/s in a given string
+- Comparing Strings 
+- Converting and reading strings as user input.
+  
+
 
 
 
