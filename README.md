@@ -996,6 +996,58 @@ Now we are going to discuss the most important concepts that are necessary to kn
 - Find character/s | substring/s in a given string
 - Comparing Strings 
 - Converting and reading strings as user input.
+
+
+#### For short this is a table containing all the needed methods to perform the mentioned tasks:
+
+| Method|  Description| 
+| ---| ---- |
+| `length()`|  Returns the number of characters in this string.| 
+| `charAt(index)`|  Returns the character at the specified index from this string.| 
+| `concat(s1)`|  Returns a new string that concatenates this string with string s1.| 
+| `toUpperCase()`|  Returns a new string with all letters in uppercase.| 
+| `toLowerCase()`|  Returns a new string with all letters in lowercase.| 
+| `trim()`|  Returns a new string with whitespace characters trimmed on both sides.| 
+
+**1- Getting String Length**
+- you'll use strings almost for everything, getting a string length is important if you are going to iterate over this string for any task or to check if the returned data is matching from their lengths. 
+- an instance method `length()` returns to you the length of the given string.
+- **here comes another question, What is an instance method?** 
+    - till now, we've passed by static and instance methods, static methods like Math.rint(), Math.sin()... , `length()`method here is the first instance method we meet.
+    - regarding mentioninng classes and objects earlier without details, for now instance methods are methods tied to a specific object (relies on specific data) and static methods are methods which are not tied to a specific object they only cling to the class itself that's why you invoke them using the class name itself and not the reference variable (object).
+    - clarification: 
+      - Think of a school where students and classrooms play important roles:
+        - Instance Methods: Imagine each student has their own notebook. The notes in these notebooks are personal and unique to each student. For example, a student's grades or personal notes are tied to that specific student. In the same way, instance methods in a class belong to specific objects (or instances) of that class. These methods can access and modify the instance variables of the object they belong to.
+      - 
+        ![notebooks](/images/notebooks%20object.jpg)
+
+        - Static Methods: Now, think about the whiteboard in a classroom. The whiteboard is a shared resource that any teacher can use to teach any student. The information on the whiteboard is not tied to any specific student; it can be used by all students collectively. Similarly, static methods belong to the class itself, not to any particular instance. These methods can be called without creating an instance of the class and cannot access instance variables directly. Instead, they work with class-level data.
+  
+        ![board](/images/classboardstaticmethodexample.jpg)
+
+        - this is the difference noticed when you use static methods of Math class like round(), as rounding number doesn't rely on specific data, but length() from String class is tied to specific object data, in our case here [`sentence`](#string-reference-type) string above, you return the length of this specific string object.
+  
+you can check this example here about how to use length() method [Check Password Length example](/Test%20Files%20Elementary/CheckingPasswordLength.java)
+
+
+![checkpassword](/images/CheckingPasswordLength.png)
+
+****
+
+#### Learn by example:
+
+we're going to explain each method and common use cases by examples in addition to clarifying any ambiguity:
+
+- **charAt() method**
+    
+
+
+
+  
+
+
+
+
   
 
 
