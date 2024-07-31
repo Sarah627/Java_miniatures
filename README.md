@@ -1038,7 +1038,118 @@ you can check this example here about how to use length() method [Check Password
 
 we're going to explain each method and common use cases by examples in addition to clarifying any ambiguity:
 
-- **charAt() method**
+- **charAt(index) method**
+  
+  let's clarify a point, string as mentioned earlier is a sequence of characters, people who already familiar with programming or already tried C/C++ knew that string is an array of characters, each character is indexed.
+
+  The (string variable).charAt(index) method can be used to retrieve a specific character in a string s,where the index is between 0 and (string variable).length()–1.
+
+  > **`note`** ⚠ a coomon programming error **"StringIndexOutOfBoundsException."** if you tried to access character which is our of array bounds as we count from zero, so charAt(string.length()) will expose you to this error :) 
+
+
+  > String message = "Welcome to Java";
+  > 
+  > System.out.println(message.length());
+
+
+  ![java indexed string](/images/string%20example.png)
+
+
+<details><summary><strong>To Someone Totally New to Programming<strong></summary>
+
+  - Imagine you have a row of lockers, and each locker has a number on it, starting from 0. These numbers help you find and open a specific locker quickly.
+
+  - A string is like a row of lockers, but instead of holding things, it holds characters (letters, numbers, symbols, etc.). Each character in the string has a number called an index, which tells you its position in the row.
+
+  For example, in the string "Hello":
+
+  - The first character 'H' is at index 0
+  - The second character 'e' is at index 1
+  - The third character 'l' is at index 2
+  - The fourth character 'l' is at index 3
+  - The fifth character 'o' is at index 4
+  
+  So, if you want to find or use a specific character, you can refer to its index number, just like you'd find a specific locker by its number.
+
+
+
+  > ⚠ **`note`** in programming by default we count from 0 index
+
+</details>
+
+example on using charAt(index) method: [email validation](/Test%20Files%20Elementary/CheckingEmailElgibility.java)
+
+
+![charAt()](/images/emailvalidation.png)
+
+- **concat(s1) method**:
+  
+  concatenation is one of the most important concepts you need to learn about strings, concatenation means merging two strings together <3
+
+  concatenation is acheived using multiple ways, one shortcut is by using plus sign '+' between two strings as follows:
+  > String name = "Sarah";
+  >
+  > String greeting = "Hello, " + name;
+  >
+  > System.out.println(greeting);
+  >
+  > prints >>> Hello, Sarah 
+
+  also `+=` operator can be used with strings:
+
+  > String studentsNames = "";  //empty string
+  >
+  > studentsNames += input.next();
+  >
+  > enetrs Mariam 
+  > 
+  > System.out.println(studentsNames);
+  >
+  > prints Mariam as the empty string is concatenated with the user input "Mariam"
+
+  using s2.concat(s1) method:
+  > String spongepopFandomgreeting = "Hi Hi,"; 
+  >
+  > String name = "Captain";
+  >
+  > spongepopFandomgreeting = spongepopFandomgreeting.concat(name);
+  > 
+  > System.out.println(spongepopFandomgreeting);
+  >
+  > prints Hi Hi, Captain
+
+  > `note` the reassignment happened above with `spongepopFandomgreeting` because the method concat(s1) returns a string so it must be stored in string variable or update an existing string variable.
+
+  you can concatenate strings with any data type resulting a new string with all the concatenated values
+
+  ![string concatenation](/images/concatenateStrings.png)
+
+
+- **trim(), toUpperCase(), toLowerCase() methods**:
+
+   The `toLowerCase()` method returns a new string with all lowercase letters, and the `toUpperCase()` method returns a new string with all uppercase letters. For example:
+
+      "Welcome".toLowerCase() returns a new string **welcome**.
+      "Welcome".toUpperCase() returns a new string **WELCOME**.
+
+  The `trim()` method returns a new string by eliminating whitespace characters from both ends of the string. The characters `' '`, `\t`, `\f`, `\r`, or `\n` are known as **whitespace** characters. For example,
+       
+       "\t Good Night \n".trim() returns a new string Good Night.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
