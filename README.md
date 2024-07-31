@@ -1039,7 +1039,8 @@ you can check this example here about how to use length() method [Check Password
 we're going to explain each method and common use cases by examples in addition to clarifying any ambiguity:
 
 - **charAt() method**
-    
+
+
 
 
 
