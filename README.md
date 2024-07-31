@@ -1087,36 +1087,26 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
   concatenation is one of the most important concepts you need to learn about strings, concatenation means merging two strings together <3
 
   concatenation is acheived using multiple ways, one shortcut is by using plus sign '+' between two strings as follows:
-  > String name = "Sarah";
-  >
-  > String greeting = "Hello, " + name;
-  >
-  > System.out.println(greeting);
-  >
-  > prints >>> Hello, Sarah 
 
+        String name = "Sarah";
+        String greeting = "Hello, " + name;
+        System.out.println(greeting);
+        //prints >>> Hello, Sarah 
   also `+=` operator can be used with strings:
 
-  > String studentsNames = "";  //empty string
-  >
-  > studentsNames += input.next();
-  >
-  > enetrs Mariam 
-  > 
-  > System.out.println(studentsNames);
-  >
-  > prints Mariam as the empty string is concatenated with the user input "Mariam"
+         String studentsNames = "";  //empty string
+         studentsNames += input.next();
+         // enetrs Mariam 
+         System.out.println(studentsNames);
+         // prints Mariam as the empty string is concatenated with the user input "Mariam"
 
   using s2.concat(s1) method:
-  > String spongepopFandomgreeting = "Hi Hi,"; 
-  >
-  > String name = "Captain";
-  >
-  > spongepopFandomgreeting = spongepopFandomgreeting.concat(name);
-  > 
-  > System.out.println(spongepopFandomgreeting);
-  >
-  > prints Hi Hi, Captain
+
+        String spongepopFandomgreeting = "Hi Hi,"; 
+        String name = "Captain";
+        spongepopFandomgreeting = spongepopFandomgreeting.concat(name);
+        System.out.println(spongepopFandomgreeting);
+        //prints Hi Hi, Captain
 
   > `note` the reassignment happened above with `spongepopFandomgreeting` because the method concat(s1) returns a string so it must be stored in string variable or update an existing string variable.
 
@@ -1129,12 +1119,12 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
 
    The `toLowerCase()` method returns a new string with all lowercase letters, and the `toUpperCase()` method returns a new string with all uppercase letters. For example:
 
-      "Welcome".toLowerCase(); \\returns a new string **welcome**.
-      "Welcome".toUpperCase(); \\returns a new string **WELCOME**.
+        String convertToLower = "Welcome".toLowerCase(); // returns a new string **welcome**.
+        String convertToUpper ="Welcome".toUpperCase(); //returns   a new string **WELCOME**.
 
   The `trim()` method returns a new string by eliminating whitespace characters from both ends of the string. The characters `' '`, `\t`, `\f`, `\r`, or `\n` are known as **whitespace** characters. For example,
        
-       "\t Good Night \n".trim(); \\returns a new string Good Night.
+        String trimmedSentence = "\t Good Night \n".trim(); //returns a new string Good Night.
 
 
 
