@@ -1129,12 +1129,12 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
 
    The `toLowerCase()` method returns a new string with all lowercase letters, and the `toUpperCase()` method returns a new string with all uppercase letters. For example:
 
-      "Welcome".toLowerCase() returns a new string **welcome**.
-      "Welcome".toUpperCase() returns a new string **WELCOME**.
+      "Welcome".toLowerCase(); \\returns a new string **welcome**.
+      "Welcome".toUpperCase(); \\returns a new string **WELCOME**.
 
   The `trim()` method returns a new string by eliminating whitespace characters from both ends of the string. The characters `' '`, `\t`, `\f`, `\r`, or `\n` are known as **whitespace** characters. For example,
        
-       "\t Good Night \n".trim() returns a new string Good Night.
+       "\t Good Night \n".trim(); \\returns a new string Good Night.
 
 
 
