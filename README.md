@@ -980,7 +980,7 @@ In other words, Any class can be used as a `reference type`, and any variable de
 
 So, like **Scanner** class you have to follow the naming convention and capitalize the first letter of the class name: 
 
-> String sentence = "Hello, Developer!"; 
+     String sentence = "Hello, Developer!"; 
 
 **STRINGS IS A SUPER IMPORTANT TOPIC IN ALMOST ALL AREAS OF  PROGRAMMING**
 
@@ -1008,6 +1008,13 @@ Now we are going to discuss the most important concepts that are necessary to kn
 | `toUpperCase()`|  Returns a new string with all letters in uppercase.| 
 | `toLowerCase()`|  Returns a new string with all letters in lowercase.| 
 | `trim()`|  Returns a new string with whitespace characters trimmed on both sides.| 
+|`equals(s1)`| Returns true if this string is equal to string s1.|
+|`equalsIgnoreCase(s1)`| Returns true if this string is equal to string s1; it is case insensitive.|
+|`compareTo(s1)`| Returns an integer greater than 0, equal to 0, or less than 0 to indicate whether this string is greater than, equal to, or less than s1.|
+|`compareToIgnoreCase(s1)`| Same as compareTo except that the comparison is case insensitive.|
+|`startsWith(prefix)`| Returns true if this string starts with the specified prefix.|
+|`endsWith(suffix)`| Returns true if this string ends with the specified suffix.|
+|`contains(s1)`| Returns true if s1 is a substring in this string|
 
 **1- Getting String Length**
 - you'll use strings almost for everything, getting a string length is important if you are going to iterate over this string for any task or to check if the returned data is matching from their lengths. 
@@ -1047,9 +1054,9 @@ we're going to explain each method and common use cases by examples in addition 
   > **`note`** ⚠ a coomon programming error **"StringIndexOutOfBoundsException."** if you tried to access character which is our of array bounds as we count from zero, so charAt(string.length()) will expose you to this error :) 
 
 
-  > String message = "Welcome to Java";
-  > 
-  > System.out.println(message.length());
+       String message = "Welcome to Java";
+      
+       System.out.println(message.length());
 
 
   ![java indexed string](/images/string%20example.png)
@@ -1125,6 +1132,19 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
   The `trim()` method returns a new string by eliminating whitespace characters from both ends of the string. The characters `' '`, `\t`, `\f`, `\r`, or `\n` are known as **whitespace** characters. For example,
        
         String trimmedSentence = "\t Good Night \n".trim(); //returns a new string Good Night.
+  
+- **equals(s1) & equalsIgnoreCase(s1) methods**:
+
+take a look on the next two examples:
+
+![example using == operator](/images/strings%20comparison%20using%20equality%20operator.png)
+
+![example using equals() method](/images/equality%20method%20for%20strings.png)
+
+What Happened?
+
+introducing a new concept: String pool in heap:
+
 
 
 
