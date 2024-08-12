@@ -1239,6 +1239,28 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
   - contains(s1) Returns true if s1 is a substring in this string.
   
   ![substrings](/images/substrings.png) 
+
+#### Obtaining Substrings
+
+- You can obtaib either a character or a substring from a string or return their indices:
+  
+  |Method|Description|
+  |----|----| 
+  | `substring(beginIndex)`| Returns this string’s substring that begins with the character at the specified beginIndex and   extends to the end of the string, as shown down in the Figure| 
+  | `substring(beginIndex,endIndex)`| Returns this string’s substring that begins at the specified beginIndex and extends to the character at index endIndex – 1, shown down in the Figure. Note the character at endIndex is not part o f the substring | 
+  | `indexOf(ch)`|  Returns the index of the first occurrence o f ch in the string. Returns −1 if not matched.| 
+  | `indexOf(ch, fromIndex)`|  Returns the index of the first occurrence of ch after fromIndex in the string. Returns −1 if not matched.| 
+  | `indexOf(s)`|  Returns the index of the first occurrence o  f string s in this string. Returns −1 if not matched.| 
+  | `indexOf(s, fromIndex)`|  Returns the index of the first occurrence of string s in this string after fromIndex. Returns −1 if not matched.| 
+  | `lastIndexOf(ch)`|  Returns the index of the last occurrenc e of ch in the string. Returns −1 if not matched.| 
+  | `lastIndexOf(ch,fromIndex)`|  Returns the index of the last occurrence of ch before fromIndex in this string. Returns −1 if not matched.| 
+  | `lastIndexOf(s)`| Returns the index of the last occurrence of string s. Returns −1 if not matched.|
+  |`lastIndexOf(s, fromIndex)`|  Returns the index of the last occurrence of string s before fromIndex. Returns −1 if not matched.|  
+
+  
+
+
+ 
             
 
 
