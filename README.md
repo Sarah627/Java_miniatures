@@ -965,6 +965,7 @@ Strings are enclosed by double quotes `" "`.
 
 > again and again characters are surrounded by single quotes and it's a must or they will be considered as strings 
 
+`note` : Strigns are immutable 'you cannot change their value' ⚠
 
 #### Reference Types in Java
 In Java, there are two main categories of data types: **primitive** types and **reference** types.
@@ -1135,15 +1136,36 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
   
 - **equals(s1) & equalsIgnoreCase(s1) methods**:
 
-take a look on the next two examples:
+  take a look on the next two examples:
 
-![example using == operator](/images/strings%20comparison%20using%20equality%20operator.png)
+  ![example using == operator](/images/strings%20comparison%20using%20equality%20operator.png)
 
-![example using equals() method](/images/equality%20method%20for%20strings.png)
 
-What Happened?
+  ![example using equals() method](/images/equality%20method%20for%20strings.png)
 
-introducing a new concept: String pool in heap:
+
+  What Happened?
+
+  Introducing a new concept: String pool in heap
+
+  From the reference used to formulate part 1: 
+  > the == operator checks only whether string1 and string2 refer to the same object; it does not tell you whether they have the same contents. Therefore, you cannot use the == operator to find out whether two string variables have the same contents. Instead, you should use the equals method.
+
+  The reference illustrated the concept straight forward, let me highlight that: 
+
+  - "**the == operator checks only whether string1 and string2 refer to the same object; it does not tell you whether they have the same contents**" 
+  
+  - let us dig deeper, what does that mean?
+      - This is where the String Pool concept comes into play. 
+      - The String Pool is a special area in the heap memory where Java stores string literals. When you create a string using a literal (`e.g., String s = "hello";`), Java first checks if an identical string already exists in the pool. If it does, the existing reference is used; otherwise, a new string is added to the pool. This behavior ensures security, reusability, and memory management. But how does it work?
+      - Reference types in Java store a reference to an object, not the actual value. If you're familiar with C, you can think of it like a pointer, but let's clarify further:
+
+        - ![reference data types](/images/reference%20datatypes.png)
+
+        - you can see reference types have their values in a place called `heap` while the value or simple data type has its value in the stack, 
+
+
+  
 
 
 
