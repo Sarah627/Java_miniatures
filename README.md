@@ -1136,7 +1136,7 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
   
 - **equals(s1) & equalsIgnoreCase(s1) methods**:
 
-  take a look on the next two examples:
+  Let’s examine the following examples:
 
   ![example using == operator](/images/strings%20comparison%20using%20equality%20operator.png)
 
@@ -1144,9 +1144,9 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
   ![example using equals() method](/images/equality%20method%20for%20strings.png)
 
 
-  What Happened?
+  #### What Happened?
 
-  Introducing a new concept: String pool in heap
+  This introduces the concept of the **String Pool** in the heap.
 
   From the reference used to formulate part 1: 
   > the == operator checks only whether string1 and string2 refer to the same object; it does not tell you whether they have the same contents. Therefore, you cannot use the == operator to find out whether two string variables have the same contents. Instead, you should use the equals method.
@@ -1168,7 +1168,7 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
               greeting = "Hi";
               System.out.println(greeting); ///prints Hi
 
-      - You just changed the reference to another object has the value `Hi`, you didn't actually change the value of greeting.
+      - You’re not changing the value of greeting directly; instead, you’re changing the reference to another object that has the value "Hi".
   
       ![String pool example](/images/String%20pool.png)
 
@@ -1177,9 +1177,9 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
 
       - As you observed in the figures, you just created another string literal has the value of `"Hi"`
 
-      - How security can be achieved here in this situation:
+      #### How security can be achieved here in this situation:
 
-      - Imagine we have multiple string objects have the same value `"default"` as follows: 
+      - magine you have multiple string objects with the same value `"default"` as follows: 
       
                String str1 = "default";
                String str2 = "default";
@@ -1190,17 +1190,18 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
         ![changing references](/images/changing%20reference.png)
 
       - What if one of them have been changed its value to `"def"` for example? 
-         - Now you know the answer! the value is not changed the string reference variable just changed its reference to another object in the pool :) 
+         - Now you know the answer! the value hasn't been changed the string reference variable just has been changed its reference to another object in the pool :) 
             
          ![changed reference](/images/changed%20reference.png)   
 
-         - Here, the security is ensured, imagine a situation where multiple threads for example using the same string literal if one of the other threads tried to change the value the others won't be affected because the string reference variable used by the thread just changed its reference without affecting the others. 
-         - Also, the reusability and memory management are ensured, as JVM first checks if an identical string already exists in the pool. If it does, the existing reference is used; otherwise, a new string is added to the pool. So, JVM don't have to waste memory for the same literal in addition being secure due to the string immutability. 
+         - Here, security is ensured. For instance, imagine a situation which multiple threads use the same string literal, and one thread tries to change the value, the others won’t be affected because the string reference variable used by the thread just changes its reference without affecting the others.
+         - Reusability and memory management are also ensured. The JVM first checks if an identical string already exists in the pool. If it does, the existing reference is used; otherwise, a new string is added to the pool. This prevents memory waste for the same literal while maintaining security due to string immutability.
       - In case of using `new` operator, here you create string object outside of the string pool, in the heap:
       
       ![new operator](/images/new%20operator%20with%20string%20pool%20concept.png)
 
-      - here `new` operator creates object outsite the heap, even if you created multiple objects using `new` operator or not have the same exaxt string literal they won't point to the same objects as in myName.
+      - The `new` operator creates an object outside the **String Pool**, so even if you create multiple objects with the same exact string literal using the new operator, they won’t point to the same object, as seen in myName.
+      - 
 
             
 
