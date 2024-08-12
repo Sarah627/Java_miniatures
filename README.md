@@ -1257,7 +1257,15 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
   | `lastIndexOf(s)`| Returns the index of the last occurrence of string s. Returns −1 if not matched.|
   |`lastIndexOf(s, fromIndex)`|  Returns the index of the last occurrence of string s before fromIndex. Returns −1 if not matched.|  
 
-  
+- example on **indexOf(ch)** method
+
+![example on indexOf method](/images/exampleonIndexOf.png) 
+
+- 
+
+
+
+
 
 
  
