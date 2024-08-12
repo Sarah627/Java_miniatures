@@ -286,9 +286,10 @@ _prerequisites_ ⚠
 you can check the file here in this directory [Hello.java](/Test%20Files%20Elementary/Hello.java) file.
 
 **Now we consider you a real programmer**
+
 ![queen's knight](</images/Accolade_by_Edmund_Blair_Leighton%20(1).jpg>)
 
-#### notes about java syntax:
+### java syntax:
 
 - every programming language has a syntax defines it, simply like grammar in English defines how you form a sentence has context, simmilarly in programming the syntax allows you to write program instructions correct or with a context for the compiler.
 
@@ -1231,7 +1232,13 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
 - **str1.compareToIgnoreCase(str2)** does the same job but here the case won't be considered : 
   
   ![comparing strings ignore case](/images/comparing%20Strings2.png)  
-    
+
+- **startsWith(prefix), endsWith(suffix), contains(s1)** methods:
+  -  startsWith(prefix)Returns true if this string starts with the specified prefix.
+  - endsWith(suffix) Returns true if this string ends with the specified suffix.
+  - contains(s1) Returns true if s1 is a substring in this string.
+  
+  ![substrings](/images/substrings.png) 
             
 
 
