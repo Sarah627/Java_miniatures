@@ -1157,12 +1157,59 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
   
   - let us dig deeper, what does that mean?
       - This is where the String Pool concept comes into play. 
-      - The String Pool is a special area in the heap memory where Java stores string literals. When you create a string using a literal (`e.g., String s = "hello";`), Java first checks if an identical string already exists in the pool. If it does, the existing reference is used; otherwise, a new string is added to the pool. This behavior ensures security, reusability, and memory management. But how does it work?
+      - The String Pool is a special area in the heap memory where Java stores string literals. When you create a string using a literal (`e.g., String s = "hello";`), Java first checks if an identical string already exists in the pool. If it does, the existing reference is used; otherwise, a new string is added to the pool. due to the immutability charactaristic of Java Strings what happens in string pool ensures `security`, `reusability`, and `memory management`. But how does it work?
       - Reference types in Java store a reference to an object, not the actual value. If you're familiar with C, you can think of it like a pointer, but let's clarify further:
+       
+        ![reference data types](/images/reference%20datatypes.png)
 
-        - ![reference data types](/images/reference%20datatypes.png)
+      - When you change the value of reference type as follows:
+  
+              String greeting = "Hello";
+              greeting = "Hi";
+              System.out.println(greeting); ///prints Hi
 
-        - you can see reference types have their values in a place called `heap` while the value or simple data type has its value in the stack, 
+      - You just changed the reference to another object has the value `Hi`, you didn't actually change the value of greeting.
+  
+      ![String pool example](/images/String%20pool.png)
+
+
+      ![String pool example 2](/images/String%20pool2.png)
+
+      - As you observed in the figures, you just created another string literal has the value of `"Hi"`
+
+      - How security can be achieved here in this situation:
+
+      - Imagine we have multiple string objects have the same value `"default"` as follows: 
+      
+               String str1 = "default";
+               String str2 = "default";
+               String str3 = "default";
+
+      - They all point to the same value in the string pool
+         
+        ![changing references](/images/changing%20reference.png)
+
+      - What if one of them have been changed its value to `"def"` for example? 
+         - Now you know the answer! the value is not changed the string reference variable just changed its reference to another object in the pool :) 
+            
+         ![changed reference](/images/changed%20reference.png)   
+
+         - Here, the security is ensured, imagine a situation where multiple threads for example using the same string literal if one of the other threads tried to change the value the others won't be affected because the string reference variable used by the thread just changed its reference without affecting the others. 
+         - Also, the reusability and memory management are ensured, as JVM first checks if an identical string already exists in the pool. If it does, the existing reference is used; otherwise, a new string is added to the pool. So, JVM don't have to waste memory for the same literal in addition being secure due to the string immutability. 
+      - In case of using `new` operator, here you create string object outside of the string pool, in the heap:
+      
+      ![new operator](/images/new%20operator%20with%20string%20pool%20concept.png)
+
+      - here `new` operator creates object outsite the heap, even if you created multiple objects using `new` operator or not have the same exaxt string literal they won't point to the same objects as in myName.
+
+            
+
+
+        
+
+             
+  
+      
 
 
   
