@@ -1201,8 +1201,37 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
       ![new operator](/images/new%20operator%20with%20string%20pool%20concept.png)
 
       - The `new` operator creates an object outside the **String Pool**, so even if you create multiple objects with the same exact string literal using the new operator, they won’t point to the same object, as seen in myName.
-      - 
+       
+- **str1.compareTo(str2)** is a method compares two strings lexicographically.
+ 
+  - What's meant by lexicographically?
 
+    - **The comparison is based on the Unicode value of each character in the strings.**
+  -  The method returns value less than zero if str1 has fewer characters `or` considered less than str2 comparing the unicode value of their characters, returns more than zero if the opposite and 0 if they are equal.
+  -  to understand observe the next example:
+    
+     ![comparing strings](/images/comparing%20Strings.png)
+
+  - try it out: 
+    
+        String greeting = "Hello";
+		    String greeting2 = "Hello";
+		    System.out.println(greeting.compareTo(greeting2)); //prints 0
+		    String salut = "Hi";
+		    String salut2 = "Hola";
+		    // prints -6 because letter i unicode value is less than o by 6 characters
+		    System.out.println(salut.compareTo(salut2)); 
+		    String welcome = "welcome";
+		    String welcome2 = "welco";
+		    //prints +2 because of the two characters excess
+		    System.out.println(welcome.compareTo(welcome2));
+		    //if we inverted the strings prints -2 because of the two characters are missing
+		    System.out.println(welcome2.compareTo(welcome)); 
+
+- **str1.compareToIgnoreCase(str2)** does the same job but here the case won't be considered : 
+  
+  ![comparing strings ignore case](/images/comparing%20Strings2.png)  
+    
             
 
 
