@@ -1261,7 +1261,43 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
 
 ![example on indexOf method](/images/exampleonIndexOf.png) 
 
-- 
+  
+#### Conversion Between Strings and Numbers:
+
+using **`parseInt()`** method from `Integer` class you can convert from string to integer, in other words parsing integers from a string.
+
+      int parsedInteger = Integer.parseInt("2351");
+      System.out.println(parsedInteger); // 2351 
+
+you can use **`parseDouble()`** from `Double` class also for the same matter but for parsing floating point numbers:
+
+     double parsedDouble = Double.parseDouble("34.223");
+     System.out.println(parsedDouble); // 34.223
+
+If the string is not a numeric string, the conversion would cause a runtime error:
+     
+     int numberFromAString = Integer.parseInt("Iloveyou3000");
+     System.out.println(numberFromAString); // runtime error (throws an exception) as the string is not numeric it has some characters;
+
+**`note`**: you don't have to import `Integer` or  `Double` classes because they are included in `java.lang` library thus they are imported by default
+
+you can convert any numerical value to a string by just concatenate it with a double quotes as follows:
+
+      int number = 345;
+      String numericalString = number +"";
+      System.out.println(numericalString);   // 345
+
+#### Formatting Console Output:
+
+Good news for these who loves `c/c++`, you can use the `System.out.printf` method to display formatted output on the
+console just like `printf` in `c`: 
+
+      double amount = 12618.98;
+      double interestRate = 0.0013;
+      double interest = amount * interestRate;
+      System.out.printf("Interest is $%4.2f", interest);
+
+
 
 
 
