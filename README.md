@@ -1297,73 +1297,50 @@ console just like `printf` in `c`:
       double interest = amount * interestRate;
       System.out.printf("Interest is $%4.2f", interest);
 
+For those who are new to the idea, you need to get familiar with what a `format specifier` mean:
+
+> format specifier specifies how an item should be formatted, simple format specifier consists of a percent sign (`%`) followed by a conversion code.
+
+The following is a table of format specifiers used in java:
+
+|Format Specifier|Output|
+|----|----|
+|`%b`| formats boolean value|
+|`%c`|formats character|
+|`%d`|formats integer|
+|`%f`|formats floating point number|
+|`%e`|formats scientific notation|
+|`%s`|formats string|
+
+Observe in the next example how do we use the format specifiers in formatting an output as follows:
 
 
+![format speicifers](/images/format%20specifiers.png)
+
+**`note`** Items must match the format specifiers in order, in number, and in exact type otherwise a runtime error will occur.
+
+Another important point is considering that we are formatting console output, so in some cases we need to display leading zeros or adding thousands separators or even we don't need to display all these numbers after the floating point. 
+
+Controlling the width and percision in a format specifier, helps in acheiving what were mentioned above:
+
+![components of a format specifier](/images/components%20of%20a%20format%20specifier.png)
 
 
+you can add leading zeros but with integer conversion character `d` as follows:
+
+     int thousands = 52497823;
+     System.out.printf("%010d", thousands); // 0052497823
+
+you can alter the leading zeros flag with the thousands flag or left justifying flag `-` and so  on.
+
+- What if the field width is less or more than the item digits or characters, if the field width is smaller than the item it will be automatically increased but if it's more than the item digits or characters spaces are added before them:
+
+![spaces 1](/images/spaces%20with%20specifiers%200.png)
+
+![spaces 2](/images/spaces%20with%20specifiers.png)
 
 
-
- 
-            
-
-
-        
-
-             
-  
-      
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-  
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### Finally the third chapter is FINISHED!!! :D
+I THOUGHT IT WAS A CURSE, WASN'T IT? 
 
 </details>
