@@ -1340,6 +1340,12 @@ you can alter the leading zeros flag with the thousands flag or left justifying 
 ![spaces 2](/images/spaces%20with%20specifiers.png)
 
 
+you can see more about foramtting in these links on Oracle website: Java tutorial
+
+  - [Formatting](https://docs.oracle.com/javase/tutorial/essential/io/formatting.html)
+  - [Number Format](https://docs.oracle.com/javase/tutorial/java/data/numberformat.html)
+  
+
 ### Finally the third chapter is FINISHED!!! :D
 I THOUGHT IT WAS A CURSE, WASN'T IT? 
 
