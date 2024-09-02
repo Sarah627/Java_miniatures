@@ -1412,8 +1412,14 @@ Observe the following figure:
   - post-test loops
     - do-while loop
 
- 
+![Types of Loop statements in Java](/images/Types%20of%20Loop%20Statements%20in%20Java.png)
 
+
+1. The Pretest Loops:
+
+     - For loop:
+        -  
+     - While loop: 
 
 
 
