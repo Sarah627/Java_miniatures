@@ -23,9 +23,9 @@ This repository **IS NOT A ROADMAP FOR LEARNING JAVA** exactly, you can use diff
 <details><summary><strong>Java Basics</strong></summary>
 
 1. Elementary Programming
-2. Control Structure Part 1: (_Selections_)
+2. Control Structures Part 1: (_Selections_)
 3. Mathematical Functions,Characters, and Strings
-4. Control Structure Part 2: (_Iterators_)
+4. Control Structures Part 2: (_Iterators_)
 5. Methods
 6. Arrays
 </details>
@@ -1348,5 +1348,31 @@ you can see more about foramtting in these links on Oracle website: Java tutoria
 
 ### Finally the third chapter is FINISHED!!! :D
 I THOUGHT IT WAS A CURSE, WASN'T IT? 
+
+</details>
+
+---
+
+<details>
+<summary><H3><strong>4. Control Structure Part 2: (_Iterators_) </strong><H3></summary>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </details>
