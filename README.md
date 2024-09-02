@@ -1415,10 +1415,27 @@ Observe the following figure:
 ![Types of Loop statements in Java](/images/Types%20of%20Loop%20Statements%20in%20Java.png)
 
 
-1. The Pretest Loops:
+1. The Pretest Loops: loops which already test the condition first before the execution: 
 
      - For loop:
-        -  
+        - for loops have consice syntax:
+         
+              for(`initial action`; `continuation-condition` ;`action-after-each-iteration`){
+                block of statements to be repeated
+              } 
+        - the statements between the parenthesis after `for` keyword construct the control structure of the loop.
+        - the `initial action` is the loop control variable initialization. 
+        - the `control variable` controls the number of iterations in the loop.
+        -  the `action-after-iterations` is the statement which adjusts the control variable.
+        -  each statement of the loop control structure is terminated using a semi-colon `;` like the rest of the statements in java
+           -  `note`⚠ you can insert a semicolon by mistake after the control structure which results in loop termination or it means do nothing as follows:
+                        
+                  for(int i = 0; i<10;i++);   //<----- note the semicolon after the closing parenthesis here will case to print nothing as the loop has been terminated.
+                  {
+                    System.out.println("Hello);
+                  } 
+        - examples of using `for-loops`:
+        1.  
      - While loop: 
 
 
