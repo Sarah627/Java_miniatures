@@ -1404,7 +1404,14 @@ Observe the following figure:
 - The `loop-Body` is the block of code which contains the statements to be repeated.
 
 - Executing the Loop-Body successfully one time is considered as one `iteration`. 
-    
+  
+- Loop Design strategy:
+  
+    There is two keys to design a loop:
+
+  1. Identify the code needed to be repeated
+  2. Iedntify what can terminate the loop 
+     
 - Types of loop statements in Java:
   - pretest loops
     - for loop
@@ -1435,7 +1442,51 @@ Observe the following figure:
                     System.out.println("Hello);
                   } 
         - examples of using `for-loops`:
-        1.  
+        1.  Simple program to print students name followed by their IDs, the IDs start from 2020000 to 2020009:
+          
+                  public class Main{
+                  	public static void main(String[] args) {
+                  		//This program is for printing the students IDs:
+                  		int initialID = 202000;
+                  		String[] studentNames = {"Reem","Ali","Maged","Mariam","Mary","Ahmed","Mohammed","Mustafa","Shehzad","Sally"};
+                  		for(int i = 0; i<10; i++){
+                  		    System.out.printf("Student's name: %s , student ID: %d \n ",studentNames[i],initialID+i);
+                  		}
+                  	}
+                  }  
+
+        ![loop example 1](/images/loop%20example%201.png)
+
+        2. Simple program to print the multiples of a number entered by user and stop at of before 100:
+         
+                  import java.util.Scanner;
+                  public class Main
+                  {
+                  	public static void main(String[] args) {
+                  		// This program is for printing the multiples of any number entered by user till 100:
+                  	    // prompt user to enter a number
+                  		System.out.println("Please enter a number");
+                  		// define the Scanner Object
+                  		Scanner input = new Scanner(System.in);
+                  		int number = input.nextInt();
+                  		int multiple = number;
+                  		// input.nextInteger() is token based so a \n must be inserted or the next print lines 
+                  		// will be right beside the taken input -confusing-
+                  		System.out.println();
+                  		// note that you can statements separated by comma in the initial action to initialize 
+                  		// variables or control variable but it's more common to intialize control variables
+                  		// and the same in after-iteration-action statement,you can add statements
+                  		// you want to be executed after each iteration
+                  		for(int i = 0; multiple <= 100; i++,multiple+=number){
+                  		    System.out.printf("Multiple number %d of number %d is %d \n ",i+1,number, multiple);
+                  		}
+                  	}
+                  } 
+
+        ![loop example 1](/images/loop%20example%201.png)
+
+        3. another example is illustrated here [ItertativeAdditionQuiz](/Test%20Files%20Elementary/IterativeAdditionQuiz.java). 
+
      - While loop: 
 
 
