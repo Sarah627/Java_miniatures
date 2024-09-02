@@ -1363,13 +1363,62 @@ Also, we've mentioned the types of control flow statements branching and Iterati
 
 In this Chapter we're goint to learn about Iteration (loop):
    
-  - Consider a situation where you need to print scores of a specific academic year of 200 students, logically writing 200 print statements which almost print the same sentence excep the name of student and his/her score would be a super exhuastive task. 
+  - Consider a situation where you need to print scores of a specific academic year of 200 students, logically writing 200 print statements which almost print the same sentence except the name of student and his/her score would be a super exhuastive task. 
   - Regarding what you've learnt from this section in the last chapter [DRY principle](#analysis-to-what-happened), you may think of using methods; but is that really the suitable choice for this task? for short, no.
     - you can use methods to encapsulate the right structure.
   - A control structure in which you can perform a number of tasks or execute a block of code repeatedly is called `Loop`.
 
 ### Loops (Iterations):
-  
+
+- A loop is a control structure which controls how many times an operation or a block of code can be executed.
+- Types of Loops: 
+  - Counter Controlled
+  - Sentinel Controlled
+
+- Simply, tyhe difference between the counter controlled and sentinel controlled is that you know the number of iterations in advance while in sentined you don't know how many iterations will be actually executed because it depends on other action like user input for example.
+
+#### Loop General Strcuture:
+
+   1. Loop-Continuation-Condition
+   2. Loop-Body 
+   3. iteration
+
+Observe the following figure:
+
+![loop structure](/images/loop%20strucuture.png)
+
+- The `loop-continuation-condition` is a boolean condition in which if it was evaluated to `true` so the loop continues otherwise 'false' the loop terminates. 
+  - The boolean condition controls the execution of the loop thus adjusting this condition is super important.
+  - You can be exposed to `off-by-one` error (one more or less iteration) if you didn't not adjust this condition for example:
+
+        public class Main{
+	          public static void main(String[] args) {
+	          	//this program is for printing Hello,World 10 times
+	          	for(int i =0; i<=10; i++ )
+	          	    System.out.println(i+1 + "- Hello,World");
+                  // the sentence will be printed 11 times! off-by-one 
+	          }
+        }
+  - This kind of errors is logical or semantic errors, the code actually works fine but the code doesn't yeild the right output.  
+ 
+- The `loop-Body` is the block of code which contains the statements to be repeated.
+
+- Executing the Loop-Body successfully one time is considered as one `iteration`. 
+    
+- Types of loop statements in Java:
+  - pretest loops
+    - for loop
+    - while loop
+  - post-test loops
+    - do-while loop
+
+ 
+
+
+
+
+
+
 
 
 
