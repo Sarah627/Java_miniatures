@@ -470,7 +470,7 @@ According to documentation:
 
 > control flow statements, break up the flow of execution by employing decision making, looping, and branching, enabling your program to conditionally execute particular blocks of code.
 
-types of control flow statements:
+Types of `Control Flow` statements:
 
 1. Decision making statements.
 2. Iteration (Looping) statements.
@@ -486,9 +486,10 @@ Conditional statement evaluate a (condition) if it's true or false to perform se
 
 ![if condition](./images/if%20condition.png)
 
-a boolean expression is expression will yeild true or false, e.g. is 4 + 5 = 9? if their sum equal to nine so the answer is yes otherwise no. so, an expression will be given to be evaluated.
 
-now, the question is how to build a conditional:
+A `boolean` expression is expression will yeild `true` or `false`, e.g. is 4 + 5 = 9? if their sum equal to nine so the answer is yes otherwise no. so, an expression will be given to be evaluated.
+
+now, the question is **' How to build a conditional '** :
 
 before anything let's learn about the second category you hear in this guide, **relational operators**:
 `==`
@@ -1355,6 +1356,22 @@ I THOUGHT IT WAS A CURSE, WASN'T IT?
 
 <details>
 <summary><H3><strong>4. Control Structure Part 2: (_Iterators_) </strong><H3></summary>
+
+Remember from the first chapter about Control Flow Statements, that controlling the execution flow of a code block can be done with the help of looping and branching.
+
+Also, we've mentioned the types of control flow statements branching and Iteration statements. 
+
+In this Chapter we're goint to learn about Iteration (loop):
+   
+  - Consider a situation where you need to print scores of a specific academic year of 200 students, logically writing 200 print statements which almost print the same sentence excep the name of student and his/her score would be a super exhuastive task. 
+  - Regarding what you've learnt from this section in the last chapter [DRY principle](#analysis-to-what-happened), you may think of using methods; but is that really the suitable choice for this task? for short, no.
+    - you can use methods to encapsulate the right structure.
+  - A control structure in which you can perform a number of tasks or execute a block of code repeatedly is called `Loop`.
+
+### Loops (Iterations):
+  
+
+
 
 
 
