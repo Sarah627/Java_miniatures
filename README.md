@@ -1505,10 +1505,30 @@ Observe the following figure:
         - While loop general syntax:
 
         ![while loop general syntax](/images/while%20loop%20geenral%20syntax.png)   
+
+        - While loop strcture is a little different from for loop structure, observe the following example:
+         
+        ![while loop example](/images/while%20example.png) 
+
+        - before the loop two variabels were declared and initialized `sum` & `i` (the counter).
+          - in contrast with for loop, in while loop you declare and initialize the counter outside the loop and use it inside the loop body.
+        - the boolean expression `i<10` specifies that continue iteration if i is **`smaller than`** 10, otherwise; terminate the loop.
+        - inside the loop body we have two statements:
+          - the first statement commulate the sum
+          - the second one is incementing the counter -or we will experience an infinite loop-
+        - then afer the loop termination the next statements in your code will be executed.
+        - while loop can be used for both: sentinel and counter controlled loops, in the previous example we used a counter variable `i` to control the loop thus we knew the number of iterations in advance.
+         
+        ![while loop can be used for both](/images/while%20can%20be%20used%20for%20both%20sentinel%20and%20counter%20controlled%20loops.png)
+         
+        - the following example illustrates a sentinel controlled loop using while: 
         
-               
+          ![example number 2 while loop](/images/repeatAdditionQuiz.png)
 
+          
+         
 
+ 
 
 
 
