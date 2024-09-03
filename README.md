@@ -1357,7 +1357,7 @@ I THOUGHT IT WAS A CURSE, WASN'T IT?
 <details>
 <summary><H3><strong>4. Control Structure Part 2: (_Iterators_) </strong><H3></summary>
 
-Remember from the first chapter about Control Flow Statements, that controlling the execution flow of a code block can be done with the help of looping and branching.
+Remember from the first chapter about `Control Flow Statements`, that controlling the execution flow of a code block can be done with the help of looping and branching.
 
 Also, we've mentioned the types of control flow statements branching and Iteration statements. 
 
@@ -1371,9 +1371,12 @@ In this Chapter we're goint to learn about Iteration (loop):
 ### Loops (Iterations):
 
 - A loop is a control structure which controls how many times an operation or a block of code can be executed.
+ 
 - Types of Loops: 
   - Counter Controlled
   - Sentinel Controlled
+   
+![types of loops](/images/types%20of%20loops.png) 
 
 - Simply, tyhe difference between the counter controlled and sentinel controlled is that you know the number of iterations in advance while in sentined you don't know how many iterations will be actually executed because it depends on other action like user input for example.
 
@@ -1425,7 +1428,11 @@ Observe the following figure:
 1. The Pretest Loops: loops which already test the condition first before the execution: 
 
      - For loop:
-        - for loops have consice syntax:
+        - for loops have concise syntax:
+         
+        ![For Loop Java Syntax](/images/For-Loop%20Syntax%20Java.png) 
+
+        - try it out !  replace each statement with actual code.
          
               for(`initial action`; `continuation-condition` ;`action-after-each-iteration`){
                 block of statements to be repeated
@@ -1435,7 +1442,7 @@ Observe the following figure:
         - the `control variable` controls the number of iterations in the loop.
         -  the `action-after-iterations` is the statement which adjusts the control variable.
         -  each statement of the loop control structure is terminated using a semi-colon `;` like the rest of the statements in java
-           -  `note`⚠ you can insert a semicolon by mistake after the control structure which results in loop termination or it means do nothing as follows:
+           -  `note`⚠ you can insert a semicolon by mistake after the control structure itself insisde the parenthesis which results in loop termination or it means do nothing as follows:
                         
                   for(int i = 0; i<10;i++);   //<----- note the semicolon after the closing parenthesis here will case to print nothing as the loop has been terminated.
                   {
@@ -1488,6 +1495,18 @@ Observe the following figure:
         3. another example is illustrated here [ItertativeAdditionQuiz](/Test%20Files%20Elementary/IterativeAdditionQuiz.java). 
 
      - While loop: 
+       - A while loop executes statements repeatedly while the condition is true. Its syntax is simple:
+
+                while (loop-continuation-condition) {
+                  // Loop body
+                  Statement(s);
+                }
+
+        - While loop general syntax:
+
+        ![while loop general syntax](/images/while%20loop%20geenral%20syntax.png)   
+        
+               
 
 
 
