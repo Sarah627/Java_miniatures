@@ -1492,7 +1492,7 @@ Observe the following figure:
 
         ![loop example 1](/images/loop%20example%201.png)
 
-        3. another example is illustrated here [ItertativeAdditionQuiz](/Test%20Files%20Elementary/IterativeAdditionQuiz.java). 
+        3. another example is illustrated here . 
 
      - While loop: 
        - A while loop executes statements repeatedly while the condition is true. Its syntax is simple:
@@ -1525,6 +1525,12 @@ Observe the following figure:
         
           ![example number 2 while loop](/images/repeatAdditionQuiz.png)
 
+        - the loop terminates based on user input, if the user entered the correct answer, the loop will terminate, otherwise; continues.
+        - using random built-in function to generate random numbers, notice the casting before using the function `(int)` , multiplying by 10 to move the range, because random generates numbers between 0 and 1 exlcusive.
+        - a scanner object is created to take user's input then a while loop is crafted to recieve the user answer for the question.
+        - if the user entered the right answer, it termintes and then the next line in the code executes. 
+        - you can check a similar example but with grading system here: [ItertativeAdditionQuiz](/Test%20Files%20Elementary/IterativeAdditionQuiz.java).
+         
           
          
 
