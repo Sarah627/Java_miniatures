@@ -1560,31 +1560,57 @@ Observe the following figure:
          
         ![guess number example](/images/guessnumber%20example%20do%20while%20loop.png) 
 
+#### Which loop to use:
+Generally, you would use a `for` loop when you know the number of repetitions in advance, such as when you need to display a message a hundred times. A `while` loop is appropriate when the number of repetitions is uncertain, like when reading numbers until the input is 0. If you need the loop body to execute at least once before checking the continuation condition, a `do-while` loop can be used instead of a `while` loop.
 
+#### Nested loops:
+
+Simply a loop inside another loop are considered as nested loops.
+
+> Nested loops consist of an outer loop and one or more inner loops. Each time the outer loop is repeated, the inner loops are reentered, and started anew. 
+> 
+> "*from Introduction to Java Programming and Data Structures Comperhensive Version 12th Edition by Daniel Y. Liang*"
+
+- Nested loops often used to loop over something has more than one diemention like tables, 2D arrays, sorting and so on. you need to keep track of the columns and rows in the same time. 
+- One common example of using nexted loops is printing patterns:
+  
+
+  ![nested loop pattern example](/images/nested%20loop%20pattern%20example%201.png)
+
+- try it out!
  
+        public class Main{
+	        public static void main(String[] args) {
+	        	int rows = 5;
+                for (int i = 1; i <= rows; i++) {
+                    for (int j = 1; j <= i; j++) {
+                        System.out.print("* ");
+                    }
+                    System.out.println();
+                }
+	        }
+        }       
 
+- ⚠ `note`: using nested loops are computationaly expensive (time complexity O(n^2)), so they are avoided as much as possible but some algorithms are built using nested for loops.
 
+#### Notes about Loops in java:
+- Avoide using floating-point numbers in the continuation condition because of the percision of the floating numbers as floating-point numbers are represented in approximation in computers by nature:
+  - An example illustrated from the same textbook mentioned above explained the percision problem caused because of using floating-point numbers in the continaution consition in addition to the statements inside the loop body itself:
+  - The exact sum should be 50.50 but the loop output is 50.499985
+   
+  ![why you have to avoid using floating point numbers](/images/sum%20of%20floating%20point%20numbers.png)
 
+  - If `double` data type is used instead of 'float' will improve the output a little bit but not the best.
 
+- Using `break` and 'continue' keywords:
+  - They add more control over you loop but they are not secure so overusing them is not recommedned.
+  - `break` is used to break out of the loop or of the condition 'it was used with `switch` before' while `continue` is used to break out of the iteration itself.
+  - Using `continue` is to stop preceding in the current running iteration and start the next iteration.  
+ 
+  ![using continue in a loop](/images/using%20continue.png)
 
+- An example on using Loops with the previously learnt concepts is shown in this example: [isPalindrome](/Test%20Files%20Elementary/isPalindrome.java)
+- Checking the word is palindrome or not is a common programming problem you can search about it and check.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+### Finally the forth chapter is FINISHED!!! :D
 </details>
