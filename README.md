@@ -1614,3 +1614,17 @@ Simply a loop inside another loop are considered as nested loops.
 
 ### Finally the forth chapter is FINISHED!!! :D
 </details>
+
+----
+
+<details><summary><H3><strong>5.Methods</strong><H3></summary>
+
+In this chapter you are about laerning the first step towards the abstraction.
+
+We already mentioned before on a successive chapter that methods are used to define reusable code.
+
+
+</details>
+
+
+------
