@@ -1427,8 +1427,8 @@ Observe the following figure:
 
 1. The Pretest Loops: loops which already test the condition first before the execution: 
 
-     - For loop:
-        - for loops have concise syntax:
+    - For loop:
+        - `for` loops have concise syntax:
          
         ![For Loop Java Syntax](/images/For-Loop%20Syntax%20Java.png) 
 
@@ -1492,10 +1492,9 @@ Observe the following figure:
 
         ![loop example 1](/images/loop%20example%201.png)
 
-        3. another example is illustrated here . 
 
-     - While loop: 
-       - A while loop executes statements repeatedly while the condition is true. Its syntax is simple:
+    - While loop: 
+       - A `while` loop executes statements repeatedly while the condition is true. Its syntax is simple:
 
                 while (loop-continuation-condition) {
                   // Loop body
@@ -1506,7 +1505,7 @@ Observe the following figure:
 
         ![while loop general syntax](/images/while%20loop%20geenral%20syntax.png)   
 
-        - While loop strcture is a little different from for loop structure, observe the following example:
+        - `while` loop strcture is a little different from for loop structure, observe the following example:
          
         ![while loop example](/images/while%20example.png) 
 
@@ -1521,7 +1520,7 @@ Observe the following figure:
          
         ![while loop can be used for both](/images/while%20can%20be%20used%20for%20both%20sentinel%20and%20counter%20controlled%20loops.png)
          
-        - the following example illustrates a sentinel controlled loop using while: 
+        - the following example illustrates a sentinel controlled loop using `while`: 
         
           ![example number 2 while loop](/images/repeatAdditionQuiz.png)
 
@@ -1531,8 +1530,36 @@ Observe the following figure:
         - if the user entered the right answer, it termintes and then the next line in the code executes. 
         - you can check a similar example but with grading system here: [ItertativeAdditionQuiz](/Test%20Files%20Elementary/IterativeAdditionQuiz.java).
          
-          
+2. The Post-test Loops: loops which loop at least one time before testing the condition:
+    - Do-While Loop:
+      - `do-While` loop is a variation of while loop but here the body of the loop is executed first before testing the condition.
+      - Use a `do-while` loop if you have statements inside the loop that must be executed at least once.
+      - `do-while` syntax:
+       
+        ![do while loop syntax](/images/do%20while%20loop%20syntax.png) 
+
+      - try it out! 
+                        
+            do {
+              // Loop body;
+              Statement(s);
+            } while(loop-continuation-condition);   
+
+      - One important thing to notice about do-while loop is the semi-colon after the closing parentheses of the loop-continuation-condition.
+      
+      - examples:
+        - Menu example, when you prompt the user to choose from a menu, the menu must be executed at least once if the user chose to exit from the first time. you can see that in the following example:
+          - note that it's just an example to clarify the concept of while, due to the missing functionalities like opening other files as it's considered an advanced topic currently.
+          - you can check it out at [DoWhileLoopTestExample](/Test%20Files%20Elementary/DoWhileLoopTestExample.java).
+           
+        ![do while loop test example](/images/Do%20while%20loop%20test%20example.png)
+
+       
+
+        - Guessing number example:
          
+        ![guess number example](/images/guessnumber%20example%20do%20while%20loop.png) 
+
 
  
 
