@@ -1664,6 +1664,41 @@ Now we are going to delve deeper in Methods concepts in java context, the follow
 - Methods provide a form of abstraction, but what's meant by an abstraction by the way?
   - **abstraction** is the process of hiding the complex details and showing only the essential features of an object or a method. In programming, this allows developers to work with higher-level concepts without needing to understand the intricate implementation behind them.
 - May this figure clear your understanding about the abstraction idea and methods:
+ 
+![method abstraction](/images/Methods%20in%20Java%20.png)
+
+- now let's try to refine an old example, for example let's refine the [calculator](/Test%20Files%20Elementary/Calculator.java) example. 
+- Let's encapsulate these lines of code in a small code statement consists only of a method call. 
+
+<details><summary>details of how we refined the example to make use of method concept</summary>
+
+after the closing curly braces of the main method 
+1. define a new method with a meaningful name `calculate`.
+2. add these two modeifers for now `public` and then `static`.
+3. define the return type, here it's `void` it can be double but we have to do some edits in `switch` statement.
+4. define the parameter list here (two integers the numbers which the operation will be performed on, and the operator code -also an integer-).
+5. move the long switch case in the method.
+6. invoke it in the main method. (remember anything you want to execute you must invoke it in the main method or in the main class which contains the main method).
+
+![details](/images/details%20of%20refining%20the%20calculate%20class.png)
+
+![invoking](/images/invoke%20calculator%20in%20main%20method.png)
+
+
+</details>
+
+- final result after refining the calculator example:
+   
+![calculator example refined](/images/CalculateRefinement.png) 
+
+- imagine the method is in another class the code will be like this: 
+
+ ![calculator example refined](/images/CalculateRefinement%20class.png)
+
+
+
+- now everything looks really abstracted you don't know how this method process the opertaions but you know what it does! 
+
 
 
 
