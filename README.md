@@ -1674,3 +1674,14 @@ Now we are going to delve deeper in Methods concepts in java context, the follow
 
 
 ------
+
+<details><summary><H3><strong>6. Arrays</strong><H3></summary>
+
+In this chapter you are about laerning the first step towards the abstraction.
+
+We already mentioned before on a successive chapter that methods are used to define reusable code.
+
+
+</details>
+
+---
