@@ -1623,6 +1623,52 @@ In this chapter you are about laerning the first step towards the abstraction.
 
 We already mentioned before on a successive chapter that methods are used to define reusable code.
 
+Now we are going to delve deeper in Methods concepts in java context, the following are the point's I'm going to discuss:
+
+1. Method definition.
+2. Method Invokation
+3. Void vs Value-Returning methods
+4. Pass by Value
+5. Modularizing Code
+6. Overloading
+7. Scope
+8. Method abstraction
+
+
+#### 1. Method Definition:
+
+- Before we discussed how does a method work, but we've mentioned that we were talking about the built-in methods. 
+- Now, we are going to deal with custom-built methods, in other words you'll create it yourself.
+- We are going to address **How to Define a method**, a method consists of:
+ 
+  - modefier
+  - return type
+  - method name
+  - list of parameters
+  - body
+- These components are shown in the following figure:
+
+![method definition](/images/method%20definition.png)
+
+- The `modifier` and its importance will be metioned in a future chapter (OOP).
+- The `return type`, methods are of two types : 
+  1. value-returning methods
+  2. void methods (return nothing).
+   
+  some methods return values after finishing their task and others doesn't such as any print method it doesn't return value but prints some values on console.
+
+- `Method Name` and `Parameter List` which define the `method signature` -crucial for a future concept 'Overloading'-.
+- The `parameter list` is the variables, objects, arrays,.etc we pass to the method which are used in the processing performed be the method to finish a specific task, paramters actually are optional some methods have empty parameter list.
+- The `method body` like the other `loop body` the collection of statements which are grouped together to perform one task not for iteration like the loop body.
+
+- Methods provide a form of abstraction, but what's meant by an abstraction by the way?
+  - **abstraction** is the process of hiding the complex details and showing only the essential features of an object or a method. In programming, this allows developers to work with higher-level concepts without needing to understand the intricate implementation behind them.
+- May this figure clear your understanding about the abstraction idea and methods:
+
+
+
+
+
 
 </details>
 
