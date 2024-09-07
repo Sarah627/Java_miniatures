@@ -1696,12 +1696,15 @@ after the closing curly braces of the main method
  ![calculator example refined](/images/CalculateRefinement%20class.png)
 
 
-
 - now everything looks really abstracted you don't know how this method process the opertaions but you know what it does! 
 
+- another point woth mentioning is that the parameter list is called the formal parameters, when you `actually` passing values to the method then it's called actual parameters or arguments: 
+- parameter list: formal `paramters`.
+- passing actual values: `arguments`. 
 
 
 
+#### Method Invokation:
 
 
 
