@@ -1698,8 +1698,8 @@ after the closing curly braces of the main method
 - now everything looks really abstracted you don't know how this method process the opertaions but you know what it does! 
 
 - another point woth mentioning is that the parameter list is called the formal parameters, when you `actually` passing values to the method then it's called actual parameters or arguments: 
-- parameter list: formal `paramters`.
-- passing actual values: `arguments`. 
+  - parameter list: formal `paramters`.
+  - passing actual values: `arguments`. 
 
 -  some methods return values after finishing their task and others doesn't such as any print method it doesn't return value but prints some values on console.
 -  methods returning values must contain the `return` keyword, the method terminates its execution when approach this keyword.
@@ -1707,13 +1707,9 @@ after the closing curly braces of the main method
 - Some programming languages refer to methods as procedures and functions. A `value-returning` method is called a `function` and a `void` method is called a `procedure`.
 
 <details><summary>little story:</summary>
+
 > The first programming language I was exposed to in the middle school was `visual basic 'VB'` maybe in 2016 or earlier, I don't even remember its version or how I coded using this language but it was the point where it all started 🤍, but I can rememebr well my teacher when she was differentiating between procedure and function, in general a `value-returning` method was called a `function` and a `void` method was called a `procedure`, I can remember this part because of the way we had been taught, I'm Egyptian and our native language is Arabic, so procedure translation in Arabic is masculine and function is a femenine word, so my teacher told us that mom comes back from the market with many groceries and surprises while dad he doesn't care and comes back with nothing, this was for joking she didn't meant anything mean but from the actual reality that your mom is more caring and loving than your dad by nature -again without any offense to either gender but if you live here in Egypt you'll enjoy and understand this kind of jokes  jokes 😄-. 
 </details>
-
-
-
-
-
 
 #### Method Invokation:
 
