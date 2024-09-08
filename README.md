@@ -54,7 +54,7 @@ This repository **IS NOT A ROADMAP FOR LEARNING JAVA** exactly, you can use diff
 3. Web Frameworks
 
 - Spring
-- Springboot
+- Spring-boot
 
 4. ORM
 
@@ -139,19 +139,19 @@ according to Java Docs official website [Oracle Docs](https://docs.oracle.com/en
 
 - #### _**`general puprose`**_ means you can build applications using this language in a wide range of different domains (Desktop applications, client/server applications/ web applications, Enterprise applications).
 
-- #### _**`concurrent`**_ means the ability of the language to execute mulitple processes in the same time. (This is kinda an advanced concrpt for beginners and maybe cs students in first 2 or three semesters)
+- #### _**`concurrent`**_ means the ability of the language to execute multiple processes in the same time. (This is kinda an advanced concept for beginners and maybe cs students in first 2 or three semesters)
 
-- #### **_`strongly-typed`_** means the strict attatchment of language syntax to define variabels datatypes. (This will be explained and noticed as we go deep in the language)
+- #### **_`strongly-typed`_** means the strict attachment of language syntax to define variables data types. (This will be explained and noticed as we go deep in the language)
 
-- #### **_`class based object oriented`_** means this language structure is based on object oriented concepts and use of classes.
+- #### **_`class based object oriented`_** means this language structure is based on object-oriented concepts and use of classes.
 
-Don't worry **these charactaristics of the language will be more clear as we go down in this repo**
+Don't worry **these characteristics of the language will be more clear as we go down in this repo**
 
 ---
 
-<details><summary><H3><strong>Installing JDK</strong><H3></summary>
+<details><summary><H3><strong>Installing JDK</strong></H3></summary>
 
-To get started with java we must install JDK on our local machine, (here, I'm considering you are a beginner or totally newcommer in programming world or even didn't visit virtualization concepts|tools before).
+To get started with java we must install JDK on our local machine, (here, I'm considering you are a beginner or totally newcomer in programming world or even didn't visit virtualization concepts|tools before).
 
 Installing JDK is a **must** it provides the necessary tools and libraries to develop, compile, and run Java applications.
 
@@ -159,7 +159,7 @@ click on the following link [oracle](https://www.oracle.com/eg/java/technologies
 
 ![screenshot](/images/image.png)
 
-> download and install JDK based on your os and processor acritecture set
+> download and install JDK based on your os and processor architecture set
 
 ### What's JDK?
 
@@ -167,9 +167,9 @@ click on the following link [oracle](https://www.oracle.com/eg/java/technologies
 
 ![JDK](/images/JDK.jpg)
 
-Java is machine independent language or it's more descriptive to refer to it as **platform-independent**; you can run it on any platform, while the JVM is platform-dependent; different JVM is designed for each platform (Linux, Windows, MacOs).
+Java is machine independent language, or it's more descriptive to refer to it as **platform-independent**; you can run it on any platform, while the JVM is platform-dependent; different JVM is designed for each platform (Linux, Windows, macOS).
 
-In othwe words, if we have three local devices, each of which has a different platform installed in it e.g.(windows, mac, linux), all is required to install a JVM for each device and the java files can run on any machine of them after compiling it just one time.
+In other words, if we have three local devices, each of which has a different platform installed in it e.g.(windows, mac, linux), all is required to install a JVM for each device and the java files can run on any machine of them after compiling it just one time.
 
 Once you downloaded the latest version of JDK here you have two options:
 
@@ -177,15 +177,15 @@ Once you downloaded the latest version of JDK here you have two options:
 
     > you need to edit system environment variables first
 
-    These instructions for windows users only ⚠:
+    These instructions for Windows users only ⚠:
 
     - open your Program Files directory navigate till you find the jdk directory
     - open the bin directory then copy its path
       ![path image](/images/path%20image.png)
-    - press win key on your kewboard ⌨ then type in search bar down edit system environment variables
-    - click on Evironment Variables, from user variables choose path then click on edit
+    - press win key on your keyboard ⌨ then type in search bar down edit system environment variables
+    - click on Environment Variables, from user variables choose path then click on edit
     - on path window click add new, then paste the path you copied earlier and press enter
-    - click on move up to make it on the top of the list and voila!
+    - click on move up to make it on the top of the list and voilà!
 
 2.  if you've already installed earlier JDK version
 
@@ -199,7 +199,7 @@ Once you downloaded the latest version of JDK here you have two options:
 
       I have JDK version 17 installed on my own, now we are going to switch it to the new version of JDK
 
-      - we'll repeat the steps of the previous option (editing system environment variables, etc)
+      - we'll repeat the steps of the previous option (editing system environment variables, etc.)
       - Check your java version again in cmd (restart it if you didn't close it already)
 
       _and Voila!_
@@ -210,7 +210,7 @@ Once you downloaded the latest version of JDK here you have two options:
 
 ---
 
-<details><summary><H3><strong>1. Elementary Programming</strong><H3></summary>
+<details><summary><H3><strong>1. Elementary Programming</strong></H3></summary>
 
 Remember this part mentioned earlier ? [class-based](#class-based-object-oriented-means-this-language-structure-is-based-on-object-oriented-concepts-and-use-of-classes)
 
@@ -224,7 +224,7 @@ _prerequisites_ ⚠
 
 > if you didn't install the jdk yet, go to [this part](#installing-jdk) and install it
 >
-> It's better if you have an IDE, till this point it's not mandatory yet but then it will be as we are not at the age of DOS anymore.
+> It's better if you have an IDE, till this point it's not mandatory yet ,but then it will be as we are not at the age of DOS anymore.
 
 1.  If you don't have an IDE: (note: I won't let you stay lazy forever, you'll have to install it)
 
@@ -236,11 +236,11 @@ _prerequisites_ ⚠
 
     > public & class are both keywords all written in lower case letters
     >
-    > HelloWorld is the name of the class and it must be written in [pascal case](https://www.freecodecamp.org/news/snake-case-vs-camel-case-vs-pascal-case-vs-kebab-case-whats-the-difference/#pascal-case) (the first letter of each word is capital)
+    > HelloWorld is the name of the class ,and it must be written in [pascal case](https://www.freecodecamp.org/news/snake-case-vs-camel-case-vs-pascal-case-vs-kebab-case-whats-the-difference/#pascal-case) (the first letter of each word is capital)
     >
     > inside the curly braces `{}` we are going to illustrate our code
 
-    - keywords or reserved words are predefined words in a programming language with a specific use, you can't use them for naming (simply, because the compiler will be confused if it's the word used by the language to identify some order to be executed by the program or it's just a programmer defined variable)
+    - keywords or reserved words are predefined words in a programming language with a specific use, you can't use them for naming (simply, because the compiler will be confused if it's the word used by the language to identify some order to be executed by the program ,or it's just a programmer defined variable)
 
     - every java program should at least have one class, to execute the program we should have a _main method_ (in other words method its name is "main")
     - inside our created class we define the main method as follows:
@@ -249,7 +249,7 @@ _prerequisites_ ⚠
 
       > public, static, void, String are all keywords
       >
-      > naming methods using [camelCase](https://www.freecodecamp.org/news/snake-case-vs-camel-case-vs-pascal-case-vs-kebab-case-whats-the-difference/#camel-case) in java if it consists of more than one word other wise all lower case
+      > naming methods using [camelCase](https://www.freecodecamp.org/news/snake-case-vs-camel-case-vs-pascal-case-vs-kebab-case-whats-the-difference/#camel-case) in java if it consists of more than one word otherwise all lower case
 
     - the curly braces `{}` mean block of code, here we write the lines of code that will be executed, their place is after every class, method, control statements, specific keywords e.g. static keyword. They also represent a specific scope (we'll talk about this soon).
     - inside the curly braces of the main method we will print our first hello world
@@ -271,7 +271,7 @@ _prerequisites_ ⚠
 
     ![cmd](/images/javacompile.png)
 
-    - write the name of the file right with its correct formate or you'll face `error: file not found`
+    - write the name of the file right with its correct format ,or you'll face `error: file not found`
 
     > **_javac_** stands for java compile, you'll notice that a `.class` file is created on your directory this is the `bytecode`. you compile one time and run the code infinitely.
 
@@ -291,15 +291,15 @@ you can check the file here in this directory [Hello.java](/Test%20Files%20Eleme
 
 ### java syntax:
 
-- every programming language has a syntax defines it, simply like grammar in English defines how you form a sentence has context, simmilarly in programming the syntax allows you to write program instructions correct or with a context for the compiler.
+- every programming language has a syntax defines it, simply like grammar in English defines how you form a sentence has context, similarly in programming the syntax allows you to write program instructions correct or with a context for the compiler.
 
 - curly braces`{}` define a block of code -in other words **lines** of code- and also define scope.
 
 - yup, just like C language semicolon is the statements terminator `;`
 
-- `//` double slashes for single line comments and `/* comments lines go here */` for multiple lines of comments (for those who are new to programming, comments are setences or lines won't be treated as code or instruction they will be ignored by the compiler, programmers use comments to clarify points about their code, like comments show imcomplete implementation or reference to the original source code or even to clear confusion about the code they wrote)
+- `//` double slashes for single line comments and `/* comments lines go here */` for multiple lines of comments (for those who are new to programming, comments are sentences or lines won't be treated as code or instruction they will be ignored by the compiler, programmers use comments to clarify points about their code, like comments show incomplete implementation or reference to the original source code or even to clear confusion about the code they wrote)
 
-- java is case sensitive language (you get syntax error if you mistyped a keyword or wrote its letetr capital rather than small or vice versa), e.g.
+- java is case-sensitive language (you get syntax error if you mistyped a keyword or wrote its letter capital rather than small or vice versa), e.g.
 
   > `Public void fun(){...}` --> syntax error (Public is not a keyword)
 
@@ -307,7 +307,7 @@ you can check the file here in this directory [Hello.java](/Test%20Files%20Eleme
 
 - while square brackets follow 'Array' types `[]` e.g.
 
-  > `String[]` -> indecates array of type String.
+  > `String[]` -> indicates array of type String.
 
 - later in advanced java programming we will get familiar with the ArrayList, we will find the angle brackets `<>` follow ArrayLists keyword in which contain the Type of the ArrayList (ArrayList is simply resizable array) e.g.
 
@@ -321,12 +321,12 @@ you can check the file here in this directory [Hello.java](/Test%20Files%20Eleme
 
 #### errors types:
 
-- Syntax errors: mistyping, missing puncituation
+- Syntax errors: mistyping, missing punctuation
 
-- Runtime errors: occur while program is actually running if the IDE indeicated a process cannot be carried out or through input errors.
+- Runtime errors: occur while program is actually running if the IDE indicated a process cannot be carried out or through input errors.
 
 - Logical errors (semantic) -cruel one😈-:
-  the code actually works fine but doesn't give you the expected output e.g. you wanted to make simple program that multiply numebrs. now look at the followin code:
+  the code actually works fine but doesn't give you the expected output e.g. you wanted to make simple program that multiply numbers. now look at the following code:
 
   > int x = 2, y = 2;
   >
@@ -340,16 +340,16 @@ you can check the file here in this directory [Hello.java](/Test%20Files%20Eleme
   >
   > int result = x + y;
   >
-  > System.out.println(result); >>> 5 here there is a problem, the code is working fine as no errors appear but wait a minute 😅, a plus " + " sign where inserted instead of " \* " multiplication sign.
+  > System.out.println(result); >>> 5 here there is a problem, the code is working fine as no errors appear but wait a minute 😅, a plus " + " sign where inserted instead of " * " multiplication sign.
 
-  here where the error takes place, it's not in code it workds fine but doesn't give you the expected results, this type of errors are dedicted and corrected using tests we will come to this point later.
+  here where the error takes place, it's not in syntax, the code works fine but doesn't give you the expected results, this type of errors are dedicated and corrected using tests we will come to this point later.
 
-for more on errors types here is a useful link [not for new commers](https://www.geeksforgeeks.org/types-of-errors-in-java-with-examples/)
-, this is nice introduction to errors [types of erros in java](https://www.scaler.com/topics/types-of-errors-in-java/).
+for more on errors types here is a useful link [not for newcomers](https://www.geeksforgeeks.org/types-of-errors-in-java-with-examples/)
+, this is nice introduction to errors [types of errors in java](https://www.scaler.com/topics/types-of-errors-in-java/).
 
 <h3>Dealing with data in Java</h3>
 
-- a variable is used to store data, you can think of variables as where we store values, these values can be numeric, string (group of characetrs), reference, etc.
+- a variable is used to store data, you can think of variables as where we store values, these values can be numeric, string (group of characters), reference, etc.
 
 - basic syntax to declare a variable in java
 
@@ -363,16 +363,16 @@ for more on errors types here is a useful link [not for new commers](https://www
 - naming conventions:
 
   - camel case.
-  - do not start naming a varable with a number
+  - do not start naming a variable with a number
   - you can start your variable name with dollar sign `$` or with underscore `_`.
-  - variables cannot be reserverd words, e.g. you cannot name your variable '_static_' gives you syntax error.
+  - variables cannot be reserved words, e.g. you cannot name your variable '_static_' gives you syntax error.
   - for clean code early teaching purpose, choose meaningful names for your variables describe them.
   - do not contain spaces in your variable name, keep using camel case if your variable name is more than one word.
 
 - data types:
 
-  - In general they are two types numerical or non-numerical, numerical like integers, floating point or decimal numbers, non-numrical like strings "Hello my name is" or boolean like True or False.
-  - In java they are two categories, premitive data types and reference datatypes, they are classified based on how they store data, primitive copies only values while reference hold the address to the value they just copied, if you couldn't understand this no problem it will be clear later.
+  - In general, they are two types numerical or non-numerical, numerical like integers, floating point or decimal numbers, non-numerical like strings "Hello my name is" or boolean like True or False.
+  - In java, they are two categories, primitive data types and reference data types, they are classified based on how they store data, primitive copies only values while reference hold the address to the value they just copied, if you couldn't understand this no problem it will be clear later.
   - primitive data types are:
     - byte
     - short
@@ -399,7 +399,7 @@ for more on errors types here is a useful link [not for new commers](https://www
 
 - you can perform simple operations using binary arithmetic operators: `+ , - , * , / , %`
 
-  - 'astrisk' `*` is used for multiplication, 'single slash' `/` is used for division, and `%` is called modulus gives you the remainder, e.g.
+  - 'asterisk' `*` is used for multiplication, 'single slash' `/` is used for division, and `%` is called modulus gives you the remainder, e.g.
 
     ![remainder](./images//remainder.png)
 
@@ -409,12 +409,12 @@ for more on errors types here is a useful link [not for new commers](https://www
 
 - for taking custom input from user, either from console or keyboard input, we are going to start using classes.
 
-- In java to take user input using three classes: Console, BufferedReader, and Scanner. For now we will deal with Scanner only.
+- In java to take user input using three classes: Console, BufferedReader, and Scanner. For now, we will deal with Scanner only.
 
-- first of all we need to import the class, so using the keyword `import` we will invoke the `Scanner` class as follows:
+- First, we need to import the class, so using the keyword `import` we will invoke the `Scanner` class as follows:
   ![import scanner class](./images/Scanner%20Class.png)
 
-  - note that even in import we don't forget the semi colon :) .
+  - note that even in import we don't forget the semi-colon :) .
     ![import scanner](/images/2023_02_Java-Scanner-Class.jpg)
 
 - Then, we create a new object from Scanner class
@@ -434,7 +434,7 @@ for more on errors types here is a useful link [not for new commers](https://www
 
 - so, at any point you want to take user input:
   1. `import java.util.Scanner;`
-  2. inside main mathod block of code
+  2. inside main method block of code
      `Scanner input = new Scanner(System.in);`
   3. based on what data you want to take, e.g. prompt user to enter integer:
      `int number = input.nextInt();`
@@ -456,23 +456,23 @@ for more on errors types here is a useful link [not for new commers](https://www
 
 #### notes:
 
-### First Chapter is Finished!!! :D
+### First Chapter is Finished!!! 
 
 </details>
 
 ---
 
-<details><summary><H3><strong>2. Control Structure Part 1: (_Selections_)</strong><H3></summary>
+<details><summary><H3><strong>2. Control Structure Part 1: (_Selections_)</strong></H3></summary>
 
 In this section you will learn **the way you take decision**.
 
 According to documentation:
 
-> control flow statements, break up the flow of execution by employing decision making, looping, and branching, enabling your program to conditionally execute particular blocks of code.
+> control flow statements, break up the flow of execution by employing decision-making, looping, and branching, enabling your program to conditionally execute particular blocks of code.
 
 Types of `Control Flow` statements:
 
-1. Decision making statements.
+1. Decision-making statements.
 2. Iteration (Looping) statements.
 3. Branching statements.
 
@@ -487,7 +487,7 @@ Conditional statement evaluate a (condition) if it's true or false to perform se
 ![if condition](./images/if%20condition.png)
 
 
-A `boolean` expression is expression will yeild `true` or `false`, e.g. is 4 + 5 = 9? if their sum equal to nine so the answer is yes otherwise no. so, an expression will be given to be evaluated.
+A `boolean` expression is expression will yield `true` or `false`, e.g. is 4 + 5 = 9? if their sum equal to nine so the answer is yes otherwise no. so, an expression will be given to be evaluated.
 
 now, the question is **' How to build a conditional '** :
 
@@ -499,13 +499,13 @@ before anything let's learn about the second category you hear in this guide, **
 `>`
 `<`
 
-> note that assignment operator `=` is not the same as `==` equality operator, equality operator mean if the value of smth **equals** some value on the other hand the assignment oeprator assigns value to variable.
+> note that assignment operator `=` is not the same as `==` equality operator, equality operator mean if the value of smth **equals** some value on the other hand the assignment operator assigns value to variable.
 
-Conditionals evaluate boolean expressions, boolean expression are expression expected to have true or false as answer so we are kinda building comparison statments.
+Conditionals evaluate boolean expressions, boolean expression are expression expected to have true or false as answer, so we are kinda building comparison statements.
 
 ![if example](./images/ifexample.png)
 
-it's simply like saying: is dividing 7 by 10 equals 70? if yes please print the result and if not do nothing.
+it's simply like saying: is dividing 7 by 10 equals 70? if yes please print the result ,and if 'not' do nothing.
 
 - Checking for alternatives:
   using else if we can check for alternatives, e.g.
@@ -513,18 +513,18 @@ it's simply like saying: is dividing 7 by 10 equals 70? if yes please print the 
 
   ![conditional example](./images/conditionalsexample.png)
 
-- you can find more examples in Test Files Elemntary, e.g. [addition Quiz](./Test%20Files%20Elementary/AdditionQuiz.java)
+- you can find more examples in Test Files Elementary, e.g. [addition Quiz](./Test%20Files%20Elementary/AdditionQuiz.java)
 
-we can check using `if` then another `if` but what we hit the goal from first time why do we continue checking? that's why we use else if instead of if to skip the rest of conditional statement checking if we already satisfied one.
+we can check using `if` then another `if` but what we hit the goal from first time why do we continue checking? that's why we use else if instead of to skip the rest of conditional statement checking if we already satisfied one.
 
 #### notes:
 
 - any boolean expression is enclosed by parenthesis `()`.
 - if by mistake you placed a semicolon after if statement `if ( y == x );` is like doing this: `if ( y == x ){}` means do nothing.
-- avoid redundant testing of boolean expression e.g. `if (even == true)` better do this `if (even)`, so if even have a number other than zero it sill evaluate to true or if even a boolean variable it will evaluate to its boolean value.
-- avoid equaltiy test to float variables to avoid percision problem of floating point numbers.
-- you can simplyfy boolean variable assignment:
-  ![dothis](./images/dothis1.png)
+- avoid redundant testing of boolean expression e.g. `if (even == true)` better do this `if (even)`, so if even have a number other than zero it still evaluate to true or if even a boolean variable it will evaluate to its boolean value.
+- avoid equality test to float variables to avoid precision problem of floating point numbers.
+- you can simplify boolean variable assignment:
+  ![do this](./images/dothis1.png)
 
 now we could build simple conditionals using of, else and if else. What if we want to check two conditions at the same time, can we? actually yes, using compound boolean expressions we can check two conditions at the same time, but first let's get familiar with the logical operators:
 
@@ -536,16 +536,16 @@ now we could build simple conditionals using of, else and if else. What if we wa
 
 `^ XOR operator`
 
-if you are a computer science, or electrical engineering student you are already familiar with thess operators as you took this knowledge in Logic design course -probably it's name nearly like this-, if you or not here's a simple explaination and I'll provide you a link for a video to simplify the concept more:
+if you are a computer science, or electrical engineering student you are already familiar with these operators as you took this knowledge in Logic design course -probably it's name nearly like this-, if you or not here's a simple explanation ,and I'll provide you a link for a video to simplify the concept more:
 
 OR operator `||` check if one of the expressions `at least` is true or both of them.
-e.g. `(5+6 == 11 || 5+7 == 11)` evaluates to true because the first expression is true. it will only evaluates to false if both of them are false.
+e.g. `(5+6 == 11 || 5+7 == 11)` evaluates to true because the first expression is true. it will only evaluate to false if both of them are false.
 
 AND operator `&&` check if both of the expressions `must be true` if one of them is false so the whole evaluation of both of them will be false.
 
 NOT operator `!` is to negate any value to oppose any expression in other words: !(expression) means to flip the evaluation value of this expression if it's evaluated to true the not operator will make it false and so on. same when we use `!=` we mean not equal.
 
-XOR operator `^` is used to check if both expressions evaluates to different answers, simply if both of the expression is evaluated to true or both false it return to us false, if they are different (true , false or false , true) return to us true.
+XOR operator `^` is used to check if both expressions evaluates to different answers, simply if both of the expression is evaluated to true or both false it will return to us false, if they are different (true , false or false , true) return to us true.
 
 we can use DeMorgan's law to best practise these compound boolean expression conditionals
 
@@ -555,7 +555,7 @@ we can use DeMorgan's law to best practise these compound boolean expression con
 
 #### 1. Switch case statements:
 
-we use switch case statements with menu-like -means many choices- problems, e.g. choosing operation to be done on numerical values, based on day of week choosen perform some action:
+we use switch case statements with menu-like -means many choices- problems, e.g. choosing operation to be done on numerical values, based on day of week chosen ;perform some action:
 
 ![switch case flow chart](./images/switch-statement-flowchart-in-java.jpg)
 
@@ -568,23 +568,23 @@ you can check it from here [switch program](./Test%20Files%20Elementary/Calculat
 
 - if `break` is not used, switch will evaluate all other cases, we use default if the expression doesn't match any case.
 
-lastly we will learn about the boolean ternary operator `(boolean expression)? (if true)expression1 : (if false)expression2` this oeprator return exp1 if it evaluates to true and exp if it evaluates to false, e.g. :
+lastly we will learn about the boolean ternary operator `(boolean expression)? (if true)expression1 : (if false)expression2` this operator return exp1 if it evaluates to true and exp if it evaluates to false, e.g. :
 
-![ternaryoperator](./images/ternaryoperator.png)
+![ternary operator](./images/ternaryoperator.png)
 
 #### notes:
 
-### Second Chapter is Finished!!! :D
+### Second Chapter is Finished!!! 
 
 </details>
 
 ---
 
-<details><summary><H3><strong>3. Mathematical Functions,Characters, and Strings</strong><H3></summary>
+<details><summary><H3><strong>3. Mathematical Functions,Characters, and Strings</strong></H3></summary>
 
 In this section you will learn about some built-in mathematical functions in addition to introducing two data types (Character and String).
 
-let's breakdown the concepts we are going to learn:
+lets breakdown the concepts we are going to learn:
 
 - Methods
 - Important built-in methods
@@ -602,7 +602,7 @@ before we go in methods with more details on the next Chapter, we can have quick
 
 We also refer to methods as routines and other words will be mentioned later, for now remember the word "reusable".
 
-note: if you experienced other languages other than java you may find that methods are called functions, but with a programming language which is sticked to Object Oriented concepts you'll find the word 'method' is the convention here.
+note: if you experienced other languages other than java you may find that methods are called functions, but with a programming language which is attached to Object-Oriented concepts you'll find the word 'method' is the convention here.
 
 methods can be:
 
@@ -627,7 +627,7 @@ Imagine you run a coffee shop. When customers come in and order coffee, the bari
 > 2. The barista follows the same steps for each coffee order.
 
 **Identifying the problem:**
-steps erpition for every customer in addition to time consumed
+steps repetition for every customer in addition to time consumed
 
 **Offered Solution: Introducing a coffee machine**
 
@@ -640,10 +640,10 @@ To improve efficiency, you introduce a coffee machine. The machine has buttons f
 
 ### Java Code Simulation:
 #### Without Methods (Exhausting Process)
-![withoutmethods](/images/without%20methods.png)
+![without methods](/images/without%20methods.png)
 
 #### With Methods (Effective Process)
-![withmethods](/images/without%20methods.png)
+![with methods](/images/without%20methods.png)
 
 ### Analysis to what happened:
 * **DRY Principle:** By using methods, we encapsulate the repetitive steps of making coffee into a single method makeCoffee. This follows the DRY principle by avoiding repetition of the same code.
@@ -657,13 +657,13 @@ To improve efficiency, you introduce a coffee machine. The machine has buttons f
 For now in this chapter we're going to discuss built-in methods only.
 <details><summary><strong>more about built-in functions</strong></summary>
 
-  easy definition for these functions foun on NinjaOne blog:
+  easy definition for these functions found on NinjaOne blog:
 
   > Built-in functions refer to those pre-defined functions that come along with a programming language. They are intrinsic components of the language’s library, ready to be used without requiring any additional installation or importation. These functions have been designed to perform common tasks, thus facilitating efficient and swift coding.
 
   for short: built-in functions or methods are pre-defined methods in the language library itself which are already implemented for you to perform common tasks.
 
-  now let's getting familiar with them, first of all I prefer to categorize them, so it's easily inside my head to choose the suitable one for the suitable situation:
+  now lets getting familiar with them; first, I prefer to categorize them, so it's easily inside my head to choose the suitable one for the suitable situation:
 
   We'll use **Math** class for this mission, Math class in java contains all mathematical constants and methods you'll need to use, according to Oracle documentation:
 
@@ -672,12 +672,12 @@ For now in this chapter we're going to discuss built-in methods only.
 
 **Built-in Functions in Math Class:**
 
-1. Trignometric Methods
+1. Trigonometric Methods
 2. Exponential Methods
 3. Service Methods (rounding, min-max-abs, random)
 
 
-1- Trignometric Methods:
+1- Trigonometric Methods:
 | Method | Description |
 | ----------- | ----------- |
 |  `sin(radians)` | Returns the trigonometric sine of an angle in radians. |
@@ -710,11 +710,11 @@ The best way to understand rounding methods in Math class in java is by example:
 
 ![ciel method](/images/ciel%20method.png)
 
-![floormethod](/images/floor.png)
+![floor method](/images/floor.png)
 
-![rintmethod](/images/rint.png)
+![rint method](/images/rint.png)
 
-![roundmethod](/images/round.png)
+![round method](/images/round.png)
 
 **The min, max, and abs Methods**
 
@@ -725,7 +725,7 @@ The best way to understand rounding methods in Math class in java is by example:
   
 Here is a worked example:
 
-![minmaxabs methods](/images/usignminmaxabs%20methods.png)
+![min max abs methods](/images/usignminmaxabs%20methods.png)
 
 **The random() Method**
 
@@ -733,7 +733,7 @@ In my own opinion random method is super important in a lot of situations, for e
 
 > This method generates a random double value greater than or equal to 0.0 and less than 1.0
 
-![randomMethod](/images/random.png)
+![random Method](/images/random.png)
 
 ### Simple Application !
 ![angle between two vectors](/images/Angle-Between-Two-Vectors-01.png)
@@ -757,9 +757,9 @@ Character data type is used to represent single character surrounded by single q
 
 Caution ⚠
 
-> characters must be surrounded by single qoutes while Strings must be surrounded by double qoutes, thus "S" is a String and 'S' is a character my this is not important in other languages like: Python but here it's essential to differentiate between them as java s a stongly static typed language
+> characters must be surrounded by single quotes while Strings must be surrounded by double quotes, thus "S" is a String and 'S' is a character my this is not important in other languages like: Python but here it's essential to differentiate between them as java s a strongly static typed language
 
-If you are not a computer science student or you are not familiar with the idea of how computers deals with data, so expand this section, if you are familiar go to the next points
+If you are not a computer science student ,or you are not familiar with the idea of how computers deals with data, so expand this section, if you are familiar go to the next points
 
 ---
 <details><summary><h4>How computers deal with data</h4></summary>
@@ -791,7 +791,7 @@ Here are videos will help you so much for understanding the topic:
   
 - [How computers Actually work -The detailed video- ](https://www.youtube.com/watch?v=5f3NJnvnk7k) : for more details 
 
-A good arcticle about how data is stored and how computers deal with it: [How data is stored in computers](https://www.datarecoveryspecialists.co.uk/blog/how-is-data-in-a-computer-stored)
+A good article about how data is stored and how computers deal with it: [How data is stored in computers](https://www.datarecoveryspecialists.co.uk/blog/how-is-data-in-a-computer-stored)
 
 
 Since you may not be familiar with computer science, I'll recommend a superior playlist. The videos are relatively short and very informative:  [Crash Course computer science](https://www.youtube.com/playlist?list=PL8dPuuaLjXtNlUrzyH5r6jN9ulIgZBpdo)
@@ -800,7 +800,7 @@ Since you may not be familiar with computer science, I'll recommend a superior p
 
 - Watch the playlist like your daily series; you'll learn amazing things about this field that has revolutionized humanity in the last decade!
 
-Another one, but this time you cannot just watch and enjoy, also I want to inform its lectures are long, but super informative recommended from almost everyone and it's considered as one of the most common and best introductions to computer science,
+Another one, but this time you cannot just watch and enjoy, also I want to inform its lectures are long, but super informative recommended from almost everyone ,and it's considered as one of the most common and best introductions to computer science,
 CS50 - from Harvard [CS50](https://www.youtube.com/playlist?list=PLhQjrBD2T381WAHyx1pq-sBfykqMBI7V4)
 
 **`Note`: You don't need to master this topic to understand character data types. Just grasp the main idea. If you want to delve deeper into computer science, these playlists and courses are great resources. These playlists take time, and it's okay to keep learning without finishing them first. You can do both in parallel.**
@@ -819,14 +819,14 @@ CS50 - from Harvard [CS50](https://www.youtube.com/playlist?list=PLhQjrBD2T381WA
   
 - Java supports `Unicode`, an encoding scheme established by the Unicode Consortium to support the interchange, processing, and display of written texts in the world’s diverse languages.
   
-- Before Unicode, ASCII encoding scheme were used; a standard data-encoding format for electronic communication between computersencoding scheme, it was 7 bits (every bit can represent either one or zero) so it could hold only 128 characters English characters with some puncituation and control features then it was expanded to be 8 bits to hold 256 characters.
+- Before Unicode, ASCII encoding scheme were used; a standard data-encoding format for electronic communication between computers encoding scheme, it was 7 bits (every bit can represent either one or zero) so it could hold only 128 characters English characters with some punctuation and control features then it was expanded to be 8 bits to hold 256 characters.
   
 - other encoding schemes are widely used today like UTF-8 which is algorithmic mapping in addition to providing backward compatibility with ASCII. 
   
 ### Character Encoding Analogy! Teaching Colors with a Numbered Painting Sketch
 
 **If we want to teach a child how to get used with colors and their names we use the `Numbered Painting Sketch`**
-- `Encoding`: in the context of `The Numbered Painting Sketch`, Encoding is like the painting sketch where each sector of the drawing is assigned (encoded to) a unique number (1 for red color, two for green, 21 for mint green, etc).
+- `Encoding`: in the context of `The Numbered Painting Sketch`, Encoding is like the painting sketch where each sector of the drawing is assigned (encoded to) a unique number (1 for red color, two for green, 21 for mint green, etc.).
 
 ![numbered painting sketch](/images/Color%20by%20number.jpg)
   
@@ -855,15 +855,15 @@ CS50 - from Harvard [CS50](https://www.youtube.com/playlist?list=PLhQjrBD2T381WA
   ![blending colors](/images/blending%20colors.jpg)
 
 ------
-#### **Now we can indroduce the data type :)**
+#### **Now we can introduce the data type :)**
 
 you define the character data type using **`char`** keyword, then give it a name and assign a character value to it.
 
 > **Caution**⚠ don't forget that characters must be surrounded by single quotes **`' '`**.
 
-**Why did we indtroduced the character encoding with all this staff? to understand the following**
+**Why did we introduce the character encoding with all this staff? to understand the following**
  
- ![characetrs](/images/characters.png)
+ ![characters](/images/characters.png)
 
 
  **Here you can see that character data type can store numeric value and weird code starts with **`\u`** but how?**
@@ -874,7 +874,7 @@ you define the character data type using **`char`** keyword, then give it a name
 
  ![character operations increment](/images/characterincrement.png)
 
- > also numerical operations are allowed but you'll get numeric output
+ > also, numerical operations are allowed ,but you'll get numeric output
 
  ![char operations](/images/charops.png)
 
@@ -885,7 +885,7 @@ you define the character data type using **`char`** keyword, then give it a name
  `Escape characetr` is a character preceded by a backslash `\` is an escape sequence and has special meaning to the compiler.
 
  from Oracle java tutorial:
- > When an escape sequence is encountered in a print statement, the compiler interprets it accordingly. For example, if you want to put quotes within quotes you must use the escape sequence, \", on the interior quotes. To print the sentence
+ > When an escape sequence is encountered in a print statement, the compiler interprets it accordingly. For example, if you want to put quotes within quotes you must use the escape sequence, `\"`, on the interior quotes. To print the sentence
 
 > She said "Hello!" to me. you would write:
 
@@ -897,7 +897,7 @@ you define the character data type using **`char`** keyword, then give it a name
 |`\b`|**Backspace**|
 |`\t`|**Tab**|
 |`\n`|**Linefeed**|
-|`\f`|**Formfeed**|
+|`\f`|**Form feed**|
 |`\r`|**Carriage Return**|
 |`\\`|**Backslash**|
 |`\"`|**Double Quote**|
@@ -915,11 +915,11 @@ Now let's move to new topic (Casting) which will be expanded later when you got 
 
 > Casting : is a process that converts a variable's data type into another data type, casting may be **implicit** (auto) or **explicit**.
 
-Characters (char) can be converted to numerical data types because characters are internally represented by numeric values according to the Unicode standard, **thus** character data type can be casted into any numeric type and vice versa.
+Characters (char) can be converted to numerical data types because characters are internally represented by numeric values according to the Unicode standard, **thus** character data type can be cast into any numeric type and vice versa.
 
 - `note 1`: character data type is `2 bytes` so only the lower 16 bits of data are used when casting from numeric into character
 
-- `note 2`: if you cast a floating number data to character, first the float data will be cated into integer then character
+- `note 2`: if you cast a floating number data to character, first the float data will be cast into integer then character
 
 ![casting one](/images/character%20casting%20one.png)
 
@@ -930,7 +930,7 @@ When a `char` is cast into a numeric type, the character’s Unicode is cast int
 
 > **`⚠ note`** Implicit casting can be used if the result of a casting fits into the target variable. Otherwise, explicit casting must be used.
 
-- Each data type reserves different amount of space in memory, so it's important to take this in consideration when casting, char is 2 bytes, boolean is one byte while integer is 4 bytes.
+- All data type reserves different amount of space in memory, so it's important to take this in consideration when casting, char is 2 bytes, boolean is one byte while integer is 4 bytes.
 
 - Two characters can be compared using the relational operators just like comparing two numbers. This is done by comparing the Unicodes of the two characters.
   - for example:
@@ -965,9 +965,9 @@ A `string` is a sequence of characters.
 
 Strings are enclosed by double quotes `" "`.
 
-> again and again characters are surrounded by single quotes and it's a must or they will be considered as strings 
+> again and again characters are surrounded by single quotes ,and it's a must ,or they will be considered as strings 
 
-`note` : Strigns are immutable 'you cannot change their value' ⚠
+`note` : Strings are immutable 'you cannot change their value' ⚠
 
 #### Reference Types in Java
 In Java, there are two main categories of data types: **primitive** types and **reference** types.
@@ -1024,7 +1024,7 @@ Now we are going to discuss the most important concepts that are necessary to kn
 - an instance method `length()` returns to you the length of the given string.
 - **here comes another question, What is an instance method?** 
     - till now, we've passed by static and instance methods, static methods like Math.rint(), Math.sin()... , `length()`method here is the first instance method we meet.
-    - regarding mentioninng classes and objects earlier without details, for now instance methods are methods tied to a specific object (relies on specific data) and static methods are methods which are not tied to a specific object they only cling to the class itself that's why you invoke them using the class name itself and not the reference variable (object).
+    - regarding mentioning classes and objects earlier without details, for now instance methods are methods tied to a specific object (relies on specific data) and static methods are methods which are not tied to a specific object they only cling to the class itself that's why you invoke them using the class name itself and not the reference variable (object).
     - clarification: 
       - Think of a school where students and classrooms play important roles:
         - Instance Methods: Imagine each student has their own notebook. The notes in these notebooks are personal and unique to each student. For example, a student's grades or personal notes are tied to that specific student. In the same way, instance methods in a class belong to specific objects (or instances) of that class. These methods can access and modify the instance variables of the object they belong to.
@@ -1040,7 +1040,7 @@ Now we are going to discuss the most important concepts that are necessary to kn
 you can check this example here about how to use length() method [Check Password Length example](/Test%20Files%20Elementary/CheckingPasswordLength.java)
 
 
-![checkpassword](/images/CheckingPasswordLength.png)
+![check password](/images/CheckingPasswordLength.png)
 
 ****
 
@@ -1054,7 +1054,7 @@ we're going to explain each method and common use cases by examples in addition 
 
   The (string variable).charAt(index) method can be used to retrieve a specific character in a string s,where the index is between 0 and (string variable).length()–1.
 
-  > **`note`** ⚠ a coomon programming error **"StringIndexOutOfBoundsException."** if you tried to access character which is our of array bounds as we count from zero, so charAt(string.length()) will expose you to this error :) 
+  > **`note`** ⚠ a common programming error **"StringIndexOutOfBoundsException."** if you tried to access character which is our of array bounds as we count from zero, so charAt(string.length()) will expose you to this error :) 
 
 
        String message = "Welcome to Java";
@@ -1065,7 +1065,7 @@ we're going to explain each method and common use cases by examples in addition 
   ![java indexed string](/images/string%20example.png)
 
 
-<details><summary><strong>To Someone Totally New to Programming<strong></summary>
+<details><summary><strong>To Someone Totally New to Programming</strong></summary>
 
   - Imagine you have a row of lockers, and each locker has a number on it, starting from 0. These numbers help you find and open a specific locker quickly.
 
@@ -1096,7 +1096,7 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
   
   concatenation is one of the most important concepts you need to learn about strings, concatenation means merging two strings together <3
 
-  concatenation is acheived using multiple ways, one shortcut is by using plus sign '+' between two strings as follows:
+  concatenation is achieved using multiple ways, one shortcut is by using plus sign '+' between two strings as follows:
 
         String name = "Sarah";
         String greeting = "Hello, " + name;
@@ -1118,7 +1118,7 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
         System.out.println(spongepopFandomgreeting);
         //prints Hi Hi, Captain
 
-  > `note` the reassignment happened above with `spongepopFandomgreeting` because the method concat(s1) returns a string so it must be stored in string variable or update an existing string variable.
+  > `note` the reassignment happened above with `spongepopFandomgreeting` because the method concat(s1) returns a string ,so it must be stored in string variable or update an existing string variable.
 
   you can concatenate strings with any data type resulting a new string with all the concatenated values
 
@@ -1151,7 +1151,7 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
   This introduces the concept of the **String Pool** in the heap.
 
   From the reference used to formulate part 1: 
-  > the == operator checks only whether string1 and string2 refer to the same object; it does not tell you whether they have the same contents. Therefore, you cannot use the == operator to find out whether two string variables have the same contents. Instead, you should use the equals method.
+  > the == operator checks only whether string1 and string2 refer to the same object; it does not tell you whether they have the same contents. Therefore, you cannot use the == operator to find out whether two string variables have the same contents. Instead, you should use the equals() method.
 
   The reference illustrated the concept straight forward, let me highlight that: 
 
@@ -1159,7 +1159,7 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
   
   - let us dig deeper, what does that mean?
       - This is where the String Pool concept comes into play. 
-      - The String Pool is a special area in the heap memory where Java stores string literals. When you create a string using a literal (`e.g., String s = "hello";`), Java first checks if an identical string already exists in the pool. If it does, the existing reference is used; otherwise, a new string is added to the pool. due to the immutability charactaristic of Java Strings what happens in string pool ensures `security`, `reusability`, and `memory management`. But how does it work?
+      - The String Pool is a special area in the heap memory where Java stores string literals. When you create a string using a literal (`e.g., String s = "hello";`), Java first checks if an identical string already exists in the pool. If it does, the existing reference is used; otherwise, a new string is added to the pool. due to the immutability characteristic of Java Strings what happens in string pool ensures `security`, `reusability`, and `memory management`. But how does it work?
       - Reference types in Java store a reference to an object, not the actual value. If you're familiar with C, you can think of it like a pointer, but let's clarify further:
        
         ![reference data types](/images/reference%20datatypes.png)
@@ -1243,7 +1243,7 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
 
 #### Obtaining Substrings
 
-- You can obtaib either a character or a substring from a string or return their indices:
+- You can obtain either a character or a substring from a string or return their indices:
   
   |Method|Description|
   |----|----| 
@@ -1253,7 +1253,7 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
   | `indexOf(ch, fromIndex)`|  Returns the index of the first occurrence of ch after fromIndex in the string. Returns −1 if not matched.| 
   | `indexOf(s)`|  Returns the index of the first occurrence o  f string s in this string. Returns −1 if not matched.| 
   | `indexOf(s, fromIndex)`|  Returns the index of the first occurrence of string s in this string after fromIndex. Returns −1 if not matched.| 
-  | `lastIndexOf(ch)`|  Returns the index of the last occurrenc e of ch in the string. Returns −1 if not matched.| 
+  | `lastIndexOf(ch)`|  Returns the index of the last occurrence e of ch in the string. Returns −1 if not matched.| 
   | `lastIndexOf(ch,fromIndex)`|  Returns the index of the last occurrence of ch before fromIndex in this string. Returns −1 if not matched.| 
   | `lastIndexOf(s)`| Returns the index of the last occurrence of string s. Returns −1 if not matched.|
   |`lastIndexOf(s, fromIndex)`|  Returns the index of the last occurrence of string s before fromIndex. Returns −1 if not matched.|  
@@ -1316,13 +1316,13 @@ The following is a table of format specifiers used in java:
 Observe in the next example how do we use the format specifiers in formatting an output as follows:
 
 
-![format speicifers](/images/format%20specifiers.png)
+![format specifiers](/images/format%20specifiers.png)
 
 **`note`** Items must match the format specifiers in order, in number, and in exact type otherwise a runtime error will occur.
 
-Another important point is considering that we are formatting console output, so in some cases we need to display leading zeros or adding thousands separators or even we don't need to display all these numbers after the floating point. 
+Another important point is considering that we are formatting console output, so in some cases we need to display leading zeros or adding thousands separators ,or even we don't need to display all these numbers after the floating point. 
 
-Controlling the width and percision in a format specifier, helps in acheiving what were mentioned above:
+Controlling the width and precision in a format specifier, helps in achieving what were mentioned above:
 
 ![components of a format specifier](/images/components%20of%20a%20format%20specifier.png)
 
@@ -1341,13 +1341,13 @@ you can alter the leading zeros flag with the thousands flag or left justifying 
 ![spaces 2](/images/spaces%20with%20specifiers.png)
 
 
-you can see more about foramtting in these links on Oracle website: Java tutorial
+you can see more about formatting in these links on Oracle website: Java tutorial
 
   - [Formatting](https://docs.oracle.com/javase/tutorial/essential/io/formatting.html)
   - [Number Format](https://docs.oracle.com/javase/tutorial/java/data/numberformat.html)
   
 
-### Finally the third chapter is FINISHED!!! :D
+### Finally, the third chapter is FINISHED!!! 
 I THOUGHT IT WAS A CURSE, WASN'T IT? 
 
 </details>
@@ -1355,15 +1355,15 @@ I THOUGHT IT WAS A CURSE, WASN'T IT?
 ---
 
 <details>
-<summary><H3><strong>4. Control Structure Part 2: (_Iterators_) </strong><H3></summary>
+<summary><H3><strong>4. Control Structure Part 2: (_Iterators_) </strong></H3></summary>
 
 Remember from the first chapter about `Control Flow Statements`, that controlling the execution flow of a code block can be done with the help of looping and branching.
 
 Also, we've mentioned the types of control flow statements branching and Iteration statements. 
 
-In this Chapter we're goint to learn about Iteration (loop):
+In this Chapter we're going to learn about Iteration (loop):
    
-  - Consider a situation where you need to print scores of a specific academic year of 200 students, logically writing 200 print statements which almost print the same sentence except the name of student and his/her score would be a super exhuastive task. 
+  - Consider a situation where you need to print scores of a specific academic year of 200 students, logically writing 200 print statements which almost print the same sentence except the name of student and his/her score would be a super exhaustive task. 
   - Regarding what you've learnt from this section in the last chapter [DRY principle](#analysis-to-what-happened), you may think of using methods; but is that really the suitable choice for this task? for short, no.
     - you can use methods to encapsulate the right structure.
   - A control structure in which you can perform a number of tasks or execute a block of code repeatedly is called `Loop`.
@@ -1378,9 +1378,9 @@ In this Chapter we're goint to learn about Iteration (loop):
    
 ![types of loops](/images/types%20of%20loops.png) 
 
-- Simply, tyhe difference between the counter controlled and sentinel controlled is that you know the number of iterations in advance while in sentined you don't know how many iterations will be actually executed because it depends on other action like user input for example.
+- Simply, the difference between the counter controlled and sentinel controlled is that you know the number of iterations in advance while in sentinel loops you don't know how many iterations will be actually executed because it depends on other action like user input for example.
 
-#### Loop General Strcuture:
+#### Loop General Structure:
 
    1. Loop-Continuation-Condition
    2. Loop-Body 
@@ -1390,9 +1390,9 @@ Observe the following figure:
 
 ![loop structure](/images/loop%20strucuture.png)
 
-- The `loop-continuation-condition` is a boolean condition in which if it was evaluated to `true` so the loop continues otherwise 'false' the loop terminates. 
+- The `loop-continuation-condition` is a boolean condition in which ,if it was evaluated to `true` so the loop continues otherwise 'false' the loop terminates. 
   - The boolean condition controls the execution of the loop thus adjusting this condition is super important.
-  - You can be exposed to `off-by-one` error (one more or less iteration) if you didn't not adjust this condition for example:
+  - You can be exposed to `off-by-one` error (one more or less iteration) if you didn't adjust this condition for example:
 
         public class Main{
 	          public static void main(String[] args) {
@@ -1402,7 +1402,7 @@ Observe the following figure:
                   // the sentence will be printed 11 times! off-by-one 
 	          }
         }
-  - This kind of errors is logical or semantic errors, the code actually works fine but the code doesn't yeild the right output.  
+  - This kind of errors is logical or semantic errors, the code actually works fine but the code doesn't yield the right output.  
  
 - The `loop-Body` is the block of code which contains the statements to be repeated.
 
@@ -1413,7 +1413,7 @@ Observe the following figure:
     There is two keys to design a loop:
 
   1. Identify the code needed to be repeated
-  2. Iedntify what can terminate the loop 
+  2. Identify what can terminate the loop 
      
 - Types of loop statements in Java:
   - pretest loops
@@ -1442,7 +1442,7 @@ Observe the following figure:
         - the `control variable` controls the number of iterations in the loop.
         -  the `action-after-iterations` is the statement which adjusts the control variable.
         -  each statement of the loop control structure is terminated using a semi-colon `;` like the rest of the statements in java
-           -  `note`⚠ you can insert a semicolon by mistake after the control structure itself insisde the parenthesis which results in loop termination or it means do nothing as follows:
+           -  `note`⚠ you can insert a semicolon by mistake after the control structure itself inside the parenthesis which results in loop termination ,or it means do nothing as follows:
                         
                   for(int i = 0; i<10;i++);   //<----- note the semicolon after the closing parenthesis here will case to print nothing as the loop has been terminated.
                   {
@@ -1569,10 +1569,10 @@ Simply a loop inside another loop are considered as nested loops.
 
 > Nested loops consist of an outer loop and one or more inner loops. Each time the outer loop is repeated, the inner loops are reentered, and started anew. 
 > 
-> "*from Introduction to Java Programming and Data Structures Comperhensive Version 12th Edition by Daniel Y. Liang*"
+> "*from Introduction to Java Programming and Data Structures Comprehensive Version 12th Edition by Daniel Y. Liang*"
 
-- Nested loops often used to loop over something has more than one diemention like tables, 2D arrays, sorting and so on. you need to keep track of the columns and rows in the same time. 
-- One common example of using nexted loops is printing patterns:
+- Nested loops often used to loop over something has more than one dimension like tables, 2D arrays, sorting and so on. you need to keep track of the columns and rows in the same time. 
+- One common example of using nested loops is printing patterns:
   
 
   ![nested loop pattern example](/images/nested%20loop%20pattern%20example%201.png)
@@ -1591,19 +1591,19 @@ Simply a loop inside another loop are considered as nested loops.
 	        }
         }       
 
-- ⚠ `note`: using nested loops are computationaly expensive (time complexity O(n^2)), so they are avoided as much as possible but some algorithms are built using nested for loops.
+- ⚠ `note`: using nested loops are computationally expensive (time complexity O(n^2)), so they are avoided as much as possible but some algorithms are built using nested for loops.
 
 #### Notes about Loops in java:
-- Avoide using floating-point numbers in the continuation condition because of the percision of the floating numbers as floating-point numbers are represented in approximation in computers by nature:
-  - An example illustrated from the same textbook mentioned above explained the percision problem caused because of using floating-point numbers in the continaution consition in addition to the statements inside the loop body itself:
+- Avoid using floating-point numbers in the continuation condition because of the precision of the floating numbers as floating-point numbers are represented in approximation in computers by nature:
+  - An example illustrated from the same textbook mentioned above explained the precision problem caused because of using floating-point numbers in the continuation condition in addition to the statements inside the loop body itself:
   - The exact sum should be 50.50 but the loop output is 50.499985
    
   ![why you have to avoid using floating point numbers](/images/sum%20of%20floating%20point%20numbers.png)
 
-  - If `double` data type is used instead of 'float' will improve the output a little bit but not the best.
+  - If `double` data type is used instead of 'float' will improve the output a little but not the best.
 
 - Using `break` and 'continue' keywords:
-  - They add more control over you loop but they are not secure so overusing them is not recommedned.
+  - They add more control over you loop ,but they are not secure so overusing them is not recommended.
   - `break` is used to break out of the loop or of the condition 'it was used with `switch` before' while `continue` is used to break out of the iteration itself.
   - Using `continue` is to stop preceding in the current running iteration and start the next iteration.  
  
@@ -1612,21 +1612,21 @@ Simply a loop inside another loop are considered as nested loops.
 - An example on using Loops with the previously learnt concepts is shown in this example: [isPalindrome](/Test%20Files%20Elementary/isPalindrome.java)
 - Checking the word is palindrome or not is a common programming problem you can search about it and check.
 
-### Finally the forth chapter is FINISHED!!! :D
+### Finally, the forth chapter is FINISHED!!! 
 </details>
 
 ----
 
-<details><summary><H3><strong>5.Methods</strong><H3></summary>
+<details><summary><H3><strong>5.Methods</strong></H3></summary>
 
-In this chapter you are about laerning the first step towards the abstraction.
+In this chapter you are about learning the first step towards the abstraction.
 
 We already mentioned before on a successive chapter that methods are used to define reusable code.
 
 Now we are going to delve deeper in Methods concepts in java context, the following are the point's I'm going to discuss:
 
 1. Method definition.
-2. Method Invokation
+2. Method Invocation
 3. Void vs Value-Returning methods
 4. Pass by Value
 5. Modularizing Code
@@ -1641,7 +1641,7 @@ Now we are going to delve deeper in Methods concepts in java context, the follow
 - Now, we are going to deal with custom-built methods, in other words you'll create it yourself.
 - We are going to address **How to Define a method**, a method consists of:
  
-  - modefier
+  - modifier
   - return type
   - method name
   - list of parameters
@@ -1650,14 +1650,14 @@ Now we are going to delve deeper in Methods concepts in java context, the follow
 
 ![method definition](/images/method%20definition.png)
 
-- The `modifier` and its importance will be metioned in a future chapter (OOP).
+- The `modifier` and its importance will be mentioned in a future chapter (OOP).
 - The `return type`, methods are of two types : 
   1. value-returning methods
   2. void methods (return nothing).
    
 
 - `Method Name` and `Parameter List` which define the `method signature` -crucial for a future concept 'Overloading'-.
-- The `parameter list` is the variables, objects, arrays,.etc we pass to the method which are used in the processing performed be the method to finish a specific task, paramters actually are optional some methods have empty parameter list.
+- The `parameter list` is the variables, objects, arrays,etc. we pass to the method which are used in the processing performed be the method to finish a specific task, parameters actually are optional some methods have empty parameter list.
 - The `method body` like the other `loop body` the collection of statements which are grouped together to perform one task not for iteration like the loop body.
 
 - Methods provide a form of abstraction, but what's meant by an abstraction by the way?
@@ -1673,8 +1673,8 @@ Now we are going to delve deeper in Methods concepts in java context, the follow
 
 after the closing curly braces of the main method 
 1. define a new method with a meaningful name `calculate`.
-2. add these two modeifers for now `public` and then `static`.
-3. define the return type, here it's `void` it can be double but we have to do some edits in `switch` statement.
+2. add these two modifiers for now `public` and then `static`.
+3. define the return type, here it's `void` it can be double ,but we have to do some edits in `switch` statement.
 4. define the parameter list here (two integers the numbers which the operation will be performed on, and the operator code -also an integer-).
 5. move the long switch case in the method.
 6. invoke it in the main method. (remember anything you want to execute you must invoke it in the main method or in the main class which contains the main method).
@@ -1695,9 +1695,9 @@ after the closing curly braces of the main method
  ![calculator example refined](/images/CalculateRefinement%20class.png)
 
 
-- now everything looks really abstracted you don't know how this method process the opertaions but you know what it does! 
+- now everything looks really abstracted you don't know how this method process the operations ,but you know what it does! 
 
-- another point woth mentioning is that the parameter list is called the formal parameters, when you `actually` passing values to the method then it's called actual parameters or arguments: 
+- another point worth mentioning is that the parameter list is called the formal parameters, when you `actually` passing values to the method then it's called actual parameters or arguments: 
   - parameter list: formal `paramters`.
   - passing actual values: `arguments`. 
 
@@ -1708,10 +1708,16 @@ after the closing curly braces of the main method
 
 <details><summary>little story:</summary>
 
-> The first programming language I was exposed to in the middle school was `visual basic 'VB'` maybe in 2016 or earlier, I don't even remember its version or how I coded using this language but it was the point where it all started 🤍, but I can rememebr well my teacher when she was differentiating between procedure and function, in general a `value-returning` method was called a `function` and a `void` method was called a `procedure`, I can remember this part because of the way we had been taught, I'm Egyptian and our native language is Arabic, so procedure translation in Arabic is masculine and function is a femenine word, so my teacher told us that mom comes back from the market with many groceries and surprises while dad he doesn't care and comes back with nothing, this was for joking she didn't meant anything mean but from the actual reality that your mom is more caring and loving than your dad by nature -again without any offense to either gender but if you live here in Egypt you'll enjoy and understand this kind of jokes  jokes 😄-. 
+> The first programming language I was exposed to in the middle school was `visual basic 'VB'` maybe in 2016 or earlier, I don't even remember its version or how I coded using this language ,but it was the point where it all started 🤍, but I can remember well my teacher when she was differentiating between procedure and function, in general a `value-returning` method was called a `function` and a `void` method was called a `procedure`, I can remember this part because of the way we had been taught, I'm Egyptian and our native language is Arabic, so procedure translation in Arabic is masculine and function is a feminine word, so my teacher told us that mom comes back from the market with many groceries and surprises while dad he doesn't care and comes back with nothing, this was for joking she didn't mean anything mean but from the actual reality that your mom is more caring and loving than your dad by nature -again without any offense to either gender but if you live here in Egypt you'll enjoy and understand this kind of jokes 😄-. 
 </details>
 
-#### Method Invokation:
+#### Method Invocation:
+
+- To execute the method, you have to call or invoke it.
+  - invoking or calling is simply by typing the method name and pass its parameters if they exist as follows:
+  
+
+        
 
 
 
@@ -1720,9 +1726,9 @@ after the closing curly braces of the main method
 
 ------
 
-<details><summary><H3><strong>6. Arrays</strong><H3></summary>
+<details><summary><H3><strong>6. Arrays</strong></H3></summary>
 
-In this chapter you are about laerning the first step towards the abstraction.
+In this chapter you are about learning the first step towards the abstraction.
 
 We already mentioned before on a successive chapter that methods are used to define reusable code.
 
