@@ -1755,6 +1755,21 @@ after the closing curly braces of the main method
     - To fix this problem, delete if (n < 0) in (a), so the compiler will see a return
 statement to be reached regardless of how the if statement is evaluated, as shown in (b).  
 
+##### Program Control, Call and Caller:
+
+  - **The program control** refers to the order in which individual instructions, statements, and function calls are executed in a program
+  - Program control is commonly known by `the flow of execution`, the normal flow is from top to buttom until a control structure or a method call is executed the program control moves to them until they end their tasks and terminates successfully.
+  - When a method is called, the program's control is transferred to that method:
+   
+    - The current execution of code is paused.
+    - Program control jumps to the method definition.
+    - After the method finishes execution, control returns to the point where the method was called.
+  - Understanding this point helps in other times when you want to debug your program, it aids you with the understanding of where you can stick a breaking point to check where a problem started.
+  - The program that calls the function is called a **caller**.
+  - **The main method is just like any other method, except that it is invoked by the `JVM` to start the program.**
+    - The main method’s header is always the same. It includes the modifiers `public` and `static`, return value type `void`, method name `main`, and a parameter of the `String[]` type. `String[]` indicates the parameter is an array of String, a subject addressed in the next chapter.
+    - The statements in main may invoke other methods that are defined in the class that contains the main method or in other classes.
+
 
    
   
