@@ -1770,6 +1770,79 @@ statement to be reached regardless of how the if statement is evaluated, as show
     - The main method’s header is always the same. It includes the modifiers `public` and `static`, return value type `void`, method name `main`, and a parameter of the `String[]` type. `String[]` indicates the parameter is an array of String, a subject addressed in the next chapter.
     - The statements in main may invoke other methods that are defined in the class that contains the main method or in other classes.
 
+##### Call Stack
+
+  - What is the Call Stack?
+    
+    - The **call stack** is a special part of a computer’s memory where Java keeps track of all the methods that are currently being executed.
+    - Think of it as a list or a stack of tasks that the program is handling. When a new task (method) is called, it gets added to the top of the list. Once the task is done, it is removed, and the program goes back to the previous task.
+
+
+
+  - How Does the Call Stack Work?
+
+    - Let’s break it down step by step:
+
+      1. **Program starts executing**:
+         - When you run a Java program, the main method is the first method that gets executed. The program control goes to the main method, and the first thing that happens is that **a stack frame is created** for `main()`.
+         - A **stack frame** or **activation record** is a structure that holds all the information needed for the method to run (local variables, parameters, and the point to return after the method is done).
+
+      2. **Calling another method**:
+         - When `main()` calls another method (let’s say `printHello()`), a new stack frame is created for `printHello()`, and it is **added to the top of the call stack**.
+         - The method at the top of the call stack is always the one that is currently being executed. This means that `main()` is paused, and the program now focuses on executing `printHello()`.
+
+      3. **Method completion**:
+         - Once `printHello()` finishes, its stack frame is removed (or **popped off**) from the call stack.
+         - Program control then returns to `main()`, and `main()` continues executing from where it left off.
+ 
+
+      4. **Stack Frame Removal**:
+         - After the `main()` method finishes, its stack frame is removed, and the program ends.
+
+    - Visualizing the Call Stack
+
+        
+
+        ```java
+        public class CallStackExample {
+            public static void main(String[] args) {
+                System.out.println("Start of main()");
+                printHello();
+                System.out.println("End of main()");
+            }
+
+            public static void printHello() {
+                System.out.println("Hello from printHello()");
+            }
+        }
+        ```
+
+      When this program runs:
+      
+        1. `main()` starts and is placed on the call stack.
+        2. Inside `main()`, the `printHello()` method is called, so a stack frame for `printHello()` is added.
+        3. Once `printHello()` is done, its stack frame is removed, and the program returns to `main()`.
+
+      **Call Stack Visualization**:
+
+        ![call stack](/images/call%20stack.png)
+            
+
+  - Why Does the Call Stack Matter?
+
+    - **Managing Method Calls**: The call stack ensures that each method runs correctly and in the right order.
+    - **Memory Management**: Each method’s local variables and parameters are stored in its stack frame, so Java knows how much memory to allocate and free when methods start and finish.
+
+-  Important Points to Remember:
+
+    - The call stack operates on a **Last-In, First-Out (LIFO)** basis, meaning the last method called is the first one to finish and be removed from the stack.
+    - Each time a method is called, a new stack frame is created, and when the method completes, the stack frame is removed.
+    - **Stack Overflow**: If too many methods are called without finishing, the call stack can become too large and overflow. This is called a **stack overflow**, which typically happens in cases of infinite recursion.
+
+
+- Real-world Analogy
+
+  Imagine you are baking a cake (running a program). If you realize mid-way that you need eggs (another method), you pause the cake process and go get the eggs. Once you have the eggs (the method finishes), you return to baking (resume the original method). The call stack works similarly, ensuring that each task gets completed in the right order without losing track of the original task.
 
    
   
