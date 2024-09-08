@@ -125,7 +125,9 @@ This repository **IS NOT A ROADMAP FOR LEARNING JAVA** exactly, you can use diff
 - How to Contribute
 - Guidelines for Contributors
 - Community Engagement Opportunities</details>
+
 </details>
+
 
 ---
 
@@ -1617,7 +1619,8 @@ Simply a loop inside another loop are considered as nested loops.
 
 ----
 
-<details><summary><H3><strong>5.Methods</strong></H3></summary>
+<details>
+<summary><H3><strong>5.Methods</strong></H3></summary>
 
 In this chapter you are about learning the first step towards the abstraction.
 
@@ -1717,22 +1720,16 @@ after the closing curly braces of the main method
   - invoking or calling is simply by typing the method name and pass its parameters if they exist as follows:
   
 
-        
-
-
 
 </details>
-
 
 ------
 
-<details><summary><H3><strong>6. Arrays</strong></H3></summary>
-
-In this chapter you are about learning the first step towards the abstraction.
-
-We already mentioned before on a successive chapter that methods are used to define reusable code.
-
-
+<details>
+  <summary><h3><strong>6. Arrays</strong></h3></summary>
+  
+In this chapter, you are about to learn the first step towards abstraction.
+We already mentioned before, in a successive chapter, that methods are used to define reusable code.
+  
 </details>
 
----
