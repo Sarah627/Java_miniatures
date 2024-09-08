@@ -153,6 +153,8 @@ Don't worry **these characteristics of the language will be more clear as we go 
 
 <details><summary><H3><strong>Installing JDK</strong></H3></summary>
 
+### Installing JDK
+
 To get started with java we must install JDK on our local machine, (here, I'm considering you are a beginner or totally newcomer in programming world or even didn't visit virtualization concepts|tools before).
 
 Installing JDK is a **must** it provides the necessary tools and libraries to develop, compile, and run Java applications.
@@ -163,7 +165,7 @@ click on the following link [oracle](https://www.oracle.com/eg/java/technologies
 
 > download and install JDK based on your os and processor architecture set
 
-### What's JDK?
+#### What's JDK?
 
 "**_JDK_**" stands for Java Development Kit, it's the development environment for building java applications, it consists of JVM -_Java Virtual Machine_-, JRE -_Java Runtime Environment_- and development tools like compiler etc.
 
@@ -213,6 +215,8 @@ Once you downloaded the latest version of JDK here you have two options:
 ---
 
 <details><summary><H3><strong>1. Elementary Programming</strong></H3></summary>
+
+### 1. Elementary Programming
 
 Remember this part mentioned earlier ? [class-based](#class-based-object-oriented-means-this-language-structure-is-based-on-object-oriented-concepts-and-use-of-classes)
 
@@ -291,7 +295,7 @@ you can check the file here in this directory [Hello.java](/Test%20Files%20Eleme
 
 ![queen's knight](</images/Accolade_by_Edmund_Blair_Leighton%20(1).jpg>)
 
-### java syntax:
+#### java syntax:
 
 - every programming language has a syntax defines it, simply like grammar in English defines how you form a sentence has context, similarly in programming the syntax allows you to write program instructions correct or with a context for the compiler.
 
@@ -349,7 +353,7 @@ you can check the file here in this directory [Hello.java](/Test%20Files%20Eleme
 for more on errors types here is a useful link [not for newcomers](https://www.geeksforgeeks.org/types-of-errors-in-java-with-examples/)
 , this is nice introduction to errors [types of errors in java](https://www.scaler.com/topics/types-of-errors-in-java/).
 
-<h3>Dealing with data in Java</h3>
+#### Dealing with data in Java
 
 - a variable is used to store data, you can think of variables as where we store values, these values can be numeric, string (group of characters), reference, etc.
 
@@ -458,7 +462,7 @@ for more on errors types here is a useful link [not for newcomers](https://www.g
 
 #### notes:
 
-### First Chapter is Finished!!! 
+First Chapter is Finished!!! 
 
 </details>
 
@@ -466,6 +470,7 @@ for more on errors types here is a useful link [not for newcomers](https://www.g
 
 <details><summary><H3><strong>2. Control Structure Part 1: (_Selections_)</strong></H3></summary>
 
+### 2. Control Structure Part 1: 
 In this section you will learn **the way you take decision**.
 
 According to documentation:
@@ -576,13 +581,15 @@ lastly we will learn about the boolean ternary operator `(boolean expression)? (
 
 #### notes:
 
-### Second Chapter is Finished!!! 
+Second Chapter is Finished!!! 
 
 </details>
 
 ---
 
 <details><summary><H3><strong>3. Mathematical Functions,Characters, and Strings</strong></H3></summary>
+
+### 3. Mathematical Functions,Characters, and Strings
 
 In this section you will learn about some built-in mathematical functions in addition to introducing two data types (Character and String).
 
@@ -613,9 +620,9 @@ methods can be:
 
 Before we go deeper in this
 
-### Why do we need methods?
+#### Why do we need methods?
 
-#### Coffee Shop analogy:
+##### Coffee Shop analogy:
 ![coffeeShop](/images/organizational-structure-of-coffee-shop.jpg)
 
 **Imagine we have the following situation:**
@@ -640,14 +647,14 @@ To improve efficiency, you introduce a coffee machine. The machine has buttons f
 * **Without Methods:** The barista repeats the same steps (code) for each customer.
 * **With Methods:** The barista uses the coffee machine (method) to make coffee efficiently.
 
-### Java Code Simulation:
-#### Without Methods (Exhausting Process)
+#### Java Code Simulation:
+##### Without Methods (Exhausting Process)
 ![without methods](/images/without%20methods.png)
 
-#### With Methods (Effective Process)
+##### With Methods (Effective Process)
 ![with methods](/images/without%20methods.png)
 
-### Analysis to what happened:
+#### Analysis to what happened:
 * **DRY Principle:** By using methods, we encapsulate the repetitive steps of making coffee into a single method makeCoffee. This follows the DRY principle by avoiding repetition of the same code.
 
 * **Built-In vs. User-Defined Methods:** 
@@ -657,6 +664,7 @@ To improve efficiency, you introduce a coffee machine. The machine has buttons f
   **User-Defined Methods:** These are like the custom coffee machine **designed specifically** for your coffee shop. They perform specific tasks defined by the programmer. In our example, **`makeCoffee`** is a user-defined method that encapsulates the steps to make coffee.
 
 For now in this chapter we're going to discuss built-in methods only.
+
 <details><summary><strong>more about built-in functions</strong></summary>
 
   easy definition for these functions found on NinjaOne blog:
@@ -737,7 +745,7 @@ In my own opinion random method is super important in a lot of situations, for e
 
 ![random Method](/images/random.png)
 
-### Simple Application !
+#### Simple Application !
 ![angle between two vectors](/images/Angle-Between-Two-Vectors-01.png)
 there is a little application "Calculate Theta value" calculates the value of the angle between any two vectors using dot product
 you can take a look on the application here, whereas you can find how can we use **Math Class** built-in functions are used.
@@ -825,7 +833,7 @@ CS50 - from Harvard [CS50](https://www.youtube.com/playlist?list=PLhQjrBD2T381WA
   
 - other encoding schemes are widely used today like UTF-8 which is algorithmic mapping in addition to providing backward compatibility with ASCII. 
   
-### Character Encoding Analogy! Teaching Colors with a Numbered Painting Sketch
+#### Character Encoding Analogy! Teaching Colors with a Numbered Painting Sketch
 
 **If we want to teach a child how to get used with colors and their names we use the `Numbered Painting Sketch`**
 - `Encoding`: in the context of `The Numbered Painting Sketch`, Encoding is like the painting sketch where each sector of the drawing is assigned (encoded to) a unique number (1 for red color, two for green, 21 for mint green, etc.).
@@ -1349,7 +1357,7 @@ you can see more about formatting in these links on Oracle website: Java tutoria
   - [Number Format](https://docs.oracle.com/javase/tutorial/java/data/numberformat.html)
   
 
-### Finally, the third chapter is FINISHED!!! 
+Finally, the third chapter is FINISHED!!! 
 I THOUGHT IT WAS A CURSE, WASN'T IT? 
 
 </details>
@@ -1358,6 +1366,8 @@ I THOUGHT IT WAS A CURSE, WASN'T IT?
 
 <details>
 <summary><H3><strong>4. Control Structure Part 2: (_Iterators_) </strong></H3></summary>
+
+### 4. Control Structure Part 2: (_Iterators_) 
 
 Remember from the first chapter about `Control Flow Statements`, that controlling the execution flow of a code block can be done with the help of looping and branching.
 
@@ -1370,7 +1380,7 @@ In this Chapter we're going to learn about Iteration (loop):
     - you can use methods to encapsulate the right structure.
   - A control structure in which you can perform a number of tasks or execute a block of code repeatedly is called `Loop`.
 
-### Loops (Iterations):
+#### Loops (Iterations):
 
 - A loop is a control structure which controls how many times an operation or a block of code can be executed.
  
@@ -1468,6 +1478,7 @@ Observe the following figure:
 
         2. Simple program to print the multiples of a number entered by user and stop at of before 100:
          
+                  ```java 
                   import java.util.Scanner;
                   public class Main
                   {
@@ -1490,7 +1501,7 @@ Observe the following figure:
                   		    System.out.printf("Multiple number %d of number %d is %d \n ",i+1,number, multiple);
                   		}
                   	}
-                  } 
+                  } ```
 
         ![loop example 1](/images/loop%20example%201.png)
 
@@ -1498,10 +1509,13 @@ Observe the following figure:
     - While loop: 
        - A `while` loop executes statements repeatedly while the condition is true. Its syntax is simple:
 
-                while (loop-continuation-condition) {
-                  // Loop body
-                  Statement(s);
-                }
+                ``` java
+               
+                  while (loop-continuation-condition) {
+                    // Loop body
+                    Statement(s);
+                  }
+                ```
 
         - While loop general syntax:
 
@@ -1580,7 +1594,8 @@ Simply a loop inside another loop are considered as nested loops.
   ![nested loop pattern example](/images/nested%20loop%20pattern%20example%201.png)
 
 - try it out!
- 
+- 
+        ``` java
         public class Main{
 	        public static void main(String[] args) {
 	        	int rows = 5;
@@ -1591,7 +1606,8 @@ Simply a loop inside another loop are considered as nested loops.
                     System.out.println();
                 }
 	        }
-        }       
+        }
+        ```      
 
 - ⚠ `note`: using nested loops are computationally expensive (time complexity O(n^2)), so they are avoided as much as possible but some algorithms are built using nested for loops.
 
@@ -1614,7 +1630,7 @@ Simply a loop inside another loop are considered as nested loops.
 - An example on using Loops with the previously learnt concepts is shown in this example: [isPalindrome](/Test%20Files%20Elementary/isPalindrome.java)
 - Checking the word is palindrome or not is a common programming problem you can search about it and check.
 
-### Finally, the forth chapter is FINISHED!!! 
+Finally, the forth chapter is FINISHED!!! 
 </details>
 
 ----
@@ -1622,20 +1638,21 @@ Simply a loop inside another loop are considered as nested loops.
 <details>
 <summary><H3><strong>5.Methods</strong></H3></summary>
 
+### 5.Methods
+
 In this chapter you are about learning the first step towards the abstraction.
 
 We already mentioned before on a successive chapter that methods are used to define reusable code.
 
 Now we are going to delve deeper in Methods concepts in java context, the following are the point's I'm going to discuss:
 
-1. Method definition.
-2. Method Invocation
-3. Void vs Value-Returning methods
-4. Pass by Value
-5. Modularizing Code
-6. Overloading
-7. Scope
-8. Method abstraction
+  1. Method definition.
+  2. Method Invocation
+  3. Pass by Value
+  4. Modularizing Code
+  5. Overloading
+  6. Scope
+  7. Method abstraction
 
 
 #### 1. Method Definition:
@@ -1714,23 +1731,41 @@ after the closing curly braces of the main method
 > The first programming language I was exposed to in the middle school was `visual basic 'VB'` maybe in 2016 or earlier, I don't even remember its version or how I coded using this language ,but it was the point where it all started 🤍, but I can remember well my teacher when she was differentiating between procedure and function, in general a `value-returning` method was called a `function` and a `void` method was called a `procedure`, I can remember this part because of the way we had been taught, I'm Egyptian and our native language is Arabic, so procedure translation in Arabic is masculine and function is a feminine word, so my teacher told us that mom comes back from the market with many groceries and surprises while dad he doesn't care and comes back with nothing, this was for joking she didn't mean anything mean but from the actual reality that your mom is more caring and loving than your dad by nature -again without any offense to either gender but if you live here in Egypt you'll enjoy and understand this kind of jokes 😄-. 
 </details>
 
-#### Method Invocation:
+#### 2. Method Invocation:
 
 - To execute the method, you have to call or invoke it.
-  - invoking or calling is simply by typing the method name and pass its parameters if they exist as follows:
-  ![]() 
+  - invoking or calling is simply by typing the `method name` and pass its parameters if they exist as follows:
+   
+  ![Invoking a method](/images/Methods%20Invocation%20with%20edit.png) 
+
+  1. Number 1 and 3 are examples on parameter list and no parameter methods respectively.
+  2. Number 2, have two parts the left part is the class name 'Math' as it's a static method ,and it should be invoked using the class name then the method name with an access operator `.` or the period.
+
+##### Value-Returning Method vs Void Method:
+  - Void method is used as a `statement` that can stand alone while the value returning-value method is treated as a value as shown in the previous example, the value returned by the method calculateDistance can have two distinations: 
+     1. Is to be stored in a variable or array or whatever of the same type, or 
+     2. To be passed to the print statement 'if it can be printed directly' to be printed on the console.
+  - A returning-value method must have a `return` keyword followed by the returned value to terminates the method execution, while the void method terminates when its execution approaches the closing curly braces. 
+  - Another note is that your method implementation must gurantee that the method will return the value at the end, look at the following example:
+   
+    - A return statement is required for a value-returning method. The method given in (a) is logically correct, but it has a compile error because the Java compiler thinks this method might not return a value.
+     
+    ![return example](/images/return%20statement%20problem.png)
+
+    - To fix this problem, delete if (n < 0) in (a), so the compiler will see a return
+statement to be reached regardless of how the if statement is evaluated, as shown in (b).  
+
+
+   
   
-
-
 </details>
 
 ------
 
-<details>
-  <summary><h3><strong>6. Arrays</strong></h3></summary>
+<details><summary><h3><strong>6. Arrays</strong></h3></summary>
   
-In this chapter, you are about to learn the first step towards abstraction.
-We already mentioned before, in a successive chapter, that methods are used to define reusable code.
+  In this chapter, you are about to learn the first step towards abstraction.
+  We already mentioned before, in a successive chapter, that methods are used to define reusable code.
   
 </details>
 
