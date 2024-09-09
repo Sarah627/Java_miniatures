@@ -1844,6 +1844,21 @@ statement to be reached regardless of how the if statement is evaluated, as show
 
   Imagine you are baking a cake (running a program). If you realize mid-way that you need eggs (another method), you pause the cake process and go get the eggs. Once you have the eggs (the method finishes), you return to baking (resume the original method). The call stack works similarly, ensuring that each task gets completed in the right order without losing track of the original task.
 
+#### 3. Pass By Value:
+
+- In Java, when you pass a variable to a method, you are passing **only the value** stored in that variable, not the actual memory address or reference of the variable itself. This is known as **pass by value**.
+
+- Every variable in Java has a memory address where its value is stored. When we manipulate a variable, we are working with the value at that memory location.
+- **Passing by value** means that when you call a method and pass a variable as an argument, Java copies the value stored in the variable and passes that copy to the method. Inside the method, any changes made to the copied value **do not affect** the original variable outside the method.
+
+- The original variable and the copy passed into the method are stored in **different memory locations**. Modifying the copy only affects the memory location of the copy, leaving the original untouched.
+  
+- The original variable will only be modified if the method returns a new value and you reassign the result to that variable.
+
+- This behavior applies to **primitive data types** (like `int`, `float`, `boolean`) and can be confusing with reference types (like objects and arrays), but the core principle remains the same: **Java always passes values, not references**.
+
+
+
    
   
 </details>
