@@ -1857,7 +1857,30 @@ statement to be reached regardless of how the if statement is evaluated, as show
 
 - This behavior applies to **primitive data types** (like `int`, `float`, `boolean`) and can be confusing with reference types (like objects and arrays), but the core principle remains the same: **Java always passes values, not references**.
 
+- let's demonstrate an example:
+  
+    ``` java
 
+        public class PassByValueExample {
+
+          public static void main(String[] args) {
+              int original = 10;
+              System.out.println("Before calling method: " + original);
+              
+              modifyValue(original); // Passes the value, not the reference
+              
+              System.out.println("After calling method: " + original); // Original value remains unchanged
+          }
+
+        public static void modifyValue(int value) {
+            value = 20; // Only modifies the copy of the value
+            System.out.println("Inside method: " + value);
+        }
+      }
+
+    ```
+- The value of `original` remains the same after calling the method.
+   
 
    
   
