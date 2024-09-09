@@ -1966,7 +1966,71 @@ statement to be reached regardless of how the if statement is evaluated, as show
 
     ```
 
-- Until this point, abstraction concept is being introduced to you bit by bit until we approach the OOP chapters; then the concept will be clear.   
+- Until this point, abstraction concept is being introduced to you bit by bit until we approach the OOP chapters; then the concept will be clear.
+
+#### 5. Overloading:
+
+- In Java, method overloading is a technique that allow methods to behave differently based on various factors.
+
+- `Method Overloading` or Compile-time Polymorphism -will be discussed latter in OOP chapters- Method overloading occurs when multiple methods in the same class have the same name but different parameter lists (different number of parameters, types, or both). This is resolved at compile time, meaning the Java compiler decides which method to call based on the method signature.
+
+  - **Purpose**: To create several versions of the same method that can handle different input data.
+  - **When Used**: When you need the same method name to perform different operations based on the input parameters.
+- observe the following example:
+
+    ``` java
+
+        public class Calculator {
+
+         // Overloaded methods: same name but different parameters
+          public int add(int a, int b) {
+            return a + b;
+          }
+
+          public double add(double a, double b) {
+              return a + b;
+          }
+
+          public int add(int a, int b, int c) {
+              return a + b + c;
+          }
+
+          public static void main(String[] args) {
+              Calculator calc = new Calculator();
+
+              // Calls different add methods based on the arguments
+              System.out.println(calc.add(5, 10));       // Calls the first add method (int, int)
+              System.out.println(calc.add(5.5, 10.2));   // Calls the second add method (double, double)
+              System.out.println(calc.add(5, 10, 15));   // Calls the third add method (int, int, int)
+          }
+        }
+
+    ```
+
+- Sometimes there are two or more possible matches for the invocation of a method, but the compiler cannot determine the most specific match. This is referred to as `ambiguous invocation`. Ambiguous invocation causes a compile error. Consider the following:
+  
+      ```java
+         public class AmbiguousOverloading {
+            public static void main(String[] args) {
+            System.out.println(max(1, 2));
+            }
+            public static double max(int num1, double num2) {
+              if (num1 > num2)
+                return num1;
+              else
+                return num2;
+            }
+            public static double max(double num1, int num2) {
+              if (num1 > num2)
+                return num1;
+              else
+                return num2;
+            }
+          }
+      ```  
+
+- Both max(int, double) and max(double, int) are possible candidates to
+match max(1, 2). Because neither is more specific than the other, the invocation is ambiguous, resulting in a compile error.
   
 </details>
 
