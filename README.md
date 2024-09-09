@@ -1880,7 +1880,36 @@ statement to be reached regardless of how the if statement is evaluated, as show
 
     ```
 - The value of `original` remains the same after calling the method.
-   
+
+- Other languages which deal with pointers like C/Cpp can pass references to methods causing direct change to the original variables.
+
+- Another important point is that you must pass arguments in the same order as s their respective parameters in the method signature. This is known as `parameter order association`.
+ 
+- The arguments must match the parameters in `order`, `number`, and `compatible type`, as defined in the method signature. `Compatible type` means you can pass an argument to a parameter without explicit casting, such as passing an int value argument to a double value parameter.
+
+- observe this example:
+
+     ``` java 
+         public class Main{
+            public static void main(String[] args) {
+                // passing incompatible types to a method: 
+                double base = 10;
+                double height = 5;
+              double area = calculateTriangleArea(base, height);
+              System.out.println("The triangle area is: "+ area);
+            }
+          
+            public static double calculateTriangleArea(float base, int height){
+                
+                return 0.5 * base * height;
+            }
+          }
+    ```  
+    
+  ![incompatible types](/images/compatible%20types%20error.png)    
+
+#### 4. Modularizing Code: 
+
 
    
   
