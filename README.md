@@ -1659,13 +1659,14 @@ Now we are going to delve deeper in Methods concepts in java context, the follow
 
 - Before we discussed how does a method work, but we've mentioned that we were talking about the built-in methods. 
 - Now, we are going to deal with custom-built methods, in other words you'll create it yourself.
-- We are going to address **How to Define a method**, a method consists of:
+- This chapter will demonstrate the concept of **How to Define a method**.
  
-  - modifier
-  - return type
-  - method name
-  - list of parameters
-  - body
+-  A method consists of:
+     - modifier
+     - return type
+     - method name
+     - list of parameters
+     - body
 - These components are shown in the following figure:
 
 ![method definition](/images/method%20definition.png)
@@ -1680,14 +1681,16 @@ Now we are going to delve deeper in Methods concepts in java context, the follow
 - The `parameter list` is the variables, objects, arrays,etc. we pass to the method which are used in the processing performed be the method to finish a specific task, parameters actually are optional some methods have empty parameter list.
 - The `method body` like the other `loop body` the collection of statements which are grouped together to perform one task not for iteration like the loop body.
 
-- Methods provide a form of abstraction, but what's meant by an abstraction by the way?
-  - **abstraction** is the process of hiding the complex details and showing only the essential features of an object or a method. In programming, this allows developers to work with higher-level concepts without needing to understand the intricate implementation behind them.
-- May this figure clear your understanding about the abstraction idea and methods:
- 
-![method abstraction](/images/Methods%20in%20Java%20.png)
+##### Abstraction:
 
-- now let's try to refine an old example, for example let's refine the [calculator](/Test%20Files%20Elementary/Calculator.java) example. 
-- Let's encapsulate these lines of code in a small code statement consists only of a method call. 
+  - Methods provide a form of abstraction, but what's meant by an abstraction by the way?
+    - **abstraction** is the process of hiding the complex details and showing only the essential features of an object or a method. In programming, this allows developers to work with higher-level concepts without needing to understand the intricate implementation behind them.
+  - May this figure clear your understanding about the abstraction idea and methods:
+   
+  ![method abstraction](/images/Methods%20in%20Java%20.png)
+
+  - now let's try to refine an old example, for example let's refine the [calculator](/Test%20Files%20Elementary/Calculator.java) example. 
+  - Let's encapsulate these lines of code in a small code statement consists only of a method call. 
 
 <details><summary>details of how we refined the example to make use of method concept</summary>
 
@@ -2032,7 +2035,7 @@ statement to be reached regardless of how the if statement is evaluated, as show
 - Both max(int, double) and max(double, int) are possible candidates to
 match max(1, 2). Because neither is more specific than the other, the invocation is ambiguous, resulting in a compile error.
 
-#### Scope:
+#### 6. Scope:
 
 - The scope of a variable is the part of the program where the variable can be referenced.
  
@@ -2046,6 +2049,16 @@ match max(1, 2). Because neither is more specific than the other, the invocation
 -  A variable declared in the initial-action part of a for-loop header has its scope in the entire loop. However, a variable declared inside a for-loop body has its scope limited in the loop body from its declaration 
 
 - You can declare local variables with the same name in different blocks within a method. However, you cannot declare the same local variable twice in the **same block** or in **nested blocks**. In nested blocks, this is not allowed because the variable declared in the outer block remains accessible within the inner block. On the other hand, if the variable is declared in the inner block, it will not be accessible outside that block.
+  
+#### 7. Stepwise Refinement: 
+- The first step in developing a software is to understand the abstraction cocnept.
+- The concept is already introduced earlier in the chapter [abstraction](#abstraction).
+- Abstraction concept is achieved using `encapsulation`, **encapsulation** is hiding the implementation details from the user, thus if the implementation changed for any reason, the user is not aware he/she just keep using the method or the class.
+
+- A key point in designing large programs is to divide the program into sub-proograms using divide-and-conquer approach or commonly known by `stepwise refinement`. 
+- You can follow `top-down` design strategy to develop the program.
+- To make problem solving flow as smoothly as possible,
+you'll apply method abstraction concept to isolate details from design and only later implements the details either using bottom-up/top-up approaches.  
 
   
 </details>
