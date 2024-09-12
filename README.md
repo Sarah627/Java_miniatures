@@ -1745,11 +1745,11 @@ after the closing curly braces of the main method
   2. Number 2, have two parts the left part is the class name 'Math' as it's a static method ,and it should be invoked using the class name then the method name with an access operator `.` or the period.
 
 ##### Value-Returning Method vs Void Method:
-  - Void method is used as a `statement` that can stand alone while the value returning-value method is treated as a value as shown in the previous example, the value returned by the method calculateDistance can have two distinations: 
+  - Void method is used as a `statement` that can standalone while the value returning-value method is treated as a value as shown in the previous example, the value returned by the method calculateDistance can have two destinations: 
      1. Is to be stored in a variable or array or whatever of the same type, or 
      2. To be passed to the print statement 'if it can be printed directly' to be printed on the console.
-  - A returning-value method must have a `return` keyword followed by the returned value to terminates the method execution, while the void method terminates when its execution approaches the closing curly braces. 
-  - Another note is that your method implementation must gurantee that the method will return the value at the end, look at the following example:
+  - A returning-value method must have a `return` keyword followed by the returned value to terminate the method execution, while the void method terminates when its execution approaches the closing curly braces. 
+  - Another note is that your method implementation must guarantee that the method will return the value at the end, look at the following example:
    
     - A return statement is required for a value-returning method. The method given in (a) is logically correct, but it has a compile error because the Java compiler thinks this method might not return a value.
      
@@ -1761,7 +1761,7 @@ statement to be reached regardless of how the if statement is evaluated, as show
 ##### Program Control, Call and Caller:
 
   - **The program control** refers to the order in which individual instructions, statements, and function calls are executed in a program
-  - Program control is commonly known by `the flow of execution`, the normal flow is from top to buttom until a control structure or a method call is executed the program control moves to them until they end their tasks and terminates successfully.
+  - Program control is commonly known by `the flow of execution`, the normal flow is from top to bottom until a control structure or a method call is executed the program control moves to them until they end their tasks and terminates successfully.
   - When a method is called, the program's control is transferred to that method:
    
     - The current execution of code is paused.
@@ -1856,7 +1856,7 @@ statement to be reached regardless of how the if statement is evaluated, as show
 
 - The original variable and the copy passed into the method are stored in **different memory locations**. Modifying the copy only affects the memory location of the copy, leaving the original untouched.
   
-- The original variable will only be modified if the method returns a new value and you reassign the result to that variable.
+- The original variable will only be modified if the method returns a new value, and you reassign the result to that variable.
 
 - This behavior applies to **primitive data types** (like `int`, `float`, `boolean`) and can be confusing with reference types (like objects and arrays), but the core principle remains the same: **Java always passes values, not references**.
 
@@ -1914,7 +1914,7 @@ statement to be reached regardless of how the if statement is evaluated, as show
 #### 4. Modularizing Code: 
 
 
-- In Java, methods are one of the key ways to **modularize** code, which means breaking down a large, complex problem into smaller, more manageable pieces. This not only makes the code easier to understand but also allows for **better organization and reusability**. Here's how it works:
+- In Java, methods are one of the key ways to **modularize** code, which means breaking down a large, complex problem into smaller, more manageable pieces. This not only makes the code easier to understand but also allows for **better organization and re-usability**. Here's how it works:
 
 1. **Encapsulation**:  
    Encapsulation is the concept of bundling data and methods that operate on that data into a single unit (like a class). By using methods, we hide the internal implementation details and expose only the functionality that other parts of the program need to know about. This allows for independent methods to be developed and modified **without affecting the rest of the code**.
@@ -1925,8 +1925,8 @@ statement to be reached regardless of how the if statement is evaluated, as show
 3. **Isolation and Independence**:  
    Since each method is self-contained, it can be tested and debugged in isolation, ensuring that changes to one method do not affect other parts of the code. This allows developers to **modify or improve individual methods** without worrying about unintended consequences elsewhere in the program.
 
-4. **Reusability**:  
-   One of the greatest benefits of methods is their reusability. Once a method is written, you can call it multiple times from different parts of the program, reducing redundancy and keeping the code **clean and efficient**.
+4. **Re-usability**:  
+   One of the greatest benefits of methods is their re-usability. Once a method is written, you can call it multiple times from different parts of the program, reducing redundancy and keeping the code **clean and efficient**.
 
 - The demonstrated the calculator example here clarifies the point: 
 
@@ -2051,13 +2051,13 @@ match max(1, 2). Because neither is more specific than the other, the invocation
 - You can declare local variables with the same name in different blocks within a method. However, you cannot declare the same local variable twice in the **same block** or in **nested blocks**. In nested blocks, this is not allowed because the variable declared in the outer block remains accessible within the inner block. On the other hand, if the variable is declared in the inner block, it will not be accessible outside that block.
   
 #### 7. Stepwise Refinement: 
-- The first step in developing a software is to understand the abstraction cocnept.
+- The first step in developing a software is to understand the abstraction concept.
 - The concept is already introduced earlier in the chapter [abstraction](#abstraction).
 - Abstraction concept is achieved using `encapsulation`, **encapsulation** is hiding the implementation details from the user, thus if the implementation changed for any reason, the user is not aware he/she just keep using the method or the class.
 
-- A key point in designing large programs is to divide the program into sub-proograms using divide-and-conquer approach or commonly known by `stepwise refinement`. 
+- A key point in designing large programs is to divide the program into sub-programs using divide-and-conquer approach or commonly known by `stepwise refinement`. 
 - You can follow `top-down` design strategy to develop the program.
-- To make problem solving flow as smoothly as possible,
+- To make problem-solving flow as smoothly as possible,
 you'll apply method abstraction concept to isolate details from design and only later implements the details either using bottom-up/top-up approaches.  
 
 ##### Student portal example:
@@ -2078,19 +2078,19 @@ you'll apply method abstraction concept to isolate details from design and only 
  
   ![student's transcript](images/print%20student's%20transcript.png/) 
 
-- Divide the big idea into two subproblems: 
+- Divide the big idea into two sub-problems: 
   - Input Data
   - Print transcript 
 
-  ![two subproblems](images/two%20subproblems.png)
+  ![two sub-problems](images/two%20subproblems.png)
 
-- Now focus on each subproblem independently; for example, in Print Transcript we have to divide it into another two subproblems (the number of subproblems is not mandatory to be two but this what our case requires at the current time):
+- Now focus on each sub-problem independently; for example, in Print Transcript we have to divide it into another two sub-problems (the number of sub-problems is not mandatory to be two but this what our case requires at the current time):
   -  GPA calculator
   -  Print Transcript
 
    ![GPA calculator and Print transcript](/images/GPA%20calculator%20and%20Print%20transcript.png)
 
-- Translate your focus on GPA Calculator, to calculate the GPA you have to sum all the weights of the registered courses multiplied by thier credit hours and divided over th total registered hours this semester, so calculate weights method will be added: 
+- Translate your focus on GPA Calculator, to calculate the GPA you have to sum all the weights of the registered courses multiplied by their credit hours and divided over th total registered hours this semester, so calculate weights method will be added: 
  ![calculate weights](/images/calculate%20weights.png)      
 
 - let's sum up the whole problem:
