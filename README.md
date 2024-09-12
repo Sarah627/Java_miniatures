@@ -2062,7 +2062,42 @@ you'll apply method abstraction concept to isolate details from design and only 
 
 ##### Student portal example:
 
+- Imagine we have a student's portal for faculty-x, we won't discuss all the features of the portal, but we are going to focus on just one feature: print the current student's transcript.
 
+- The top-down approach will be applied to break up the big problem into smaller manageable problems: 
+
+- `print student's transcript` should print the following:
+  - student's name
+  - ID
+  - Academic year (based on a key on the ID)
+  - completed hours
+  - CGPA
+  - Current semester GPA
+
+- The Big idea is to print the student's transcript:
+ 
+  ![student's transcript](images/print%20student's%20transcript.png/) 
+
+- Divide the big idea into two subproblems: 
+  - Input Data
+  - Print transcript 
+
+  ![two subproblems](images/two%20subproblems.png)
+
+- Now focus on each subproblem independently; for example, in Print Transcript we have to divide it into another two subproblems (the number of subproblems is not mandatory to be two but this what our case requires at the current time):
+  -  GPA calculator
+  -  Print Transcript
+
+   ![GPA calculator and Print transcript](/images/GPA%20calculator%20and%20Print%20transcript.png)
+
+- Translate your focus on GPA Calculator, to calculate the GPA you have to sum all the weights of the registered courses multiplied by thier credit hours and divided over th total registered hours this semester, so calculate weights method will be added: 
+ ![calculate weights](/images/calculate%20weights.png)      
+
+- let's sum up the whole problem:
+  
+  ![the big picture](/images/print%20student's%20transcript%20problem.png) 
+
+- Now after applying the Top-Down approach in designing the feature, let's move to implementation: 
   
 </details>
 
