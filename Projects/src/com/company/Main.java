@@ -12,7 +12,7 @@ public class Main {
         String name, id;
         String[] coursesNames , letterGrades ;
         int[] creditHours, grades ;
-        int totalHours, oldCompletedHours;
+        int totalHours, oldCompletedHours, academicYear;
         float[] weights;
         float cgpa,gpa,oldGPA;
 
@@ -40,8 +40,8 @@ public class Main {
         weights = calculateWeights(letterGrades);
         gpa = gpaCalculator(weights,totalHours,SIZE,creditHours);
         cgpa = cumulativeGPA(gpa,oldGPA,totalHours,oldCompletedHours);
-
-        printTranscript(cgpa,gpa,name,id,letterGrades,coursesNames,oldCompletedHours,totalHours);
+        academicYear = estimateTheAcademicYear(id);
+        printTranscript(cgpa,gpa,name,id,letterGrades,coursesNames,oldCompletedHours,totalHours,academicYear);
 
 
     }
@@ -69,18 +69,9 @@ public class Main {
     public static void printTranscript(float cgpa , float gpa,
                                        String name, String id,
                                        String[] letterGrades, String[] coursesNames,
-                                       int oldCompletedHours, int currentSemesterCompletedHours){
-        String classification = id.substring(7);
-        int index = 0;
+                                       int oldCompletedHours, int currentSemesterCompletedHours, int academicYear){
 
-        // identify the academic year of the student from his/her id
-        int academicYear = switch(classification){
-            case "Fr" -> 1;
-            case "So" -> 2;
-            case "Jr" -> 3;
-            case "Sr" -> 4;
-            default -> 0;
-        };
+        int index = 0;
 
         //print transcript
         System.out.printf(
@@ -101,6 +92,19 @@ public class Main {
         for(String grade : letterGrades){
             System.out.println("Course Name: " + coursesNames[index++] + " grade: "+ grade);
         }
+    }
+
+    public static int estimateTheAcademicYear(String id){
+
+        String classification = id.substring(7);
+        switch(classification){
+            case "Fr" -> { return 1; }
+            case "So" -> { return 2; }
+            case "Jr" -> { return 3; }
+            case "Sr" -> { return 4; }
+            default -> { return 0; }
+        }
+
     }
 
 
