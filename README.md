@@ -2076,7 +2076,7 @@ you'll apply method abstraction concept to isolate details from design and only 
 
 - The Big idea is to print the student's transcript:
  
-  ![student's transcript](images/print%20student's%20transcript.png/) 
+  ![student's transcript](/images/print%20student's%20transcript.png) 
 
 - Divide the big idea into two sub-problems: 
   - Input Data
@@ -2091,11 +2091,12 @@ you'll apply method abstraction concept to isolate details from design and only 
    ![GPA calculator and Print transcript](/images/GPA%20calculator%20and%20Print%20transcript.png)
 
 - Translate your focus on GPA Calculator, to calculate the GPA you have to sum all the weights of the registered courses multiplied by their credit hours and divided over th total registered hours this semester, so calculate weights method will be added: 
- ![calculate weights](/images/calculate%20weights.png)      
+ 
+  ![calculate weights](/images/calculate%20weights.png)      
 
 - let's sum up the whole problem:
   
-  ![the big picture](/images/print%20student's%20transcript%20problem.png) 
+  ![the big picture](/images/print%20transcript%20problem.png) 
 
 - Now after applying the Top-Down approach in designing the feature, let's move to implementation: 
   
