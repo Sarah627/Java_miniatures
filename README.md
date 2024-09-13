@@ -2231,11 +2231,124 @@ you'll apply method abstraction concept to isolate details from design and only 
         }
 
       ```   
-​
- 
-     
 
-  
+    6. actually I decided to refactor the printTranscript method into print and `estimateTheAcaddemicYear` methods, to make each method atomic (do one mission).
+
+      ``` java
+          public static void printTranscript(float cgpa , float gpa,
+                                       String name, String id,
+                                       String[] letterGrades, String[] coursesNames,
+                                       int oldCompletedHours, int currentSemesterCompletedHours, int academicYear){
+
+            int index = 0;
+            //print transcript
+            System.out.printf(
+                    "Student's Name: %s \n" +
+                    "ID: %s \n" +
+                    "Academic Year: %d \n" +
+                    "Current Semester GPA: %.2f \n" +
+                    "CGPA: %.2f \n " +
+                    "Total Completed Hours: %d \n",
+                    name,
+                    id,
+                    academicYear,
+                    gpa,
+                    cgpa,
+                    (oldCompletedHours+currentSemesterCompletedHours));
+
+            // print student's literal grades of each course:
+            for(String grade : letterGrades){
+                System.out.println("Course Name: " + coursesNames[index++] + " grade: "+ grade);
+            }
+        }
+
+      public static int estimateTheAcademicYear(String id){
+
+          String classification = id.substring(7);
+          switch(classification){
+              case "Fr" -> { return 1; }
+              case "So" -> { return 2; }
+              case "Jr" -> { return 3; }
+              case "Sr" -> { return 4; }
+              default -> { return 0; }
+          }
+
+        }
+      ```    
+    7. It's better to enter the related data as collections, we are going to learn about the first and the basic collection `Arrays` in the next chapter, I used `Arrays` reference type to facilitate the passing and receiving of data.
+    8. I constructed methods to process the input collections:
+
+      ``` java
+          public static int[] processingNumericalInput(){
+            int[] arr = new int[SIZE];
+            Scanner input = new Scanner(System.in);
+            for(int i = 0; i<SIZE;i++){
+                arr[i] = input.nextInt();
+            }
+            return arr;
+          }
+
+        public static String[] processingLiteralInput(){
+            String[] arr = new String[SIZE];
+            Scanner input = new Scanner(System.in);
+            for(int i = 0; i<SIZE;i++){
+                arr[i] = input.nextLine();
+            }
+            return arr;
+          }
+      ``` 
+    9. Then let's sum all up in the main method where we pass everything:
+
+      ``` java
+
+          public static void main(String[] args) {
+
+          // Scanner object
+          Scanner input = new Scanner(System.in);
+
+          // declare identifiers
+          String name, id;
+          String[] coursesNames , letterGrades ;
+          int[] creditHours, grades ;
+          int totalHours, oldCompletedHours, academicYear;
+          float[] weights;
+          float cgpa,gpa,oldGPA;
+
+          // processing inputs:
+          System.out.println("enter your name: ");
+          name  = input.nextLine();
+          System.out.println("Welcome! "+name);
+          System.out.println("enter your id: ");
+          id  = input.nextLine();
+          System.out.println("enter current semester courses names: ");
+          coursesNames = processingLiteralInput();
+          System.out.println("enter credit hours for each course in the same order as courses names: ");
+          creditHours = processingNumericalInput();
+          System.out.println("enter grades in the same order as courses names: ");
+          grades = processingNumericalInput();
+          System.out.println("enter total completed hours this semester: ");
+          totalHours = input.nextInt();
+          System.out.println("enter your old gpa: ");
+          oldGPA = input.nextFloat();
+          System.out.println("enter the previous completed hours before this semester: ");
+          oldCompletedHours = input.nextInt();
+
+          // print the transcript:
+          letterGrades = getLiteralGrades(grades);
+          weights = calculateWeights(letterGrades);
+          gpa = gpaCalculator(weights,totalHours,SIZE,creditHours);
+          cgpa = cumulativeGPA(gpa,oldGPA,totalHours,oldCompletedHours);
+          academicYear = estimateTheAcademicYear(id);
+          printTranscript(cgpa,gpa,name,id,letterGrades,coursesNames,oldCompletedHours,totalHours,academicYear);
+
+
+      }
+
+      ``` 
+  - You can find the full project here: [Student's Portal](/Projects/src/com/company/Main.java)
+   
+Fifth Chapter is Finished!!!
+​       
 </details>
 
 ------

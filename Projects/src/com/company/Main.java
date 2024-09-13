@@ -72,7 +72,6 @@ public class Main {
                                        int oldCompletedHours, int currentSemesterCompletedHours, int academicYear){
 
         int index = 0;
-
         //print transcript
         System.out.printf(
                 "Student's Name: %s \n" +
