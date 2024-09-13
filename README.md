@@ -2159,7 +2159,7 @@ you'll apply method abstraction concept to isolate details from design and only 
 
     3. the implementation of `gpaCalculator` method based on the mathematical  calculation of the GPA: 
 
-      $$\frac{\sum_{x = 1}^{n} (course \: weight credit \: hours)}{total\:completed\:hours}$$
+      $$\frac{\sum_{x = 1}^{n} (course \: weight × credit \: hours)}{total\:completed\:hours}$$
 
       where `n` is the number of registered courses, each course literal grade has a weight, the sume of the weights multiplied by credit hours over the total completed hours is the GPA.
 
@@ -2181,6 +2181,56 @@ you'll apply method abstraction concept to isolate details from design and only 
         based on the mathematical calculation:
        
       $$ CGPA = \frac {(Old GPA × Old Credit Hours)+(New GPA × New Credit Hours)​}{Old Credit Hours + New Credit Hours }$$
+
+      ``` java
+          public static float cumulativeGPA(float gpa, float oldGPA, 
+                                          int totalCompletedHours,
+                                          int oldCompletedHours){
+            
+            return (gpa * totalCompletedHours + oldGPA * oldCompletedHours)/(oldCompletedHours+totalCompletedHours);
+        }
+      ```
+    5. Then the `studentPrintTranscript` method:
+
+      ``` java
+          public static void printTranscript(float cgpa , float gpa, 
+                                          String name, String id, 
+                                          String[] letterGrades, String[] coursesNames,
+                                          int oldCompletedHours, int currentSemesterCompletedHours){
+            String classification = id.substring(7);
+            int index = 0;
+
+            // identify the academic year of the student from his/her id
+            int academicYear = switch(classification){
+                case "Fr" -> 1;
+                case "So" -> 2;
+                case "Jr" -> 3;
+                case "Sr" -> 4;
+                default -> 0;
+            };
+
+            //print transcript
+            System.out.printf(
+                    "Student's Name: %s \n" +
+                    "ID: %s \n" +
+                    "Academic Year: %d \n" +
+                    "Current Semester GPA: %.2f \n" +
+                    "CGPA: %.2f \n " +
+                    "Total Completed Hours: %d \n",
+                    name,
+                    id,
+                    academicYear,
+                    gpa,
+                    cgpa,
+                    (oldCompletedHours+currentSemesterCompletedHours));
+
+            // print student's literal grades of each course:
+            for(String grade : letterGrades){
+                System.out.println("Course Name: " + coursesNames[index++] + " grade: "+ grade);
+            }
+        }
+
+      ```   
 ​
  
      
