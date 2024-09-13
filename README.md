@@ -2094,11 +2094,97 @@ you'll apply method abstraction concept to isolate details from design and only 
  
   ![calculate weights](/images/calculate%20weights.png)      
 
-- let's sum up the whole problem:
+- let's sum up the whole problem: (I've add some additional blocks)
   
   ![the big picture](/images/print%20transcript%20problem.png) 
 
 - Now after applying the Top-Down approach in designing the feature, let's move to implementation: 
+  - I used the `bottom-up` approach to implemet the methods:
+ 
+    1. I started by the `getLiteralGrades` methods, as I wanted to print the literal grade of each course, then pass these literals to another method calculates the weight of each course solely. 
+ 
+
+      ``` java 
+      public static String[] getLetterGrade(int[] grades){
+        String[] letterGrades = new String[grades.length];
+        int index = 0;
+        for(int grade : grades){
+            if(grade < 50)
+                letterGrades[index++] = "F";
+            else if(grade < 60)
+                letterGrades[index++] = "D";
+            else if (grade < 65)
+                letterGrades[index++] = "D+";
+            else if (grade < 70)
+                letterGrades[index++] = "C";
+            else if (grade < 75)
+                letterGrades[index++] = "C+";
+            else if (grade < 80)
+                letterGrades[index++] = "B";
+            else if (grade < 85)
+                letterGrades[index++] = "B+";
+            else if (grade < 90)
+                letterGrades[index++] = "A";
+            else
+                letterGrades[index++] = "A+";
+        }
+
+        return letterGrades;
+      }
+      ```  
+    2. Then `calculateWeights` method came into the play:
+
+      ``` java
+          public static float[] calculateWeights(String[] letterGrade){
+          float[] weights = new float[letterGrade.length];
+          int index = 0;
+          for(String grade : letterGrade){
+              switch(grade){
+                  case "A+" -> weights[index++] = 4.0f;
+                  case "A" -> weights[index++] = 3.75f;
+                  case "B+" -> weights[index++] = 3.4f;
+                  case "B" -> weights[index++] = 3.1f;
+                  case "C+" -> weights[index++] = 2.8f;
+                  case "C" -> weights[index++] = 2.5f;
+                  case "D+" -> weights[index++] = 2.25f;
+                  case "D" -> weights[index++] = 2;
+                  default -> weights[index++] = 1;
+              }
+          }
+          return weights;
+        }
+
+       ```  
+       notice the enhanced `switch` statement, read about how to use it [here](https://softwaremill.com/java-21-switch-the-power-on/).
+
+    3. the implementation of `gpaCalculator` method based on the mathematical  calculation of the GPA: 
+
+      $$\frac{\sum_{x = 1}^{n} (course \: weight credit \: hours)}{total\:completed\:hours}$$
+
+      where `n` is the number of registered courses, each course literal grade has a weight, the sume of the weights multiplied by credit hours over the total completed hours is the GPA.
+
+      ``` java 
+          public static float gpaCalculator(float[] weights,
+                                          int totalHours,
+                                          int numberOfRegisteredCourses,
+                                          int[] creditHours){
+            float sum = 0.0f;
+            for(int i = 0; i < numberOfRegisteredCourses; i++){
+                sum += weights[i] * creditHours[i];
+            }
+            return sum / totalHours;
+        }
+      ``` 
+
+    4. The implementation of `cumulativeGPA` method comes as following:
+
+        based on the mathematical calculation:
+       
+      $$ CGPA = \frac {(Old GPA × Old Credit Hours)+(New GPA × New Credit Hours)​}{Old Credit Hours + New Credit Hours }$$
+​
+ 
+     
+
   
 </details>
 
