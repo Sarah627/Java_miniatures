@@ -131,7 +131,8 @@ This repository **IS NOT A ROADMAP FOR LEARNING JAVA** exactly, you can use diff
 
 ---
 
-## Part One : 1 - Java Basics
+## Part One : Pick Up Your Weapon!
+## 1 - Java Basics
 
 ### **Get-Started** :D 🔥
 
@@ -671,6 +672,7 @@ To improve efficiency, you introduce a coffee machine. The machine has buttons f
 
 For now in this chapter we're going to discuss built-in methods only.
 
+-----
 <details><summary><strong>more about built-in functions</strong></summary>
 
   easy definition for these functions found on NinjaOne blog:
@@ -684,7 +686,10 @@ For now in this chapter we're going to discuss built-in methods only.
   We'll use **Math** class for this mission, Math class in java contains all mathematical constants and methods you'll need to use, according to Oracle documentation:
 
   > The class Math contains methods for performing basic numeric operations such as the elementary exponential, logarithm, square root, and trigonometric functions. 
+  
 </details>
+
+--------
 
 **Built-in Functions in Math Class:**
 
