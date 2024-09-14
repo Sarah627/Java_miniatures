@@ -2133,17 +2133,26 @@ match max(1, 2). Because neither is more specific than the other, the invocation
 #### 6. Scope:
 
 - The scope of a variable is the part of the program where the variable can be referenced.
+
+- scope levels:
+ 
+  ![scope level](/images/scope%20level.png)
  
 - A variable defined inside a method is referred to as a `local variable`.
   
 -  The scope of a local variable starts from its declaration and continues to the end of the block that contains the variable. 
   
 - A local variable must be declared and assigned a value before it can be used.
+ 
 - A parameter is actually a local variable. The scope of a method parameter covers the entire method.
+
+  ![example on scope level](/images/example%20on%20scope%20level.png)
   
 -  A variable declared in the initial-action part of a for-loop header has its scope in the entire loop. However, a variable declared inside a for-loop body has its scope limited in the loop body from its declaration 
 
 - You can declare local variables with the same name in different blocks within a method. However, you cannot declare the same local variable twice in the **same block** or in **nested blocks**. In nested blocks, this is not allowed because the variable declared in the outer block remains accessible within the inner block. On the other hand, if the variable is declared in the inner block, it will not be accessible outside that block.
+  
+  ![nested blocks scope](/images/nested%20blocks%20scope.gif)
   
 #### 7. Stepwise Refinement: 
 - The first step in developing a software is to understand the abstraction concept.
