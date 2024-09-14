@@ -238,7 +238,9 @@ _prerequisites_ ⚠
     - yes, that's it just empty text document, rename this document "HelloWorld.java"
     - open the document, as mentioned before java is class based so to write any instructions they **must be** inside classes, now let's type our first class:
 
+            ```java
             public class HelloWorld{}
+            ```
 
     > public & class are both keywords all written in lower case letters
     >
@@ -251,7 +253,9 @@ _prerequisites_ ⚠
     - every java program should at least have one class, to execute the program we should have a _main method_ (in other words method its name is "main")
     - inside our created class we define the main method as follows:
 
+            ```java
              public static void main(String[] args){}
+            ```
 
       > public, static, void, String are all keywords
       >
@@ -260,7 +264,9 @@ _prerequisites_ ⚠
     - the curly braces `{}` mean block of code, here we write the lines of code that will be executed, their place is after every class, method, control statements, specific keywords e.g. static keyword. They also represent a specific scope (we'll talk about this soon).
     - inside the curly braces of the main method we will print our first hello world
 
+             ```java
              System.out.println("Hello World!");
+             ```
 
       > **Do Not Forget The Semicolon!**
       >
@@ -993,7 +999,9 @@ In other words, Any class can be used as a `reference type`, and any variable de
 
 So, like **Scanner** class you have to follow the naming convention and capitalize the first letter of the class name: 
 
+     ```java
      String sentence = "Hello, Developer!"; 
+     ```
 
 **STRINGS IS A SUPER IMPORTANT TOPIC IN ALMOST ALL AREAS OF  PROGRAMMING**
 
@@ -1042,7 +1050,7 @@ Now we are going to discuss the most important concepts that are necessary to kn
         ![notebooks](/images/notebooks%20object.jpg)
 
         - Static Methods: Now, think about the whiteboard in a classroom. The whiteboard is a shared resource that any teacher can use to teach any student. The information on the whiteboard is not tied to any specific student; it can be used by all students collectively. Similarly, static methods belong to the class itself, not to any particular instance. These methods can be called without creating an instance of the class and cannot access instance variables directly. Instead, they work with class-level data.
-  
+
         ![board](/images/classboardstaticmethodexample.jpg)
 
         - this is the difference noticed when you use static methods of Math class like round(), as rounding number doesn't rely on specific data, but length() from String class is tied to specific object data, in our case here [`sentence`](#string-reference-type) string above, you return the length of this specific string object.
@@ -1108,26 +1116,33 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
 
   concatenation is achieved using multiple ways, one shortcut is by using plus sign '+' between two strings as follows:
 
-        String name = "Sarah";
-        String greeting = "Hello, " + name;
-        System.out.println(greeting);
-        //prints >>> Hello, Sarah 
+        ``` java
+            String name = "Sarah";
+            String greeting = "Hello, " + name;
+            System.out.println(greeting);
+            //prints >>> Hello, Sarah 
+        ```
   also `+=` operator can be used with strings:
 
-         String studentsNames = "";  //empty string
-         studentsNames += input.next();
-         // enetrs Mariam 
-         System.out.println(studentsNames);
-         // prints Mariam as the empty string is concatenated with the user input "Mariam"
+         ```java 
+            String studentsNames = "";  //empty string
+            studentsNames += input.next();
+            // enetrs Mariam 
+            System.out.println(studentsNames);
+            // prints Mariam as the empty string is concatenated with the user input "Mariam"
+        ```
 
   using s2.concat(s1) method:
 
-        String spongepopFandomgreeting = "Hi Hi,"; 
-        String name = "Captain";
-        spongepopFandomgreeting = spongepopFandomgreeting.concat(name);
-        System.out.println(spongepopFandomgreeting);
-        //prints Hi Hi, Captain
+      ```java
 
+           String spongepopFandomgreeting = "Hi Hi,"; 
+           String name = "Captain";
+           spongepopFandomgreeting = spongepopFandomgreeting.concat(name);
+           System.out.println(spongepopFandomgreeting);
+          //prints Hi Hi, Captain
+
+      ```
   > `note` the reassignment happened above with `spongepopFandomgreeting` because the method concat(s1) returns a string ,so it must be stored in string variable or update an existing string variable.
 
   you can concatenate strings with any data type resulting a new string with all the concatenated values
@@ -1139,13 +1154,16 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
 
    The `toLowerCase()` method returns a new string with all lowercase letters, and the `toUpperCase()` method returns a new string with all uppercase letters. For example:
 
-        String convertToLower = "Welcome".toLowerCase(); // returns a new string **welcome**.
-        String convertToUpper ="Welcome".toUpperCase(); //returns   a new string **WELCOME**.
+       ``` java
+           String convertToLower = "Welcome".toLowerCase(); // returns a new string **welcome**.
+           String convertToUpper ="Welcome".toUpperCase(); //returns   a new string **WELCOME**.
+        ```
 
   The `trim()` method returns a new string by eliminating whitespace characters from both ends of the string. The characters `' '`, `\t`, `\f`, `\r`, or `\n` are known as **whitespace** characters. For example,
        
-        String trimmedSentence = "\t Good Night \n".trim(); //returns a new string Good Night.
-  
+      ``` java        
+          String trimmedSentence = "\t Good Night \n".trim(); //returns a new string Good Night.
+      ```  
 - **equals(s1) & equalsIgnoreCase(s1) methods**:
 
   Let’s examine the following examples:
@@ -1176,9 +1194,11 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
 
       - When you change the value of reference type as follows:
   
-              String greeting = "Hello";
-              greeting = "Hi";
-              System.out.println(greeting); ///prints Hi
+          ```java
+             String greeting = "Hello";
+             greeting = "Hi";
+             System.out.println(greeting); ///prints Hi
+          ```
 
       - You’re not changing the value of greeting directly; instead, you’re changing the reference to another object that has the value "Hi".
   
@@ -1193,9 +1213,11 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
 
       - magine you have multiple string objects with the same value `"default"` as follows: 
       
-               String str1 = "default";
-               String str2 = "default";
-               String str3 = "default";
+        ```java
+           String str1 = "default";
+           String str2 = "default";
+           String str3 = "default";
+        ```
 
       - They all point to the same value in the string pool
          
@@ -1226,19 +1248,21 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
 
   - try it out: 
     
-        String greeting = "Hello";
-		    String greeting2 = "Hello";
-		    System.out.println(greeting.compareTo(greeting2)); //prints 0
-		    String salut = "Hi";
-		    String salut2 = "Hola";
-		    // prints -6 because letter i unicode value is less than o by 6 characters
-		    System.out.println(salut.compareTo(salut2)); 
-		    String welcome = "welcome";
-		    String welcome2 = "welco";
-		    //prints +2 because of the two characters excess
-		    System.out.println(welcome.compareTo(welcome2));
-		    //if we inverted the strings prints -2 because of the two characters are missing
-		    System.out.println(welcome2.compareTo(welcome)); 
+        ```java
+            String greeting = "Hello";
+            String greeting2 = "Hello";
+            System.out.println(greeting.compareTo(greeting2)); //prints 0
+            String salut = "Hi";
+            String salut2 = "Hola";
+            // prints -6 because letter i unicode value is less than o by 6 characters
+            System.out.println(salut.compareTo(salut2)); 
+            String welcome = "welcome";
+            String welcome2 = "welco";
+            //prints +2 because of the two characters excess
+            System.out.println(welcome.compareTo(welcome2));
+            //if we inverted the strings prints -2 because of the two characters are missing
+            System.out.println(welcome2.compareTo(welcome));
+        ``` 
 
 - **str1.compareToIgnoreCase(str2)** does the same job but here the case won't be considered : 
   
@@ -1277,37 +1301,45 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
 
 using **`parseInt()`** method from `Integer` class you can convert from string to integer, in other words parsing integers from a string.
 
-      int parsedInteger = Integer.parseInt("2351");
-      System.out.println(parsedInteger); // 2351 
-
+      ```java
+          int parsedInteger = Integer.parseInt("2351");
+          System.out.println(parsedInteger); // 2351 
+      ```
 you can use **`parseDouble()`** from `Double` class also for the same matter but for parsing floating point numbers:
 
-     double parsedDouble = Double.parseDouble("34.223");
-     System.out.println(parsedDouble); // 34.223
+      ```java
+         double parsedDouble = Double.parseDouble("34.223");
+         System.out.println(parsedDouble); // 34.223
+      ```
 
 If the string is not a numeric string, the conversion would cause a runtime error:
-     
-     int numberFromAString = Integer.parseInt("Iloveyou3000");
-     System.out.println(numberFromAString); // runtime error (throws an exception) as the string is not numeric it has some characters;
+
+      ```java
+        int numberFromAString = Integer.parseInt("Iloveyou3000");
+        System.out.println(numberFromAString); // runtime error (throws an exception) as the string is not numeric it has some characters
+      ```
 
 **`note`**: you don't have to import `Integer` or  `Double` classes because they are included in `java.lang` library thus they are imported by default
 
 you can convert any numerical value to a string by just concatenate it with a double quotes as follows:
 
+      ```java
       int number = 345;
       String numericalString = number +"";
       System.out.println(numericalString);   // 345
+      ```
 
 #### Formatting Console Output:
 
 Good news for these who loves `c/c++`, you can use the `System.out.printf` method to display formatted output on the
 console just like `printf` in `c`: 
 
+    ```java
       double amount = 12618.98;
       double interestRate = 0.0013;
       double interest = amount * interestRate;
       System.out.printf("Interest is $%4.2f", interest);
-
+    ```
 For those who are new to the idea, you need to get familiar with what a `format specifier` mean:
 
 > format specifier specifies how an item should be formatted, simple format specifier consists of a percent sign (`%`) followed by a conversion code.
@@ -1339,9 +1371,10 @@ Controlling the width and precision in a format specifier, helps in achieving wh
 
 you can add leading zeros but with integer conversion character `d` as follows:
 
-     int thousands = 52497823;
-     System.out.printf("%010d", thousands); // 0052497823
-
+    ``` java
+        int thousands = 52497823;
+        System.out.printf("%010d", thousands); // 0052497823
+    ```
 you can alter the leading zeros flag with the thousands flag or left justifying flag `-` and so  on.
 
 - What if the field width is less or more than the item digits or characters, if the field width is smaller than the item it will be automatically increased but if it's more than the item digits or characters spaces are added before them:
@@ -1405,15 +1438,17 @@ Observe the following figure:
 - The `loop-continuation-condition` is a boolean condition in which ,if it was evaluated to `true` so the loop continues otherwise 'false' the loop terminates. 
   - The boolean condition controls the execution of the loop thus adjusting this condition is super important.
   - You can be exposed to `off-by-one` error (one more or less iteration) if you didn't adjust this condition for example:
-
-        public class Main{
-	          public static void main(String[] args) {
-	          	//this program is for printing Hello,World 10 times
-	          	for(int i =0; i<=10; i++ )
-	          	    System.out.println(i+1 + "- Hello,World");
-                  // the sentence will be printed 11 times! off-by-one 
-	          }
-        }
+        ``` java
+            public class Main{
+                public static void main(String[] args) {
+                  
+                  //this program is for printing Hello,World 10 times
+                  for(int i =0; i<=10; i++ )
+                      System.out.println(i+1 + "- Hello,World");
+                      // the sentence will be printed 11 times! off-by-one 
+                }
+              }
+        ```
   - This kind of errors is logical or semantic errors, the code actually works fine but the code doesn't yield the right output.  
  
 - The `loop-Body` is the block of code which contains the statements to be repeated.
@@ -1462,7 +1497,7 @@ Observe the following figure:
                   } 
         - examples of using `for-loops`:
         1.  Simple program to print students name followed by their IDs, the IDs start from 2020000 to 2020009:
-          
+        ``` java  
                   public class Main{
                   	public static void main(String[] args) {
                   		//This program is for printing the students IDs:
@@ -1473,7 +1508,7 @@ Observe the following figure:
                   		}
                   	}
                   }  
-
+        ```
         ![loop example 1](/images/loop%20example%201.png)
 
         2. Simple program to print the multiples of a number entered by user and stop at of before 100:
@@ -2359,5 +2394,6 @@ Fifth Chapter is Finished!!!
   We already mentioned before, in a successive chapter, that methods are used to define reusable code.
   
 </details>
+
 
 -----
