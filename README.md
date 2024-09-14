@@ -239,9 +239,11 @@ _prerequisites_ ⚠
     - yes, that's it just empty text document, rename this document "HelloWorld.java"
     - open the document, as mentioned before java is class based so to write any instructions they **must be** inside classes, now let's type our first class:
 
-            ```java
-            public class HelloWorld{}
-            ```
+        ```java
+
+           public class HelloWorld{}
+
+        ```
 
     > public & class are both keywords all written in lower case letters
     >
@@ -254,9 +256,9 @@ _prerequisites_ ⚠
     - every java program should at least have one class, to execute the program we should have a _main method_ (in other words method its name is "main")
     - inside our created class we define the main method as follows:
 
-            ```java
+        ```java
              public static void main(String[] args){}
-            ```
+        ```
 
       > public, static, void, String are all keywords
       >
@@ -265,9 +267,9 @@ _prerequisites_ ⚠
     - the curly braces `{}` mean block of code, here we write the lines of code that will be executed, their place is after every class, method, control statements, specific keywords e.g. static keyword. They also represent a specific scope (we'll talk about this soon).
     - inside the curly braces of the main method we will print our first hello world
 
-             ```java
-             System.out.println("Hello World!");
-             ```
+        ```java
+           System.out.println("Hello World!");
+        ```
 
       > **Do Not Forget The Semicolon!**
       >
@@ -396,7 +398,9 @@ for more on errors types here is a useful link [not for newcomers](https://www.g
     - boolean
     - char
   - reference data type -the only one you'll use for now- is String (take care of the capital letter).
-  - data types tell the compiler how much space to reserve for that variable in memory. ![see this](./images/Java%20data%20types%20sizes%20and%20their%20default%20value.png)
+  - data types tell the compiler how much space to reserve for that variable in memory.
+   
+    ![see this](./images/Java%20data%20types%20sizes%20and%20their%20default%20value.png)
 
 - **note** as variable word declares, its value can be changes during the execution of the program, from this point let's get familiar with constants.
 
@@ -425,6 +429,7 @@ for more on errors types here is a useful link [not for newcomers](https://www.g
 - In java to take user input using three classes: Console, BufferedReader, and Scanner. For now, we will deal with Scanner only.
 
 - First, we need to import the class, so using the keyword `import` we will invoke the `Scanner` class as follows:
+ 
   ![import scanner class](./images/Scanner%20Class.png)
 
   - note that even in import we don't forget the semi-colon :) .
@@ -686,7 +691,7 @@ For now in this chapter we're going to discuss built-in methods only.
   We'll use **Math** class for this mission, Math class in java contains all mathematical constants and methods you'll need to use, according to Oracle documentation:
 
   > The class Math contains methods for performing basic numeric operations such as the elementary exponential, logarithm, square root, and trigonometric functions. 
-  
+
 </details>
 
 --------
