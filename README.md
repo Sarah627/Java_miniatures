@@ -2458,11 +2458,26 @@ Fifth Chapter is Finished!!!
 ------
 
 <details><summary><h3><strong>6. Arrays</strong></h3></summary>
-  
-  In this chapter, you are about to learn the first step towards abstraction.
-  We already mentioned before, in a successive chapter, that methods are used to define reusable code.
 
-  A single array variable can reference a large collection of data.
+### 6. Arrays:
+  
+  In this chapter, you are about to learn the first step towards the data structures world and a crucial reference type used in almost everything.
+  We already mentioned before, in a successive chapter, that methods are used to define reusable code to noot repeat the code lines applying the DRY heuristic. In the same context, we're going to be familiar with the very basic data structure : `array`.
+
+  `Array` stores a fixed-size sequential collection of elements of
+  the same type which allow to not repeat the declaration for large number of variables of the same type.
+
+  Concepts:
+  1. Array Basics (Declaration, size, accessing elements..etc.)
+  2. Copying Arrays.
+  3. Passing Arrays to Methods.
+  4. Returning an Array from a Method.
+  5. Variable-Length Argument Lists.
+  6. Searching & Sorting Arrays.
+  7. Arrays Class.
+  8. Command Line Arguments.
+  9. 
+
 </details>
 
 
