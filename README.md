@@ -2461,7 +2461,8 @@ Fifth Chapter is Finished!!!
   
   In this chapter, you are about to learn the first step towards abstraction.
   We already mentioned before, in a successive chapter, that methods are used to define reusable code.
-  
+
+  A single array variable can reference a large collection of data.
 </details>
 
 
