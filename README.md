@@ -2476,7 +2476,20 @@ Fifth Chapter is Finished!!!
   6. Searching & Sorting Arrays.
   7. Arrays Class.
   8. Command Line Arguments.
-  9. 
+   
+ #### Array Basics:
+ ##### Declare An Array:
+  - If you are familiar with C/C++ the array declaration would be like that:
+
+      ``` java 
+          int array[] = {1,2,3,4};
+      ```  
+  - This is allowed in java but not used, the declaration convention of arrays in java is quiet similar:
+
+      ``` java
+          int[] array = {1,2,3,4};
+      ```     
+  - yes, just the place of the brackets is different    
 
 </details>
 
