@@ -2489,7 +2489,11 @@ Fifth Chapter is Finished!!!
       ``` java
           int[] array = {1,2,3,4};
       ```     
-  - yes, just the place of the brackets is different    
+  - yes, just the place of the brackets is different.
+
+  - Now, as mentioned array is a reference type, which means the array reference variables contains the address of the array not the array content itself.
+  - It's important at this point to differenciate between declaring an array and allocating memory for it, declaring an array is just declaring an array reference variable to point to the array elements later, allocating space actually happens when you add elements to the array.
+- 
 
 </details>
 
