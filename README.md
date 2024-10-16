@@ -2495,6 +2495,12 @@ Fifth Chapter is Finished!!!
   - It's important at this point to differenciate between declaring an array and allocating memory for it, declaring an array is just declaring an array reference variable to point to the array elements later, allocating space actually happens when you add elements to the array.
   - Unlike the primitive datatypes; declaring an array doesn't allocate space in memory, only when you start to assign values to array elements.
   - now you have to be familiar with `null` which is the value of the reference variable if the reference variable doesn't contain a reference to an array.
+     
+     `arrayRefVar[index] = value;`
+      ``` java
+            int[] arrayRefVar = new String[10]; 
+            arrayRefVar[7] = 5;
+      ```
 </details>
 
 
