@@ -2516,7 +2516,13 @@ Fifth Chapter is Finished!!!
           myList[8] = 99.993;
           myList[9] = 11123;
       ```
+  - After you specify the size of an array, you cannot change it later, you can obtain the size of an array using `arrRefVar.length`:
 
+      ``` java
+          System.out.println(mylist.length); // 10
+      ```
+  - reminding you again that arrays in java are 0-based index (means you start counting and accessing aray elements from 0 index)
+  - in `mylist` example if you tried to access `mylist[10]` will resut in ArrayOurOfBounds error.
 
 </details>
 
