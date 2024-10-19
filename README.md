@@ -2523,7 +2523,13 @@ Fifth Chapter is Finished!!!
       ```
   - reminding you again that arrays in java are 0-based index (means you start counting and accessing aray elements from 0 index)
   - in `mylist` example if you tried to access `mylist[10]` will resut in ArrayOurOfBounds error.
+  - Java has a shorthand notation, known as the array initializer, which combines the declaration,
+creation,and initialization of an array in one statement:
 
+      ``` java
+
+          double[] myList = {1.9, 2.9, 3.4, 3.5};
+      ```
 </details>
 
 
