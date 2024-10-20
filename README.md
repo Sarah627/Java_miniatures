@@ -2530,6 +2530,9 @@ creation,and initialization of an array in one statement:
 
           double[] myList = {1.9, 2.9, 3.4, 3.5};
       ```
+  - To traverse array we have to use loops:
+    - for loops
+    - for each
 </details>
 
 
