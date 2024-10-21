@@ -2533,6 +2533,7 @@ creation,and initialization of an array in one statement:
   - To traverse array we have to use loops:
     - for loops
     - for each
+- 
 </details>
 
 
