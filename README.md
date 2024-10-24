@@ -2535,11 +2535,20 @@ creation,and initialization of an array in one statement:
     - for each
     `for each` loops are enhanced loops can be used to forward traverse arrays or collections in single steps.
      
+    using ordinary loop:
       ``` Java
         for (int i = 0; i < myList.length; i++) {
             System.out.print(myList[i] + " ");
         }
       ``` 
+    using for each:
+
+      ``` Java
+          for (int num : list) {
+            System.out.println(num);
+        }
+      ``` 
+     
 </details>
 
 
