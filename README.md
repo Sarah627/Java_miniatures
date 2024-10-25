@@ -2548,6 +2548,7 @@ creation,and initialization of an array in one statement:
             System.out.println(num);
         }
       ``` 
+  - Using for loops are more common than for each
      
 </details>
 
