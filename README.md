@@ -754,26 +754,26 @@ For now in this chapter we're going to discuss built-in methods only.
 
 
 1- Trigonometric Methods:
-| Method | Description |
-| ----------- | ----------- |
-|  `sin(radians)` | Returns the trigonometric sine of an angle in radians. |
-|  `cos(radians)`  | Returns the trigonometric cosine of an angle in radians.|
-|  `tan(radians)` | Returns the trigonometric tangent of an angle in radians. |
-| `toRadians(degree)` | Returns the angle in radians for the angle in degrees. |
-|  `toDegrees(radians)` | Returns the angle in degrees for the angle in radians. |
-| `asin(a)` |Returns the angle in radians for the inverse of sine. |
-| `acos(a)` | Returns the angle in radians for the inverse of cosine. |
-| `atan(a)` | Returns the angle in radians for the inverse of tangent. |
+| Method               | Description                                               |
+| -------------------- | --------------------------------------------------------- |
+| `sin(radians)`       | Returns the trigonometric sine of an angle in radians.    |
+| `cos(radians)`       | Returns the trigonometric cosine of an angle in radians.  |
+| `tan(radians)`       | Returns the trigonometric tangent of an angle in radians. |
+| `toRadians(degree)`  | Returns the angle in radians for the angle in degrees.    |
+| `toDegrees(radians)` | Returns the angle in degrees for the angle in radians.    |
+| `asin(a)`            | Returns the angle in radians for the inverse of sine.     |
+| `acos(a)`            | Returns the angle in radians for the inverse of cosine.   |
+| `atan(a)`            | Returns the angle in radians for the inverse of tangent.  |
 
 2- Exponential Methods:
 
-| Method | Description |
-| ------ | ----------- |
-|`exp(x)` |Returns e raised to power of x (ex).|
-| `log(x)` | Returns the natural logarithm of x (ln(x) = loge(x)).|
-| `log10(x)` | Returns the base 10 logarithm of x (log10(x)).|
-| `pow(a, b)`| Returns a raised to the power of b (ab).|
-| `sqrt(x)` | Returns the square root of x (2x) for x7 =0.|
+| Method      | Description                                           |
+| ----------- | ----------------------------------------------------- |
+| `exp(x)`    | Returns e raised to power of x (ex).                  |
+| `log(x)`    | Returns the natural logarithm of x (ln(x) = loge(x)). |
+| `log10(x)`  | Returns the base 10 logarithm of x (log10(x)).        |
+| `pow(a, b)` | Returns a raised to the power of b (ab).              |
+| `sqrt(x)`   | Returns the square root of x (2x) for x7 =0.          |
 
 3- Service Methods:
   * Rounding Methods
@@ -968,15 +968,15 @@ you define the character data type using **`char`** keyword, then give it a name
 
  ![escape sequence](/images/escape%20sequence.png)
 
-|Character|Name|
-|-----|----|
-|`\b`|**Backspace**|
-|`\t`|**Tab**|
-|`\n`|**Linefeed**|
-|`\f`|**Form feed**|
-|`\r`|**Carriage Return**|
-|`\\`|**Backslash**|
-|`\"`|**Double Quote**|
+| Character | Name                |
+| --------- | ------------------- |
+| `\b`      | **Backspace**       |
+| `\t`      | **Tab**             |
+| `\n`      | **Linefeed**        |
+| `\f`      | **Form feed**       |
+| `\r`      | **Carriage Return** |
+| `\\`      | **Backslash**       |
+| `\"`      | **Double Quote**    |
 
 **Don't worry if you are not familiar with some terms like "`carriage return`" here is clarification:**
 
@@ -1015,15 +1015,15 @@ When a `char` is cast into a numeric type, the character’s Unicode is cast int
 
 taking the advantage that we got familiar with built-in functions, let's use the built-in functions which can be used to perform some tests on characters:
 
-|Method|Description|
-|---|---|
-|`isDigit(ch)` |Returns true if the specified character is a digit.|
-|`isLetter(ch)` |Returns true if the specified character is a letter.|
-|`isLetterOrDigit(ch)` |Returns true if the specified character is a letter or digit.|
-|`isLowerCase(ch)` |Returns true if the specified character is a lowercase letter.|
-|`isUpperCase(ch)` |Returns true if the specified character is an uppercase letter.|
-|`toLowerCase(ch)` |Returns the lowercase of the specified character.|
-|`toUpperCase(ch)` |Returns the uppercase of the specified character.|
+| Method                | Description                                                     |
+| --------------------- | --------------------------------------------------------------- |
+| `isDigit(ch)`         | Returns true if the specified character is a digit.             |
+| `isLetter(ch)`        | Returns true if the specified character is a letter.            |
+| `isLetterOrDigit(ch)` | Returns true if the specified character is a letter or digit.   |
+| `isLowerCase(ch)`     | Returns true if the specified character is a lowercase letter.  |
+| `isUpperCase(ch)`     | Returns true if the specified character is an uppercase letter. |
+| `toLowerCase(ch)`     | Returns the lowercase of the specified character.               |
+| `toUpperCase(ch)`     | Returns the uppercase of the specified character.               |
 
 **`note`** to use character built-in function, it's like Math class you have to import Character Class as follows:
 
@@ -1081,21 +1081,21 @@ Now we are going to discuss the most important concepts that are necessary to kn
 
 #### For short this is a table containing all the needed methods to perform the mentioned tasks:
 
-| Method|  Description| 
-| ---| ---- |
-| `length()`|  Returns the number of characters in this string.| 
-| `charAt(index)`|  Returns the character at the specified index from this string.| 
-| `concat(s1)`|  Returns a new string that concatenates this string with string s1.| 
-| `toUpperCase()`|  Returns a new string with all letters in uppercase.| 
-| `toLowerCase()`|  Returns a new string with all letters in lowercase.| 
-| `trim()`|  Returns a new string with whitespace characters trimmed on both sides.| 
-|`equals(s1)`| Returns true if this string is equal to string s1.|
-|`equalsIgnoreCase(s1)`| Returns true if this string is equal to string s1; it is case insensitive.|
-|`compareTo(s1)`| Returns an integer greater than 0, equal to 0, or less than 0 to indicate whether this string is greater than, equal to, or less than s1.|
-|`compareToIgnoreCase(s1)`| Same as compareTo except that the comparison is case insensitive.|
-|`startsWith(prefix)`| Returns true if this string starts with the specified prefix.|
-|`endsWith(suffix)`| Returns true if this string ends with the specified suffix.|
-|`contains(s1)`| Returns true if s1 is a substring in this string|
+| Method                    | Description                                                                                                                               |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+| `length()`                | Returns the number of characters in this string.                                                                                          |
+| `charAt(index)`           | Returns the character at the specified index from this string.                                                                            |
+| `concat(s1)`              | Returns a new string that concatenates this string with string s1.                                                                        |
+| `toUpperCase()`           | Returns a new string with all letters in uppercase.                                                                                       |
+| `toLowerCase()`           | Returns a new string with all letters in lowercase.                                                                                       |
+| `trim()`                  | Returns a new string with whitespace characters trimmed on both sides.                                                                    |
+| `equals(s1)`              | Returns true if this string is equal to string s1.                                                                                        |
+| `equalsIgnoreCase(s1)`    | Returns true if this string is equal to string s1; it is case insensitive.                                                                |
+| `compareTo(s1)`           | Returns an integer greater than 0, equal to 0, or less than 0 to indicate whether this string is greater than, equal to, or less than s1. |
+| `compareToIgnoreCase(s1)` | Same as compareTo except that the comparison is case insensitive.                                                                         |
+| `startsWith(prefix)`      | Returns true if this string starts with the specified prefix.                                                                             |
+| `endsWith(suffix)`        | Returns true if this string ends with the specified suffix.                                                                               |
+| `contains(s1)`            | Returns true if s1 is a substring in this string                                                                                          |
 
 **1- Getting String Length**
 - you'll use strings almost for everything, getting a string length is important if you are going to iterate over this string for any task or to check if the returned data is matching from their lengths. 
@@ -1339,18 +1339,18 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
 
 - You can obtain either a character or a substring from a string or return their indices:
   
-  |Method|Description|
-  |----|----| 
-  | `substring(beginIndex)`| Returns this string’s substring that begins with the character at the specified beginIndex and   extends to the end of the string, as shown down in the Figure| 
-  | `substring(beginIndex,endIndex)`| Returns this string’s substring that begins at the specified beginIndex and extends to the character at index endIndex – 1, shown down in the Figure. Note the character at endIndex is not part o f the substring | 
-  | `indexOf(ch)`|  Returns the index of the first occurrence o f ch in the string. Returns −1 if not matched.| 
-  | `indexOf(ch, fromIndex)`|  Returns the index of the first occurrence of ch after fromIndex in the string. Returns −1 if not matched.| 
-  | `indexOf(s)`|  Returns the index of the first occurrence o  f string s in this string. Returns −1 if not matched.| 
-  | `indexOf(s, fromIndex)`|  Returns the index of the first occurrence of string s in this string after fromIndex. Returns −1 if not matched.| 
-  | `lastIndexOf(ch)`|  Returns the index of the last occurrence e of ch in the string. Returns −1 if not matched.| 
-  | `lastIndexOf(ch,fromIndex)`|  Returns the index of the last occurrence of ch before fromIndex in this string. Returns −1 if not matched.| 
-  | `lastIndexOf(s)`| Returns the index of the last occurrence of string s. Returns −1 if not matched.|
-  |`lastIndexOf(s, fromIndex)`|  Returns the index of the last occurrence of string s before fromIndex. Returns −1 if not matched.|  
+  | Method                           | Description                                                                                                                                                                                                        |
+  | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+  | `substring(beginIndex)`          | Returns this string’s substring that begins with the character at the specified beginIndex and   extends to the end of the string, as shown down in the Figure                                                     |
+  | `substring(beginIndex,endIndex)` | Returns this string’s substring that begins at the specified beginIndex and extends to the character at index endIndex – 1, shown down in the Figure. Note the character at endIndex is not part o f the substring |
+  | `indexOf(ch)`                    | Returns the index of the first occurrence o f ch in the string. Returns −1 if not matched.                                                                                                                         |
+  | `indexOf(ch, fromIndex)`         | Returns the index of the first occurrence of ch after fromIndex in the string. Returns −1 if not matched.                                                                                                          |
+  | `indexOf(s)`                     | Returns the index of the first occurrence o  f string s in this string. Returns −1 if not matched.                                                                                                                 |
+  | `indexOf(s, fromIndex)`          | Returns the index of the first occurrence of string s in this string after fromIndex. Returns −1 if not matched.                                                                                                   |
+  | `lastIndexOf(ch)`                | Returns the index of the last occurrence e of ch in the string. Returns −1 if not matched.                                                                                                                         |
+  | `lastIndexOf(ch,fromIndex)`      | Returns the index of the last occurrence of ch before fromIndex in this string. Returns −1 if not matched.                                                                                                         |
+  | `lastIndexOf(s)`                 | Returns the index of the last occurrence of string s. Returns −1 if not matched.                                                                                                                                   |
+  | `lastIndexOf(s, fromIndex)`      | Returns the index of the last occurrence of string s before fromIndex. Returns −1 if not matched.                                                                                                                  |
 
 - example on **indexOf(ch)** method
 
@@ -1406,14 +1406,14 @@ For those who are new to the idea, you need to get familiar with what a `format 
 
 The following is a table of format specifiers used in java:
 
-|Format Specifier|Output|
-|----|----|
-|`%b`| formats boolean value|
-|`%c`|formats character|
-|`%d`|formats integer|
-|`%f`|formats floating point number|
-|`%e`|formats scientific notation|
-|`%s`|formats string|
+| Format Specifier | Output                        |
+| ---------------- | ----------------------------- |
+| `%b`             | formats boolean value         |
+| `%c`             | formats character             |
+| `%d`             | formats integer               |
+| `%f`             | formats floating point number |
+| `%e`             | formats scientific notation   |
+| `%s`             | formats string                |
 
 Observe in the next example how do we use the format specifiers in formatting an output as follows:
 
@@ -2549,7 +2549,8 @@ creation,and initialization of an array in one statement:
         }
       ``` 
   - Using for loops are more common than for each
-  - 
+-  
+-
      
 </details>
 
