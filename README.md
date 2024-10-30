@@ -2491,17 +2491,47 @@ Fifth Chapter is Finished!!!
       ```     
   - yes, just the place of the brackets is different.
 
-  - Now, as mentioned array is a reference type, which means the array reference variables contains the address of the array not the array content itself.
+  - Array is a reference type, which means the array reference variables contains the address of the array not the array content itself.
+      try the following: 
+
+      ``` java
+          int[] elements = {0,3,5,2,51,54,78,9,3}; 
+          System.out.println(elements); //returns an ambiguos string -- memory location
+      ```
   - It's important at this point to differenciate between declaring an array and allocating memory for it, declaring an array is just declaring an array reference variable to point to the array elements later, allocating space actually happens when you add elements to the array.
   - Unlike the primitive datatypes; declaring an array doesn't allocate space in memory, only when you start to assign values to array elements.
-  - now you have to be familiar with `null` which is the value of the reference variable if the reference variable doesn't contain a reference to an array.
      
-     `arrayRefVar[index] = value;`
+      ``` java
+          int[] elements; // this is declaration without initialization
+          System.out.println(elements); //error          
+      ``` 
+  - now you have to be familiar with `null` which is the value of the reference variable if the reference variable doesn't contain a reference to an array.
+  - you get NullPointerException when you try to access `elements[0]` if you didn't initialize elements array already, here the reference variable points to null. 
+  - Using `null` keyword with reference variables as a 'value':     
+      
+      ``` java
+          int[] elements = null;
+          System.out.println(elements); //null
+      ```
+  - How empty array could be:
+     
+     ``` java
+         int[] integers = {};
+         System.out.println(integers.length); // 0  
+     ```    
+  - So in general,the sytax of declaring array as follows:    
+    
+     `elementType arrayRefVar[index] = new elementType[arraySize];`
+
+  - This statement does two things: (1) it creates an array using new elementType[arraySize]
+and (2) it assigns the reference of the newly created array to the variable arrayRefVar.   
+  - you can declare an array, specify its size then assign elements to it:
+      
       ``` java
             int[] myList = new String[10]; 
             myList[7] = 5;
       ```
-  - for example this is how to initialize an array:
+  - for example this is one way to how you can initialize an array:
 
       ```java
 
@@ -2522,15 +2552,36 @@ Fifth Chapter is Finished!!!
           System.out.println(mylist.length); // 10
       ```
   - reminding you again that arrays in java are 0-based index (means you start counting and accessing aray elements from 0 index)
-  - in `mylist` example if you tried to access `mylist[10]` will resut in ArrayOurOfBounds error.
-  - Java has a shorthand notation, known as the array initializer, which combines the declaration,
+  - in `mylist` example if you tried to access `mylist[10]` will resut in `ArrayOurOfBounds` runtime error.
+  - Java has a shorthand notation, known as the `array initializer`, which combines the declaration,
 creation,and initialization of an array in one statement:
 
       ``` java
-
           double[] myList = {1.9, 2.9, 3.4, 3.5};
       ```
-  - To traverse array we have to use loops:
+  - important note to mention :you cannot separate declaration from initialization in arrays, you can use the array initializer only while you declaring the array.
+      
+      ``` java
+         float[] arv;
+         arv = {1.1,3.4,5.6}; //error 
+      ```
+  - It was mentioned that the array size cannot be altered after declaration, once the space is allocated the elements of the array take defualt values before you assign values to them:
+
+    |Data Type| Default Value|
+    |---------|--------------|
+    |**Numeric**| `0`|
+    |**Char**|`\u0000`|
+    |**Boolean**|`false`|
+
+  - Accessing array elements is done using its `index`, remember again arrays are zero indexed means if you want to access the second array element it will be like this : `elements[1];`
+  - The `index` values range from `0` to `arrayReferenceVariable.length -1`
+  - An indexed variable can be used in the same way as a regular variable. For example, the
+following code adds the values in `myList[0]` and `myList[1]` to `myList[2]`:
+
+      ``` java  
+          myList[2] = myList[0] + myList[1];
+      ```        
+  - You can **insert elements**, **print elements values** or to **traverse** array using `loops`:
     - for loops
     - for each
     `for each` loops are enhanced loops can be used to forward traverse arrays or collections in single steps.
