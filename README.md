@@ -2581,10 +2581,10 @@ following code adds the values in `myList[0]` and `myList[1]` to `myList[2]`:
       ``` java  
           myList[2] = myList[0] + myList[1];
       ```        
-  - You can **insert elements**, **print elements values** or to **traverse** array using `loops`:
+  - You can **insert**, **print** or **traverse** array using `loops`:
     - for loops
     - for each
-    `for each` loops are enhanced loops can be used to forward traverse arrays or collections in single steps.
+      - `for each` loops are enhanced loops can be used to forward traverse arrays or collections in single steps.
      
     using ordinary loop:
       ``` Java
