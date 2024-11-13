@@ -2595,28 +2595,39 @@ following code adds the values in `myList[0]` and `myList[1]` to `myList[2]`:
     using for each:
 
       ``` Java
-          for (int num : list) {
+          for (int num : mylist) {
             System.out.println(num);
         }
       ``` 
   - Using for loops are more common than for each
--  
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
+  - Let's initialize arrays using the same logic of iterationsm whether if it was traditional for loop or enhanced for-loop `for each`:
+    - prompt user to enter array values:
+
+      ``` java
+          Scanner input  = new java.util.Scanner(System.in);
+
+          for (int i = 0; i< mylist.length; i++){
+            myList[i] = input.nextDouble();
+          }
+      ``` 
+  -  
+  -  
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
+  -
      
 </details>
 
