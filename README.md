@@ -2600,7 +2600,7 @@ following code adds the values in `myList[0]` and `myList[1]` to `myList[2]`:
         }
       ``` 
   - Using for loops are more common than for each
-  - Let's initialize arrays using the same logic of iterationsm whether if it was traditional for loop or enhanced for-loop `for each`:
+  - Let's initialize arrays using the same logic of iteration:
     - prompt user to enter array values:
 
       ``` java
@@ -2610,7 +2610,13 @@ following code adds the values in `myList[0]` and `myList[1]` to `myList[2]`:
             myList[i] = input.nextDouble();
           }
       ``` 
-  -  
+    - initialize the array using random function from Math class:
+      ```java 
+         for (int i = 0; i < mylist.length; i++){
+          mylist[i] = Math.random()*100; // inserting numbers ranges from 0.0 to 100.0 exclusive
+         }
+      ``` 
+  - A question might come up here: **why don’t we use the enhanced for-each loop?** It’s a good question. `for-each loops are excellent for traversing (reading) elements in a step-by-step manner, but they’re not suitable for modifying elements`. This is because the loop works with a copy of each element, rather than directly accessing them through their indices. 
   -  
   -
   -
