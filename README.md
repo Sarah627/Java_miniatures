@@ -2617,23 +2617,16 @@ following code adds the values in `myList[0]` and `myList[1]` to `myList[2]`:
          }
       ``` 
   - A question might come up here: **why don’t we use the enhanced for-each loop?** It’s a good question. `for-each loops are excellent for traversing (reading) elements in a step-by-step manner, but they’re not suitable for modifying elements`. This is because the loop works with a copy of each element, rather than directly accessing them through their indices. 
-  -  
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
-  -
+  -  another note is that if you tried to print elements of `char[]` type array, you can use `System.out.print` directly unlike the other array types which require iteration structure to handle the traverse. 
+
+      ``` java 
+
+          char[] name = {'A','l','i'};
+          System.out.println(name); // Ali 
+
+      ```  
+  - This behavior can be observed with `printf`, as it doesn’t automatically treat `char[]` as a string due to internal differences in how `printf` handles format specifiers compared to `print` and `println`. Unlike `print` and `println`, `printf` relies on format specifiers that don’t automatically interpret `char[]` as a sequence of characters. Therefore, converting `char[]` to a String is necessary with printf to avoid printing the reference address. 
+##### Copying Arrays:
      
 </details>
 
