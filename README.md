@@ -2627,7 +2627,12 @@ following code adds the values in `myList[0]` and `myList[1]` to `myList[2]`:
       ```  
   - This behavior can be observed with `printf`, as it doesn’t automatically treat `char[]` as a string due to internal differences in how `printf` handles format specifiers compared to `print` and `println`. Unlike `print` and `println`, `printf` relies on format specifiers that don’t automatically interpret `char[]` as a sequence of characters. Therefore, converting `char[]` to a String is necessary with printf to avoid printing the reference address. 
 ##### Copying Arrays:
-     
+- Once you entered the world of reference types, everything changes. 
+- Even copying you cannot copy contents an array into another array just like the following:
+    ```java
+        int[] copyArray = mylist;
+    ```
+- you've just copied the reference of mylist array into copyArray, so copy array have the same reference, not the content.   
 </details>
 
 
