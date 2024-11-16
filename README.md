@@ -2629,6 +2629,7 @@ following code adds the values in `myList[0]` and `myList[1]` to `myList[2]`:
 ##### Copying Arrays:
 - Once you entered the world of reference types, everything changes. 
 - Even copying you cannot copy contents an array into another array just like the following:
+    
     ```java
         int[] copyArray = mylist;
     ```
