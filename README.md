@@ -2633,7 +2633,8 @@ following code adds the values in `myList[0]` and `myList[1]` to `myList[2]`:
     ```java
         int[] copyArray = mylist;
     ```
-- you've just copied the reference of mylist array into copyArray, so copy array have the same reference, not the content.   
+- you've just copied the reference of mylist array into copyArray, so copy array have the same reference, not the content.
+- we can ask for help from java libraries like copyarray library.  
 </details>
 
 
