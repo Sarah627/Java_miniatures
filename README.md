@@ -40,26 +40,22 @@ This repository **IS NOT A ROADMAP FOR LEARNING JAVA** exactly, you can use diff
 
 <details><summary><strong>Java in Action</strong></summary>
 
-1. Build tools
+    1. Build tools
+      - Ant
+      - Maven
+      - Gradle
 
-- Ant
-- Maven
-- Gradle
+    2. building GUI
+      - JavaFX
+      - Java Swing
 
-2. building GUI
-
-- JavaFX
-- Java Swing
-
-3. Web Frameworks
-
-- Spring
-- Spring-boot
-
-4. ORM
-
-- JPA
-- Hibernate
+    3. Web Frameworks
+       - Spring
+       - Spring-boot
+    
+    4. ORM
+       - JPA
+       - Hibernate
 
 </details>
 
@@ -156,7 +152,7 @@ Don't worry **these characteristics of the language will be more clear as we go 
 
 ### Installing JDK
 
-To get started with java we must install JDK on our local machine, (here, I'm considering you are a beginner or totally newcomer in programming world or even didn't visit virtualization concepts|tools before).
+To get started with java we must install JDK on our local machine, (here, I'm considering you are a beginner or totally newcomer in programming world or even did not visit virtualization concepts|tools before).
 
 Installing JDK is a **must** it provides the necessary tools and libraries to develop, compile, and run Java applications.
 
@@ -407,7 +403,7 @@ Java comes in several editions, each designed for different types of application
   >
   > System.out.println(result); >>> 5 here there is a problem, the code is working fine as no errors appear but wait a minute 😅, a plus " + " sign where inserted instead of " * " multiplication sign.
 
-  here where the error takes place, it's not in syntax, the code works fine but doesn't give you the expected results, this type of errors are dedicated and corrected using tests we will come to this point later.
+  here where the error takes place, it's not in syntax, the code works fine but doesn't give you the expected results, these types of errors are dedicated and corrected using tests we will come to this point later.
 
 for more on errors types here is a useful link [not for newcomers](https://www.geeksforgeeks.org/types-of-errors-in-java-with-examples/)
 , this is nice introduction to errors [types of errors in java](https://www.scaler.com/topics/types-of-errors-in-java/).
@@ -447,7 +443,7 @@ for more on errors types here is a useful link [not for newcomers](https://www.g
     - double
     - boolean
     - char
-  - reference data type -the only one you'll use for now- is String (take care of the capital letter).
+  - reference data type - the only one you'll use for now - is String (take care of the capital letter).
   - data types tell the compiler how much space to reserve for that variable in memory.
    
     ![see this](./images/Java%20data%20types%20sizes%20and%20their%20default%20value.png)
@@ -468,7 +464,7 @@ for more on errors types here is a useful link [not for newcomers](https://www.g
 
   - 'asterisk' `*` is used for multiplication, 'single slash' `/` is used for division, and `%` is called modulus gives you the remainder, e.g.
 
-    ![remainder](./images//remainder.png)
+    ![remainder](./images/remainder.png)
 
   - note that `=` means assignment not equality.
 
@@ -482,7 +478,7 @@ for more on errors types here is a useful link [not for newcomers](https://www.g
  
   ![import scanner class](./images/Scanner%20Class.png)
 
-  - note that even in import we don't forget the semi-colon :) .
+  - note that even in import we don't forget the semicolon :) .
     ![import scanner](/images/2023_02_Java-Scanner-Class.jpg)
 
 - Then, we create a new object from Scanner class
@@ -545,7 +541,7 @@ Types of `Control Flow` statements:
 2. Iteration (Looping) statements.
 3. Branching statements.
 
-in this section we'll talk about **Selections** | **Conditionals** | **Decision Making statements**.
+in this section we'll talk about **Selections** | **Conditionals** | **Decision-Making statements**.
 
 Conditional keywords: `if`, `else`, `else if`,`switch`,`case`,`break`.
 
@@ -624,7 +620,7 @@ we can use DeMorgan's law to best practise these compound boolean expression con
 
 #### 1. Switch case statements:
 
-we use switch case statements with menu-like -means many choices- problems, e.g. choosing operation to be done on numerical values, based on day of week chosen ;perform some action:
+we use switch case statements with menu-like - means many choices - problems, e.g. choosing operation to be done on numerical values, based on day of week chosen ;perform some action:
 
 ![switch case flow chart](./images/switch-statement-flowchart-in-java.jpg)
 
@@ -768,7 +764,7 @@ For now in this chapter we're going to discuss built-in methods only.
 2- Exponential Methods:
 
 | Method      | Description                                           |
-| ----------- | ----------------------------------------------------- |
+|-------------|-------------------------------------------------------|
 | `exp(x)`    | Returns e raised to power of x (ex).                  |
 | `log(x)`    | Returns the natural logarithm of x (ln(x) = loge(x)). |
 | `log10(x)`  | Returns the base 10 logarithm of x (log10(x)).        |
@@ -819,7 +815,7 @@ you can take a look on the application here, whereas you can find how can we use
 
 
 
-**For now we addressed the following:**
+**For ,now we addressed the following:**
 * **Methods**
 * **Important built-in methods**
 * **example using these methods**
@@ -969,7 +965,7 @@ you define the character data type using **`char`** keyword, then give it a name
  ![escape sequence](/images/escape%20sequence.png)
 
 | Character | Name                |
-| --------- | ------------------- |
+|-----------|---------------------|
 | `\b`      | **Backspace**       |
 | `\t`      | **Tab**             |
 | `\n`      | **Linefeed**        |
@@ -1008,22 +1004,22 @@ When a `char` is cast into a numeric type, the character’s Unicode is cast int
 
 - All data type reserves different amount of space in memory, so it's important to take this in consideration when casting, char is 2 bytes, boolean is one byte while integer is 4 bytes.
 
-- Two characters can be compared using the relational operators just like comparing two numbers. This is done by comparing the Unicodes of the two characters.
+- Two characters can be compared using the relational operators just like comparing two numbers. This is done by comparing the Unicode of the two characters.
   - for example:
   
    ![comparing characters](/images/comparing%20characters.png)
 
 taking the advantage that we got familiar with built-in functions, let's use the built-in functions which can be used to perform some tests on characters:
 
-| Method                | Description                                                     |
-| --------------------- | --------------------------------------------------------------- |
-| `isDigit(ch)`         | Returns true if the specified character is a digit.             |
-| `isLetter(ch)`        | Returns true if the specified character is a letter.            |
-| `isLetterOrDigit(ch)` | Returns true if the specified character is a letter or digit.   |
-| `isLowerCase(ch)`     | Returns true if the specified character is a lowercase letter.  |
-| `isUpperCase(ch)`     | Returns true if the specified character is an uppercase letter. |
-| `toLowerCase(ch)`     | Returns the lowercase of the specified character.               |
-| `toUpperCase(ch)`     | Returns the uppercase of the specified character.               |
+| Method                 | Description                                                      |
+|------------------------|------------------------------------------------------------------|
+| `isDigit(ch)`          | Returns true if the specified character is a digit.              |
+| `isLetter(ch)`         | Returns true if the specified character is a letter.             |
+| `isLetterOrDigit(ch)`  | Returns true if the specified character is a letter or digit.    |
+| `isLowerCase(ch)`      | Returns true if the specified character is a lowercase letter.   |
+| `isUpperCase(ch)`      | Returns true if the specified character is an uppercase letter.  |
+| `toLowerCase(ch)`      | Returns the lowercase of the specified character.                |
+| `toUpperCase(ch)`      | Returns the uppercase of the specified character.                |
 
 **`note`** to use character built-in function, it's like Math class you have to import Character Class as follows:
 
@@ -1082,7 +1078,7 @@ Now we are going to discuss the most important concepts that are necessary to kn
 #### For short this is a table containing all the needed methods to perform the mentioned tasks:
 
 | Method                    | Description                                                                                                                               |
-| ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
+|---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
 | `length()`                | Returns the number of characters in this string.                                                                                          |
 | `charAt(index)`           | Returns the character at the specified index from this string.                                                                            |
 | `concat(s1)`              | Returns a new string that concatenates this string with string s1.                                                                        |
@@ -1257,7 +1253,7 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
           ```java
              String greeting = "Hello";
              greeting = "Hi";
-             System.out.println(greeting); ///prints Hi
+             System.out.println(greeting); //prints Hi
           ```
 
       - You’re not changing the value of greeting directly; instead, you’re changing the reference to another object that has the value "Hi".
@@ -1301,7 +1297,7 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
   - What's meant by lexicographically?
 
     - **The comparison is based on the Unicode value of each character in the strings.**
-  -  The method returns value less than zero if str1 has fewer characters `or` considered less than str2 comparing the unicode value of their characters, returns more than zero if the opposite and 0 if they are equal.
+  -  The method returns value less than zero if str1 has fewer characters `or` considered less than str2 comparing the Unicode value of their characters, returns more than zero if the opposite and 0 if they are equal.
   -  to understand observe the next example:
     
      ![comparing strings](/images/comparing%20Strings.png)
@@ -1339,18 +1335,18 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
 
 - You can obtain either a character or a substring from a string or return their indices:
   
-  | Method                           | Description                                                                                                                                                                                                        |
-  | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-  | `substring(beginIndex)`          | Returns this string’s substring that begins with the character at the specified beginIndex and   extends to the end of the string, as shown down in the Figure                                                     |
-  | `substring(beginIndex,endIndex)` | Returns this string’s substring that begins at the specified beginIndex and extends to the character at index endIndex – 1, shown down in the Figure. Note the character at endIndex is not part o f the substring |
-  | `indexOf(ch)`                    | Returns the index of the first occurrence o f ch in the string. Returns −1 if not matched.                                                                                                                         |
-  | `indexOf(ch, fromIndex)`         | Returns the index of the first occurrence of ch after fromIndex in the string. Returns −1 if not matched.                                                                                                          |
-  | `indexOf(s)`                     | Returns the index of the first occurrence o  f string s in this string. Returns −1 if not matched.                                                                                                                 |
-  | `indexOf(s, fromIndex)`          | Returns the index of the first occurrence of string s in this string after fromIndex. Returns −1 if not matched.                                                                                                   |
-  | `lastIndexOf(ch)`                | Returns the index of the last occurrence e of ch in the string. Returns −1 if not matched.                                                                                                                         |
-  | `lastIndexOf(ch,fromIndex)`      | Returns the index of the last occurrence of ch before fromIndex in this string. Returns −1 if not matched.                                                                                                         |
-  | `lastIndexOf(s)`                 | Returns the index of the last occurrence of string s. Returns −1 if not matched.                                                                                                                                   |
-  | `lastIndexOf(s, fromIndex)`      | Returns the index of the last occurrence of string s before fromIndex. Returns −1 if not matched.                                                                                                                  |
+  | Method                            | Description                                                                                                                                                                                                         |
+  |-----------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+  | `substring(beginIndex)`           | Returns this string’s substring that begins with the character at the specified beginIndex and   extends to the end of the string, as shown down in the Figure                                                      |
+  | `substring(beginIndex,endIndex)`  | Returns this string’s substring that begins at the specified beginIndex and extends to the character at index endIndex – 1, shown down in the Figure. Note the character at endIndex is not part o f the substring  |
+  | `indexOf(ch)`                     | Returns the index of the first occurrence o f ch in the string. Returns −1 if not matched.                                                                                                                          |
+  | `indexOf(ch, fromIndex)`          | Returns the index of the first occurrence of ch after fromIndex in the string. Returns −1 if not matched.                                                                                                           |
+  | `indexOf(s)`                      | Returns the index of the first occurrence o  f string s in this string. Returns −1 if not matched.                                                                                                                  |
+  | `indexOf(s, fromIndex)`           | Returns the index of the first occurrence of string s in this string after fromIndex. Returns −1 if not matched.                                                                                                    |
+  | `lastIndexOf(ch)`                 | Returns the index of the last occurrence e of ch in the string. Returns −1 if not matched.                                                                                                                          |
+  | `lastIndexOf(ch,fromIndex)`       | Returns the index of the last occurrence of ch before fromIndex in this string. Returns −1 if not matched.                                                                                                          |
+  | `lastIndexOf(s)`                  | Returns the index of the last occurrence of string s. Returns −1 if not matched.                                                                                                                                    |
+  | `lastIndexOf(s, fromIndex)`       | Returns the index of the last occurrence of string s before fromIndex. Returns −1 if not matched.                                                                                                                   |
 
 - example on **indexOf(ch)** method
 
@@ -1406,14 +1402,14 @@ For those who are new to the idea, you need to get familiar with what a `format 
 
 The following is a table of format specifiers used in java:
 
-| Format Specifier | Output                        |
-| ---------------- | ----------------------------- |
-| `%b`             | formats boolean value         |
-| `%c`             | formats character             |
-| `%d`             | formats integer               |
-| `%f`             | formats floating point number |
-| `%e`             | formats scientific notation   |
-| `%s`             | formats string                |
+| Format Specifier  | Output                         |
+|-------------------|--------------------------------|
+| `%b`              | formats boolean value          |
+| `%c`              | formats character              |
+| `%d`              | formats integer                |
+| `%f`              | formats floating point number  |
+| `%e`              | formats scientific notation    |
+| `%s`              | formats string                 |
 
 Observe in the next example how do we use the format specifiers in formatting an output as follows:
 
@@ -1509,7 +1505,7 @@ Observe the following figure:
                 }
               }
         ```
-  - This kind of errors is logical or semantic errors, the code actually works fine but the code doesn't yield the right output.  
+  - This kind of error is logical or semantic errors, the code actually works fine but the code doesn't yield the right output.  
  
 - The `loop-Body` is the block of code which contains the statements to be repeated.
 
@@ -1534,69 +1530,69 @@ Observe the following figure:
 
 1. The Pretest Loops: loops which already test the condition first before the execution: 
 
-    - For loop:
-        - `for` loops have concise syntax:
+   - For loop:
+       - `for` loops have concise syntax:
          
-        ![For Loop Java Syntax](/images/For-Loop%20Syntax%20Java.png) 
+       ![For Loop Java Syntax](/images/For-Loop%20Syntax%20Java.png) 
 
-        - try it out !  replace each statement with actual code.
+       - try it out !  replace each statement with actual code.
          
-              for(`initial action`; `continuation-condition` ;`action-after-each-iteration`){
-                block of statements to be repeated
-              } 
-        - the statements between the parenthesis after `for` keyword construct the control structure of the loop.
-        - the `initial action` is the loop control variable initialization. 
-        - the `control variable` controls the number of iterations in the loop.
-        -  the `action-after-iterations` is the statement which adjusts the control variable.
-        -  each statement of the loop control structure is terminated using a semi-colon `;` like the rest of the statements in java
-           -  `note`⚠ you can insert a semicolon by mistake after the control structure itself inside the parenthesis which results in loop termination ,or it means do nothing as follows:
+             for(`initial action`; `continuation-condition` ;`action-after-each-iteration`){
+               block of statements to be repeated
+             } 
+       - the statements between the parenthesis after `for` keyword construct the control structure of the loop.
+       - the `initial action` is the loop control variable initialization. 
+       - the `control variable` controls the number of iterations in the loop.
+       -  the `action-after-iterations` is the statement which adjusts the control variable.
+       -  each statement of the loop control structure is terminated using a semicolon `;` like the rest of the statements in java
+          -  `note`⚠ you can insert a semicolon by mistake after the control structure itself inside the parenthesis which results in loop termination ,or it means do nothing as follows:
                         
-                  for(int i = 0; i<10;i++);   //<----- note the semicolon after the closing parenthesis here will case to print nothing as the loop has been terminated.
-                  {
-                    System.out.println("Hello);
-                  } 
-        - examples of using `for-loops`:
-        1.  Simple program to print students name followed by their IDs, the IDs start from 2020000 to 2020009:
-        ``` java  
-                  public class Main{
-                  	public static void main(String[] args) {
-                  		//This program is for printing the students IDs:
-                  		int initialID = 202000;
-                  		String[] studentNames = {"Reem","Ali","Maged","Mariam","Mary","Ahmed","Mohammed","Mustafa","Shehzad","Sally"};
-                  		for(int i = 0; i<10; i++){
-                  		    System.out.printf("Student's name: %s , student ID: %d \n ",studentNames[i],initialID+i);
-                  		}
-                  	}
-                  }  
-        ```
-        ![loop example 1](/images/loop%20example%201.png)
-
-        2. Simple program to print the multiples of a number entered by user and stop at of before 100:
+                 for(int i = 0; i<10;i++);   //<----- note the semicolon after the closing parenthesis here will case to print nothing as the loop has been terminated.
+                 {
+                   System.out.println("Hello);
+                 } 
+       - examples of using `for-loops`:
+         1. Simple program to print students name followed by their IDs, the IDs start from 2020000 to 2020009:
+            
+       ``` java  
+                     public class Main{
+                       public static void main(String[] args) {
+                           //This program is for printing the students IDs:
+                           int initialID = 202000;
+                           String[] studentNames = {"Reem","Ali","Maged","Mariam","Mary","Ahmed","Mohammed","Mustafa","Shehzad","Sally"};
+                           for(int i = 0; i<10; i++){
+                               System.out.printf("Student's name: %s , student ID: %d \n ",studentNames[i],initialID+i);
+                           }
+                       }
+                     }  
+       ```
+       ![loop example 1](/images/loop%20example%201.png)
+       2. Simple program to print the multiples of a number entered by user and stop at of before 100:
          
-                  ```java 
-                  import java.util.Scanner;
-                  public class Main
-                  {
-                  	public static void main(String[] args) {
-                  		// This program is for printing the multiples of any number entered by user till 100:
-                  	    // prompt user to enter a number
-                  		System.out.println("Please enter a number");
-                  		// define the Scanner Object
-                  		Scanner input = new Scanner(System.in);
-                  		int number = input.nextInt();
-                  		int multiple = number;
-                  		// input.nextInteger() is token based so a \n must be inserted or the next print lines 
-                  		// will be right beside the taken input -confusing-
-                  		System.out.println();
-                  		// note that you can statements separated by comma in the initial action to initialize 
-                  		// variables or control variable but it's more common to intialize control variables
-                  		// and the same in after-iteration-action statement,you can add statements
-                  		// you want to be executed after each iteration
-                  		for(int i = 0; multiple <= 100; i++,multiple+=number){
-                  		    System.out.printf("Multiple number %d of number %d is %d \n ",i+1,number, multiple);
-                  		}
-                  	}
-                  } ```
+               ```java 
+               import java.util.Scanner;
+               public class Main
+               {
+                   public static void main(String[] args) {
+                       // This program is for printing the multiples of any number entered by user till 100:
+                       // prompt user to enter a number
+                       System.out.println("Please enter a number");
+                       // define the Scanner Object
+                       Scanner input = new Scanner(System.in);
+                       int number = input.nextInt();
+                       int multiple = number;
+                       // input.nextInteger() is token based so a \n must be inserted or the next print lines 
+                       // will be right beside the taken input -confusing-
+                       System.out.println();
+                       // note that you can statements separated by comma in the initial action to initialize 
+                       // variables or control variable but it's more common to intialize control variables
+                       // and the same in after-iteration-action statement,you can add statements
+                       // you want to be executed after each iteration
+                       for(int i = 0; multiple <= 100; i++,multiple+=number){
+                           System.out.printf("Multiple number %d of number %d is %d \n ",i+1,number, multiple);
+                       }
+                   }
+               } ```
 
         ![loop example 1](/images/loop%20example%201.png)
 
@@ -1656,7 +1652,7 @@ Observe the following figure:
               Statement(s);
             } while(loop-continuation-condition);   
 
-      - One important thing to notice about do-while loop is the semi-colon after the closing parentheses of the loop-continuation-condition.
+      - One important thing to notice about do-while loop is the semicolon after the closing parentheses of the loop-continuation-condition.
       
       - examples:
         - Menu example, when you prompt the user to choose from a menu, the menu must be executed at least once if the user chose to exit from the first time. you can see that in the following example:
@@ -2070,7 +2066,7 @@ statement to be reached regardless of how the if statement is evaluated, as show
 
 - In Java, method overloading is a technique that allow methods to behave differently based on various factors.
 
-- `Method Overloading` or Compile-time Polymorphism -will be discussed latter in OOP chapters- Method overloading occurs when multiple methods in the same class have the same name but different parameter lists (different number of parameters, types, or both). This is resolved at compile time, meaning the Java compiler decides which method to call based on the method signature.
+- `Method Overloading` or Compile-time Polymorphism - will be discussed later in OOP chapters - Method overloading occurs when multiple methods in the same class have the same name but different parameter lists (different number of parameters, types, or both). This is resolved at compile time, meaning the Java compiler decides which method to call based on the method signature.
 
   - **Purpose**: To create several versions of the same method that can handle different input data.
   - **When Used**: When you need the same method name to perform different operations based on the input parameters.
@@ -2198,12 +2194,12 @@ you'll apply method abstraction concept to isolate details from design and only 
  
   ![calculate weights](/images/calculate%20weights.png)      
 
-- let's sum up the whole problem: (I've add some additional blocks)
+- let's sum up the whole problem: (I've added some additional blocks)
   
   ![the big picture](/images/print%20transcript%20problem.png) 
 
 - Now after applying the Top-Down approach in designing the feature, let's move to implementation: 
-  - I used the `bottom-up` approach to implemet the methods:
+  - I used the `bottom-up` approach to implement the methods:
  
     1. I started by the `getLiteralGrades` methods, as I wanted to print the literal grade of each course, then pass these literals to another method calculates the weight of each course solely. 
  
@@ -2462,13 +2458,13 @@ Fifth Chapter is Finished!!!
 ### 6. Arrays:
   
   In this chapter, you are about to learn the first step towards the data structures world and a crucial reference type used in almost everything.
-  We already mentioned before, in a successive chapter, that methods are used to define reusable code to noot repeat the code lines applying the DRY heuristic. In the same context, we're going to be familiar with the very basic data structure : `array`.
+  We already mentioned before, in a successive chapter, that methods are used to define reusable code to not repeat the code lines applying the DRY heuristic. In the same context, we're going to be familiar with the very basic data structure : `array`.
 
   `Array` stores a fixed-size sequential collection of elements of
   the same type which allow to not repeat the declaration for large number of variables of the same type.
 
   Concepts:
-  1. Array Basics (Declaration, size, accessing elements..etc.)
+  1. Array Basics (Declaration, size, accessing elements.etc.)
   2. Copying Arrays.
   3. Passing Arrays to Methods.
   4. Returning an Array from a Method.
@@ -2498,7 +2494,7 @@ Fifth Chapter is Finished!!!
           int[] elements = {0,3,5,2,51,54,78,9,3}; 
           System.out.println(elements); //returns an ambiguos string -- memory location
       ```
-  - It's important at this point to differenciate between declaring an array and allocating memory for it, declaring an array is just declaring an array reference variable to point to the array elements later, allocating space actually happens when you add elements to the array.
+  - It's important at this point to differentiate between declaring an array and allocating memory for it, declaring an array is just declaring an array reference variable to point to the array elements later, allocating space actually happens when you add elements to the array.
   - Unlike the primitive datatypes; declaring an array doesn't allocate space in memory, only when you start to assign values to array elements.
      
       ``` java
@@ -2515,11 +2511,11 @@ Fifth Chapter is Finished!!!
       ```
   - How empty array could be:
      
-     ``` java
+      ``` java
          int[] integers = {};
          System.out.println(integers.length); // 0  
-     ```    
-  - So in general,the sytax of declaring array as follows:    
+      ```    
+  - So in general,the syntax of declaring array as follows:    
     
      `elementType arrayRefVar[index] = new elementType[arraySize];`
 
@@ -2551,8 +2547,8 @@ and (2) it assigns the reference of the newly created array to the variable arra
       ``` java
           System.out.println(mylist.length); // 10
       ```
-  - reminding you again that arrays in java are 0-based index (means you start counting and accessing aray elements from 0 index)
-  - in `mylist` example if you tried to access `mylist[10]` will resut in `ArrayOurOfBounds` runtime error.
+  - reminding you again that arrays in java are 0-based index (means you start counting and accessing array elements from 0 index)
+  - in `mylist` example if you tried to access `mylist[10]` will result in `ArrayOurOfBounds` runtime error.
   - Java has a shorthand notation, known as the `array initializer`, which combines the declaration,
 creation,and initialization of an array in one statement:
 
@@ -2565,13 +2561,13 @@ creation,and initialization of an array in one statement:
          float[] arv;
          arv = {1.1,3.4,5.6}; //error 
       ```
-  - It was mentioned that the array size cannot be altered after declaration, once the space is allocated the elements of the array take defualt values before you assign values to them:
+  - It was mentioned that the array size cannot be altered after declaration, once the space is allocated the elements of the array take default values before you assign values to them:
 
-    |Data Type| Default Value|
-    |---------|--------------|
-    |**Numeric**| `0`|
-    |**Char**|`\u0000`|
-    |**Boolean**|`false`|
+    | Data Type   | Default Value |
+    |-------------|---------------|
+    | **Numeric** | `0`           |
+    | **Char**    | `\u0000`      |
+    | **Boolean** | `false`       |
 
   - Accessing array elements is done using its `index`, remember again arrays are zero indexed means if you want to access the second array element it will be like this : `elements[1];`
   - The `index` values range from `0` to `arrayReferenceVariable.length -1`
@@ -2613,7 +2609,7 @@ following code adds the values in `myList[0]` and `myList[1]` to `myList[2]`:
     - initialize the array using random function from Math class:
       ```java 
          for (int i = 0; i < mylist.length; i++){
-          mylist[i] = Math.random()*100; // inserting numbers ranges from 0.0 to 100.0 exclusive
+            mylist[i] = Math.random()*100; // inserting numbers ranges from 0.0 to 100.0 exclusive
          }
       ``` 
   - A question might come up here: **why don’t we use the enhanced for-each loop?** It’s a good question. `for-each loops are excellent for traversing (reading) elements in a step-by-step manner, but they’re not suitable for modifying elements`. This is because the loop works with a copy of each element, rather than directly accessing them through their indices. 
@@ -2626,16 +2622,17 @@ following code adds the values in `myList[0]` and `myList[1]` to `myList[2]`:
 
       ```  
   - This behavior can be observed with `printf`, as it doesn’t automatically treat `char[]` as a string due to internal differences in how `printf` handles format specifiers compared to `print` and `println`. Unlike `print` and `println`, `printf` relies on format specifiers that don’t automatically interpret `char[]` as a sequence of characters. Therefore, converting `char[]` to a String is necessary with printf to avoid printing the reference address. 
-##### Copying Arrays:
+
+#### Copying Arrays:
 - Once you entered the world of reference types, everything changes. 
 - Even copying, you cannot copy contents an array into another array just like the following:
     
-    ```java
-        int[] copyArray = mylist; // that's wrong
-    ```
+      ``` java
+          int[] copyArray = mylist; // that's wrong
+      ```
     ![copying array using assignment operator](/images/copying%20contents%20of%20an%20array.png)
     
-- you've just copied the reference of mylist array into copyArray, so copyArray have the same reference, not the content.
+- you've just copied the reference of `mylist` array into `copyArray`, so copyArray have the same reference, not the content.
 - There are three ways to copy arrays:
   1. Use a loop to copy individual elements one by one.
   2. Use the static `arraycopy` method in the `System class`.
@@ -2667,16 +2664,16 @@ following code adds the values in `myList[0]` and `myList[1]` to `myList[2]`:
             }
           }
       ```
-       2. Using arraycopy method:
+      2. Using arraycopy method:
 
-       `note` that `arraycopy` method doesn't follow the naming convention in java.
+     `note` that `arraycopy` method doesn't follow the naming convention in java.
 
-        ``` java 
-            //formal declaration of the method:
-            public static void arraycopy(Object src, int srcPos, Object dest, int destPos, int length);
-            // where src is the source you would copy from, srcPos --> where you want to start copying, the same for the next two parameters, the last parameter is the number of elements would you copy?
+      ``` java 
+          //formal declaration of the method:
+          public static void arraycopy(Object src, int srcPos, Object dest, int destPos, int length);
+          // where src is the source you would copy from, srcPos --> where you want to start copying, the same for the next two parameters, the last parameter is the number of elements would you copy?
             
-        ```
+      ```
 
 
       ```java
@@ -2699,7 +2696,7 @@ following code adds the values in `myList[0]` and `myList[1]` to `myList[2]`:
                 }
               }
       ``` 
-
+#### Passing Arrays to Methods:
 
 
         
