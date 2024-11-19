@@ -2628,16 +2628,75 @@ following code adds the values in `myList[0]` and `myList[1]` to `myList[2]`:
   - This behavior can be observed with `printf`, as it doesn’t automatically treat `char[]` as a string due to internal differences in how `printf` handles format specifiers compared to `print` and `println`. Unlike `print` and `println`, `printf` relies on format specifiers that don’t automatically interpret `char[]` as a sequence of characters. Therefore, converting `char[]` to a String is necessary with printf to avoid printing the reference address. 
 ##### Copying Arrays:
 - Once you entered the world of reference types, everything changes. 
-- Even copying you cannot copy contents an array into another array just like the following:
+- Even copying, you cannot copy contents an array into another array just like the following:
     
     ```java
-        int[] copyArray = mylist;
+        int[] copyArray = mylist; // that's wrong
     ```
-- you've just copied the reference of mylist array into copyArray, so copy array have the same reference, not the content.
-- we can ask for help from java libraries like copyarray library.
-    ``` java
-    	
-    ```
+- you've just copied the reference of mylist array into copyArray, so copyArray have the same reference, not the content.
+- There are three ways to copy arrays:
+  1. Use a loop to copy individual elements one by one.
+  2. Use the static `arraycopy` method in the `System class`.
+  3. Use the `clone` method to copy arrays; this would be more clear as we approach deeper in OOP.
+     
+       1. Using loop:
+      
+      ```java
+
+          public class Main
+          {
+            public static void main(String[] args) {
+              int[] array = new int[6];
+              for(int i=0; i<array.length; i++){
+                  array[i] = (int)(Math.random() * 6);
+                  System.out.println(array[i]);
+              }
+              
+              // to copy this array into another array using loops:
+              System.out.println("-----------------");
+              
+              int[] copiedArray = new int[6];
+              
+              for(int j=0; j<copiedArray.length; j++){
+                  copiedArray[j] = array[j];
+                  System.out.println(copiedArray[j]);
+              }
+              
+            }
+          }
+      ```
+       2. Using copyarray method:
+
+        ``` java 
+            //formal declaration of the method:
+            public static void arraycopy(Object src, int srcPos, Object dest, int destPos, int length);
+            // where src is the source you would copy from, srcPos --> where you want to start copying, the same for the next two parameters, the last parameter is the number of elements would you copy?
+            
+        ```
+
+
+      ```java
+              import java.util.Arrays;
+              public class Main
+              {
+                public static void main(String[] args) {
+                  int[] array = new int[6];
+                  for(int i=0; i<array.length; i++){
+                      array[i] = (int)(Math.random() * 6);
+                      System.out.println(array[i]);
+                  }
+                  
+                  // to copy this array into another array using copyarray:
+                  System.out.println("-----------------");
+                  
+                  int[] copiedArray = new int[6];
+                  System.arraycopy(array,0,copiedArray,0,array.length);
+                  for(int num: copiedArray) System.out.println(num);
+                }
+              }
+      ``` 
+
+        
 </details>
 
 
