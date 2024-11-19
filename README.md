@@ -2481,9 +2481,8 @@ Concepts:
     3. Passing Arrays to Methods.
     4. Returning an Array from a Method.
     5. Variable-Length Argument Lists.
-    6. Searching & Sorting Arrays.
-    7. Arrays Class.
-    8. Command Line Arguments.
+    6. Arrays Class.
+    7. Command Line Arguments.
 
 #### Array Basics:
 - If you are familiar with C/C++ the array declaration would be like that:
@@ -2710,8 +2709,79 @@ Concepts:
       ``` 
 
 #### Passing Arrays to Methods:
+- We've already learnt that Java is 'passing by value', that happens when you pass primitive data types in addition to the reference data types as arrays.
+- It's a common pitfall to think Java passes array or objects by reference because you can actually make change after passing them to a method but it's not, it still passes them by value.
+- The confusion between **pass by value** and **pass by reference** in Java often arises due to how **reference types** like objects and arrays behave when passed to methods. 
+- This can be clarified using examples:
+  - In Java, **everything is passed by value**. This means when a variable is passed to a method, a **copy of its value** is made and used in the method.
+    - **For Primitive Data Types** When a **primitive** value (like `int`, `float`, `boolean`) is passed, the method gets a copy of the value. Any changes made to the parameter inside the method do **not** affect the original value.
+
+      ```Java
+          public class Demo {
+              public static void modifyPrimitive(int number) {
+                  number = 10; // Change the local copy
+              }
+
+              public static void main(String[] args) {
+                  int original = 5;
+                  modifyPrimitive(original);
+                  System.out.println(original); // Outputs: 5
+              }
+          }
+      ```
+    - **Explanation:**  
+      - The `number` parameter in `modifyPrimitive` gets a copy of `original`'s value.  
+      - Changing `number` does not affect the `original` variable in the `main` method.
+
+    - **For Reference Types** When an **object** or **array** is passed, the method receives a copy of the **reference** (the memory address). The reference still points to the same object in the heap. Modifying the object through this reference affects the original object.
+
+      ```java
+      public class Demo {
+          public static void modifyArray(int[] numbers) {
+              numbers[0] = 10; // Modify the object
+          }
+
+          public static void main(String[] args) {
+              int[] array = {1, 2, 3};
+              modifyArray(array);
+              System.out.println(array[0]); // Outputs: 10
+          }
+      }
+      ```
+
+    - **Explanation:**
+      - The `numbers` parameter in `modifyArray` gets a copy of the reference to `array`.
+      - Both `numbers` and `array` point to the same array in the heap.  
+      - Modifying `numbers[0]` changes the shared array, so the original `array` in `main` is affected.
 
 
+  - **Why It’s Not Pass by Reference**
+    - In **pass by reference**, the method would receive a direct reference to the variable itself, allowing it to reassign the original reference entirely.
+
+  - However, in Java:
+    - The reference is **copied** and passed to the method.  
+    - If you reassign the reference inside the method, it does not affect the original reference.
+
+      Example:
+      ```java
+      public class Demo {
+          public static void reassignReference(int[] numbers) {
+              numbers = new int[]{10, 20, 30}; // Reassign the reference
+          }
+
+          public static void main(String[] args) {
+              int[] array = {1, 2, 3};
+              reassignReference(array);
+              System.out.println(array[0]); // Outputs: 1
+          }
+      }
+      ```
+
+    **Explanation:**
+      - Inside `reassignReference`, the `numbers` parameter is assigned a new array.  
+      - This does not affect the `array` in `main`, as the original reference was not changed.
+
+#### 4. Returning Arrays From Methods:
 
 
 </details>
