@@ -2782,7 +2782,31 @@ Concepts:
       - This does not affect the `array` in `main`, as the original reference was not changed.
 
 #### 4. Returning Arrays From Methods:
+- You can pass arrays when invoking a method. A method may also return an array
+      
+      ``` Java
+            public class ArrayReturnExample {
 
+          // Method to return an array of even numbers
+          public static int[] generateArray(int size) {
+              int[] array = new int[size]; 
+              for (int i = 0; i < size; i++) {
+                  array[i] = i * 2; 
+              }
+              return array; // Return the array
+          }
+
+          public static void main(String[] args) {
+              int[] result = generateArray(5); // Call the method and get the array
+              for (int num : result) {        // Print the elements of the array
+                  System.out.print(num + " ");
+              }
+          }
+      }
+      ```
+
+#### 5. Variable Length Argument Lists:
+- 
 
 </details>
 
