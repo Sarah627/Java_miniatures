@@ -10,9 +10,5 @@
         <module name="mavenproject1" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="mavenproject1" target="17" />
-      <module name="OOP" target="17" />
-    </bytecodeTargetLevel>
   </component>
 </project>
