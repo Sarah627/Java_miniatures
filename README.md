@@ -2633,6 +2633,8 @@ following code adds the values in `myList[0]` and `myList[1]` to `myList[2]`:
     ```java
         int[] copyArray = mylist; // that's wrong
     ```
+    ![copying array using assignment operator](/images/copying%20contents%20of%20an%20array.png)
+    
 - you've just copied the reference of mylist array into copyArray, so copyArray have the same reference, not the content.
 - There are three ways to copy arrays:
   1. Use a loop to copy individual elements one by one.
@@ -2665,7 +2667,9 @@ following code adds the values in `myList[0]` and `myList[1]` to `myList[2]`:
             }
           }
       ```
-       2. Using copyarray method:
+       2. Using arraycopy method:
+
+       `note` that `arraycopy` method doesn't follow the naming convention in java.
 
         ``` java 
             //formal declaration of the method:
@@ -2695,6 +2699,8 @@ following code adds the values in `myList[0]` and `myList[1]` to `myList[2]`:
                 }
               }
       ``` 
+
+
 
         
 </details>
