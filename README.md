@@ -12,7 +12,7 @@ Throughout this learning journey, I've encountered various challenges, both tech
 
 ## **Important:**
 
-This repository **IS NOT A ROADMAP FOR LEARNING JAVA** exactly, you can use different arrangement e.g. If you want to learn generics first before knowing about frameworks (e.g.spring boot) it won't cause a problem, I use this repo more likely as a documentation for my programming skills progress, how my code, thinking, experience in using java change over time in addition to aiming to be a good reference in future (ISA) for whom are concerned about learning java and software engineering.
+This repository **IS NOT A ROADMAP FOR LEARNING Java** exactly, you can use different arrangement e.g. If you want to learn generics first before knowing about frameworks (e.g.spring boot) it won't cause a problem, I use this repo more likely as a documentation for my programming skills progress, how my code, thinking, experience in using Java change over time in addition to aiming to be a good reference in future (ISA) for whom are concerned about learning Java and software engineering.
 
 <details>
 <summary> <H1>Table of Contents</H1></summary>
@@ -22,21 +22,23 @@ This repository **IS NOT A ROADMAP FOR LEARNING JAVA** exactly, you can use diff
 
 <details><summary><strong>Java Basics</strong></summary>
 
-1. Elementary Programming
-2. Control Structures Part 1: (_Selections_)
-3. Mathematical Functions,Characters, and Strings
-4. Control Structures Part 2: (_Iterators_)
-5. Methods
-6. Arrays
+      1. Elementary Programming
+      2. Control Structures Part 1: (_Selections_)
+      3. Mathematical Functions,Characters, and Strings
+      4. Control Structures Part 2: (_Iterators_)
+      5. Methods
+      6. Arrays
 </details>
 
 <details><summary><strong>Object-Oriented Programming</strong></summary>
 
-1. Objects and Classes
-2. Object-Oriented Thinking
-3. Inheritance and Polymorphism
-4. Exception Handling and Text I/O
-5. Abstract Classes and Interfaces</details>
+      1. Objects and Classes
+      2. Object-Oriented Thinking
+      3. Inheritance and Polymorphism
+      4. Exception Handling and Text I/O
+      5. Abstract Classes and Interfaces
+ 
+</details>
 
 <details><summary><strong>Java in Action</strong></summary>
 
@@ -61,66 +63,75 @@ This repository **IS NOT A ROADMAP FOR LEARNING JAVA** exactly, you can use diff
 
 <details><summary><strong>Advanced Java Topics</strong></summary>
 
-1. Binary I/O
-2. Generics
-3. How JVM works
-4. Multithreading and Parallel Programming
-5. Networking
-6. Java Database Programming</details>
+    1. Binary I/O
+    2. Generics
+    3. How JVM works
+    4. Multithreading and Parallel Programming
+    5. Networking
+    6. Java Database Programming
+     
+</details>
 
 <details><summary><strong>Data Structures</strong></summary>
 
-1. Recursion
-2. Stacks & Queues
-3. Lists
-4. Trees
-5. Priority Queues
-6. Maps & Hash Tables
-7. Search Trees</details>
+    1. Recursion
+    2. Stacks & Queues
+    3. Lists
+    4. Trees
+    5. Priority Queues
+    6. Maps & Hash Tables
+    7. Search Trees
+
+</details>
 
 <details><summary><strong>Algorithms</strong></summary>
 
-1. Asymptotic analysis
-2. Sorting
-3. Searching
-4. Graphs
-5. Strings</details>
+    1. Asymptotic analysis
+    2. Sorting
+    3. Searching
+    4. Graphs
+    5. Strings
+
+</details>
+
 </details>
 
 <details><summary><H3>Part Two: Software Engineering Principles</H3></summary>
 
-1.  OOA & OOD
-2.  SOLID Principles
-3.  Design Patterns
-4.  Refactoring Techniques
-5.  Software Development Methodologies
+    1.  OOA & OOD
+    2.  SOLID Principles
+    3.  Design Patterns
+    4.  Refactoring Techniques
+    5.  Software Development Methodologies
 </details>
 
 <details><summary><h3>Part Three: Projects</h3></summary>
 
-1. Small-scale Java Projects
-2. Medium-scale Software Engineering Projects
-3. Real-world Application Examples</details>
+    1. Small-scale Java Projects
+    2. Medium-scale Software Engineering Projects
+    3. Real-world Application Examples
+</details>
 
 <details><summary><H3>Cross-Part knowledge</H3></summary>
 
-**_Challenges and Exercises_**
+    **_Challenges and Exercises_**
 
-- Coding Challenges
-- Problem-solving Exercises
-- Algorithm Implementations
+    - Coding Challenges
+    - Problem-solving Exercises
+    - Algorithm Implementations
 
-**_Resources_**
+    **_Resources_**
 
-- Online Tutorials and Courses
-- Recommended Books
-- Useful Articles and Videos
+    - Online Tutorials and Courses
+    - Recommended Books
+    - Useful Articles and Videos
 
-**_Contributions_**
+    **_Contributions_**
 
-- How to Contribute
-- Guidelines for Contributors
-- Community Engagement Opportunities</details>
+    - How to Contribute
+    - Guidelines for Contributors
+    - Community Engagement Opportunities
+</details>
 
 </details>
 
@@ -130,9 +141,9 @@ This repository **IS NOT A ROADMAP FOR LEARNING JAVA** exactly, you can use diff
 ## Part One : Pick Up Your Weapon!
 ## 1 - Java Basics
 
-### **Get-Started** :D 🔥
+### **Getting-Started** :D 🔥
 
-according to Java Docs official website [Oracle Docs](https://docs.oracle.com/en/java/).
+according to Java Docs official website [Oracle Docs](https://docs.oracle.com/en/Java/).
 
 > \'Java is a general-purpose, concurrent, strongly typed, class-based object-oriented programming language'
 
@@ -152,11 +163,11 @@ Don't worry **these characteristics of the language will be more clear as we go 
 
 ### Installing JDK
 
-To get started with java we must install JDK on our local machine, (here, I'm considering you are a beginner or totally newcomer in programming world or even did not visit virtualization concepts|tools before).
+To get started with Java we must install JDK on our local machine, (here, I'm considering you are a beginner or totally newcomer in programming world or even did not visit virtualization concepts|tools before).
 
 Installing JDK is a **must** it provides the necessary tools and libraries to develop, compile, and run Java applications.
 
-click on the following link [oracle](https://www.oracle.com/eg/java/technologies/downloads/) and install the latest JDK versions on your own device
+click on the following link [oracle](https://www.oracle.com/eg/Java/technologies/downloads/) and install the latest JDK versions on your own device
 
 ![screenshot](/images/image.png)
 
@@ -164,13 +175,13 @@ click on the following link [oracle](https://www.oracle.com/eg/java/technologies
 
 #### What's JDK?
 
-"**_JDK_**" stands for Java Development Kit, it's the development environment for building java applications, it consists of JVM -_Java Virtual Machine_-, JRE -_Java Runtime Environment_- and development tools like compiler etc.
+"**_JDK_**" stands for Java Development Kit, it's the development environment for building Java applications, it consists of JVM -_Java Virtual Machine_-, JRE -_Java Runtime Environment_- and development tools like compiler etc.
 
 ![JDK](/images/JDK.jpg)
 
 Java is machine independent language, or it's more descriptive to refer to it as **platform-independent**; you can run it on any platform, while the JVM is platform-dependent; different JVM is designed for each platform (Linux, Windows, macOS).
 
-In other words, if we have three local devices, each of which has a different platform installed in it e.g.(windows, mac, linux), all is required to install a JVM for each device and the java files can run on any machine of them after compiling it just one time.
+In other words, if we have three local devices, each of which has a different platform installed in it e.g.(windows, mac, linux), all is required to install a JVM for each device and the Java files can run on any machine of them after compiling it just one time.
 
 Once you downloaded the latest version of JDK here you have two options:
 
@@ -194,20 +205,20 @@ Once you downloaded the latest version of JDK here you have two options:
 
       - write the following:
 
-                java -version
+                Java -version
 
-      ![java version on cmd](/images/java%20version.png)
+      ![Java version on cmd](/images/Java%20version.png)
 
       I have JDK version 17 installed on my own, now we are going to switch it to the new version of JDK
 
       - we'll repeat the steps of the previous option (editing system environment variables, etc.)
-      - Check your java version again in cmd (restart it if you didn't close it already)
+      - Check your Java version again in cmd (restart it if you didn't close it already)
 
       _and Voila!_
 
-      ![new jdk version is working well](/images/java%20updated%20jdk%20version.png)
+      ![new jdk version is working well](/images/Java%20updated%20jdk%20version.png)
 
-    </details>
+</details>
 
 ---
 
@@ -231,11 +242,11 @@ _prerequisites_ ⚠
 
 1.  If you don't have an IDE: (note: I won't let you stay lazy forever, you'll have to install it)
 
-    - create a new directory (folder) for your java practice, right-click, new, text document
-    - yes, that's it just empty text document, rename this document "HelloWorld.java"
-    - open the document, as mentioned before java is class based so to write any instructions they **must be** inside classes, now let's type our first class:
+    - create a new directory (folder) for your Java practice, right-click, new, text document
+    - yes, that's it just empty text document, rename this document "HelloWorld.Java"
+    - open the document, as mentioned before Java is class based so to write any instructions they **must be** inside classes, now let's type our first class:
 
-        ```java
+        ```Java
 
            public class HelloWorld{}
 
@@ -249,21 +260,21 @@ _prerequisites_ ⚠
 
     - keywords or reserved words are predefined words in a programming language with a specific use, you can't use them for naming (simply, because the compiler will be confused if it's the word used by the language to identify some order to be executed by the program ,or it's just a programmer defined variable)
 
-    - every java program should at least have one class, to execute the program we should have a _main method_ (in other words method its name is "main")
+    - every Java program should at least have one class, to execute the program we should have a _main method_ (in other words method its name is "main")
     - inside our created class we define the main method as follows:
 
-        ```java
+        ```Java
              public static void main(String[] args){}
         ```
 
       > public, static, void, String are all keywords
       >
-      > naming methods using [camelCase](https://www.freecodecamp.org/news/snake-case-vs-camel-case-vs-pascal-case-vs-kebab-case-whats-the-difference/#camel-case) in java if it consists of more than one word otherwise all lower case
+      > naming methods using [camelCase](https://www.freecodecamp.org/news/snake-case-vs-camel-case-vs-pascal-case-vs-kebab-case-whats-the-difference/#camel-case) in Java if it consists of more than one word otherwise all lower case
 
     - the curly braces `{}` mean block of code, here we write the lines of code that will be executed, their place is after every class, method, control statements, specific keywords e.g. static keyword. They also represent a specific scope (we'll talk about this soon).
     - inside the curly braces of the main method we will print our first hello world
 
-        ```java
+        ```Java
            System.out.println("Hello World!");
         ```
 
@@ -273,20 +284,20 @@ _prerequisites_ ⚠
       >
       > System.out.println() is the method we'll use for printing anything on the terminal or console screen to user.
 
-    - to run your program open your cmd `win + R type cmd then enter ↩`, in the same directory, if you cannot navigate to the directory where the java file lies, simply in the address bar of your folder window type cmd as follows:
+    - to run your program open your cmd `win + R type cmd then enter ↩`, in the same directory, if you cannot navigate to the directory where the Java file lies, simply in the address bar of your folder window type cmd as follows:
       ![cmd of the current directory](/images/cmd%20from%20current%20directory.png)
 
-    - inside cmd type `javac {yourfilename.java}` (don't forget the extension)
+    - inside cmd type `Javac {yourfilename.Java}` (don't forget the extension)
 
-            javac replacethis.java
+            Javac replacethis.Java
 
-    ![cmd](/images/javacompile.png)
+    ![cmd](/images/Javacompile.png)
 
     - write the name of the file right with its correct format ,or you'll face `error: file not found`
 
-    > **_javac_** stands for java compile, you'll notice that a `.class` file is created on your directory this is the `bytecode`. you compile one time and run the code infinitely.
+    > **_Javac_** stands for Java compile, you'll notice that a `.class` file is created on your directory this is the `bytecode`. you compile one time and run the code infinitely.
 
-    - to run the program write `java {yourfilename}` (note here without the extension).
+    - to run the program write `Java {yourfilename}` (note here without the extension).
 
     _and Voila!_
 
@@ -294,13 +305,13 @@ _prerequisites_ ⚠
 
 ![what does program looks like](/images/firstHelloprogram.png)
 
-you can check the file here in this directory [Hello.java](/Test%20Files%20Elementary/Hello.java) file.
+you can check the file here in this directory [Hello.Java](/Test%20Files%20Elementary/Hello.Java) file.
 
 **Now we consider you a real programmer**
 
 ![queen's knight](</images/Accolade_by_Edmund_Blair_Leighton%20(1).jpg>)
 
-#### java general knowledge and syntax:
+#### Java general knowledge and syntax:
 
 To explain **data types** and **variables**, and how Java works with code, here’s a clear and beginner-friendly explanation:
 
@@ -318,7 +329,7 @@ In Java, a **variable** is a symbol that represents a value stored in the comput
 
 **Example:**
 
-  ```java
+  ```Java
   int radius = 5;  // Declare a variable of type int to store the radius
   double area = 3.14 * radius * radius;  // Declare a variable of type double to store the calculated area
   ```
@@ -328,7 +339,7 @@ In this example, `radius` holds an integer value, and `area` holds a floating-po
 
 When you write Java code, the process of transforming it into an executable program involves several steps:
 
-  1. **Compilation**: Java source code (written in `.java` files) is compiled by the **Java Compiler (javac)** into **bytecode**, which is stored in `.class` files. Bytecode is a low-level, platform-independent code.
+  1. **Compilation**: Java source code (written in `.Java` files) is compiled by the **Java Compiler (Javac)** into **bytecode**, which is stored in `.class` files. Bytecode is a low-level, platform-independent code.
    
      ![compilation process](/images/compliation%20process.png)
 
@@ -339,7 +350,7 @@ When you write Java code, the process of transforming it into an executable prog
  ![JVM](/images/JVM.png) 
 
 **Example of Compilation**:
-- `MyProgram.java` (source code) is compiled into `MyProgram.class` (bytecode).
+- `MyProgram.Java` (source code) is compiled into `MyProgram.class` (bytecode).
 - The JVM then reads `MyProgram.class` and runs the program on any platform.
 
 ##### **3. Types of Java (SE, EE, ME):**
@@ -360,7 +371,7 @@ Java comes in several editions, each designed for different types of application
 
 - `//` double slashes for single line comments and `/* comments lines go here */` for multiple lines of comments (for those who are new to programming, comments are sentences or lines won't be treated as code or instruction they will be ignored by the compiler, programmers use comments to clarify points about their code, like comments show incomplete implementation or reference to the original source code or even to clear confusion about the code they wrote)
 
-- java is case-sensitive language (you get syntax error if you mistyped a keyword or wrote its letter capital rather than small or vice versa), e.g.
+- Java is case-sensitive language (you get syntax error if you mistyped a keyword or wrote its letter capital rather than small or vice versa), e.g.
 
   > `Public void fun(){...}` --> syntax error (Public is not a keyword)
 
@@ -370,13 +381,13 @@ Java comes in several editions, each designed for different types of application
 
   > `String[]` -> indicates array of type String.
 
-- later in advanced java programming we will get familiar with the ArrayList, we will find the angle brackets `<>` follow ArrayLists keyword in which contain the Type of the ArrayList (ArrayList is simply resizable array) e.g.
+- later in advanced Java programming we will get familiar with the ArrayList, we will find the angle brackets `<>` follow ArrayLists keyword in which contain the Type of the ArrayList (ArrayList is simply resizable array) e.g.
 
   > `ArrayList<String>`.
 
-- every java program must have at least one class.
+- every Java program must have at least one class.
 
-- java program start execution from main method.
+- Java program start execution from main method.
 
 - string is enclosed in double quotes while character is enclosed in single quotes.
 
@@ -405,14 +416,14 @@ Java comes in several editions, each designed for different types of application
 
   here where the error takes place, it's not in syntax, the code works fine but doesn't give you the expected results, these types of errors are dedicated and corrected using tests we will come to this point later.
 
-for more on errors types here is a useful link [not for newcomers](https://www.geeksforgeeks.org/types-of-errors-in-java-with-examples/)
-, this is nice introduction to errors [types of errors in java](https://www.scaler.com/topics/types-of-errors-in-java/).
+for more on errors types here is a useful link [not for newcomers](https://www.geeksforgeeks.org/types-of-errors-in-Java-with-examples/)
+, this is nice introduction to errors [types of errors in Java](https://www.scaler.com/topics/types-of-errors-in-Java/).
 
 #### Dealing with data in Java
 
 - a variable is used to store data, you can think of variables as where we store values, these values can be numeric, string (group of characters), reference, etc.
 
-- basic syntax to declare a variable in java
+- basic syntax to declare a variable in Java
 
   > datatype {variable-name} = value;
 
@@ -433,7 +444,7 @@ for more on errors types here is a useful link [not for newcomers](https://www.g
 - data types:
 
   - In general, they are two types numerical or non-numerical, numerical like integers, floating point or decimal numbers, non-numerical like strings "Hello my name is" or boolean like True or False.
-  - In java, they are two categories, primitive data types and reference data types, they are classified based on how they store data, primitive copies only values while reference hold the address to the value they just copied, if you couldn't understand this no problem it will be clear later.
+  - In Java, they are two categories, primitive data types and reference data types, they are classified based on how they store data, primitive copies only values while reference hold the address to the value they just copied, if you couldn't understand this no problem it will be clear later.
   - primitive data types are:
     - byte
     - short
@@ -472,7 +483,7 @@ for more on errors types here is a useful link [not for newcomers](https://www.g
 
 - for taking custom input from user, either from console or keyboard input, we are going to start using classes.
 
-- In java to take user input using three classes: Console, BufferedReader, and Scanner. For now, we will deal with Scanner only.
+- In Java to take user input using three classes: Console, BufferedReader, and Scanner. For now, we will deal with Scanner only.
 
 - First, we need to import the class, so using the keyword `import` we will invoke the `Scanner` class as follows:
  
@@ -491,13 +502,13 @@ for more on errors types here is a useful link [not for newcomers](https://www.g
 
 - importing statement is placed before class declaration.
 
-- simple java program takes input from user to calculate the area of a circle:
-  you can simply see the file here: [ComputeCircleArea.java](/Test%20Files%20Elementary/ComputeArea.java)
+- simple Java program takes input from user to calculate the area of a circle:
+  you can simply see the file here: [ComputeCircleArea.Java](/Test%20Files%20Elementary/ComputeArea.Java)
 
   ![circle area](./images/calculate%20circle%20area.png)
 
 - so, at any point you want to take user input:
-  1. `import java.util.Scanner;`
+  1. `import Java.util.Scanner;`
   2. inside main method block of code
      `Scanner input = new Scanner(System.in);`
   3. based on what data you want to take, e.g. prompt user to enter integer:
@@ -508,7 +519,7 @@ for more on errors types here is a useful link [not for newcomers](https://www.g
 
 - Read-Evaluate-Print Loop (REPL), which evaluates declarations, statements, and expressions as they are entered and immediately shows the results.
 
-- it's an interactive tool for quickly prototyping java code, all without the need for a `public static void main` or the need to compile your code before executing it.
+- it's an interactive tool for quickly prototyping Java code, all without the need for a `public static void main` or the need to compile your code before executing it.
 
 - it's super easy open your cmd or powershell and type jshell
 
@@ -516,7 +527,7 @@ for more on errors types here is a useful link [not for newcomers](https://www.g
 
 ![jshell](/images/jshell.png)
 
-- find more on this link [how to use jshell](https://www.infoq.com/articles/jshell-java-repl/)
+- find more on this link [how to use jshell](https://www.infoq.com/articles/jshell-Java-repl/)
 
 #### notes:
 
@@ -578,7 +589,7 @@ it's simply like saying: is dividing 7 by 10 equals 70? if yes please print the 
 
   ![conditional example](./images/conditionalsexample.png)
 
-- you can find more examples in Test Files Elementary, e.g. [addition Quiz](./Test%20Files%20Elementary/AdditionQuiz.java)
+- you can find more examples in Test Files Elementary, e.g. [addition Quiz](./Test%20Files%20Elementary/AdditionQuiz.Java)
 
 we can check using `if` then another `if` but what we hit the goal from first time why do we continue checking? that's why we use else if instead of to skip the rest of conditional statement checking if we already satisfied one.
 
@@ -622,12 +633,12 @@ we can use DeMorgan's law to best practise these compound boolean expression con
 
 we use switch case statements with menu-like - means many choices - problems, e.g. choosing operation to be done on numerical values, based on day of week chosen ;perform some action:
 
-![switch case flow chart](./images/switch-statement-flowchart-in-java.jpg)
+![switch case flow chart](./images/switch-statement-flowchart-in-Java.jpg)
 
 ![switch case syntax](./images/Syntax-of-Switch-Case-Stetement-in-C-Programming.jpg)
 
 This is a simple program perform basic operations on the entered numbers:
-you can check it from here [switch program](./Test%20Files%20Elementary/Calculator.java)
+you can check it from here [switch program](./Test%20Files%20Elementary/Calculator.Java)
 
 ![switch case example](./images/switchcase%20example.png)
 
@@ -669,7 +680,7 @@ before we go in methods with more details on the next Chapter, we can have quick
 
 We also refer to methods as routines and other words will be mentioned later, for now remember the word "reusable".
 
-note: if you experienced other languages other than java you may find that methods are called functions, but with a programming language which is attached to Object-Oriented concepts you'll find the word 'method' is the convention here.
+note: if you experienced other languages other than Java you may find that methods are called functions, but with a programming language which is attached to Object-Oriented concepts you'll find the word 'method' is the convention here.
 
 methods can be:
 
@@ -734,7 +745,7 @@ For now in this chapter we're going to discuss built-in methods only.
 
   now lets getting familiar with them; first, I prefer to categorize them, so it's easily inside my head to choose the suitable one for the suitable situation:
 
-  We'll use **Math** class for this mission, Math class in java contains all mathematical constants and methods you'll need to use, according to Oracle documentation:
+  We'll use **Math** class for this mission, Math class in Java contains all mathematical constants and methods you'll need to use, according to Oracle documentation:
 
   > The class Math contains methods for performing basic numeric operations such as the elementary exponential, logarithm, square root, and trigonometric functions. 
 
@@ -778,7 +789,7 @@ For now in this chapter we're going to discuss built-in methods only.
 
 **Rounding Methods**
 
-The best way to understand rounding methods in Math class in java is by example:
+The best way to understand rounding methods in Math class in Java is by example:
 
 ![ciel method](/images/ciel%20method.png)
 
@@ -811,7 +822,7 @@ In my own opinion random method is super important in a lot of situations, for e
 ![angle between two vectors](/images/Angle-Between-Two-Vectors-01.png)
 there is a little application "Calculate Theta value" calculates the value of the angle between any two vectors using dot product
 you can take a look on the application here, whereas you can find how can we use **Math Class** built-in functions are used.
-[Calculate Theta](/Test%20Files%20Elementary/CalculateTheta.java) 
+[Calculate Theta](/Test%20Files%20Elementary/CalculateTheta.Java) 
 
 
 
@@ -829,7 +840,7 @@ Character data type is used to represent single character surrounded by single q
 
 Caution ⚠
 
-> characters must be surrounded by single quotes while Strings must be surrounded by double quotes, thus "S" is a String and 'S' is a character my this is not important in other languages like: Python but here it's essential to differentiate between them as java s a strongly static typed language
+> characters must be surrounded by single quotes while Strings must be surrounded by double quotes, thus "S" is a String and 'S' is a character my this is not important in other languages like: Python but here it's essential to differentiate between them as Java s a strongly static typed language
 
 If you are not a computer science student ,or you are not familiar with the idea of how computers deals with data, so expand this section, if you are familiar go to the next points
 
@@ -927,7 +938,7 @@ CS50 - from Harvard [CS50](https://www.youtube.com/playlist?list=PLhQjrBD2T381WA
   ![blending colors](/images/blending%20colors.jpg)
 
 ------
-#### **Now we can introduce the data type :)**
+#### **Now we can introduce the data type :**
 
 you define the character data type using **`char`** keyword, then give it a name and assign a character value to it.
 
@@ -956,7 +967,7 @@ you define the character data type using **`char`** keyword, then give it a name
 
  `Escape characetr` is a character preceded by a backslash `\` is an escape sequence and has special meaning to the compiler.
 
- from Oracle java tutorial:
+ from Oracle Java tutorial:
  > When an escape sequence is encountered in a print statement, the compiler interprets it accordingly. For example, if you want to put quotes within quotes you must use the escape sequence, `\"`, on the interior quotes. To print the sentence
 
 > She said "Hello!" to me. you would write:
@@ -1055,7 +1066,7 @@ In other words, Any class can be used as a `reference type`, and any variable de
 
 So, like **Scanner** class you have to follow the naming convention and capitalize the first letter of the class name: 
 
-     ```java
+     ```Java
      String sentence = "Hello, Developer!"; 
      ```
 
@@ -1111,7 +1122,7 @@ Now we are going to discuss the most important concepts that are necessary to kn
 
         - this is the difference noticed when you use static methods of Math class like round(), as rounding number doesn't rely on specific data, but length() from String class is tied to specific object data, in our case here [`sentence`](#string-reference-type) string above, you return the length of this specific string object.
   
-you can check this example here about how to use length() method [Check Password Length example](/Test%20Files%20Elementary/CheckingPasswordLength.java)
+you can check this example here about how to use length() method [Check Password Length example](/Test%20Files%20Elementary/CheckingPasswordLength.Java)
 
 
 ![check password](/images/CheckingPasswordLength.png)
@@ -1136,7 +1147,7 @@ we're going to explain each method and common use cases by examples in addition 
        System.out.println(message.length());
 
 
-  ![java indexed string](/images/string%20example.png)
+  ![Java indexed string](/images/string%20example.png)
 
 
 <details><summary><strong>To Someone Totally New to Programming</strong></summary>
@@ -1161,7 +1172,7 @@ we're going to explain each method and common use cases by examples in addition 
 
 </details>
 
-example on using charAt(index) method: [email validation](/Test%20Files%20Elementary/CheckingEmailElgibility.java)
+example on using charAt(index) method: [email validation](/Test%20Files%20Elementary/CheckingEmailElgibility.Java)
 
 
 ![charAt()](/images/emailvalidation.png)
@@ -1172,7 +1183,7 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
 
   concatenation is achieved using multiple ways, one shortcut is by using plus sign '+' between two strings as follows:
 
-        ``` java
+        ``` Java
             String name = "Sarah";
             String greeting = "Hello, " + name;
             System.out.println(greeting);
@@ -1180,7 +1191,7 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
         ```
   also `+=` operator can be used with strings:
 
-         ```java 
+         ```Java 
             String studentsNames = "";  //empty string
             studentsNames += input.next();
             // enetrs Mariam 
@@ -1190,7 +1201,7 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
 
   using s2.concat(s1) method:
 
-      ```java
+      ```Java
 
            String spongepopFandomgreeting = "Hi Hi,"; 
            String name = "Captain";
@@ -1210,14 +1221,14 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
 
    The `toLowerCase()` method returns a new string with all lowercase letters, and the `toUpperCase()` method returns a new string with all uppercase letters. For example:
 
-       ``` java
+       ``` Java
            String convertToLower = "Welcome".toLowerCase(); // returns a new string **welcome**.
            String convertToUpper ="Welcome".toUpperCase(); //returns   a new string **WELCOME**.
         ```
 
   The `trim()` method returns a new string by eliminating whitespace characters from both ends of the string. The characters `' '`, `\t`, `\f`, `\r`, or `\n` are known as **whitespace** characters. For example,
        
-      ``` java        
+      ``` Java        
           String trimmedSentence = "\t Good Night \n".trim(); //returns a new string Good Night.
       ```  
 - **equals(s1) & equalsIgnoreCase(s1) methods**:
@@ -1250,7 +1261,7 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
 
       - When you change the value of reference type as follows:
   
-          ```java
+          ```Java
              String greeting = "Hello";
              greeting = "Hi";
              System.out.println(greeting); //prints Hi
@@ -1269,7 +1280,7 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
 
       - magine you have multiple string objects with the same value `"default"` as follows: 
       
-        ```java
+        ```Java
            String str1 = "default";
            String str2 = "default";
            String str3 = "default";
@@ -1304,7 +1315,7 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
 
   - try it out: 
     
-        ```java
+        ```Java
             String greeting = "Hello";
             String greeting2 = "Hello";
             System.out.println(greeting.compareTo(greeting2)); //prints 0
@@ -1357,29 +1368,29 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
 
 using **`parseInt()`** method from `Integer` class you can convert from string to integer, in other words parsing integers from a string.
 
-      ```java
+      ```Java
           int parsedInteger = Integer.parseInt("2351");
           System.out.println(parsedInteger); // 2351 
       ```
 you can use **`parseDouble()`** from `Double` class also for the same matter but for parsing floating point numbers:
 
-      ```java
+      ```Java
          double parsedDouble = Double.parseDouble("34.223");
          System.out.println(parsedDouble); // 34.223
       ```
 
 If the string is not a numeric string, the conversion would cause a runtime error:
 
-      ```java
+      ```Java
         int numberFromAString = Integer.parseInt("Iloveyou3000");
         System.out.println(numberFromAString); // runtime error (throws an exception) as the string is not numeric it has some characters
       ```
 
-**`note`**: you don't have to import `Integer` or  `Double` classes because they are included in `java.lang` library thus they are imported by default
+**`note`**: you don't have to import `Integer` or  `Double` classes because they are included in `Java.lang` library thus they are imported by default
 
 you can convert any numerical value to a string by just concatenate it with a double quotes as follows:
 
-      ```java
+      ```Java
       int number = 345;
       String numericalString = number +"";
       System.out.println(numericalString);   // 345
@@ -1390,7 +1401,7 @@ you can convert any numerical value to a string by just concatenate it with a do
 Good news for these who loves `c/c++`, you can use the `System.out.printf` method to display formatted output on the
 console just like `printf` in `c`: 
 
-    ```java
+    ```Java
       double amount = 12618.98;
       double interestRate = 0.0013;
       double interest = amount * interestRate;
@@ -1400,7 +1411,7 @@ For those who are new to the idea, you need to get familiar with what a `format 
 
 > format specifier specifies how an item should be formatted, simple format specifier consists of a percent sign (`%`) followed by a conversion code.
 
-The following is a table of format specifiers used in java:
+The following is a table of format specifiers used in Java:
 
 | Format Specifier  | Output                         |
 |-------------------|--------------------------------|
@@ -1427,7 +1438,7 @@ Controlling the width and precision in a format specifier, helps in achieving wh
 
 you can add leading zeros but with integer conversion character `d` as follows:
 
-    ``` java
+    ``` Java
         int thousands = 52497823;
         System.out.printf("%010d", thousands); // 0052497823
     ```
@@ -1442,8 +1453,8 @@ you can alter the leading zeros flag with the thousands flag or left justifying 
 
 you can see more about formatting in these links on Oracle website: Java tutorial
 
-  - [Formatting](https://docs.oracle.com/javase/tutorial/essential/io/formatting.html)
-  - [Number Format](https://docs.oracle.com/javase/tutorial/java/data/numberformat.html)
+  - [Formatting](https://docs.oracle.com/Javase/tutorial/essential/io/formatting.html)
+  - [Number Format](https://docs.oracle.com/Javase/tutorial/Java/data/numberformat.html)
   
 
 Finally, the third chapter is FINISHED!!! 
@@ -1494,17 +1505,17 @@ Observe the following figure:
 - The `loop-continuation-condition` is a boolean condition in which ,if it was evaluated to `true` so the loop continues otherwise 'false' the loop terminates. 
   - The boolean condition controls the execution of the loop thus adjusting this condition is super important.
   - You can be exposed to `off-by-one` error (one more or less iteration) if you didn't adjust this condition for example:
-        ``` java
-            public class Main{
-                public static void main(String[] args) {
-                  
-                  //this program is for printing Hello,World 10 times
-                  for(int i =0; i<=10; i++ )
-                      System.out.println(i+1 + "- Hello,World");
-                      // the sentence will be printed 11 times! off-by-one 
-                }
+      ``` Java
+          public class Main{
+              public static void main(String[] args) {
+                
+                //this program is for printing Hello,World 10 times
+                for(int i =0; i<=10; i++ )
+                    System.out.println(i+1 + "- Hello,World");
+                    // the sentence will be printed 11 times! off-by-one 
               }
-        ```
+            }
+      ```
   - This kind of error is logical or semantic errors, the code actually works fine but the code doesn't yield the right output.  
  
 - The `loop-Body` is the block of code which contains the statements to be repeated.
@@ -1544,7 +1555,7 @@ Observe the following figure:
        - the `initial action` is the loop control variable initialization. 
        - the `control variable` controls the number of iterations in the loop.
        -  the `action-after-iterations` is the statement which adjusts the control variable.
-       -  each statement of the loop control structure is terminated using a semicolon `;` like the rest of the statements in java
+       -  each statement of the loop control structure is terminated using a semicolon `;` like the rest of the statements in Java
           -  `note`⚠ you can insert a semicolon by mistake after the control structure itself inside the parenthesis which results in loop termination ,or it means do nothing as follows:
                         
                  for(int i = 0; i<10;i++);   //<----- note the semicolon after the closing parenthesis here will case to print nothing as the loop has been terminated.
@@ -1553,46 +1564,47 @@ Observe the following figure:
                  } 
        - examples of using `for-loops`:
          1. Simple program to print students name followed by their IDs, the IDs start from 2020000 to 2020009:
-            
-       ``` java  
-                     public class Main{
-                       public static void main(String[] args) {
-                           //This program is for printing the students IDs:
-                           int initialID = 202000;
-                           String[] studentNames = {"Reem","Ali","Maged","Mariam","Mary","Ahmed","Mohammed","Mustafa","Shehzad","Sally"};
-                           for(int i = 0; i<10; i++){
-                               System.out.printf("Student's name: %s , student ID: %d \n ",studentNames[i],initialID+i);
-                           }
-                       }
-                     }  
-       ```
-       ![loop example 1](/images/loop%20example%201.png)
-       2. Simple program to print the multiples of a number entered by user and stop at of before 100:
-         
-               ```java 
-               import java.util.Scanner;
-               public class Main
-               {
-                   public static void main(String[] args) {
-                       // This program is for printing the multiples of any number entered by user till 100:
-                       // prompt user to enter a number
-                       System.out.println("Please enter a number");
-                       // define the Scanner Object
-                       Scanner input = new Scanner(System.in);
-                       int number = input.nextInt();
-                       int multiple = number;
-                       // input.nextInteger() is token based so a \n must be inserted or the next print lines 
-                       // will be right beside the taken input -confusing-
-                       System.out.println();
-                       // note that you can statements separated by comma in the initial action to initialize 
-                       // variables or control variable but it's more common to intialize control variables
-                       // and the same in after-iteration-action statement,you can add statements
-                       // you want to be executed after each iteration
-                       for(int i = 0; multiple <= 100; i++,multiple+=number){
-                           System.out.printf("Multiple number %d of number %d is %d \n ",i+1,number, multiple);
-                       }
-                   }
-               } ```
+
+          ``` Java 
+              public class Main{
+                  public static void main(String[] args) {
+                      //This program is for printing the students IDs:
+                      int initialID = 202000;
+                      String[] studentNames = {"Reem","Ali","Maged","Mariam","Mary","Ahmed","Mohammed","Mustafa","Shehzad","Sally"};
+                      for(int i = 0; i<10; i++){
+                          System.out.printf("Student's name: %s , student ID: %d \n ",studentNames[i],initialID+i);
+                      }
+                  }
+              }  
+          ```
+       ![loop example 1](/images/loop%20example%201.png) 
+         2. Simple program to print the multiples of a number entered by user and stop at of before 100:
+
+      ```Java 
+      import Java.util.Scanner;
+      public class Main
+      {
+          public static void main(String[] args) {
+              // This program is for printing the multiples of any number entered by user till 100:
+              // prompt user to enter a number
+              System.out.println("Please enter a number");
+              // define the Scanner Object
+              Scanner input = new Scanner(System.in);
+              int number = input.nextInt();
+              int multiple = number;
+              // input.nextInteger() is token based so a \n must be inserted or the next print lines 
+              // will be right beside the taken input -confusing-
+              System.out.println();
+              // note that you can statements separated by comma in the initial action to initialize 
+              // variables or control variable but it's more common to intialize control variables
+              // and the same in after-iteration-action statement,you can add statements
+              // you want to be executed after each iteration
+              for(int i = 0; multiple <= 100; i++,multiple+=number){
+                  System.out.printf("Multiple number %d of number %d is %d \n ",i+1,number, multiple);
+              }
+          }
+      } 
+      ```
 
         ![loop example 1](/images/loop%20example%201.png)
 
@@ -1600,7 +1612,7 @@ Observe the following figure:
     - While loop: 
        - A `while` loop executes statements repeatedly while the condition is true. Its syntax is simple:
 
-                ``` java
+                ``` Java
                
                   while (loop-continuation-condition) {
                     // Loop body
@@ -1635,8 +1647,8 @@ Observe the following figure:
         - using random built-in function to generate random numbers, notice the casting before using the function `(int)` , multiplying by 10 to move the range, because random generates numbers between 0 and 1 exlcusive.
         - a scanner object is created to take user's input then a while loop is crafted to recieve the user answer for the question.
         - if the user entered the right answer, it termintes and then the next line in the code executes. 
-        - you can check a similar example but with grading system here: [ItertativeAdditionQuiz](/Test%20Files%20Elementary/IterativeAdditionQuiz.java).
-         
+        - you can check a similar example but with grading system here: [ItertativeAdditionQuiz](/Test%20Files%20Elementary/IterativeAdditionQuiz.Java).
+
 2. The Post-test Loops: loops which loop at least one time before testing the condition:
     - Do-While Loop:
       - `do-While` loop is a variation of while loop but here the body of the loop is executed first before testing the condition.
@@ -1657,7 +1669,7 @@ Observe the following figure:
       - examples:
         - Menu example, when you prompt the user to choose from a menu, the menu must be executed at least once if the user chose to exit from the first time. you can see that in the following example:
           - note that it's just an example to clarify the concept of while, due to the missing functionalities like opening other files as it's considered an advanced topic currently.
-          - you can check it out at [DoWhileLoopTestExample](/Test%20Files%20Elementary/DoWhileLoopTestExample.java).
+          - you can check it out at [DoWhileLoopTestExample](/Test%20Files%20Elementary/DoWhileLoopTestExample.Java).
            
         ![do while loop test example](/images/Do%20while%20loop%20test%20example.png)
 
@@ -1686,23 +1698,23 @@ Simply a loop inside another loop are considered as nested loops.
 
 - try it out!
 - 
-        ``` java
-        public class Main{
-	        public static void main(String[] args) {
-	        	int rows = 5;
-                for (int i = 1; i <= rows; i++) {
-                    for (int j = 1; j <= i; j++) {
-                        System.out.print("* ");
-                    }
-                    System.out.println();
-                }
-	        }
+      ``` Java
+      public class Main{
+        public static void main(String[] args) {
+          int rows = 5;
+              for (int i = 1; i <= rows; i++) {
+                  for (int j = 1; j <= i; j++) {
+                      System.out.print("* ");
+                  }
+                  System.out.println();
+              }
         }
-        ```      
+      }
+      ```      
 
 - ⚠ `note`: using nested loops are computationally expensive (time complexity O(n^2)), so they are avoided as much as possible but some algorithms are built using nested for loops.
 
-#### Notes about Loops in java:
+#### Notes about Loops in Java:
 - Avoid using floating-point numbers in the continuation condition because of the precision of the floating numbers as floating-point numbers are represented in approximation in computers by nature:
   - An example illustrated from the same textbook mentioned above explained the precision problem caused because of using floating-point numbers in the continuation condition in addition to the statements inside the loop body itself:
   - The exact sum should be 50.50 but the loop output is 50.499985
@@ -1718,7 +1730,7 @@ Simply a loop inside another loop are considered as nested loops.
  
   ![using continue in a loop](/images/using%20continue.png)
 
-- An example on using Loops with the previously learnt concepts is shown in this example: [isPalindrome](/Test%20Files%20Elementary/isPalindrome.java)
+- An example on using Loops with the previously learnt concepts is shown in this example: [isPalindrome](/Test%20Files%20Elementary/isPalindrome.Java)
 - Checking the word is palindrome or not is a common programming problem you can search about it and check.
 
 Finally, the forth chapter is FINISHED!!! 
@@ -1735,7 +1747,7 @@ In this chapter you are about learning the first step towards the abstraction.
 
 We already mentioned before on a successive chapter that methods are used to define reusable code.
 
-Now we are going to delve deeper in Methods concepts in java context, the following are the point's I'm going to discuss:
+Now we are going to delve deeper in Methods concepts in Java context, the following are the point's I'm going to discuss:
 
   1. Method definition.
   2. Method Invocation
@@ -1780,7 +1792,7 @@ Now we are going to delve deeper in Methods concepts in java context, the follow
    
   ![method abstraction](/images/Methods%20in%20Java%20.png)
 
-  - now let's try to refine an old example, for example let's refine the [calculator](/Test%20Files%20Elementary/Calculator.java) example. 
+  - now let's try to refine an old example, for example let's refine the [calculator](/Test%20Files%20Elementary/Calculator.Java) example. 
   - Let's encapsulate these lines of code in a small code statement consists only of a method call. 
 
 <details><summary>details of how we refined the example to make use of method concept</summary>
@@ -1897,19 +1909,19 @@ statement to be reached regardless of how the if statement is evaluated, as show
 
         
 
-        ```java
-        public class CallStackExample {
-            public static void main(String[] args) {
-                System.out.println("Start of main()");
-                printHello();
-                System.out.println("End of main()");
-            }
+      ```Java
+      public class CallStackExample {
+          public static void main(String[] args) {
+              System.out.println("Start of main()");
+              printHello();
+              System.out.println("End of main()");
+          }
 
-            public static void printHello() {
-                System.out.println("Hello from printHello()");
-            }
-        }
-        ```
+          public static void printHello() {
+              System.out.println("Hello from printHello()");
+          }
+      }
+      ```
 
       When this program runs:
       
@@ -1952,27 +1964,27 @@ statement to be reached regardless of how the if statement is evaluated, as show
 - This behavior applies to **primitive data types** (like `int`, `float`, `boolean`) and can be confusing with reference types (like objects and arrays), but the core principle remains the same: **Java always passes values, not references**.
 
 - let's demonstrate an example:
-  
-    ``` java
+    
+      ``` Java
 
-        public class PassByValueExample {
+          public class PassByValueExample {
 
-          public static void main(String[] args) {
-              int original = 10;
-              System.out.println("Before calling method: " + original);
-              
-              modifyValue(original); // Passes the value, not the reference
-              
-              System.out.println("After calling method: " + original); // Original value remains unchanged
+            public static void main(String[] args) {
+                int original = 10;
+                System.out.println("Before calling method: " + original);
+                
+                modifyValue(original); // Passes the value, not the reference
+                
+                System.out.println("After calling method: " + original); // Original value remains unchanged
+            }
+
+          public static void modifyValue(int value) {
+              value = 20; // Only modifies the copy of the value
+              System.out.println("Inside method: " + value);
           }
-
-        public static void modifyValue(int value) {
-            value = 20; // Only modifies the copy of the value
-            System.out.println("Inside method: " + value);
         }
-      }
 
-    ```
+      ```
 - The value of `original` remains the same after calling the method.
 
 - Other languages which deal with pointers like C/Cpp can pass references to methods causing direct change to the original variables.
@@ -1983,22 +1995,22 @@ statement to be reached regardless of how the if statement is evaluated, as show
 
 - observe this example:
 
-    ``` java 
-         public class Main{
-            public static void main(String[] args) {
-                // passing incompatible types to a method: 
-                double base = 10;
-                double height = 5;
-              double area = calculateTriangleArea(base, height);
-              System.out.println("The triangle area is: "+ area);
+      ``` Java 
+          public class Main{
+              public static void main(String[] args) {
+                  // passing incompatible types to a method: 
+                  double base = 10;
+                  double height = 5;
+                double area = calculateTriangleArea(base, height);
+                System.out.println("The triangle area is: "+ area);
+              }
+            
+              public static double calculateTriangleArea(float base, int height){
+                  
+                  return 0.5 * base * height;
+              }
             }
-          
-            public static double calculateTriangleArea(float base, int height){
-                
-                return 0.5 * base * height;
-            }
-          }
-    ```  
+      ```  
 
   ![incompatible types](/images/compatible%20types%20error.png)    
 
@@ -2021,44 +2033,44 @@ statement to be reached regardless of how the if statement is evaluated, as show
 
 - The demonstrated the calculator example here clarifies the point: 
 
-    ``` java
-            public class Calculator {
+      ``` Java
+              public class Calculator {
 
-            public static void main(String[] args) {
-                int num1 = 10;
-                int num2 = 5;
+              public static void main(String[] args) {
+                  int num1 = 10;
+                  int num2 = 5;
 
-                // Modularity in action: calling independent methods for each operation
-                System.out.println("Addition: " + add(num1, num2));
-                System.out.println("Subtraction: " + subtract(num1, num2));
-                System.out.println("Multiplication: " + multiply(num1, num2));
-                System.out.println("Division: " + divide(num1, num2));
-            }
+                  // Modularity in action: calling independent methods for each operation
+                  System.out.println("Addition: " + add(num1, num2));
+                  System.out.println("Subtraction: " + subtract(num1, num2));
+                  System.out.println("Multiplication: " + multiply(num1, num2));
+                  System.out.println("Division: " + divide(num1, num2));
+              }
 
-            // Each method encapsulates its own logic, providing abstraction
-            public static int add(int a, int b) {
-                return a + b;
-            }
+              // Each method encapsulates its own logic, providing abstraction
+              public static int add(int a, int b) {
+                  return a + b;
+              }
 
-            public static int subtract(int a, int b) {
-                return a - b;
-            }
+              public static int subtract(int a, int b) {
+                  return a - b;
+              }
 
-            public static int multiply(int a, int b) {
-                return a * b;
-            }
+              public static int multiply(int a, int b) {
+                  return a * b;
+              }
 
-            public static int divide(int a, int b) {
-                if (b != 0) {
-                    return a / b;
-                } else {
-                    System.out.println("Error: Division by zero.");
-                    return 0;
-                }
-            }
-        }
+              public static int divide(int a, int b) {
+                  if (b != 0) {
+                      return a / b;
+                  } else {
+                      System.out.println("Error: Division by zero.");
+                      return 0;
+                  }
+              }
+          }
 
-    ```
+      ```
 
 - Until this point, abstraction concept is being introduced to you bit by bit until we approach the OOP chapters; then the concept will be clear.
 
@@ -2072,38 +2084,38 @@ statement to be reached regardless of how the if statement is evaluated, as show
   - **When Used**: When you need the same method name to perform different operations based on the input parameters.
 - observe the following example:
 
-    ``` java
+      ``` Java
 
-        public class Calculator {
+          public class Calculator {
 
-         // Overloaded methods: same name but different parameters
-          public int add(int a, int b) {
-            return a + b;
-          }
-
-          public double add(double a, double b) {
+          // Overloaded methods: same name but different parameters
+            public int add(int a, int b) {
               return a + b;
+            }
+
+            public double add(double a, double b) {
+                return a + b;
+            }
+
+            public int add(int a, int b, int c) {
+                return a + b + c;
+            }
+
+            public static void main(String[] args) {
+                Calculator calc = new Calculator();
+
+                // Calls different add methods based on the arguments
+                System.out.println(calc.add(5, 10));       // Calls the first add method (int, int)
+                System.out.println(calc.add(5.5, 10.2));   // Calls the second add method (double, double)
+                System.out.println(calc.add(5, 10, 15));   // Calls the third add method (int, int, int)
+            }
           }
 
-          public int add(int a, int b, int c) {
-              return a + b + c;
-          }
-
-          public static void main(String[] args) {
-              Calculator calc = new Calculator();
-
-              // Calls different add methods based on the arguments
-              System.out.println(calc.add(5, 10));       // Calls the first add method (int, int)
-              System.out.println(calc.add(5.5, 10.2));   // Calls the second add method (double, double)
-              System.out.println(calc.add(5, 10, 15));   // Calls the third add method (int, int, int)
-          }
-        }
-
-    ```
+      ```
 
 - Sometimes there are two or more possible matches for the invocation of a method, but the compiler cannot determine the most specific match. This is referred to as `ambiguous invocation`. Ambiguous invocation causes a compile error. Consider the following:
   
-      ```java
+      ```Java
          public class AmbiguousOverloading {
             public static void main(String[] args) {
             System.out.println(max(1, 2));
@@ -2204,7 +2216,7 @@ you'll apply method abstraction concept to isolate details from design and only 
     1. I started by the `getLiteralGrades` methods, as I wanted to print the literal grade of each course, then pass these literals to another method calculates the weight of each course solely. 
  
 
-      ``` java 
+      ``` Java 
       public static String[] getLetterGrade(int[] grades){
         String[] letterGrades = new String[grades.length];
         int index = 0;
@@ -2234,7 +2246,7 @@ you'll apply method abstraction concept to isolate details from design and only 
       ```  
     2. Then `calculateWeights` method came into the play:
 
-      ``` java
+      ``` Java
           public static float[] calculateWeights(String[] letterGrade){
           float[] weights = new float[letterGrade.length];
           int index = 0;
@@ -2255,7 +2267,7 @@ you'll apply method abstraction concept to isolate details from design and only 
         }
 
        ```  
-       notice the enhanced `switch` statement, read about how to use it [here](https://softwaremill.com/java-21-switch-the-power-on/).
+       notice the enhanced `switch` statement, read about how to use it [here](https://softwaremill.com/Java-21-switch-the-power-on/).
 
     3. the implementation of `gpaCalculator` method based on the mathematical  calculation of the GPA: 
 
@@ -2263,7 +2275,7 @@ you'll apply method abstraction concept to isolate details from design and only 
 
       where `n` is the number of registered courses, each course literal grade has a weight, the sume of the weights multiplied by credit hours over the total completed hours is the GPA.
 
-      ``` java 
+      ``` Java 
           public static float gpaCalculator(float[] weights,
                                           int totalHours,
                                           int numberOfRegisteredCourses,
@@ -2282,7 +2294,7 @@ you'll apply method abstraction concept to isolate details from design and only 
        
       $$ CGPA = \frac {(Old GPA × Old Credit Hours)+(New GPA × New Credit Hours)​}{Old Credit Hours + New Credit Hours }$$
 
-      ``` java
+      ``` Java
           public static float cumulativeGPA(float gpa, float oldGPA, 
                                           int totalCompletedHours,
                                           int oldCompletedHours){
@@ -2292,7 +2304,7 @@ you'll apply method abstraction concept to isolate details from design and only 
       ```
     5. Then the `studentPrintTranscript` method:
 
-      ``` java
+      ``` Java
           public static void printTranscript(float cgpa , float gpa, 
                                           String name, String id, 
                                           String[] letterGrades, String[] coursesNames,
@@ -2334,7 +2346,7 @@ you'll apply method abstraction concept to isolate details from design and only 
 
     6. actually I decided to refactor the printTranscript method into print and `estimateTheAcaddemicYear` methods, to make each method atomic (do one mission).
 
-      ``` java
+      ``` Java
           public static void printTranscript(float cgpa , float gpa,
                                        String name, String id,
                                        String[] letterGrades, String[] coursesNames,
@@ -2378,7 +2390,7 @@ you'll apply method abstraction concept to isolate details from design and only 
     7. It's better to enter the related data as collections, we are going to learn about the first and the basic collection `Arrays` in the next chapter, I used `Arrays` reference type to facilitate the passing and receiving of data.
     8. I constructed methods to process the input collections:
 
-      ``` java
+      ``` Java
           public static int[] processingNumericalInput(){
             int[] arr = new int[SIZE];
             Scanner input = new Scanner(System.in);
@@ -2399,7 +2411,7 @@ you'll apply method abstraction concept to isolate details from design and only 
       ``` 
     9. Then let's sum all up in the main method where we pass everything:
 
-      ``` java
+      ``` Java
 
           public static void main(String[] args) {
 
@@ -2445,7 +2457,7 @@ you'll apply method abstraction concept to isolate details from design and only 
       }
 
       ``` 
-  - You can find the full project here: [Student's Portal](/Projects/src/com/company/Main.java)
+  - You can find the full project here: [Student's Portal](/Projects/src/com/company/Main.Java)
    
 Fifth Chapter is Finished!!!
 ​       
@@ -2455,192 +2467,191 @@ Fifth Chapter is Finished!!!
 
 <details><summary><h3><strong>6. Arrays</strong></h3></summary>
 
-### 6. Arrays:
-  
-  In this chapter, you are about to learn the first step towards the data structures world and a crucial reference type used in almost everything.
-  We already mentioned before, in a successive chapter, that methods are used to define reusable code to not repeat the code lines applying the DRY heuristic. In the same context, we're going to be familiar with the very basic data structure : `array`.
+### 6. Arrays
 
-  `Array` stores a fixed-size sequential collection of elements of
-  the same type which allow to not repeat the declaration for large number of variables of the same type.
+In this chapter, you are about to learn the first step towards the data structures world and a crucial reference type used in almost everything.
+We already mentioned before, in a successive chapter, that methods are used to define reusable code to not repeat the code lines applying the DRY heuristic. In the same context, we're going to be familiar with the very basic data structure : `array`.
 
-  Concepts:
-  1. Array Basics (Declaration, size, accessing elements.etc.)
-  2. Copying Arrays.
-  3. Passing Arrays to Methods.
-  4. Returning an Array from a Method.
-  5. Variable-Length Argument Lists.
-  6. Searching & Sorting Arrays.
-  7. Arrays Class.
-  8. Command Line Arguments.
-   
- #### Array Basics:
- ##### Declare An Array:
-  - If you are familiar with C/C++ the array declaration would be like that:
+`Array` stores a fixed-size sequential collection of elements of
+the same type which allow to not repeat the declaration for large number of variables of the same type.
 
-      ``` java 
+Concepts:
+    1. Array Basics (Declaration, size, accessing elements.etc.)
+    2. Copying Arrays.
+    3. Passing Arrays to Methods.
+    4. Returning an Array from a Method.
+    5. Variable-Length Argument Lists.
+    6. Searching & Sorting Arrays.
+    7. Arrays Class.
+    8. Command Line Arguments.
+
+#### Array Basics:
+- If you are familiar with C/C++ the array declaration would be like that:
+
+      ``` Java 
           int array[] = {1,2,3,4};
       ```  
-  - This is allowed in java but not used, the declaration convention of arrays in java is quiet similar:
+- This is allowed in Java but not used, the declaration convention of arrays in Java is quiet similar:
 
-      ``` java
+      ``` Java
           int[] array = {1,2,3,4};
       ```     
-  - yes, just the place of the brackets is different.
+- yes, just the place of the brackets is different.
 
-  - Array is a reference type, which means the array reference variables contains the address of the array not the array content itself.
-      try the following: 
+- Array is a reference type, which means the array reference variables contains the address of the array not the array content itself.
+  try the following:
 
-      ``` java
+      ``` Java
           int[] elements = {0,3,5,2,51,54,78,9,3}; 
           System.out.println(elements); //returns an ambiguos string -- memory location
       ```
-  - It's important at this point to differentiate between declaring an array and allocating memory for it, declaring an array is just declaring an array reference variable to point to the array elements later, allocating space actually happens when you add elements to the array.
-  - Unlike the primitive datatypes; declaring an array doesn't allocate space in memory, only when you start to assign values to array elements.
-     
-      ``` java
+- It's important at this point to differentiate between declaring an array and allocating memory for it, declaring an array is just declaring an array reference variable to point to the array elements later, allocating space actually happens when you add elements to the array.
+- Unlike the primitive datatypes; declaring an array doesn't allocate space in memory, only when you start to assign values to array elements.
+
+      ``` Java
           int[] elements; // this is declaration without initialization
-          System.out.println(elements); //error          
+          //System.out.println(elements); //error          
       ``` 
-  - now you have to be familiar with `null` which is the value of the reference variable if the reference variable doesn't contain a reference to an array.
-  - you get NullPointerException when you try to access `elements[0]` if you didn't initialize elements array already, here the reference variable points to null. 
-  - Using `null` keyword with reference variables as a 'value':     
-      
-      ``` java
+- now you have to be familiar with `null` which is the value of the reference variable if the reference variable doesn't contain a reference to an array.
+- you get NullPointerException when you try to access `elements[0]` if you didn't initialize elements array already, here the reference variable points to null.
+- Using `null` keyword with reference variables as a 'value':
+
+      ``` Java
           int[] elements = null;
           System.out.println(elements); //null
       ```
-  - How empty array could be:
-     
-      ``` java
-         int[] integers = {};
-         System.out.println(integers.length); // 0  
-      ```    
-  - So in general,the syntax of declaring array as follows:    
-    
-     `elementType arrayRefVar[index] = new elementType[arraySize];`
+- How empty array could be:
 
-  - This statement does two things: (1) it creates an array using new elementType[arraySize]
-and (2) it assigns the reference of the newly created array to the variable arrayRefVar.   
-  - you can declare an array, specify its size then assign elements to it:
-      
-      ``` java
-            int[] myList = new String[10]; 
+      ``` Java
+          int[] integers = {};
+          System.out.println(integers.length); // 0  
+      ```    
+- So in general,the syntax of declaring array as follows:
+
+  `elementType arrayRefVar[index] = new elementType[arraySize];`
+
+- This statement does two things: (1) it creates an array using `new elementType[arraySize]`
+  and (2) it assigns the reference of the newly created array to the variable arrayRefVar.
+- you can declare an array, specify its size then assign elements to it:
+
+      ``` Java
+            int[] myList = new int[10]; 
             myList[7] = 5;
       ```
-  - for example this is one way to how you can initialize an array:
+- for example this is one way to how you can initialize an array:
 
-      ```java
+      ```Java
 
-          myList[0] = 5.6;
-          myList[1] = 4.5;
-          myList[2] = 3.3;
-          myList[3] = 13.2;
-          myList[4] = 4.0;
-          myList[5] = 34.33;
-          myList[6] = 34.0;
-          myList[7] = 45.45;
-          myList[8] = 99.993;
-          myList[9] = 11123;
+          myList2[0] = 5.6;
+          myList2[1] = 4.5;
+          myList2[2] = 3.3;
+          myList2[3] = 13.2;
+          myList2[4] = 4.0;
+          myList2[5] = 34.33;
+          myList2[6] = 34.0;
+          myList2[7] = 45.45;
+          myList2[8] = 99.993;
+          myList2[9] = 11123;
       ```
-  - After you specify the size of an array, you cannot change it later, you can obtain the size of an array using `arrRefVar.length`:
+- After you specify the size of an array, you cannot change it later, you can obtain the size of an array using `arrRefVar.length`:
 
-      ``` java
+      ``` Java
           System.out.println(mylist.length); // 10
       ```
-  - reminding you again that arrays in java are 0-based index (means you start counting and accessing array elements from 0 index)
-  - in `mylist` example if you tried to access `mylist[10]` will result in `ArrayOurOfBounds` runtime error.
-  - Java has a shorthand notation, known as the `array initializer`, which combines the declaration,
-creation,and initialization of an array in one statement:
+- reminding you again that arrays in Java are 0-based index (means you start counting and accessing array elements from 0 index)
+- in `mylist` example if you tried to access `mylist[10]` will result in `ArrayOurOfBounds` runtime error.
+- Java has a shorthand notation, known as the `array initializer`, which combines the declaration,
+  creation,and initialization of an array in one statement:
 
-      ``` java
+      ``` Java
           double[] myList = {1.9, 2.9, 3.4, 3.5};
       ```
-  - important note to mention :you cannot separate declaration from initialization in arrays, you can use the array initializer only while you declaring the array.
-      
-      ``` java
-         float[] arv;
-         arv = {1.1,3.4,5.6}; //error 
+- important note to mention :you cannot separate declaration from initialization in arrays, you can use the array initializer only while you declaring the array.
+
+      ``` Java
+          float[] arv;
+          //arv = {1.1,3.4,5.6}; //error 
       ```
-  - It was mentioned that the array size cannot be altered after declaration, once the space is allocated the elements of the array take default values before you assign values to them:
+- It was mentioned that the array size cannot be altered after declaration, once the space is allocated the elements of the array take default values before you assign values to them:
 
-    | Data Type   | Default Value |
-    |-------------|---------------|
-    | **Numeric** | `0`           |
-    | **Char**    | `\u0000`      |
-    | **Boolean** | `false`       |
+  | Data Type   | Default Value |
+  |-------------|---------------|
+  | **Numeric** | `0`           |
+  | **Char**    | `\u0000`      |
+  | **Boolean** | `false`       |
 
-  - Accessing array elements is done using its `index`, remember again arrays are zero indexed means if you want to access the second array element it will be like this : `elements[1];`
-  - The `index` values range from `0` to `arrayReferenceVariable.length -1`
-  - An indexed variable can be used in the same way as a regular variable. For example, the
-following code adds the values in `myList[0]` and `myList[1]` to `myList[2]`:
+- Accessing array elements is done using its `index`, remember again arrays are zero indexed means if you want to access the second array element it will be like this : `elements[1];`
+- The `index` values range from `0` to `arrayReferenceVariable.length -1`
+- An indexed variable can be used in the same way as a regular variable. For example, the
+  following code adds the values in `myList[0]` and `myList[1]` to `myList[2]`:
 
-      ``` java  
+      ``` Java  
           myList[2] = myList[0] + myList[1];
       ```        
-  - You can **insert**, **print** or **traverse** array using `loops`:
+- You can **insert**, **print** or **traverse** array using `loops`:
     - for loops
     - for each
-      - `for each` loops are enhanced loops can be used to forward traverse arrays or collections in single steps.
-     
-    using ordinary loop:
+        - `for each` loops are enhanced loops can be used to forward traverse arrays or collections in single steps.
+
+  - using ordinary loop:
       ``` Java
         for (int i = 0; i < myList.length; i++) {
             System.out.print(myList[i] + " ");
         }
       ``` 
-    using for each:
+  - using for each:
 
       ``` Java
           for (int num : mylist) {
-            System.out.println(num);
-        }
+            System.out.println(num);}
       ``` 
-  - Using for loops are more common than for each
-  - Let's initialize arrays using the same logic of iteration:
+- Using for loops are more common than for each
+- Let's initialize arrays using the same logic of iteration:
     - prompt user to enter array values:
 
-      ``` java
-          Scanner input  = new java.util.Scanner(System.in);
+      ``` Java
+          Scanner input  = new Java.util.Scanner(System.in);
 
           for (int i = 0; i< mylist.length; i++){
             myList[i] = input.nextDouble();
           }
       ``` 
     - initialize the array using random function from Math class:
-      ```java 
-         for (int i = 0; i < mylist.length; i++){
-            mylist[i] = Math.random()*100; // inserting numbers ranges from 0.0 to 100.0 exclusive
-         }
+      ```Java 
+          for (int i = 0; i < mylist.length; i++){
+            mylist[i] = (Math.random() * 100); // inserting numbers ranges from 0.0 to 100.0 exclusive
+          }
       ``` 
-  - A question might come up here: **why don’t we use the enhanced for-each loop?** It’s a good question. `for-each loops are excellent for traversing (reading) elements in a step-by-step manner, but they’re not suitable for modifying elements`. This is because the loop works with a copy of each element, rather than directly accessing them through their indices. 
-  -  another note is that if you tried to print elements of `char[]` type array, you can use `System.out.print` directly unlike the other array types which require iteration structure to handle the traverse. 
+- A question might come up here: **why don’t we use the enhanced for-each loop?** It’s a good question. `for-each loops are excellent for traversing (reading) elements in a step-by-step manner, but they’re not suitable for modifying elements`. This is because the loop works with a copy of each element, rather than directly accessing them through their indices.
+-  another note is that if you tried to print elements of `char[]` type array, you can use `System.out.print` directly unlike the other array types which require iteration structure to handle the traverse.
 
-      ``` java 
+      ``` Java 
 
           char[] name = {'A','l','i'};
           System.out.println(name); // Ali 
 
       ```  
-  - This behavior can be observed with `printf`, as it doesn’t automatically treat `char[]` as a string due to internal differences in how `printf` handles format specifiers compared to `print` and `println`. Unlike `print` and `println`, `printf` relies on format specifiers that don’t automatically interpret `char[]` as a sequence of characters. Therefore, converting `char[]` to a String is necessary with printf to avoid printing the reference address. 
+- This behavior can be observed with `printf`, as it doesn’t automatically treat `char[]` as a string due to internal differences in how `printf` handles format specifiers compared to `print` and `println`. Unlike `print` and `println`, `printf` relies on format specifiers that don’t automatically interpret `char[]` as a sequence of characters. Therefore, converting `char[]` to a String is necessary with printf to avoid printing the reference address.
 
 #### Copying Arrays:
-- Once you entered the world of reference types, everything changes. 
-- Even copying, you cannot copy contents an array into another array just like the following:
-    
-      ``` java
+- Once you entered the world of reference types, everything changes.
+    - Even copying, you cannot copy contents an array into another array just like the following:
+
+      ``` Java
           int[] copyArray = mylist; // that's wrong
       ```
-    ![copying array using assignment operator](/images/copying%20contents%20of%20an%20array.png)
-    
-- you've just copied the reference of `mylist` array into `copyArray`, so copyArray have the same reference, not the content.
-- There are three ways to copy arrays:
-  1. Use a loop to copy individual elements one by one.
-  2. Use the static `arraycopy` method in the `System class`.
-  3. Use the `clone` method to copy arrays; this would be more clear as we approach deeper in OOP.
-     
-       1. Using loop:
-      
-      ```java
+      ![copying array using assignment operator](/images/copying%20contents%20of%20an%20array.png)
+
+    - you've just copied the reference of `mylist` array into `copyArray`, so copyArray have the same reference, not the content.
+    - There are three ways to copy arrays:
+        1. Use a loop to copy individual elements one by one.
+        2. Use the static `arraycopy` method in the `System class`.
+        3. Use the `clone` method to copy arrays; this would be more clear as we approach deeper in OOP.
+
+            1. Using loop
+            2. Using arraycopy
+
+      ```Java
 
           public class Main
           {
@@ -2650,34 +2661,35 @@ following code adds the values in `myList[0]` and `myList[1]` to `myList[2]`:
                   array[i] = (int)(Math.random() * 6);
                   System.out.println(array[i]);
               }
-              
+            
               // to copy this array into another array using loops:
               System.out.println("-----------------");
-              
+            
               int[] copiedArray = new int[6];
-              
+            
               for(int j=0; j<copiedArray.length; j++){
                   copiedArray[j] = array[j];
                   System.out.println(copiedArray[j]);
               }
-              
+            
             }
           }
       ```
-      2. Using arraycopy method:
 
-     `note` that `arraycopy` method doesn't follow the naming convention in java.
+            
 
-      ``` java 
+           `note` that `arraycopy` method doesn't follow the naming convention in Java.
+
+      ``` Java 
           //formal declaration of the method:
           public static void arraycopy(Object src, int srcPos, Object dest, int destPos, int length);
           // where src is the source you would copy from, srcPos --> where you want to start copying, the same for the next two parameters, the last parameter is the number of elements would you copy?
-            
+          
       ```
 
 
-      ```java
-              import java.util.Arrays;
+      ```Java
+              import Java.util.Arrays;
               public class Main
               {
                 public static void main(String[] args) {
@@ -2696,11 +2708,13 @@ following code adds the values in `myList[0]` and `myList[1]` to `myList[2]`:
                 }
               }
       ``` 
+
 #### Passing Arrays to Methods:
 
 
-        
+
+
 </details>
 
+---
 
------
