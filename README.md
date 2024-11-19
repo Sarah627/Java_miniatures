@@ -2785,7 +2785,7 @@ Concepts:
 - You can pass arrays when invoking a method. A method may also return an array
       
       ``` Java
-            public class ArrayReturnExample {
+          public class ArrayReturnExample {
 
           // Method to return an array of even numbers
           public static int[] generateArray(int size) {
@@ -2802,7 +2802,7 @@ Concepts:
                   System.out.print(num + " ");
               }
           }
-      }
+          }
       ```
 
 #### 5. Variable Length Argument Lists:
