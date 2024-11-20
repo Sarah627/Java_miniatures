@@ -2801,7 +2801,7 @@ Concepts:
     ```
 
 
-#### 5. Variable Length Argument Lists:
+#### 5. Variable Length Parameter Lists:
 - we can pass variable number of parameter list, means that you can pass one or two or more parameters but should be of the same type, here java treats the var param list as Array.
 - In the method declaration, you specify the type followed by an ellipsis (...).
 - Only one variable-length parameter may be specified in a method.
@@ -2823,6 +2823,180 @@ Concepts:
             }
           }
        ```
+
+#### 6. Arrays Class in Java:
+- The java.util.Arrays class contains various static methods for sorting and searching
+arrays, comparing arrays, filling array elements, and returning a string representation of the
+array. These methods are overloaded for all primitive types.
+
+1. **Sorting Arrays Using `Arrays.sort()`**
+  The `sort()` method sorts the elements of an array in ascending order.
+
+      ```java
+      import java.util.Arrays;
+
+      public class SortExample {
+          public static void main(String[] args) {
+              int[] numbers = {5, 1, 12, -5, 16};
+              Arrays.sort(numbers); // Sort in ascending order
+              System.out.println(Arrays.toString(numbers)); // Output: [-5, 1, 5, 12, 16]
+          }
+      }
+      ```
+
+2. **Parallel Sorting Using `Arrays.parallelSort()`**
+  `parallelSort()` divides the array into sub-arrays and sorts them in parallel, combining the results at the end.
+
+      ```java
+      import java.util.Arrays;
+
+      public class ParallelSortExample {
+          public static void main(String[] args) {
+              int[] numbers = {9, 3, 7, 1, 6};
+              Arrays.parallelSort(numbers); // Parallel sorting
+              System.out.println(Arrays.toString(numbers)); // Output: [1, 3, 6, 7, 9]
+          }
+      }
+      ```
+3. **Searching for an Element Using `Arrays.binarySearch()`**
+  `binarySearch()` searches for a specified value in a **sorted** array. It returns the index of the element if found, or a negative value if not.
+      ```java
+      import java.util.Arrays;
+
+      public class BinarySearchExample {
+          public static void main(String[] args) {
+              int[] numbers = {1, 3, 5, 7, 9};
+              int index = Arrays.binarySearch(numbers, 5); // Search for 5
+              System.out.println("Index of 5: " + index); // Output: Index of 5: 2
+              
+              int notFoundIndex = Arrays.binarySearch(numbers, 4); // Search for 4
+              System.out.println("Index of 4: " + notFoundIndex); // Output: Index of 4: -3
+          }
+      }
+      ```
+4. **Converting an Array to a String Using `Arrays.toString()`**
+  `toString()` converts the contents of an array into a readable string representation.
+
+      ```java
+      import java.util.Arrays;
+
+      public class ToStringExample {
+          public static void main(String[] args) {
+              String[] fruits = {"Apple", "Banana", "Cherry"};
+              System.out.println(Arrays.toString(fruits)); // Output: [Apple, Banana, Cherry]
+          }
+      }
+      ```
+5. **Filling an Array Using `Arrays.fill()`**
+  `fill()` assigns a specified value to every element in the array.
+
+      ```java
+      import java.util.Arrays;
+
+      public class FillExample {
+          public static void main(String[] args) {
+              int[] numbers = new int[5];
+              Arrays.fill(numbers, 42); // Fill all elements with 42
+              System.out.println(Arrays.toString(numbers)); // Output: [42, 42, 42, 42, 42]
+          }
+      }
+      ```
+6. **Comparing Arrays Using `Arrays.equals()`**
+  `equals()` checks if two arrays are equal, element by element.
+
+      ```java
+      import java.util.Arrays;
+
+      public class EqualsExample {
+          public static void main(String[] args) {
+              int[] arr1 = {1, 2, 3};
+              int[] arr2 = {1, 2, 3};
+              int[] arr3 = {3, 2, 1};
+              
+              System.out.println(Arrays.equals(arr1, arr2)); // Output: true
+              System.out.println(Arrays.equals(arr1, arr3)); // Output: false
+          }
+      }
+      ```
+7. **Copying Arrays Using `Arrays.copyOf()`**
+  `copyOf()` creates a copy of the array with the specified length.
+
+      ```java
+      import java.util.Arrays;
+
+      public class CopyOfExample {
+          public static void main(String[] args) {
+              int[] numbers = {10, 20, 30};
+              int[] copy = Arrays.copyOf(numbers, 5); // Copy with size 5
+              System.out.println(Arrays.toString(copy)); // Output: [10, 20, 30, 0, 0]
+          }
+      }
+      ```
+8. **Splitting Arrays Using `Arrays.copyOfRange()`**
+  `copyOfRange()` creates a copy of a specified range from the original array.
+
+      ```java
+      import java.util.Arrays;
+
+      public class CopyOfRangeExample {
+          public static void main(String[] args) {
+              int[] numbers = {1, 2, 3, 4, 5};
+              int[] subArray = Arrays.copyOfRange(numbers, 1, 4); // Copy index 1 to 3 (4 exclusive)
+              System.out.println(Arrays.toString(subArray)); // Output: [2, 3, 4]
+          }
+      }
+      ```
+9. **Comparing Lexicographically Using `Arrays.compare()`**
+  `compare()` compares two arrays lexicographically.
+
+      ```java
+      import java.util.Arrays;
+
+      public class CompareExample {
+          public static void main(String[] args) {
+              int[] arr1 = {1, 2, 3};
+              int[] arr2 = {1, 2, 4};
+              int result = Arrays.compare(arr1, arr2);
+              System.out.println(result); // Output: -1 (arr1 < arr2)
+          }
+      }
+      ```
+
+10.  **Checking Array Mismatches Using `Arrays.mismatch()`**
+  `mismatch()` returns the index of the first mismatch between two arrays, or `-1` if they're identical.
+
+      ```java
+      import java.util.Arrays;
+
+      public class MismatchExample {
+          public static void main(String[] args) {
+              int[] arr1 = {1, 2, 3};
+              int[] arr2 = {1, 2, 4};
+              int mismatchIndex = Arrays.mismatch(arr1, arr2);
+              System.out.println("First mismatch at index: " + mismatchIndex); // Output: First mismatch at index: 2
+          }
+      }
+      ```
+
+Arrays Methods Table:
+
+| Method               | Purpose                                         |
+|----------------------|-------------------------------------------------|
+| `sort()`             | Sorts array elements in ascending order.        |
+| `parallelSort()`     | Sorts array elements using parallel computation |
+| `binarySearch()`     | Finds an element in a sorted array.             |
+| `toString()`         | Converts array to a string representation.      |
+| `fill()`             | Fills array elements with a specified value.    |
+| `equals()`           | Compares two arrays for equality.               |
+| `copyOf()`           | Copies array with specified length.             |
+| `copyOfRange()`      | Copies a range of array elements.               |
+| `compare()`          | Compares arrays lexicographically.              |
+| `mismatch()`         | Finds the first index of mismatch.              |
+
+
+
+#### 7. Command Line Arguments:
+
 
 </details>
 
