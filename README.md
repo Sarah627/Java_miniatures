@@ -2608,14 +2608,14 @@ Concepts:
 - Using for loops are more common than for each
   - Let's initialize arrays using the same logic of iteration:
       - prompt user to enter array values:
-
-        ``` Java
-        Scanner input  = new Java.util.Scanner(System.in);
-        for (int i = 0; i< mylist.length; i++){
-        myList[i] = input.nextDouble();
-        }
+        
+        ```` Java
+            Scanner input  = new Java.util.Scanner(System.in);
+            for (int i = 0; i< mylist.length; i++){
+            myList[i] = input.nextDouble();
+            }
         ```
-       
+        
       - initialize the array using random function from Math class:
         ```Java 
             for (int i = 0; i < mylist.length; i++){
@@ -2781,50 +2781,49 @@ Concepts:
 #### 4. Returning Arrays From Methods:
 - You can pass arrays when invoking a method. A method may also return an array.
 
-      ```Java
-          public class ArrayReturnExample {
-          // Method to return an array of even numbers
-          public static int[] generateArray(int size) {
-              int[] array = new int[size]; 
-              for (int i = 0; i < size; i++) {
-                  array[i] = i * 2; 
-              }
-              return array; // Return the array
+    ```Java
+      public class ArrayReturnExample {
+      // Method to return an array of even numbers
+      public static int[] generateArray(int size) {
+          int[] array = new int[size]; 
+          for (int i = 0; i < size; i++) {
+              array[i] = i * 2; 
           }
-          public static void main(String[] args) {
-              int[] result = generateArray(5); // Call the method and get the array
-              for (int num : result) {        // Print the elements of the array
-                  System.out.print(num + " ");
-              }
+          return array; // Return the array
+      }
+      public static void main(String[] args) {
+          int[] result = generateArray(5); // Call the method and get the array
+          for (int num : result) {        // Print the elements of the array
+              System.out.print(num + " ");
           }
-          }
-      ```
+      }
+      }
+    ```
 
 
 #### 5. Variable Length Argument Lists:
-- we can pass variable number of paramter list, means that you can pass one or two or more paramters but should be of the same type, here java treats the var param list as Array.
+- we can pass variable number of parameter list, means that you can pass one or two or more parameters but should be of the same type, here java treats the var param list as Array.
 - In the method declaration, you specify the type followed by an ellipsis (...).
 - Only one variable-length parameter may be specified in a method.
 - This parameter must be the last parameter. Any regular parameters must precede it.
 - Look at the following example:
 
-      ```java 
+       ```Java 
           public class VarargsExample {
           // Method with variable-length parameter list
           public static int sum(int... numbers) {
               int total = 0;
                 for (int num : numbers) {
-                    total += num; // Add each number to total
-                }
-                return total;
-            }
+                    total += num; // Add each number to total}
+                return total;}
           public static void main(String[] args) {
               System.out.println(sum(1, 2, 3));       // Output: 6
               System.out.println(sum(10, 20, 30, 40)); // Output: 100
               System.out.println(sum());             // Output: 0 (no arguments passed)
             }
-        }
-      ```   
+          }
+       ```
+
 </details>
 
 ---
