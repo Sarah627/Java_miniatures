@@ -2483,6 +2483,7 @@ Concepts:
     5. Variable-Length Argument Lists.
     6. Arrays Class.
     7. Command Line Arguments.
+    8. Two Dimensional Arrays.
 
 #### Array Basics:
 - If you are familiar with C/C++ the array declaration would be like that:
@@ -3017,6 +3018,103 @@ public class Main
     javac Main.java
     java Main yourname
 ```
+
+
+#### 8. Two Dimensional Arrays:
+- A two-dimensional array in Java is essentially an array of arrays. It can be visualized as a table, where each element is accessed using two indices: one for the row and one for the column.
+
+##### **Declaration and Initialization:**
+
+1. **Declaration:**
+   - A two-dimensional array can be declared as follows:
+     ```java
+     int[][] matrix;
+     ```
+
+2. **Initialization:**
+   - You can initialize the array at the time of declaration or later.
+     - **Method 1: During declaration**
+       ```java
+       int[][] matrix = {
+           {1, 2, 3},
+           {4, 5, 6},
+           {7, 8, 9}
+       };
+       ```
+     - **Method 2: After declaration**
+       ```java
+       int[][] matrix = new int[3][3]; // creates a 3x3 matrix
+       matrix[0][0] = 1;
+       matrix[0][1] = 2;
+       matrix[0][2] = 3;
+       matrix[1][0] = 4;
+       matrix[1][1] = 5;
+       matrix[1][2] = 6;
+       matrix[2][0] = 7;
+       matrix[2][1] = 8;
+       matrix[2][2] = 9;
+       ```
+
+##### **Accessing Elements in a Two-Dimensional Array:**
+
+- You access an element by specifying two indices: one for the row and one for the column.
+```java
+int value = matrix[1][2]; // Accesses the element in the 2nd row and 3rd column (value is 6)
+```
+
+##### **Iterating Through Two-Dimensional Arrays:**
+
+- You can iterate over a two-dimensional array using nested loops:
+
+```java
+for (int i = 0; i < matrix.length; i++) { // Loop through rows
+    for (int j = 0; j < matrix[i].length; j++) { // Loop through columns
+        System.out.print(matrix[i][j] + " ");
+    }
+    System.out.println();
+}
+```
+##### **Example of a Calculator Using a Two-Dimensional Array:**
+
+
+```java
+public class Calculator {
+    public static void main(String[] args) {
+        int[][] operations = new int[3][3]; // A 3x3 matrix for storing results of operations
+
+        // Filling the array with simple operations
+        operations[0][0] = 10 + 5;   // addition
+        operations[0][1] = 10 - 5;   // subtraction
+        operations[0][2] = 10 * 5;   // multiplication
+        operations[1][0] = 10 / 5;   // division
+        operations[1][1] = 10 % 5;   // modulo
+        operations[1][2] = (int) Math.pow(10, 2); // exponentiation
+        operations[2][0] = 5 + 10;   // reverse addition
+        operations[2][1] = 5 - 10;   // reverse subtraction
+        operations[2][2] = 5 * 10;   // reverse multiplication
+
+        // Printing the result of operations
+        for (int i = 0; i < operations.length; i++) {
+            for (int j = 0; j < operations[i].length; j++) {
+                System.out.print(operations[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+```
+
+    **Output:**
+    ```
+    15 5 50 
+    2 0 100 
+    15 -5 50 
+    ```
+#### notes:
+
+Last Chapter in Java Basics is Finished Finally 🥳!!!
+
+
 </details>
 
 ---
