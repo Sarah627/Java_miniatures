@@ -2540,7 +2540,6 @@ Concepts:
 - for example this is one way to how you can initialize an array:
 
       ```Java
-
           myList2[0] = 5.6;
           myList2[1] = 4.5;
           myList2[2] = 3.3;
@@ -2555,7 +2554,7 @@ Concepts:
 - After you specify the size of an array, you cannot change it later, you can obtain the size of an array using `arrRefVar.length`:
 
       ``` Java
-          System.out.println(mylist.length); // 10
+            System.out.println(mylist.length); // 10
       ```
 - reminding you again that arrays in Java are 0-based index (means you start counting and accessing array elements from 0 index)
 - in `mylist` example if you tried to access `mylist[10]` will result in `ArrayOurOfBounds` runtime error.
@@ -2563,13 +2562,13 @@ Concepts:
   creation,and initialization of an array in one statement:
 
       ``` Java
-          double[] myList = {1.9, 2.9, 3.4, 3.5};
+            double[] myList = {1.9, 2.9, 3.4, 3.5};
       ```
 - important note to mention :you cannot separate declaration from initialization in arrays, you can use the array initializer only while you declaring the array.
 
       ``` Java
-          float[] arv;
-          //arv = {1.1,3.4,5.6}; //error 
+            float[] arv;
+            //arv = {1.1,3.4,5.6}; //error 
       ```
 - It was mentioned that the array size cannot be altered after declaration, once the space is allocated the elements of the array take default values before you assign values to them:
 
@@ -2584,8 +2583,8 @@ Concepts:
 - An indexed variable can be used in the same way as a regular variable. For example, the
   following code adds the values in `myList[0]` and `myList[1]` to `myList[2]`:
 
-      ``` Java  
-          myList[2] = myList[0] + myList[1];
+      ```Java  
+            myList[2] = myList[0] + myList[1];
       ```        
 - You can **insert**, **print** or **traverse** array using `loops`:
     - for loops
@@ -2624,7 +2623,7 @@ Concepts:
 - A question might come up here: **why don’t we use the enhanced for-each loop?** It’s a good question. `for-each loops are excellent for traversing (reading) elements in a step-by-step manner, but they’re not suitable for modifying elements`. This is because the loop works with a copy of each element, rather than directly accessing them through their indices.
 -  another note is that if you tried to print elements of `char[]` type array, you can use `System.out.print` directly unlike the other array types which require iteration structure to handle the traverse.
 
-      ``` Java 
+      ```Java 
 
           char[] name = {'A','l','i'};
           System.out.println(name); // Ali 
@@ -2636,8 +2635,8 @@ Concepts:
 - Once you entered the world of reference types, everything changes.
     - Even copying, you cannot copy contents an array into another array just like the following:
 
-      ``` Java
-          int[] copyArray = mylist; // that's wrong
+      ```Java
+         int[] copyArray = mylist; // that's wrong
       ```
       ![copying array using assignment operator](/images/copying%20contents%20of%20an%20array.png)
 
@@ -2677,9 +2676,9 @@ Concepts:
 
             
 
-           `note` that `arraycopy` method doesn't follow the naming convention in Java.
+      `note` that `arraycopy` method doesn't follow the naming convention in Java.
 
-      ``` Java 
+      ```Java 
           //formal declaration of the method:
           public static void arraycopy(Object src, int srcPos, Object dest, int destPos, int length);
           // where src is the source you would copy from, srcPos --> where you want to start copying, the same for the next two parameters, the last parameter is the number of elements would you copy?
@@ -2784,7 +2783,7 @@ Concepts:
 #### 4. Returning Arrays From Methods:
 - You can pass arrays when invoking a method. A method may also return an array
       
-      ``` Java
+      ```Java
       public class ArrayReturnExample {
 
       // Method to return an array of even numbers
