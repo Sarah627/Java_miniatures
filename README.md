@@ -2487,27 +2487,27 @@ Concepts:
 #### Array Basics:
 - If you are familiar with C/C++ the array declaration would be like that:
 
-      ``` Java 
-          int array[] = {1,2,3,4};
-      ```  
+    ```Java
+        int array[] = {1,2,3,4};
+    ```  
 - This is allowed in Java but not used, the declaration convention of arrays in Java is quiet similar:
 
-      ``` Java
-          int[] array = {1,2,3,4};
-      ```     
+    ```Java
+         int[] array = {1,2,3,4};
+    ```     
 - yes, just the place of the brackets is different.
 
 - Array is a reference type, which means the array reference variables contains the address of the array not the array content itself.
   try the following:
 
-      ``` Java
+      ```Java
           int[] elements = {0,3,5,2,51,54,78,9,3}; 
           System.out.println(elements); //returns an ambiguos string -- memory location
       ```
 - It's important at this point to differentiate between declaring an array and allocating memory for it, declaring an array is just declaring an array reference variable to point to the array elements later, allocating space actually happens when you add elements to the array.
 - Unlike the primitive datatypes; declaring an array doesn't allocate space in memory, only when you start to assign values to array elements.
-
-      ``` Java
+      
+      ```Java
           int[] elements; // this is declaration without initialization
           //System.out.println(elements); //error          
       ``` 
@@ -2515,7 +2515,7 @@ Concepts:
 - you get NullPointerException when you try to access `elements[0]` if you didn't initialize elements array already, here the reference variable points to null.
 - Using `null` keyword with reference variables as a 'value':
 
-      ``` Java
+      ```Java
           int[] elements = null;
           System.out.println(elements); //null
       ```
@@ -2539,18 +2539,19 @@ Concepts:
       ```
 - for example this is one way to how you can initialize an array:
 
-      ```Java
-          myList2[0] = 5.6;
-          myList2[1] = 4.5;
-          myList2[2] = 3.3;
-          myList2[3] = 13.2;
-          myList2[4] = 4.0;
-          myList2[5] = 34.33;
-          myList2[6] = 34.0;
-          myList2[7] = 45.45;
-          myList2[8] = 99.993;
-          myList2[9] = 11123;
-      ```
+
+    ```Java
+       myList2[0] = 5.6;
+       myList2[1] = 4.5;
+       myList2[2] = 3.3;
+       myList2[3] = 13.2;
+       myList2[4] = 4.0;
+       myList2[5] = 34.33;
+       myList2[6] = 34.0;
+       myList2[7] = 45.45;
+       myList2[8] = 99.993;
+       myList2[9] = 11123;
+    ```
 - After you specify the size of an array, you cannot change it later, you can obtain the size of an array using `arrRefVar.length`:
 
       ``` Java
@@ -2592,6 +2593,7 @@ Concepts:
         - `for each` loops are enhanced loops can be used to forward traverse arrays or collections in single steps.
 
   - using ordinary loop:
+  
       ``` Java
         for (int i = 0; i < myList.length; i++) {
             System.out.print(myList[i] + " ");
@@ -2604,22 +2606,22 @@ Concepts:
             System.out.println(num);}
       ``` 
 - Using for loops are more common than for each
-- Let's initialize arrays using the same logic of iteration:
-    - prompt user to enter array values:
+  - Let's initialize arrays using the same logic of iteration:
+      - prompt user to enter array values:
 
-      ``` Java
-          Scanner input  = new Java.util.Scanner(System.in);
-
-          for (int i = 0; i< mylist.length; i++){
-            myList[i] = input.nextDouble();
-          }
-      ``` 
-    - initialize the array using random function from Math class:
-      ```Java 
-          for (int i = 0; i < mylist.length; i++){
-            mylist[i] = (Math.random() * 100); // inserting numbers ranges from 0.0 to 100.0 exclusive
-          }
-      ``` 
+        ``` Java
+        Scanner input  = new Java.util.Scanner(System.in);
+        for (int i = 0; i< mylist.length; i++){
+        myList[i] = input.nextDouble();
+        }
+        ```
+       
+      - initialize the array using random function from Math class:
+        ```Java 
+            for (int i = 0; i < mylist.length; i++){
+              mylist[i] = (Math.random() * 100); // inserting numbers ranges from 0.0 to 100.0 exclusive
+            }
+        ``` 
 - A question might come up here: **why don’t we use the enhanced for-each loop?** It’s a good question. `for-each loops are excellent for traversing (reading) elements in a step-by-step manner, but they’re not suitable for modifying elements`. This is because the loop works with a copy of each element, rather than directly accessing them through their indices.
 -  another note is that if you tried to print elements of `char[]` type array, you can use `System.out.print` directly unlike the other array types which require iteration structure to handle the traverse.
 
@@ -2674,8 +2676,6 @@ Concepts:
           }
       ```
 
-            
-
       `note` that `arraycopy` method doesn't follow the naming convention in Java.
 
       ```Java 
@@ -2684,8 +2684,6 @@ Concepts:
           // where src is the source you would copy from, srcPos --> where you want to start copying, the same for the next two parameters, the last parameter is the number of elements would you copy?
           
       ```
-
-
       ```Java
               import Java.util.Arrays;
               public class Main
@@ -2709,7 +2707,7 @@ Concepts:
 
 #### Passing Arrays to Methods:
 - We've already learnt that Java is 'passing by value', that happens when you pass primitive data types in addition to the reference data types as arrays.
-- It's a common pitfall to think Java passes array or objects by reference because you can actually make change after passing them to a method but it's not, it still passes them by value.
+- It's a common pitfall to think Java passes array or objects by reference because you can actually make change after passing them to a method, but it's not, it still passes them by value.
 - The confusion between **pass by value** and **pass by reference** in Java often arises due to how **reference types** like objects and arrays behave when passed to methods. 
 - This can be clarified using examples:
   - In Java, **everything is passed by value**. This means when a variable is passed to a method, a **copy of its value** is made and used in the method.
@@ -2781,32 +2779,52 @@ Concepts:
       - This does not affect the `array` in `main`, as the original reference was not changed.
 
 #### 4. Returning Arrays From Methods:
-- You can pass arrays when invoking a method. A method may also return an array
-      
+- You can pass arrays when invoking a method. A method may also return an array.
+
       ```Java
-      public class ArrayReturnExample {
-
-      // Method to return an array of even numbers
-      public static int[] generateArray(int size) {
-          int[] array = new int[size]; 
-          for (int i = 0; i < size; i++) {
-              array[i] = i * 2; 
+          public class ArrayReturnExample {
+          // Method to return an array of even numbers
+          public static int[] generateArray(int size) {
+              int[] array = new int[size]; 
+              for (int i = 0; i < size; i++) {
+                  array[i] = i * 2; 
+              }
+              return array; // Return the array
           }
-          return array; // Return the array
-      }
-
-      public static void main(String[] args) {
-          int[] result = generateArray(5); // Call the method and get the array
-          for (int num : result) {        // Print the elements of the array
-              System.out.print(num + " ");
+          public static void main(String[] args) {
+              int[] result = generateArray(5); // Call the method and get the array
+              for (int num : result) {        // Print the elements of the array
+                  System.out.print(num + " ");
+              }
           }
-      }
-      }
+          }
       ```
 
-#### 5. Variable Length Argument Lists:
-- 
 
+#### 5. Variable Length Argument Lists:
+- we can pass variable number of paramter list, means that you can pass one or two or more paramters but should be of the same type, here java treats the var param list as Array.
+- In the method declaration, you specify the type followed by an ellipsis (...).
+- Only one variable-length parameter may be specified in a method.
+- This parameter must be the last parameter. Any regular parameters must precede it.
+- Look at the following example:
+
+      ```java 
+          public class VarargsExample {
+          // Method with variable-length parameter list
+          public static int sum(int... numbers) {
+              int total = 0;
+                for (int num : numbers) {
+                    total += num; // Add each number to total
+                }
+                return total;
+            }
+          public static void main(String[] args) {
+              System.out.println(sum(1, 2, 3));       // Output: 6
+              System.out.println(sum(10, 20, 30, 40)); // Output: 100
+              System.out.println(sum());             // Output: 0 (no arguments passed)
+            }
+        }
+      ```   
 </details>
 
 ---
