@@ -2996,8 +2996,27 @@ Arrays Methods Table:
 
 
 #### 7. Command Line Arguments:
+- The main method can receive string arguments from the command line.
+- You might have noticed the unique header of the `main` method, which includes the parameter `args` of type `String[]`. 
+- Essentially, `args` is an array of strings. 
+- Similar to any other method with parameters, the main method can accept arguments, just as you would pass actual parameters when calling a regular method.
 
 
+```Java
+public class Main
+{
+  public static void main(String[] args) {
+    System.out.println("Hello, "+ args[0]);
+  }
+}
+```
+
+- before running the code, in the command line pass the arguments of main method as follows:
+
+``` bash
+    javac Main.java
+    java Main yourname
+```
 </details>
 
 ---
