@@ -1,0 +1,16 @@
+//FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml")); this line of code exists by defualt when you open a JavaFX project with Intellij
+
+//list of line codes to build Stage
+
+Group root = new Group();
+        Scene scene = new Scene(root, Color.BLACK);
+        stage.setTitle("Student Portal");
+        stage.setScene(scene);
+        Image programIcon = new Image(Objects.requireNonNull(getClass().getResourceAsStream("/Images/students_2995620.png")));
+        stage.getIcons().add(programIcon);
+        /* stage.setHeight(900);
+        stage.setWidth(900);*/
+        stage.setFullScreen(true);
+        stage.setFullScreenExitHint("to exit fullscreen mode press e");
+        stage.setFullScreenExitKeyCombination(KeyCombination.valueOf("e"));
+        stage.show();
