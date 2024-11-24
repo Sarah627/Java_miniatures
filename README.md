@@ -3120,3 +3120,9 @@ Last Chapter in Java Basics is Finished Finally 🥳!!!
 ---
 
 ## 2- Object Oriented Programming
+
+4 Main concepts of OOP:
+1- Abstraction
+2- Encapsulation
+3- Inheritance 
+4- Polymorphism
