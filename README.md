@@ -3126,3 +3126,5 @@ Last Chapter in Java Basics is Finished Finally 🥳!!!
 2. Encapsulation
 3. Inheritance 
 4. Polymorphism
+
+### Object Oriented Thinking:
