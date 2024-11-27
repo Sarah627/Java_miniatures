@@ -3128,3 +3128,4 @@ Last Chapter in Java Basics is Finished Finally 🥳!!!
 4. Polymorphism
 
 ### Object Oriented Thinking:
+a `class` is a blueprint , template or a contract which defines properties and behaviours of objects.
