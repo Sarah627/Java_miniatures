@@ -3128,4 +3128,24 @@ Last Chapter in Java Basics is Finished Finally 🥳!!!
 4. Polymorphism
 
 ### Object Oriented Thinking:
-a `class` is a blueprint , template or a contract which defines properties and behaviours of objects.
+- A `class` is a blueprint , template or a contract which defines properties and behaviours of objects.
+- An object is an instance of a class.
+  - an object has a unique :  
+    - state --> datafield values.
+    - behaviour --> methods to perform some operations on the object.
+- The process of making instance of a class is called `instantiation`. 
+- The `instantiation` is done using a special method is called the `constructor`.
+
+  ```java
+       ClassName(parameters){
+        //lines of code to initialize the class
+       }
+  ```
+
+- Constructors can:
+  - be overloaded
+  - be invoked
+  - have an access modifier
+
+
+
