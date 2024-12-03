@@ -42,14 +42,14 @@ This repository **IS NOT A ROADMAP FOR LEARNING Java** exactly, you can use diff
 
 <details><summary><strong>Java in Action</strong></summary>
 
-  1. Build tools
-    - Ant
-    - Maven
-    - Gradle
+  1. Build tools:  
+       - Ant
+       - Maven
+       - Gradle
 
   2. building GUI
-    - JavaFX
-    - Java Swing
+       - JavaFX
+       - Java Swing
 
   3. Web Frameworks
       - Spring
