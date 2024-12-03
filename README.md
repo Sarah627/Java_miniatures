@@ -22,75 +22,75 @@ This repository **IS NOT A ROADMAP FOR LEARNING Java** exactly, you can use diff
 
 <details><summary><strong>Java Basics</strong></summary>
 
-      1. Elementary Programming
-      2. Control Structures Part 1: (_Selections_)
-      3. Mathematical Functions,Characters, and Strings
-      4. Control Structures Part 2: (_Iterators_)
-      5. Methods
-      6. Arrays
+  1. [Elementary Programming](#1-elementary-programming)
+  2. [Control Structures Part 1: (_Selections_)](#2-control-structure-part-1)
+  3. [Mathematical Functions,Characters, and Strings](#3-mathematical-functionscharacters-and-strings)
+  4. [Control Structures Part 2: (_Iterators_)](#4-control-structure-part-2-iterators)
+  5. [Methods](#5-methods)
+  6. [Arrays](#6-arrays)
 </details>
 
 <details><summary><strong>Object-Oriented Programming</strong></summary>
 
-      1. Objects and Classes
-      2. Object-Oriented Thinking
-      3. Inheritance and Polymorphism
-      4. Exception Handling and Text I/O
-      5. Abstract Classes and Interfaces
+  1. Objects and Classes
+  2. Object-Oriented Thinking
+  3. Inheritance and Polymorphism
+  4. Exception Handling and Text I/O
+  5. Abstract Classes and Interfaces
  
 </details>
 
 <details><summary><strong>Java in Action</strong></summary>
 
-    1. Build tools
-      - Ant
-      - Maven
-      - Gradle
+  1. Build tools
+    - Ant
+    - Maven
+    - Gradle
 
-    2. building GUI
-      - JavaFX
-      - Java Swing
+  2. building GUI
+    - JavaFX
+    - Java Swing
 
-    3. Web Frameworks
-       - Spring
-       - Spring-boot
-    
-    4. ORM
-       - JPA
-       - Hibernate
+  3. Web Frameworks
+      - Spring
+      - Spring-boot
+  
+  4. ORM
+      - JPA
+      - Hibernate
 
 </details>
 
 <details><summary><strong>Advanced Java Topics</strong></summary>
 
-    1. Binary I/O
-    2. Generics
-    3. How JVM works
-    4. Multithreading and Parallel Programming
-    5. Networking
-    6. Java Database Programming
+  1. Binary I/O
+  2. Generics
+  3. How JVM works
+  4. Multithreading and Parallel Programming
+  5. Networking
+  6. Java Database Programming
      
 </details>
 
 <details><summary><strong>Data Structures</strong></summary>
 
-    1. Recursion
-    2. Stacks & Queues
-    3. Lists
-    4. Trees
-    5. Priority Queues
-    6. Maps & Hash Tables
-    7. Search Trees
+  1. Recursion
+  2. Stacks & Queues
+  3. Lists
+  4. Trees
+  5. Priority Queues
+  6. Maps & Hash Tables
+  7. Search Trees
 
 </details>
 
 <details><summary><strong>Algorithms</strong></summary>
 
-    1. Asymptotic analysis
-    2. Sorting
-    3. Searching
-    4. Graphs
-    5. Strings
+  1. Asymptotic analysis
+  2. Sorting
+  3. Searching
+  4. Graphs
+  5. Strings
 
 </details>
 
@@ -98,39 +98,39 @@ This repository **IS NOT A ROADMAP FOR LEARNING Java** exactly, you can use diff
 
 <details><summary><H3>Part Two: Software Engineering Principles</H3></summary>
 
-    1.  OOA & OOD
-    2.  SOLID Principles
-    3.  Design Patterns
-    4.  Refactoring Techniques
-    5.  Software Development Methodologies
+  1.  OOA & OOD
+  2.  SOLID Principles
+  3.  Design Patterns
+  4.  Refactoring Techniques
+  5.  Software Development Methodologies
 </details>
 
 <details><summary><h3>Part Three: Projects</h3></summary>
 
-    1. Small-scale Java Projects
-    2. Medium-scale Software Engineering Projects
-    3. Real-world Application Examples
+  1. Small-scale Java Projects
+  2. Medium-scale Software Engineering Projects
+  3. Real-world Application Examples
 </details>
 
 <details><summary><H3>Cross-Part knowledge</H3></summary>
 
-    **_Challenges and Exercises_**
+  **_Challenges and Exercises_**
 
-    - Coding Challenges
-    - Problem-solving Exercises
-    - Algorithm Implementations
+  - Coding Challenges
+  - Problem-solving Exercises
+  - Algorithm Implementations
 
-    **_Resources_**
+  **_Resources_**
 
-    - Online Tutorials and Courses
-    - Recommended Books
-    - Useful Articles and Videos
+  - Online Tutorials and Courses
+  - Recommended Books
+  - Useful Articles and Videos
 
-    **_Contributions_**
+  **_Contributions_**
 
-    - How to Contribute
-    - Guidelines for Contributors
-    - Community Engagement Opportunities
+  - How to Contribute
+  - Guidelines for Contributors
+  - Community Engagement Opportunities
 </details>
 
 </details>
@@ -1741,7 +1741,7 @@ Finally, the forth chapter is FINISHED!!!
 <details>
 <summary><H3><strong>5.Methods</strong></H3></summary>
 
-### 5.Methods
+### 5. Methods
 
 In this chapter you are about learning the first step towards the abstraction.
 
@@ -3148,7 +3148,7 @@ Last Chapter in Java Basics is Finished Finally 🥳!!!
   - have an access modifier
   
 - `note` when you have two classes in one file, one of them only is the public class and the other is not, so the file name must be the same as the public class name.
-- if you didn't specif any constructors, a no-arg constructor is made for your class automatically by the Java compiler.
+- if you didn't specify any constructors, a no-arg constructor is made for your class automatically by the Java compiler.
 -
 -
 -
