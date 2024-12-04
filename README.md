@@ -32,7 +32,7 @@ This repository **IS NOT A ROADMAP FOR LEARNING Java** exactly, you can use diff
 
 <details><summary><strong>Object-Oriented Programming</strong></summary>
 
-  1. Objects and Classes
+  1. [Objects and Classes](#2--object-oriented-programming)
   2. Object-Oriented Thinking
   3. Inheritance and Polymorphism
   4. Exception Handling and Text I/O
