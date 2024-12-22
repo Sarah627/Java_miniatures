@@ -5,7 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb0ff27f-355f-4e66-bb4a-5ce0135ee909" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/Projects.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/out/production/Projects/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/out/production/Projects/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/out/production/Projects/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/out/production/Projects/.idea/description.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/out/production/Projects/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/out/production/Projects/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/out/production/Projects/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/out/production/Projects/.idea/project-template.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/out/production/Projects/.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/out/production/Projects/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/out/production/Projects/Projects.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/out/production/Projects/com/company/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Projects/src/com/company/Main.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
