@@ -3150,6 +3150,8 @@ Last Chapter in Java Basics is Finished Finally 🥳!!!
 - `note` when you have two classes in one file, one of them only is the public class and the other is not, so the file name must be the same as the public class name.
 - if you didn't specify any constructors, a no-arg constructor is made for your class automatically by the Java compiler.
 -
+- 
+-
 -
 -
 -
