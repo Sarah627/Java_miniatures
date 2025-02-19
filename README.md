@@ -3152,11 +3152,18 @@ Last Chapter in Java Basics is Finished Finally 🥳!!!
 - an Object Reference Variable is a variable where a reference to a specific object is stored:
   >  Class_Name ORV  
 - Previously, we introduced Strings and Arrays which are Reference Types, thus we can make objects from each class.
--
--
--
--
--
+#### Instance Method vs Static Methods: 
+- Instance methods are methods which must be invoked using an object (dependen) while static methods doesn't require creating an instance of a class (independent).
+- static methods have a non-access modifier `static` like following:
+  ``` java 
+  public static int sum(int num2, int num2); 
+  ```
+- example:
+  ``` java 
+  Math.pow(2,3); // static method 
+  new Scanner(System.in).next(); // instance method 
+  ```
+- 
 -
 -
 -
