@@ -2500,25 +2500,25 @@ Concepts:
 - Array is a reference type, which means the array reference variables contains the address of the array not the array content itself.
   try the following:
 
-      ```Java
+    ```Java
           int[] elements = {0,3,5,2,51,54,78,9,3}; 
           System.out.println(elements); //returns an ambiguos string -- memory location
-      ```
+    ```
 - It's important at this point to differentiate between declaring an array and allocating memory for it, declaring an array is just declaring an array reference variable to point to the array elements later, allocating space actually happens when you add elements to the array.
 - Unlike the primitive datatypes; declaring an array doesn't allocate space in memory, only when you start to assign values to array elements.
       
-      ```Java
+    ```Java
           int[] elements; // this is declaration without initialization
           //System.out.println(elements); //error          
-      ``` 
+    ``` 
 - now you have to be familiar with `null` which is the value of the reference variable if the reference variable doesn't contain a reference to an array.
 - you get NullPointerException when you try to access `elements[0]` if you didn't initialize elements array already, here the reference variable points to null.
 - Using `null` keyword with reference variables as a 'value':
 
-      ```Java
+    ```Java
           int[] elements = null;
           System.out.println(elements); //null
-      ```
+    ```
 - How empty array could be:
 
       ``` Java
@@ -2533,10 +2533,10 @@ Concepts:
   and (2) it assigns the reference of the newly created array to the variable arrayRefVar.
 - you can declare an array, specify its size then assign elements to it:
 
-      ``` Java
+    ``` Java
             int[] myList = new int[10]; 
             myList[7] = 5;
-      ```
+    ```
 - for example this is one way to how you can initialize an array:
 
 
@@ -2554,23 +2554,23 @@ Concepts:
     ```
 - After you specify the size of an array, you cannot change it later, you can obtain the size of an array using `arrRefVar.length`:
 
-      ``` Java
+    ``` Java
             System.out.println(mylist.length); // 10
-      ```
+    ```
 - reminding you again that arrays in Java are 0-based index (means you start counting and accessing array elements from 0 index)
 - in `mylist` example if you tried to access `mylist[10]` will result in `ArrayOurOfBounds` runtime error.
 - Java has a shorthand notation, known as the `array initializer`, which combines the declaration,
   creation,and initialization of an array in one statement:
 
-      ``` Java
+    ``` Java
             double[] myList = {1.9, 2.9, 3.4, 3.5};
-      ```
+    ```
 - important note to mention :you cannot separate declaration from initialization in arrays, you can use the array initializer only while you declaring the array.
 
-      ``` Java
+    ``` Java
             float[] arv;
             //arv = {1.1,3.4,5.6}; //error 
-      ```
+    ```
 - It was mentioned that the array size cannot be altered after declaration, once the space is allocated the elements of the array take default values before you assign values to them:
 
   | Data Type   | Default Value |
@@ -2584,9 +2584,9 @@ Concepts:
 - An indexed variable can be used in the same way as a regular variable. For example, the
   following code adds the values in `myList[0]` and `myList[1]` to `myList[2]`:
 
-      ```Java  
+    ```Java  
             myList[2] = myList[0] + myList[1];
-      ```        
+    ```        
 - You can **insert**, **print** or **traverse** array using `loops`:
     - for loops
     - for each
@@ -2594,52 +2594,52 @@ Concepts:
 
   - using ordinary loop:
   
-      ``` Java
+    ``` Java
         for (int i = 0; i < myList.length; i++) {
             System.out.print(myList[i] + " ");
         }
-      ``` 
+    ``` 
   - using for each:
 
-      ``` Java
+    ``` Java
           for (int num : mylist) {
             System.out.println(num);}
-      ``` 
+    ``` 
 - Using for loops are more common than for each
   - Let's initialize arrays using the same logic of iteration:
       - prompt user to enter array values:
         
-        ```` Java
+    ```` Java
             Scanner input  = new Java.util.Scanner(System.in);
             for (int i = 0; i< mylist.length; i++){
             myList[i] = input.nextDouble();
             }
-        ```
+    ```
         
       - initialize the array using random function from Math class:
-        ```Java 
+    ```Java 
             for (int i = 0; i < mylist.length; i++){
               mylist[i] = (Math.random() * 100); // inserting numbers ranges from 0.0 to 100.0 exclusive
             }
-        ``` 
+    ``` 
 - A question might come up here: **why don’t we use the enhanced for-each loop?** It’s a good question. `for-each loops are excellent for traversing (reading) elements in a step-by-step manner, but they’re not suitable for modifying elements`. This is because the loop works with a copy of each element, rather than directly accessing them through their indices.
 -  another note is that if you tried to print elements of `char[]` type array, you can use `System.out.print` directly unlike the other array types which require iteration structure to handle the traverse.
 
-      ```Java 
+    ```Java 
 
           char[] name = {'A','l','i'};
           System.out.println(name); // Ali 
 
-      ```  
+    ```  
 - This behavior can be observed with `printf`, as it doesn’t automatically treat `char[]` as a string due to internal differences in how `printf` handles format specifiers compared to `print` and `println`. Unlike `print` and `println`, `printf` relies on format specifiers that don’t automatically interpret `char[]` as a sequence of characters. Therefore, converting `char[]` to a String is necessary with printf to avoid printing the reference address.
 
 #### Copying Arrays:
 - Once you entered the world of reference types, everything changes.
     - Even copying, you cannot copy contents an array into another array just like the following:
 
-      ```Java
+    ```Java
          int[] copyArray = mylist; // that's wrong
-      ```
+    ```
       ![copying array using assignment operator](/images/copying%20contents%20of%20an%20array.png)
 
     - you've just copied the reference of `mylist` array into `copyArray`, so copyArray have the same reference, not the content.
@@ -2651,7 +2651,7 @@ Concepts:
             1. Using loop
             2. Using arraycopy
 
-      ```Java
+    ```Java
 
           public class Main
           {
@@ -2674,17 +2674,17 @@ Concepts:
             
             }
           }
-      ```
+    ```
 
       `note` that `arraycopy` method doesn't follow the naming convention in Java.
 
-      ```Java 
+    ```Java 
           //formal declaration of the method:
           public static void arraycopy(Object src, int srcPos, Object dest, int destPos, int length);
           // where src is the source you would copy from, srcPos --> where you want to start copying, the same for the next two parameters, the last parameter is the number of elements would you copy?
           
-      ```
-      ```Java
+    ```
+    ```Java
               import Java.util.Arrays;
               public class Main
               {
@@ -2703,7 +2703,7 @@ Concepts:
                   for(int num: copiedArray) System.out.println(num);
                 }
               }
-      ``` 
+    ``` 
 
 #### Passing Arrays to Methods:
 - We've already learnt that Java is 'passing by value', that happens when you pass primitive data types in addition to the reference data types as arrays.
@@ -2713,7 +2713,7 @@ Concepts:
   - In Java, **everything is passed by value**. This means when a variable is passed to a method, a **copy of its value** is made and used in the method.
     - **For Primitive Data Types** When a **primitive** value (like `int`, `float`, `boolean`) is passed, the method gets a copy of the value. Any changes made to the parameter inside the method do **not** affect the original value.
 
-      ```Java
+    ```Java
           public class Demo {
               public static void modifyPrimitive(int number) {
                   number = 10; // Change the local copy
@@ -2725,14 +2725,14 @@ Concepts:
                   System.out.println(original); // Outputs: 5
               }
           }
-      ```
+    ```
     - **Explanation:**  
       - The `number` parameter in `modifyPrimitive` gets a copy of `original`'s value.  
       - Changing `number` does not affect the `original` variable in the `main` method.
 
     - **For Reference Types** When an **object** or **array** is passed, the method receives a copy of the **reference** (the memory address). The reference still points to the same object in the heap. Modifying the object through this reference affects the original object.
 
-      ```java
+    ```java
       public class Demo {
           public static void modifyArray(int[] numbers) {
               numbers[0] = 10; // Modify the object
@@ -2760,7 +2760,7 @@ Concepts:
     - If you reassign the reference inside the method, it does not affect the original reference.
 
       Example:
-      ```java
+    ```java
       public class Demo {
           public static void reassignReference(int[] numbers) {
               numbers = new int[]{10, 20, 30}; // Reassign the reference
@@ -2772,7 +2772,7 @@ Concepts:
               System.out.println(array[0]); // Outputs: 1
           }
       }
-      ```
+    ```
 
     **Explanation:**
       - Inside `reassignReference`, the `numbers` parameter is assigned a new array.  
@@ -2808,7 +2808,7 @@ Concepts:
 - This parameter must be the last parameter. Any regular parameters must precede it.
 - Look at the following example:
 
-       ```Java 
+    ```Java 
           public class VarargsExample {
           // Method with variable-length parameter list
           public static int sum(int... numbers) {
@@ -2822,7 +2822,7 @@ Concepts:
               System.out.println(sum());             // Output: 0 (no arguments passed)
             }
           }
-       ```
+     ```
 
 #### 6. Arrays Class in Java:
 - The java.util.Arrays class contains various static methods for sorting and searching
@@ -2832,7 +2832,7 @@ array. These methods are overloaded for all primitive types.
 1. **Sorting Arrays Using `Arrays.sort()`**
   The `sort()` method sorts the elements of an array in ascending order.
 
-      ```java
+    ```java
       import java.util.Arrays;
 
       public class SortExample {
@@ -2842,12 +2842,12 @@ array. These methods are overloaded for all primitive types.
               System.out.println(Arrays.toString(numbers)); // Output: [-5, 1, 5, 12, 16]
           }
       }
-      ```
+    ```
 
 2. **Parallel Sorting Using `Arrays.parallelSort()`**
   `parallelSort()` divides the array into sub-arrays and sorts them in parallel, combining the results at the end.
 
-      ```java
+    ```java
       import java.util.Arrays;
 
       public class ParallelSortExample {
@@ -2857,10 +2857,10 @@ array. These methods are overloaded for all primitive types.
               System.out.println(Arrays.toString(numbers)); // Output: [1, 3, 6, 7, 9]
           }
       }
-      ```
+    ```
 3. **Searching for an Element Using `Arrays.binarySearch()`**
   `binarySearch()` searches for a specified value in a **sorted** array. It returns the index of the element if found, or a negative value if not.
-      ```java
+    ```java
       import java.util.Arrays;
 
       public class BinarySearchExample {
@@ -2873,11 +2873,11 @@ array. These methods are overloaded for all primitive types.
               System.out.println("Index of 4: " + notFoundIndex); // Output: Index of 4: -3
           }
       }
-      ```
+    ```
 4. **Converting an Array to a String Using `Arrays.toString()`**
   `toString()` converts the contents of an array into a readable string representation.
 
-      ```java
+    ```java
       import java.util.Arrays;
 
       public class ToStringExample {
@@ -2886,11 +2886,11 @@ array. These methods are overloaded for all primitive types.
               System.out.println(Arrays.toString(fruits)); // Output: [Apple, Banana, Cherry]
           }
       }
-      ```
+    ```
 5. **Filling an Array Using `Arrays.fill()`**
   `fill()` assigns a specified value to every element in the array.
 
-      ```java
+    ```java
       import java.util.Arrays;
 
       public class FillExample {
@@ -2900,11 +2900,11 @@ array. These methods are overloaded for all primitive types.
               System.out.println(Arrays.toString(numbers)); // Output: [42, 42, 42, 42, 42]
           }
       }
-      ```
+    ```
 6. **Comparing Arrays Using `Arrays.equals()`**
   `equals()` checks if two arrays are equal, element by element.
 
-      ```java
+    ```java
       import java.util.Arrays;
 
       public class EqualsExample {
@@ -2917,11 +2917,11 @@ array. These methods are overloaded for all primitive types.
               System.out.println(Arrays.equals(arr1, arr3)); // Output: false
           }
       }
-      ```
+    ```
 7. **Copying Arrays Using `Arrays.copyOf()`**
   `copyOf()` creates a copy of the array with the specified length.
 
-      ```java
+    ```java
       import java.util.Arrays;
 
       public class CopyOfExample {
@@ -2931,11 +2931,11 @@ array. These methods are overloaded for all primitive types.
               System.out.println(Arrays.toString(copy)); // Output: [10, 20, 30, 0, 0]
           }
       }
-      ```
+    ```
 8. **Splitting Arrays Using `Arrays.copyOfRange()`**
   `copyOfRange()` creates a copy of a specified range from the original array.
 
-      ```java
+    ```java
       import java.util.Arrays;
 
       public class CopyOfRangeExample {
@@ -2945,11 +2945,11 @@ array. These methods are overloaded for all primitive types.
               System.out.println(Arrays.toString(subArray)); // Output: [2, 3, 4]
           }
       }
-      ```
+    ```
 9. **Comparing Lexicographically Using `Arrays.compare()`**
   `compare()` compares two arrays lexicographically.
 
-      ```java
+    ```java
       import java.util.Arrays;
 
       public class CompareExample {
@@ -2960,12 +2960,12 @@ array. These methods are overloaded for all primitive types.
               System.out.println(result); // Output: -1 (arr1 < arr2)
           }
       }
-      ```
+    ```
 
 10.  **Checking Array Mismatches Using `Arrays.mismatch()`**
   `mismatch()` returns the index of the first mismatch between two arrays, or `-1` if they're identical.
 
-      ```java
+    ```java
       import java.util.Arrays;
 
       public class MismatchExample {
@@ -2976,7 +2976,7 @@ array. These methods are overloaded for all primitive types.
               System.out.println("First mismatch at index: " + mismatchIndex); // Output: First mismatch at index: 2
           }
       }
-      ```
+    ```
 
 Arrays Methods Table:
 
