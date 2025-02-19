@@ -2457,7 +2457,6 @@ you'll apply method abstraction concept to isolate details from design and only 
       }
 
       ``` 
-  - You can find the full project here: [Student's Portal](/Projects/src/com/company/Main.Java)
    
 Fifth Chapter is Finished!!!
 ​       
