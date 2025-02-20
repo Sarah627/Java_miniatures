@@ -2556,7 +2556,7 @@ Concepts:
 
     ```java
         System.out.println(mylist.length); // 10
-      ```
+    ```
 - reminding you again that arrays in Java are 0-based index (means you start counting and accessing array elements from 0 index)
 - in `mylist` example if you tried to access `mylist[10]` will result in `ArrayOurOfBounds` runtime error.
 - Java has a shorthand notation, known as the `array initializer`, which combines the declaration,
