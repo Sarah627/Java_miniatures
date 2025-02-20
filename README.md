@@ -832,9 +832,9 @@ you can take a look on the application here, whereas you can find how can we use
 * **example using these methods**
 
 -----
-### Character data type and String reference type:
+#### Character data type and String reference type:
 
-#### Character Data Type:
+##### Character Data Type:
 
 Character data type is used to represent single character surrounded by single quotes. `char firstLetter = 'S'`
 
@@ -847,7 +847,7 @@ If you are not a computer science student ,or you are not familiar with the idea
 ---
 <details><summary><h4>How computers deal with data</h4></summary>
 
-#### How computers deals with data?
+##### How computers deals with data?
 You need to know what machine language is. Machine language is the language that computers actually understand. This language consists of 0's and 1's based on the fact that computers, at their core, consist of transistors that can be switched to two states: ON or OFF (1 or 0). From this, the binary system was born.
 
 ![zeros and ones](/images/zeros%20and%20ones.jpg)
@@ -892,7 +892,7 @@ CS50 - from Harvard [CS50](https://www.youtube.com/playlist?list=PLhQjrBD2T381WA
 </details>
 
 ----
-#### Characters and Encoding
+##### Characters and Encoding
 
 - Computers use binary numbers internally. A character is stored in a computer as a sequence of `0s and 1s.` 
   
@@ -906,7 +906,7 @@ CS50 - from Harvard [CS50](https://www.youtube.com/playlist?list=PLhQjrBD2T381WA
   
 - other encoding schemes are widely used today like UTF-8 which is algorithmic mapping in addition to providing backward compatibility with ASCII. 
   
-#### Character Encoding Analogy! Teaching Colors with a Numbered Painting Sketch
+##### Character Encoding Analogy! Teaching Colors with a Numbered Painting Sketch
 
 **If we want to teach a child how to get used with colors and their names we use the `Numbered Painting Sketch`**
 - `Encoding`: in the context of `The Numbered Painting Sketch`, Encoding is like the painting sketch where each sector of the drawing is assigned (encoded to) a unique number (1 for red color, two for green, 21 for mint green, etc.).
@@ -938,7 +938,7 @@ CS50 - from Harvard [CS50](https://www.youtube.com/playlist?list=PLhQjrBD2T381WA
   ![blending colors](/images/blending%20colors.jpg)
 
 ------
-#### **Now we can introduce the data type :**
+##### **Now we can introduce the data type :**
 
 you define the character data type using **`char`** keyword, then give it a name and assign a character value to it.
 
@@ -961,7 +961,7 @@ you define the character data type using **`char`** keyword, then give it a name
 
  ![char operations](/images/charops.png)
 
- #### Escape Sequences for Special Characters
+ ##### Escape Sequences for Special Characters
 
  if you know already C you maybe familiar with these characters 
 
@@ -993,7 +993,7 @@ you define the character data type using **`char`** keyword, then give it a name
 
 - **`Formfeed`** means advance downward to the next "page".
 ***
-#### Casting
+##### Casting
 Now let's move to new topic (Casting) which will be expanded later when you got familiar with OOP.
 
 > Casting : is a process that converts a variable's data type into another data type, casting may be **implicit** (auto) or **explicit**.
@@ -1052,7 +1052,7 @@ Strings are enclosed by double quotes `" "`.
 
 `note` : Strings are immutable 'you cannot change their value' ⚠
 
-#### Reference Types in Java
+##### Reference Types in Java
 In Java, there are two main categories of data types: **primitive** types and **reference** types.
 
 **`Primitive Types`**: These include `int`, `char`, `boolean`, etc. They store simple values.
@@ -1074,7 +1074,7 @@ So, like **Scanner** class you have to follow the naming convention and capitali
 
 **SO, KEEP YOUR FOCUS ON THIS TOPIC**
 
-#### String Operations
+##### String Operations
 
 Now we are going to discuss the most important concepts that are necessary to know about strings:
 
@@ -1086,7 +1086,7 @@ Now we are going to discuss the most important concepts that are necessary to kn
 - Converting and reading strings as user input.
 
 
-#### For short this is a table containing all the needed methods to perform the mentioned tasks:
+##### For short this is a table containing all the needed methods to perform the mentioned tasks:
 
 | Method                    | Description                                                                                                                               |
 |---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
@@ -1129,7 +1129,7 @@ you can check this example here about how to use length() method [Check Password
 
 ****
 
-#### Learn by example:
+##### Learn by example:
 
 we're going to explain each method and common use cases by examples in addition to clarifying any ambiguity:
 
@@ -1241,7 +1241,7 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
   ![example using equals() method](/images/equality%20method%20for%20strings.png)
 
 
-  #### What Happened?
+  ##### What Happened?
 
   This introduces the concept of the **String Pool** in the heap.
 
@@ -1276,7 +1276,7 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
 
       - As you observed in the figures, you just created another string literal has the value of `"Hi"`
 
-      #### How security can be achieved here in this situation:
+      ##### How security can be achieved here in this situation:
 
       - magine you have multiple string objects with the same value `"default"` as follows: 
       
@@ -1291,7 +1291,7 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
         ![changing references](/images/changing%20reference.png)
 
       - What if one of them have been changed its value to `"def"` for example? 
-         - Now you know the answer! the value hasn't been changed the string reference variable just has been changed its reference to another object in the pool :) 
+         - Now you know the answer! the value hasn't been changed the string reference variable just has been changed its reference to another object in the pool. 
             
          ![changed reference](/images/changed%20reference.png)   
 
@@ -1342,7 +1342,7 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
   
   ![substrings](/images/substrings.png) 
 
-#### Obtaining Substrings
+##### Obtaining Substrings
 
 - You can obtain either a character or a substring from a string or return their indices:
   
@@ -1364,7 +1364,7 @@ example on using charAt(index) method: [email validation](/Test%20Files%20Elemen
 ![example on indexOf method](/images/exampleonIndexOf.png) 
 
   
-#### Conversion Between Strings and Numbers:
+##### Conversion Between Strings and Numbers:
 
 using **`parseInt()`** method from `Integer` class you can convert from string to integer, in other words parsing integers from a string.
 
@@ -3255,55 +3255,8 @@ Last Chapter in Java Basics is Finished Finally 🥳!!!
 
 ![Access Modifiers](/images/Accessbilty%20Modifiers.png)
 
+<details><summary><h3><strong>7. Abstraction & Encaplsulation</strong></h3></summary>
 
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
--
+### 7- Abstraction & Encaplsulation: 
+
+</details>
