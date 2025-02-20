@@ -2640,7 +2640,7 @@ Concepts:
     ```Java
          int[] copyArray = mylist; // that's wrong
     ```
-      ![copying array using assignment operator](/images/copying%20contents%20of%20an%20array.png)
+    ![copying array using assignment operator](/images/copying%20contents%20of%20an%20array.png)
 
     - you've just copied the reference of `mylist` array into `copyArray`, so copyArray have the same reference, not the content.
     - There are three ways to copy arrays:
@@ -2676,7 +2676,7 @@ Concepts:
           }
     ```
 
-      `note` that `arraycopy` method doesn't follow the naming convention in Java.
+    `note` that `arraycopy` method doesn't follow the naming convention in Java.
 
     ```Java 
           //formal declaration of the method:
@@ -2684,6 +2684,7 @@ Concepts:
           // where src is the source you would copy from, srcPos --> where you want to start copying, the same for the next two parameters, the last parameter is the number of elements would you copy?
           
     ```
+
     ```Java
               import Java.util.Arrays;
               public class Main
@@ -2965,18 +2966,17 @@ array. These methods are overloaded for all primitive types.
 10.  **Checking Array Mismatches Using `Arrays.mismatch()`**
   `mismatch()` returns the index of the first mismatch between two arrays, or `-1` if they're identical.
 
-    ```java
-      import java.util.Arrays;
-
-      public class MismatchExample {
-          public static void main(String[] args) {
-              int[] arr1 = {1, 2, 3};
-              int[] arr2 = {1, 2, 4};
-              int mismatchIndex = Arrays.mismatch(arr1, arr2);
-              System.out.println("First mismatch at index: " + mismatchIndex); // Output: First mismatch at index: 2
+      ``` java  
+          import java.util.Arrays;
+          public class MismatchExample {
+              public static void main(String[] args) {
+                  int[] arr1 = {1, 2, 3};
+                  int[] arr2 = {1, 2, 4};
+                  int mismatchIndex = Arrays.mismatch(arr1, arr2);
+                  System.out.println("First mismatch at index: " + mismatchIndex); // Output: First mismatch at index: 2
+              }
           }
-      }
-    ```
+      ```
 
 Arrays Methods Table:
 
@@ -3027,7 +3027,7 @@ public class Main
 1. **Declaration:**
    - A two-dimensional array can be declared as follows:
      ```java
-     int[][] matrix;
+        int[][] matrix;
      ```
 
 2. **Initialization:**
@@ -3103,12 +3103,15 @@ public class Calculator {
 }
 ```
 
-    **Output:**
-    ```
-    15 5 50 
-    2 0 100 
-    15 -5 50 
-    ```
+  **Output:**
+    
+    15 5 50
+
+    2 0 100
+
+    15 -5 50
+
+    
 #### notes:
 
 Last Chapter in Java Basics is Finished Finally 🥳!!!
