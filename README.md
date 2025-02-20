@@ -2512,7 +2512,7 @@ Concepts:
           //System.out.println(elements); //error          
     ``` 
 - now you have to be familiar with `null` which is the value of the reference variable if the reference variable doesn't contain a reference to an array.
-- you get NullPointerException when you try to access `elements[0]` if you didn't initialize elements array already, here the reference variable points to null.
+- you get `NullPointerException` when you try to access `elements[0]` if you didn't initialize elements array already, here the reference variable points to null.
 - Using `null` keyword with reference variables as a 'value':
 
     ```Java
@@ -2527,7 +2527,7 @@ Concepts:
     ```    
 - So in general,the syntax of declaring array as follows:
 
-  > `elementType[] arrayRefVar = new elementType[arraySize];`
+  > elementType[] arrayRefVar = new elementType[arraySize];
 
 - This statement does two things: (1) it creates an array using `new elementType[arraySize]`
   and (2) it assigns the reference of the newly created array to the variable arrayRefVar.
@@ -2558,7 +2558,7 @@ Concepts:
         System.out.println(mylist.length); // 10
     ```
 - reminding you again that arrays in Java are 0-based index (means you start counting and accessing array elements from 0 index)
-- in `mylist` example if you tried to access `mylist[10]` will result in `ArrayOurOfBounds` runtime error.
+- in `mylist` example if you tried to access `mylist[10]` will result in `ArrayOutOfBounds` Exception (runtime error).
 - Java has a shorthand notation, known as the `array initializer`, which combines the declaration,
   creation,and initialization of an array in one statement:
 
@@ -2580,7 +2580,7 @@ Concepts:
   | **Boolean** | `false`       |
 
 - Accessing array elements is done using its `index`, remember again arrays are zero indexed means if you want to access the second array element it will be like this : `elements[1];`
-- The `index` values range from `0` to `arrayReferenceVariable.length -1`
+- The `index` values range from `0` to `array length -1` --> (int i = 0; i < arrRefVar.length; i++) to loop from 0 index to (array length -1) index
 - An indexed variable can be used in the same way as a regular variable. For example, the
   following code adds the values in `myList[0]` and `myList[1]` to `myList[2]`:
 
@@ -2643,6 +2643,7 @@ Concepts:
     ![copying array using assignment operator](/images/copying%20contents%20of%20an%20array.png)
 
     - you've just copied the reference of `mylist` array into `copyArray`, so copyArray have the same reference, not the content.
+    - `note`: If you traversed the copied array, the same elements of the original array will be printed, but any change happens to the original array affect your copied array simply because it's pointing to it (contains the original array's reference not the content) 
     - There are three ways to copy arrays:
         1. Use a loop to copy individual elements one by one.
         2. Use the static `arraycopy` method in the `System class`.
@@ -2707,7 +2708,7 @@ Concepts:
     ``` 
 
 #### Passing Arrays to Methods:
-- We've already learnt that Java is 'passing by value', that happens when you pass primitive data types in addition to the reference data types as arrays.
+- It's known that Java is '**`pass by value`**', that happens when you pass primitive data types in addition to the reference data types as arrays.
 - It's a common pitfall to think Java passes array or objects by reference because you can actually make change after passing them to a method, but it's not, it still passes them by value.
 - The confusion between **pass by value** and **pass by reference** in Java often arises due to how **reference types** like objects and arrays behave when passed to methods. 
 - This can be clarified using examples:
