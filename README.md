@@ -33,7 +33,7 @@ This repository **IS NOT A ROADMAP FOR LEARNING Java** exactly, you can use diff
 <details><summary><strong>Object-Oriented Programming</strong></summary>
 
   1. [Objects and Classes](#2--object-oriented-programming)
-  2. Object-Oriented Thinking
+  2. [Abstraction and Encapsulation](#1--abstraction-and-encaplsulation)
   3. Inheritance and Polymorphism
   4. Exception Handling and Text I/O
   5. Abstract Classes and Interfaces
@@ -404,7 +404,7 @@ Java comes in several editions, each designed for different types of application
   >
   > int result = x + y;
   >
-  > System.out.println(result); >>>> 4 looks fine nothing wrong, no errors, the result is right :)
+  > System.out.println(result); >>>> 4 looks fine nothing wrong, no errors, the result is right 
 
   try again making y = 3 instead of 2
 
@@ -3255,8 +3255,8 @@ Last Chapter in Java Basics is Finished Finally 🥳!!!
 
 ![Access Modifiers](/images/Accessbilty%20Modifiers.png)
 
-<details><summary><h3><strong>7. Abstraction & Encaplsulation</strong></h3></summary>
+<details><summary><h3><strong>1. Abstraction and Encaplsulation</strong></h3></summary>
 
-### 7- Abstraction & Encaplsulation: 
+### 1- Abstraction and Encaplsulation: 
 
 </details>
