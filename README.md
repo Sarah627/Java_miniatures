@@ -2521,13 +2521,13 @@ Concepts:
     ```
 - How empty array could be:
 
-      ``` Java
+    ``` Java
           int[] integers = {};
           System.out.println(integers.length); // 0  
-      ```    
+    ```    
 - So in general,the syntax of declaring array as follows:
 
-  `elementType arrayRefVar[index] = new elementType[arraySize];`
+  > `elementType[] arrayRefVar = new elementType[arraySize];`
 
 - This statement does two things: (1) it creates an array using `new elementType[arraySize]`
   and (2) it assigns the reference of the newly created array to the variable arrayRefVar.
@@ -2554,9 +2554,9 @@ Concepts:
     ```
 - After you specify the size of an array, you cannot change it later, you can obtain the size of an array using `arrRefVar.length`:
 
-    ``` Java
-            System.out.println(mylist.length); // 10
-    ```
+    ```java
+        System.out.println(mylist.length); // 10
+      ```
 - reminding you again that arrays in Java are 0-based index (means you start counting and accessing array elements from 0 index)
 - in `mylist` example if you tried to access `mylist[10]` will result in `ArrayOurOfBounds` runtime error.
 - Java has a shorthand notation, known as the `array initializer`, which combines the declaration,
@@ -2609,15 +2609,15 @@ Concepts:
   - Let's initialize arrays using the same logic of iteration:
       - prompt user to enter array values:
         
-    ```` Java
+    ```Java
             Scanner input  = new Java.util.Scanner(System.in);
             for (int i = 0; i< mylist.length; i++){
             myList[i] = input.nextDouble();
             }
     ```
-        
       - initialize the array using random function from Math class:
-    ```Java 
+
+    ```java 
             for (int i = 0; i < mylist.length; i++){
               mylist[i] = (Math.random() * 100); // inserting numbers ranges from 0.0 to 100.0 exclusive
             }
