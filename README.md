@@ -2527,8 +2527,9 @@ Concepts:
     ```    
 - So in general,the syntax of declaring array as follows:
 
-  > elementType[] arrayRefVar = new elementType[arraySize];
-
+    ```java
+      elementType[] arrayRefVar = new elementType[ArraySize];
+    ```
 - This statement does two things: (1) it creates an array using `new elementType[arraySize]`
   and (2) it assigns the reference of the newly created array to the variable arrayRefVar.
 - you can declare an array, specify its size then assign elements to it:
@@ -3155,6 +3156,40 @@ Last Chapter in Java Basics is Finished Finally 🥳!!!
 - an Object Reference Variable is a variable where a reference to a specific object is stored:
   >  Class_Name ORV  
 - Previously, we introduced Strings and Arrays which are Reference Types, thus we can make objects from each class.
+
+#### Local Variables vs Instance Variables vs Static Variables :
+- Static variables like global variables if you are familiar with languages like C/C++:
+  -  They are defined inside a class and outside of any method.
+  -  Shared by all the objects of the same class.
+  - They are defined using `static` keyword.
+- Instance variables are defined inside a class and outside any metho:
+  -  Each object has its own copy of this variable
+  -  Stored in heap memory.
+  -  They are automatically initialized with default values.
+- Local variables are defined inside a class or a block:
+  -  its life time inside this block or method only
+  -  stored in stack memory.
+  -  they don't have a default value they must be initialized. 
+- example:
+  
+  ```java
+      public class Circle{
+        static double pi = 3.14;
+        private double rad; 
+
+        public Circle(double rad){
+          this.rad = rad;
+        }
+        public double calcArea(){
+          double squaredRad = Math.pow(rad,2);
+          return  squaredRad * pi;
+        }
+      } 
+  ```
+  - `pi` is a static variable shared by all the objects of the class.
+  - `rad` is an instance variable each object of the class has its own copy of this variable with different values.
+  - `squaredRad` is a local variable once its method 'calcArea' finishs its mission, the variable will be popped out of the stack 'its life time ends'.
+
 #### Instance Method vs Static Methods: 
 - Instance methods are methods which must be invoked using an object (dependen) while static methods doesn't require creating an instance of a class (independent).
 - static methods have a non-access modifier `static` like following:
@@ -3165,13 +3200,62 @@ Last Chapter in Java Basics is Finished Finally 🥳!!!
   ``` java 
       Math.pow(2,3); // static method 
       new Scanner(System.in).next(); // instance method 
-  ```
-- 
--
--
--
--
--
+  ``` 
+- Instance methods can access:
+  - Instance variables
+  - Instance methods
+  - static variables 
+  - static methods`
+- Static methods can access:
+  - static variables
+  - static methods
+  - instance variables or methods but ind indirectly.
+
+- How can a static method access or invoke instance method or variable indirectly?
+  - static methods cannot use the keyword `this`, but instead you can invoke an instance method or variable using object.
+  - Using the Circle class example:
+  ```java 
+      public class Circle {
+        static double pi = 3.14;
+        private double rad; 
+        private String message = "Hello from circle object";
+
+        public Circle(double rad) {
+            this.rad = rad;
+        }
+
+        public String getMessage(){
+          return message;
+        }
+        public double calcArea() { // Instance Method
+            return Math.pow(rad, 2) * pi;
+        }
+
+        public static void printArea(Circle c) { // Static Method
+            System.out.println("Area: " + c.calcArea()); // Indireclty accessing instance method
+        }
+
+        public static void printRadValu(Circle c){
+          System.out.println(c.getMessage()); // Indirectly accessing instance variable
+        }
+
+      }
+
+  ```  
+#### Visibility Modifiers (Access Modifiers):
+  - `public`
+  - `default` (package-private)
+  - `protected`
+  - `private`
+- public modifier makes a variable or a method, accessible everywhere (inside same package or different packages or inside same class or different classes)
+- default access modifer (it's not a keyword just nothing or no access modifier), allows access in the same package.
+-  protected access modifier allows accessing in the same package or same class, a subclas in different package.
+
+![Access Modifiers](/images/Access%20Modifiers.png) 
+
+![Access Modifiers](/images/Accessbilty%20Modifiers.png)
+
+
 -
 -
 -
