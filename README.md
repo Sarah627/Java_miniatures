@@ -2475,14 +2475,14 @@ We already mentioned before, in a successive chapter, that methods are used to d
 the same type which allow to not repeat the declaration for large number of variables of the same type.
 
 Concepts:
-    1. Array Basics (Declaration, size, accessing elements.etc.)
-    2. Copying Arrays.
-    3. Passing Arrays to Methods.
-    4. Returning an Array from a Method.
-    5. Variable-Length Argument Lists.
-    6. Arrays Class.
-    7. Command Line Arguments.
-    8. Two Dimensional Arrays.
+ 1. Array Basics (Declaration, size, accessing elements.etc.)
+ 2. Copying Arrays.
+ 3. Passing Arrays to Methods.
+ 4. Returning an Array from a Method.
+ 5. Variable-Length Argument Lists.
+ 6. Arrays Class.
+ 7. Command Line Arguments.
+ 8. Two Dimensional Arrays.
 
 #### Array Basics:
 - If you are familiar with C/C++ the array declaration would be like that:
