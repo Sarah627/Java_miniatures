@@ -3258,6 +3258,10 @@ Last Chapter in Java Basics is Finished Finally 🥳!!!
 <details><summary><h3><strong>1. Abstraction and Encaplsulation</strong></h3></summary>
 
 ### 1- Abstraction and Encaplsulation: 
-- Concepts:
+**Concepts:**
+- Data Hiding
+- `private` keyword
+- Concrete class vs abstract class
+- Types of abstraction
 
 </details>
