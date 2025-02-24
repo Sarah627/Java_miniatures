@@ -33,10 +33,11 @@ This repository **IS NOT A ROADMAP FOR LEARNING Java** exactly, you can use diff
 <details><summary><strong>Object-Oriented Programming</strong></summary>
 
   1. [Objects and Classes](#2--object-oriented-programming)
-  2. [Abstraction and Encapsulation](#1--abstraction-and-encaplsulation)
-  3. Inheritance and Polymorphism
-  4. Exception Handling and Text I/O
-  5. Abstract Classes and Interfaces
+  2. [Object Oriented Thinking](#1--object-oriented-thinking)
+  3. [Abstraction and Encapsulation](#2--abstraction-and-encaplsulation)
+  4. Inheritance and Polymorphism
+  5. Exception Handling and Text I/O
+  6. Abstract Classes and Interfaces
  
 </details>
 
@@ -3125,13 +3126,17 @@ Last Chapter in Java Basics is Finished Finally 🥳!!!
 
 ## 2- Object Oriented Programming
 
+Object-Oriented Programming (OOP) is a programming paradigm that organizes software design around objects, which are real-world entities with state (attributes) and behavior (methods). It focuses on modular, reusable, and maintainable code.
+
 4 Main concepts of OOP:
 1. Abstraction
 2. Encapsulation
 3. Inheritance 
 4. Polymorphism
 
-### Object Oriented Thinking:
+<details><summary><h3><strong>1. Object Oriented Thinking </strong></h3></summary>
+
+### 1- Object Oriented Thinking:
 - A `class` is a blueprint , template or a contract which defines properties and behaviours of objects.
 - An object is an instance of a class.
   - an object has a unique :  
@@ -3255,9 +3260,11 @@ Last Chapter in Java Basics is Finished Finally 🥳!!!
 
 ![Access Modifiers](/images/Accessbilty%20Modifiers.png)
 
-<details><summary><h3><strong>1. Abstraction and Encaplsulation</strong></h3></summary>
+</details>
 
-### 1- Abstraction and Encaplsulation: 
+<details><summary><h3><strong>2. Abstraction and Encaplsulation</strong></h3></summary>
+
+### 2- Abstraction and Encaplsulation: 
 **Concepts:**
 - Data Hiding
 - `private` keyword
