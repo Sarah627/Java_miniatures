@@ -3270,5 +3270,50 @@ Object-Oriented Programming (OOP) is a programming paradigm that organizes softw
 - `private` keyword
 - Concrete class vs abstract class
 - Types of abstraction
-
+#### Data Hiding:
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
 </details>
