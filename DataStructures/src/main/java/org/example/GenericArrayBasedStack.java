@@ -1,6 +1,5 @@
 package org.example;
 
-import java.util.Iterator;
 
 public class GenericArrayBasedStack<T>  {
 
@@ -37,8 +36,6 @@ public class GenericArrayBasedStack<T>  {
         if(isEmpty()) throw new IllegalStateException("Stack is empty");;
         return (T) array[top--];
     }
-
-
 
 
 }

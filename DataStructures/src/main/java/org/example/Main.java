@@ -6,9 +6,6 @@ package org.example;
 public class Main {
 
 
-
-
-
     public static void main(String[] args) {
         Stack pages = new Stack(5);
 
@@ -62,6 +59,8 @@ public class Main {
         while(!numberStack.isEmpty()){
             System.out.println(numberStack.pop());
         }
+
+
 
     }
 
