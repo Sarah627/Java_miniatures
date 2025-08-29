@@ -21,16 +21,13 @@ public class CircularQueue {
     public void enqueue(int element){
         if(isEmpty()) {
             front++;
-            rear = (rear+1)% data.length;
-            data[rear]=element;
         }
-        else if(isFull()){
+        if(isFull()){
             throw new IllegalStateException("Queue is Full");
         }
-        else{
-            rear = (rear+1)% data.length;
-            data[rear]=element;
-        }
+        rear = (rear+1)% data.length;
+        data[rear]=element;
+
     }
 
     public int dequeue(){

@@ -20,15 +20,13 @@ public class GenericCircularQueue<T> {
 
     public void enqueue(T element) {
         if (isEmpty()) {
-            front = 0;
-            rear = (rear + 1) % data.length;
-            data[rear] = element;
-        } else if (isFull()) {
+            front = 0;}
+        if (isFull()) {
             throw new IllegalStateException("the queue is full");
-        } else {
-            rear = (rear + 1) % data.length;
-            data[rear] = element;
         }
+        rear = (rear + 1) % data.length;
+        data[rear] = element;
+
     }
 
     public T dequeue() {
