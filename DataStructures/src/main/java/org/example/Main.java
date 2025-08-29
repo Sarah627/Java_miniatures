@@ -1,14 +1,56 @@
 package org.example;
 
+import java.util.ArrayList;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
 
+    // function for comparing precedence of operators
 
+    public static int precedence(String c){
+        return switch (c) {
+            case "^" -> 3;
+            case "*", "/" -> 2;
+            case "+", "-" -> 1;
+            default -> -1;
+        };
+    }
+
+    // function to convert the infix expression into postfix:
+
+    public static String toPostFix(String expression){
+        GenericArrayBasedStack<String> parser = new GenericArrayBasedStack<>();
+        ArrayList<String> finalExpression = new ArrayList<>();
+        String current;
+        for(int i = 0;i<expression.length();i++){
+            current = expression.charAt(i)+"";
+            if(current.matches("[0-9a-zA-Z]")){
+                finalExpression.add(current);
+            } else if (current.equals("(")) {
+                parser.push(current);
+            } else if (current.matches("[+\\-*/]")) {
+                while ( !parser.isEmpty() && precedence(current) <= precedence(parser.top()) ){
+                    finalExpression.add(parser.pop());
+                }
+                parser.push(current);
+            } else {
+                while (!parser.isEmpty() && !parser.top().equals("(")){
+                    finalExpression.add(parser.pop());
+                }
+                parser.pop();
+            }
+            }
+        while(!parser.isEmpty()){
+            finalExpression.add(parser.pop());
+        }
+
+        return finalExpression.toString();
+    }
     public static void main(String[] args) {
         Stack pages = new Stack(5);
 
+        System.out.println(toPostFix("(a+b)-c*d"));
         // trying some operations
 
         pages.push(5);
@@ -60,6 +102,48 @@ public class Main {
             System.out.println(numberStack.pop());
         }
 
+        Queue track1 = new Queue(10);
+
+        track1.enqueue(4);
+        track1.enqueue(3);
+        track1.enqueue(2);
+        track1.enqueue(10);
+        track1.enqueue(7);
+        track1.enqueue(8);
+        track1.enqueue(0);
+        track1.enqueue(6);
+        track1.enqueue(1);
+        track1.enqueue(5);
+
+
+        for(int i = 0; i < 10;i++){
+            System.out.println(track1.dequeue());
+        }
+        int value;
+        CircularQueue circleQueue = new CircularQueue(5);
+        circleQueue.enqueue(5);
+        circleQueue.enqueue(2);
+        circleQueue.enqueue(4);
+        circleQueue.enqueue(3);
+        circleQueue.enqueue(1);
+        value = circleQueue.dequeue();
+        System.out.println(value);
+        value = circleQueue.dequeue();
+        System.out.println(value);
+        circleQueue.enqueue(10);
+        circleQueue.enqueue(6);
+
+    GenericArrayBasedQueue<String> queries = new GenericArrayBasedQueue<>(5);
+    queries.enqueue("CREATE");
+    queries.enqueue("TABLE");
+    queries.enqueue("students");
+    queries.enqueue("(id INTEGER AUTOINCREMENT, name TEXT, age INTEGER)");
+    queries.enqueue("Hello");
+
+
+        for (int i = 0; i < 5; i++) {
+            System.out.println(queries.dequeue());
+        }
 
 
     }
