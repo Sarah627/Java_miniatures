@@ -133,17 +133,36 @@ public class Main {
         circleQueue.enqueue(10);
         circleQueue.enqueue(6);
 
-    GenericArrayBasedQueue<String> queries = new GenericArrayBasedQueue<>(5);
-    queries.enqueue("CREATE");
-    queries.enqueue("TABLE");
-    queries.enqueue("students");
-    queries.enqueue("(id INTEGER AUTOINCREMENT, name TEXT, age INTEGER)");
-    queries.enqueue("Hello");
+        GenericArrayBasedQueue<String> queries = new GenericArrayBasedQueue<>(5);
+        queries.enqueue("CREATE");
+        queries.enqueue("TABLE");
+        queries.enqueue("students");
+        queries.enqueue("(id INTEGER AUTOINCREMENT, name TEXT, age INTEGER)");
+        queries.enqueue("Hello");
 
 
         for (int i = 0; i < 5; i++) {
             System.out.println(queries.dequeue());
         }
+
+
+
+
+        GenericCircularQueue<Character> password = new GenericCircularQueue<>(7);
+        password.enqueue('Y');
+        password.enqueue('4');
+        password.enqueue('@');
+        password.enqueue('M');
+        password.enqueue('i');
+        password.enqueue('%');
+        password.enqueue('%');
+
+        for (int i = 0; i < 6; i++) {
+            System.out.println(password.dequeue());
+        }
+
+
+
 
 
     }
