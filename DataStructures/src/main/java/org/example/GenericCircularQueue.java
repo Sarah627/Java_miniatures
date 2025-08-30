@@ -31,18 +31,12 @@ public class GenericCircularQueue<T> {
 
     public T dequeue() {
         T value;
-        if (isEmpty()) {
-            throw new IllegalStateException("the queue is empty");
-        } else if (rear == front) {
+        if (!isEmpty()) {
             value = data[front];
-            front = -1;
-            rear = -1;
-            return value;
-        } else {
-            value = data[front];
-            front = (front+1) % data.length;
-            return value;
+        }if (rear == front) {
+            front = rear = -1;
         }
+        return value;
 
     }
 }
