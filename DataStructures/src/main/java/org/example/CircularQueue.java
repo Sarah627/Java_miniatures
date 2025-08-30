@@ -31,19 +31,15 @@ public class CircularQueue {
     }
 
     public int dequeue(){
-        int value;
         if(isEmpty()) throw new IllegalStateException("Queue is empty");
-        else if (rear == front) {
-            value = data[front];
-            rear =-1;
-            front =-1;
+        int value = data[front];
+        if (rear == front) {
+            rear = front = -1;
             return value;
         }
-        else {
-            value = data[front];
-            front = (front+1)% data.length;
-            return value;
-        }
+        front = (front+1)% data.length;
+        return value;
+
     }
 
 }
