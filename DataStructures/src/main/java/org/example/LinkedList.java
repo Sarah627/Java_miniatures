@@ -2,6 +2,16 @@ package org.example;
 
 
 public class LinkedList {
+    class Node{
+        int element;
+        Node next;
+
+        public Node(int data, Node n){
+            element = data;
+            next = n;
+        }
+    }
+
     private Node head = null;
     int size = 0;
 
@@ -9,35 +19,39 @@ public class LinkedList {
         return (size == 0);
     }
 
-    public void push(int element){
+    public void insertFirst(int element){
         Node node = new Node(element, head);
         head = node;
         size++;
+
     }
 
     public void append(int data){
         Node node = new Node(data, null);
-        if (head == null) head = node;
+        if (head == null) {
+            insertFirst(data);
+            return;
+        }
         else {
             Node iterator = head;
             while (iterator.next != null){
                 iterator = iterator.next;
             }
             iterator.next = node;
+            size++;
         }
-        size++;
     }
     public void insertAt(int pos, int data){
         if (pos < 0 || pos > size) {
             throw new IndexOutOfBoundsException("Invalid position");
         }
 
-        Node node = new Node(data, null);
-        Node iterator = head;
         if(pos == 0) {
-            push(data);
+            insertFirst(data);
             return;
         }
+        Node node = new Node(data, null);
+        Node iterator = head;
         for( int i = 0; i < pos-1 ; i++ ){
             iterator = iterator.next;
         }
@@ -46,17 +60,55 @@ public class LinkedList {
         size++;
     }
 
+    void removeAt(int pos){
+        Node nodeToRemove = head;
+        if(isEmpty() || pos < 0 || pos>=size) return;
+        if(pos == 0) {
+            head=head.next;
+            nodeToRemove.next=null;
+            size--;
+            return;
+        }
+        Node iterator = head;
+        for( int i = 0; i < pos-1 ; i++ ){
+            iterator = iterator.next;
+        }
+        nodeToRemove = iterator.next;
+        iterator.next = nodeToRemove.next;
+        nodeToRemove.next=null;
+        size--;
 
-
-}
-
-
-class Node{
-    int element;
-    Node next;
-
-    public Node(int data, Node n){
-        element = data;
-        next = n;
     }
+
+    void removeElement(int element){
+        Node nodeToRemove = head;
+
+        if(isEmpty()) return;
+        if(head.element ==element) {
+            head=head.next;
+            nodeToRemove.next=null;
+            size--;
+            return;
+        }
+
+        Node iterator = head;
+
+        while(iterator.next!= null && iterator.next.element !=element ){
+            iterator = iterator.next;
+        }
+        if(iterator.next==null) return;
+
+        nodeToRemove = iterator.next;
+        iterator.next = nodeToRemove.next;
+        nodeToRemove.next=null;
+        size--;
+
+    }
+
+
+
+
+
 }
+
+

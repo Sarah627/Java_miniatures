@@ -164,14 +164,14 @@ public class Main {
 
         LinkedList list = new LinkedList();
 
-        list.push(1);
-        list.push(12);
-        list.push(9);
-        list.push(78);
+        list.insertFirst(1);
+        list.insertFirst(12);
+        list.insertFirst(9);
+        list.insertFirst(78);
         list.insertAt(0,50);
 
-
-
+        list.removeAt(0);
+        list.removeElement(9);
 
     }
 
