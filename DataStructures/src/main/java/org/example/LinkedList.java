@@ -1,8 +1,7 @@
 package org.example;
 
-
 public class LinkedList {
-    class Node{
+    static class Node{
         int element;
         Node next;
 
@@ -13,16 +12,15 @@ public class LinkedList {
     }
 
     private Node head = null;
-    int size = 0;
+    private int size = 0;
 
     public boolean isEmpty(){
         return (size == 0);
     }
 
     public void insertFirst(int element){
-        Node node = new Node(element, head);
-        head = node;
-        size++;
+       head = new Node(element, head);
+       size++;
 
     }
 
@@ -105,7 +103,9 @@ public class LinkedList {
 
     }
 
-
+    int size(){
+        return size;
+    }
 
 
 
