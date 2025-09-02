@@ -28,7 +28,6 @@ public class LinkedList {
         Node node = new Node(data, null);
         if (head == null) {
             insertFirst(data);
-            return;
         }
         else {
             Node iterator = head;
