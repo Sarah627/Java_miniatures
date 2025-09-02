@@ -1,4 +1,4 @@
 package org.example;
 
-public class GenericDoubleLinkedList {
+public class GenericDoubleLinkedList <T>{
 }
