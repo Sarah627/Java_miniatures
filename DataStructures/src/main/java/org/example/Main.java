@@ -208,6 +208,19 @@ public class Main {
         doubleList.removeElement(15);
 
 
+        GenericDoubleLinkedList<Integer> genericDoubleLinkedList = new GenericDoubleLinkedList<>();
+        genericDoubleLinkedList.insertFirst(10);
+        genericDoubleLinkedList.insertFirst(20);
+        genericDoubleLinkedList.append(5);
+        genericDoubleLinkedList.insertAt(1, 15);
+
+        System.out.println("Size: " + genericDoubleLinkedList.size()); // 4
+        genericDoubleLinkedList.removeElement(15);
+        System.out.println("Size after remove 15: " + genericDoubleLinkedList.size()); // 3
+        genericDoubleLinkedList.removeAt(0);
+        System.out.println("Size after removeAt(0): " + genericDoubleLinkedList.size()); // 2
+
+
     }
 
 
