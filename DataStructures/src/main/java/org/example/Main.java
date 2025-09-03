@@ -197,6 +197,17 @@ public class Main {
         receipt.insert(54.2);
         receipt.insert(842.5);
 
+
+
+        DoublyLinkedList doubleList = new DoublyLinkedList();
+        doubleList.insertFirst(10);
+        doubleList.insertFirst(20);
+        doubleList.append(5);
+        doubleList.insertAt(1, 15);
+        doubleList.removeAt(2);
+        doubleList.removeElement(15);
+
+
     }
 
 
