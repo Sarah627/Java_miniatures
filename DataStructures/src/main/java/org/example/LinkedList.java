@@ -1,7 +1,7 @@
 package org.example;
 
 public class LinkedList {
-    static class Node{
+    private static class Node{
         int element;
         Node next;
 
