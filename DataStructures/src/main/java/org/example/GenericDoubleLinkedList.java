@@ -1,5 +1,6 @@
 package org.example;
 
+@SuppressWarnings("DuplicatedCode")
 public class GenericDoubleLinkedList <T>{
         private static class Node<T>{
             T element;

@@ -216,8 +216,10 @@ public class Main {
 
         System.out.println("Size: " + genericDoubleLinkedList.size()); // 4
         genericDoubleLinkedList.removeElement(15);
+        genericDoubleLinkedList.removeElement(5);
         System.out.println("Size after remove 15: " + genericDoubleLinkedList.size()); // 3
         genericDoubleLinkedList.removeAt(0);
+        genericDoubleLinkedList.removeAt(1);
         System.out.println("Size after removeAt(0): " + genericDoubleLinkedList.size()); // 2
 
 
