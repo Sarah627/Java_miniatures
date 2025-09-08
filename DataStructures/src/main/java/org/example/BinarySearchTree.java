@@ -2,7 +2,7 @@ package org.example;
 
 public class BinarySearchTree {
 
-    private class Node{
+    private static class Node{
         int element;
         Node right = null;
         Node left = null;
@@ -51,6 +51,12 @@ public class BinarySearchTree {
         else{
             return minimum(node.left);
         }
+        // iterative approach
+        //Node temp =  node;
+        //while(temp.left != null){
+        //    temp = temp.left;
+        //}
+        //return temp.element;
 
     }
     private int maximum(Node node){
