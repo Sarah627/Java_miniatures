@@ -13,11 +13,21 @@ public class BinarySearchTree {
 
     Node root=null;
 
+    // public methods
+
     public void insert(int element){
         root = insert(element, root);
     }
 
-    //recursive helper method
+    public int min(){
+        return minimum(root);
+    }
+
+    public int max(){
+        return maximum(root);
+    }
+
+    //recursive helper methods
 
     private Node insert(int element, Node node){
         if(node == null){
@@ -26,11 +36,31 @@ public class BinarySearchTree {
         if(element<=node.element){
             node.left = insert(element,node.left);
         }
-        else if(element>node.element){
+        else{
             node.right = insert(element,node.right);
         }
 
         return node;
+    }
+
+    private int minimum(Node node){
+
+        if(node.left == null){
+            return  node.element;
+        }
+        else{
+            return minimum(node.left);
+        }
+
+    }
+    private int maximum(Node node){
+
+        if(node.right == null){
+            return  node.element;
+        }
+        else{
+            return maximum(node.right);
+        }
 
     }
 
