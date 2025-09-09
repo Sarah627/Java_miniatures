@@ -230,9 +230,11 @@ public class Main {
             tree.insert(70);
             tree.insert(60);
             tree.insert(80);
+            tree.insert(10);
 
         System.out.println(tree.min());
         System.out.println(tree.max());
+        System.out.println(tree.height());
 
     }
 

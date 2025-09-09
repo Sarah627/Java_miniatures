@@ -27,6 +27,10 @@ public class BinarySearchTree {
         return maximum(root);
     }
 
+    public int height(){
+        return height(root);
+    }
+
     //recursive helper methods
 
     private Node insert(int element, Node node){
@@ -39,7 +43,6 @@ public class BinarySearchTree {
         else{
             node.right = insert(element,node.right);
         }
-
         return node;
     }
 
@@ -68,6 +71,17 @@ public class BinarySearchTree {
             return maximum(node.right);
         }
 
+    }
+
+    private int height(Node node){
+        if(node == null){
+            return -1;
+        }
+
+        int rightTreeHeight = height(node.right);
+        int leftTreeHeight = height(node.left);
+
+        return Math.max(rightTreeHeight,leftTreeHeight) + 1;
     }
 
 
