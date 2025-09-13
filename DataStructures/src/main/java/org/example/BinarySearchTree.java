@@ -33,11 +33,14 @@ public class BinarySearchTree {
     }
 
     public void traverse(){
-        traversePostOrder(root);
+        traverseInOrder(root);
     }
 
     public void traverseBFS(){
         traverseBFS(root);
+    }
+    public void delete(int element){
+        root = delete(root,element);
     }
 
     //recursive helper methods
@@ -135,6 +138,31 @@ public class BinarySearchTree {
             if(current.right != null) nodes.enqueue(current.right);
 
         }
+
+    }
+
+    private Node delete(Node node, int element){
+        if(node == null) return null;
+        else if(element < node.element){
+            node.left = delete(node.left,element);
+        } else if (element > node.element) {
+            node.right = delete(node.right,element);
+        }else{
+            if(node.left == null){
+                Node temp = node.right;
+                node = null;
+                return temp;
+            } else if (node.right == null){
+                Node temp = node.left;
+                node = null;
+                return temp;
+            }else{
+                int minValue = minimum(node.right);
+                node.element = minValue;
+                node.right = delete(node.right,minValue);
+            }
+        }
+        return node;
 
     }
 }
