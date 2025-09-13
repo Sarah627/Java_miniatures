@@ -239,6 +239,9 @@ public class Main {
         tree.traverse();
         System.out.println("------------tree traversal BFS-----------");
         tree.traverseBFS();
+        tree.delete(70);
+        System.out.println("------------tree traversal-----------");
+        tree.traverse();
 
     }
 
