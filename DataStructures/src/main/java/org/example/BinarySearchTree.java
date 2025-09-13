@@ -12,6 +12,7 @@ public class BinarySearchTree {
     }
 
     Node root=null;
+    int size = 0;
 
     // public methods
 
@@ -31,10 +32,19 @@ public class BinarySearchTree {
         return height(root);
     }
 
+    public void traverse(){
+        traversePostOrder(root);
+    }
+
+    public void traverseBFS(){
+        traverseBFS(root);
+    }
+
     //recursive helper methods
 
     private Node insert(int element, Node node){
         if(node == null){
+            size++;
             return new Node(element);
         }
         if(element<=node.element){
@@ -43,6 +53,7 @@ public class BinarySearchTree {
         else{
             node.right = insert(element,node.right);
         }
+        size++;
         return node;
     }
 
@@ -86,4 +97,44 @@ public class BinarySearchTree {
 
 
 
+    private void traversePreOrder(Node node){
+        if(node == null){
+            return;
+        }
+        System.out.println(node.element);
+        traversePreOrder(node.left);
+        traversePreOrder(node.right);
+    }
+
+    private void traverseInOrder(Node node){
+        if(node == null){
+            return;
+        }
+        traverseInOrder(node.left);
+        System.out.println(node.element);
+        traverseInOrder(node.right);
+    }
+
+    private void traversePostOrder(Node node){
+        if(node == null){
+            return;
+        }
+        traversePostOrder(node.left);
+        traversePostOrder(node.right);
+        System.out.println(node.element);
+    }
+
+    private void traverseBFS(Node node){
+        if(node == null) return;
+        GenericArrayBasedQueue<Node> nodes = new GenericArrayBasedQueue<>(size);
+        nodes.enqueue(node);
+        while(!nodes.isEmpty()){
+            Node current = nodes.dequeue();
+            System.out.println(current.element);
+            if(current.left != null) nodes.enqueue(current.left);
+            if(current.right != null) nodes.enqueue(current.right);
+
+        }
+
+    }
 }

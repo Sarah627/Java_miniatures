@@ -235,6 +235,10 @@ public class Main {
         System.out.println(tree.min());
         System.out.println(tree.max());
         System.out.println(tree.height());
+        System.out.println("------------tree traversal-----------");
+        tree.traverse();
+        System.out.println("------------tree traversal BFS-----------");
+        tree.traverseBFS();
 
     }
 
