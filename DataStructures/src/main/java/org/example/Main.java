@@ -221,27 +221,50 @@ public class Main {
 //        genericDoubleLinkedList.removeAt(0);
 //        genericDoubleLinkedList.removeAt(1);
 //        System.out.println("Size after removeAt(0): " + genericDoubleLinkedList.size()); // 2
-            BinarySearchTree tree = new BinarySearchTree();
+//            BinarySearchTree tree = new BinarySearchTree();
+//
+//            tree.insert(50);
+//            tree.insert(30);
+//            tree.insert(20);
+//            tree.insert(40);
+//            tree.insert(70);
+//            tree.insert(60);
+//            tree.insert(80);
+//            tree.insert(10);
+//
+//        System.out.println(tree.min());
+//        System.out.println(tree.max());
+//        System.out.println(tree.height());
+//        System.out.println("------------tree traversal-----------");
+//        tree.traverse();
+//        System.out.println("------------tree traversal BFS-----------");
+//        tree.traverseBFS();
+//        tree.delete(70);
+//        System.out.println("------------tree traversal-----------");
+//        tree.traverse();
+//
 
-            tree.insert(50);
-            tree.insert(30);
-            tree.insert(20);
-            tree.insert(40);
-            tree.insert(70);
-            tree.insert(60);
-            tree.insert(80);
-            tree.insert(10);
 
-        System.out.println(tree.min());
-        System.out.println(tree.max());
-        System.out.println(tree.height());
-        System.out.println("------------tree traversal-----------");
-        tree.traverse();
-        System.out.println("------------tree traversal BFS-----------");
-        tree.traverseBFS();
-        tree.delete(70);
-        System.out.println("------------tree traversal-----------");
-        tree.traverse();
+        Graph newGraph = new Graph(12);
+        newGraph.addEdge(0,1);
+        newGraph.addEdge(1,8);
+        newGraph.addEdge(0,9);
+        newGraph.addEdge(9,8);
+        newGraph.addEdge(8,7);
+        newGraph.addEdge(7,10);
+        newGraph.addEdge(7,11);
+        newGraph.addEdge(7,6);
+        newGraph.addEdge(7,3);
+        newGraph.addEdge(3,2);
+        newGraph.addEdge(3,4);
+        newGraph.addEdge(3,5);
+        newGraph.addEdge(3,6);
+        newGraph.addEdge(6,5);
+        newGraph.addEdge(10,11);
+
+        newGraph.printGraph();
+
+        newGraph.BFS(8);
 
     }
 
