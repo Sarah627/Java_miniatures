@@ -45,6 +45,11 @@ public class Queue {
     }
 
 
+    int size(){
+        return data.length;
+    }
+
+
 
 
 
