@@ -38,6 +38,11 @@ public class LinkedList {
             size++;
         }
     }
+
+    public int first(){
+        if (isEmpty()) throw new RuntimeException("Queue is empty");
+        return head.element;
+    }
     public void insertAt(int pos, int data){
         if (pos < 0 || pos > size) {
             throw new IndexOutOfBoundsException("Invalid position");
