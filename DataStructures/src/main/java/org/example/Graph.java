@@ -3,13 +3,15 @@ package org.example;
 import java.util.ArrayList;
 
 public class Graph {
-    private ArrayList<ArrayList<Integer>> graph;
+    private final ArrayList<ArrayList<Integer>> graph;
 
-    int v;
+    private final int v;
 
+    private boolean[] visited;
 
     Graph(int nodes){
         v =nodes;
+        visited = new boolean[v];
         graph = new ArrayList<>();
         for(int i =0;i<v;i++){
             graph.add(new ArrayList<>());
@@ -46,12 +48,19 @@ public class Graph {
                         toBeVisited.enqueue(currentElement);
                     }
 
-
-
-
             }
+        }
+    }
 
 
+
+    void DFS(int v){
+        if(visited[v]) return;
+        visited[v] = true;
+        System.out.println(v);
+        ArrayList<Integer> list = graph.get(v);
+        for (int i = 0; i < list.size(); i++) {
+            DFS(list.get(i));
         }
     }
 
