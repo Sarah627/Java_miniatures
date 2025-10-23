@@ -265,6 +265,8 @@ public class Main {
         newGraph.printGraph();
 
         newGraph.BFS(8);
+        System.out.println("----------DFS----------");
+        newGraph.DFS(8);
 
     }
 
