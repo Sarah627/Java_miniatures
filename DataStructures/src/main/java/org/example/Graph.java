@@ -23,6 +23,10 @@ public class Graph {
         graph.get(v).add(u);
     }
 
+    void addDirectedEdge(int from, int to){
+        graph.get(from).add(to);
+    }
+
     void printGraph(){
         for(int i =0;i<v;i++){
             System.out.print("Node "+ i+ " -> ");
