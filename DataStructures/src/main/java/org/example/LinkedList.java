@@ -11,6 +11,8 @@ public class LinkedList {
         }
     }
 
+
+
     private Node head = null;
     private int size = 0;
 
@@ -106,6 +108,8 @@ public class LinkedList {
         size--;
 
     }
+
+
 
     int size(){
         return size;

@@ -1,6 +1,7 @@
 package org.example;
 
 import java.util.ArrayList;
+import java.util.List;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -245,7 +246,7 @@ public class Main {
 //
 
 
-        Graph newGraph = new Graph(12);
+        Graph newGraph = new Graph(13);
         newGraph.addEdge(0,1);
         newGraph.addEdge(1,8);
         newGraph.addEdge(0,9);
@@ -261,12 +262,24 @@ public class Main {
         newGraph.addEdge(3,6);
         newGraph.addEdge(6,5);
         newGraph.addEdge(10,11);
+        newGraph.addEdge(12,12);
+
+
 
         newGraph.printGraph();
 
-        newGraph.BFS(8);
-        System.out.println("----------DFS----------");
-        newGraph.DFS(8);
+//        newGraph.BFS(8);
+//        System.out.println("----------DFS----------");
+//        newGraph.DFS(8);
+//        System.out.println(newGraph.isCyclicUndirected(2));;
+
+
+        List<Integer> path = newGraph.getShortestPath(0,11);
+
+        for(int point: path){
+            System.out.println(point);
+        }
+
 
     }
 

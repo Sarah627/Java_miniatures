@@ -1,6 +1,9 @@
 package org.example;
 
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 
 public class Graph {
     private final ArrayList<ArrayList<Integer>> graph;
@@ -8,10 +11,14 @@ public class Graph {
     private final int v;
 
     private boolean[] visited;
+    private boolean[] parents;
+    private StackLinkedBased ancestors;
 
     Graph(int nodes){
         v =nodes;
         visited = new boolean[v];
+        parents = new boolean[v];
+        ancestors = new StackLinkedBased();
         graph = new ArrayList<>();
         for(int i =0;i<v;i++){
             graph.add(new ArrayList<>());
@@ -68,4 +75,81 @@ public class Graph {
         }
     }
 
+
+
+    List<Integer> getShortestPath(int node,int end){
+
+        int[] prev= new int[graph.size()];
+        Arrays.fill(prev,-1);
+        boolean[] visited = new boolean[graph.size()];
+        Queue waiting = new Queue(graph.size());
+
+        waiting.enqueue(node);
+        visited[node] = true;
+        while(!waiting.isEmpty()){
+            int currentNode = waiting.dequeue();
+            ArrayList<Integer> neighbours = graph.get(currentNode);
+            for(int next: neighbours ){
+                if(!visited[next]){
+                    waiting.enqueue(next);
+                    visited[next] = true;
+                    prev[next]=currentNode;
+
+                }
+            }
+        }
+
+        return reconstructPath(node,end, prev);
+    }
+
+
+    ArrayList<Integer> reconstructPath(int start, int end, int[] prev){
+        ArrayList<Integer> path = new ArrayList<Integer>(graph.size());
+        for (int i = end; i != -1 ; i = prev[i]) {
+            path.add(i);
+        }
+        List<Integer> reversed = path.reversed();
+        if (reversed.getFirst() == start) return path;
+        return null;
+    }
+
+
+
+    boolean isCyclic(int node){
+        if(parents[node]) return true;
+        visited[node] = true;
+        parents[node] = true;
+        ArrayList<Integer> nodes =graph.get(node);
+        for(int n: nodes){
+            if(!visited[n] && isCyclic(n)) return true;
+            else if(parents[n]) return true;
+        }
+        parents[node] = false;
+        return false;
+
+
+    }
+
+    public boolean isCyclicUndirected(int node){
+        return isCyclic(node, visited,-1);
+    }
+
+    private boolean isCyclic(int node, boolean[] visited, int parent) {
+        visited[node] = true;
+
+        for (int neighbor : graph.get(node)) {
+            if (!visited[neighbor]) {
+                if (isCyclic(neighbor, visited, node))
+                    return true;
+            } else if (neighbor != parent) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+
+
 }
+
+
