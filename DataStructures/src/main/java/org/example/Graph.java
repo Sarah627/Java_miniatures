@@ -10,15 +10,15 @@ public class Graph {
 
     private final int v;
 
-    private boolean[] visited;
-    private boolean[] parents;
-    private StackLinkedBased ancestors;
+    private final boolean[] visited;
+    private final boolean[] parents;
+
 
     Graph(int nodes){
         v =nodes;
         visited = new boolean[v];
         parents = new boolean[v];
-        ancestors = new StackLinkedBased();
+
         graph = new ArrayList<>();
         for(int i =0;i<v;i++){
             graph.add(new ArrayList<>());
@@ -70,8 +70,8 @@ public class Graph {
         visited[v] = true;
         System.out.println(v);
         ArrayList<Integer> list = graph.get(v);
-        for (int i = 0; i < list.size(); i++) {
-            DFS(list.get(i));
+        for (Integer integer : list) {
+            DFS(integer);
         }
     }
 
@@ -104,13 +104,13 @@ public class Graph {
 
 
     ArrayList<Integer> reconstructPath(int start, int end, int[] prev){
-        ArrayList<Integer> path = new ArrayList<Integer>(graph.size());
+        ArrayList<Integer> path = new ArrayList<>(graph.size());
         for (int i = end; i != -1 ; i = prev[i]) {
             path.add(i);
         }
         List<Integer> reversed = path.reversed();
         if (reversed.getFirst() == start) return path;
-        return null;
+        return new ArrayList<>();
     }
 
 

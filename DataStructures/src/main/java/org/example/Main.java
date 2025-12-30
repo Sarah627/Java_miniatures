@@ -49,203 +49,244 @@ public class Main {
         return finalExpression.toString();
     }
     public static void main(String[] args) {
-//        Stack pages = new Stack(5);
-//
-//        System.out.println(toPostFix("(a+b)-c*d"));
-//        // trying some operations
-//
-//        pages.push(5);
-//        pages.push(8);
-//        pages.push(9);
-//        pages.push(3);
-//
-//        System.out.println(pages.pop()); //prints out 3 because it's the last element
-//
-//        System.out.println(pages.peek());
-//        System.out.println(pages.pop());
-//        System.out.println(pages.pop());
-//        System.out.println(pages.pop());
-//        System.out.println(pages.isEmpty());
-//
-//        //testing if the stack is safe
-//
-//        System.out.println(pages.pop());
-//        // test 2
-//        pages.push(5);
-//        pages.push(8);
-//        pages.push(9);
-//        pages.push(3);
-//        pages.push(0);
-//        pages.push(4);
-//
-//
-//        //trying generic stack implementation
-//        //creating object first (two different constructors)
-//
-//        GenericArrayBasedStack<Integer> numberStack = new GenericArrayBasedStack<>(10);
-//        GenericArrayBasedStack<Integer> numberStack2 = new GenericArrayBasedStack<>();
-//
-//
-//        numberStack.push(5);
-//        numberStack.push(9);
-//        numberStack.push(0);
-//        numberStack.push(2);
-//        numberStack.push(3);
-//        numberStack.push(8);
-//        numberStack.push(4);
-//        numberStack.push(1);
-//        numberStack.push(6);
-//        numberStack.push(21);
-//
-//
-//        numberStack2.push(7);
-//        while(!numberStack.isEmpty()){
-//            System.out.println(numberStack.pop());
-//        }
-//
-//        Queue track1 = new Queue(10);
-//
-//        track1.enqueue(4);
-//        track1.enqueue(3);
-//        track1.enqueue(2);
-//        track1.enqueue(10);
-//        track1.enqueue(7);
-//        track1.enqueue(8);
-//        track1.enqueue(0);
-//        track1.enqueue(6);
-//        track1.enqueue(1);
-//        track1.enqueue(5);
-//
-//
-//        for(int i = 0; i < 10;i++){
-//            System.out.println(track1.dequeue());
-//        }
-//        int value;
-//        CircularQueue circleQueue = new CircularQueue(5);
-//        circleQueue.enqueue(5);
-//        circleQueue.enqueue(2);
-//        circleQueue.enqueue(4);
-//        circleQueue.enqueue(3);
-//        circleQueue.enqueue(1);
-//        value = circleQueue.dequeue();
-//        System.out.println(value);
-//        value = circleQueue.dequeue();
-//        System.out.println(value);
-//        circleQueue.enqueue(10);
-//        circleQueue.enqueue(6);
-//
-//        GenericArrayBasedQueue<String> queries = new GenericArrayBasedQueue<>(5);
-//        queries.enqueue("CREATE");
-//        queries.enqueue("TABLE");
-//        queries.enqueue("students");
-//        queries.enqueue("(id INTEGER AUTOINCREMENT, name TEXT, age INTEGER)");
-//        queries.enqueue("Hello");
-//
-//
-//        for (int i = 0; i < 5; i++) {
-//            System.out.println(queries.dequeue());
-//        }
-//
-//
-//
-//
-//        GenericCircularQueue<Character> password = new GenericCircularQueue<>(7);
-//        password.enqueue('Y');
-//        password.enqueue('4');
-//        password.enqueue('@');
-//        password.enqueue('M');
-//        password.enqueue('i');
-//        password.enqueue('%');
-//        password.enqueue('%');
-//
-//        for (int i = 0; i < 6; i++) {
-//            System.out.println(password.dequeue());
-//        }
-//
-//
-//        LinkedList list = new LinkedList();
-//
-//        list.insertFirst(1);
-//        list.insertFirst(12);
-//        list.insertFirst(9);
-//        list.insertFirst(78);
-//        list.insertAt(0,50);
-//
-//        list.removeAt(0);
-//        list.removeElement(9);
-//
-//
-//        GenericLinkedList<String> names = new GenericLinkedList<>();
-//        names.insertAt(0,"Ali");
-//        names.insertAt(1,"Moaaz");
-//        names.insertAt(2,"Mudather");
-//        names.insertAt(3,"Mahdi");
-//        names.insertAt(4,"Mohammed");
-//        names.insertAt(5,"Omar");
-//
-//
-//        GenericLinkedList<Double> receipt = new GenericLinkedList<>();
-//        receipt.insertAt(0,250.56);
-//        receipt.insertAt(1,45.5);
-//        receipt.insertAt(2,98.25);
-//        receipt.insertAt(3,45.0);
-//        receipt.insertAt(4,789.2);
-//        receipt.insertAt(5,1000.0);
-//
-//        receipt.removeAt(2);
-//
-//        receipt.insert(85.2);
-//        receipt.insert(54.2);
-//        receipt.insert(842.5);
-//
-//
-//
-//        DoublyLinkedList doubleList = new DoublyLinkedList();
-//        doubleList.insertFirst(10);
-//        doubleList.insertFirst(20);
-//        doubleList.append(5);
-//        doubleList.insertAt(1, 15);
-//        doubleList.removeAt(2);
-//        doubleList.removeElement(15);
-//
-//
-//        GenericDoubleLinkedList<Integer> genericDoubleLinkedList = new GenericDoubleLinkedList<>();
-//        genericDoubleLinkedList.insertFirst(10);
-//        genericDoubleLinkedList.insertFirst(20);
-//        genericDoubleLinkedList.append(5);
-//        genericDoubleLinkedList.insertAt(1, 15);
-//
-//        System.out.println("Size: " + genericDoubleLinkedList.size()); // 4
-//        genericDoubleLinkedList.removeElement(15);
-//        genericDoubleLinkedList.removeElement(5);
-//        System.out.println("Size after remove 15: " + genericDoubleLinkedList.size()); // 3
-//        genericDoubleLinkedList.removeAt(0);
-//        genericDoubleLinkedList.removeAt(1);
-//        System.out.println("Size after removeAt(0): " + genericDoubleLinkedList.size()); // 2
-//            BinarySearchTree tree = new BinarySearchTree();
-//
-//            tree.insert(50);
-//            tree.insert(30);
-//            tree.insert(20);
-//            tree.insert(40);
-//            tree.insert(70);
-//            tree.insert(60);
-//            tree.insert(80);
-//            tree.insert(10);
-//
-//        System.out.println(tree.min());
-//        System.out.println(tree.max());
-//        System.out.println(tree.height());
-//        System.out.println("------------tree traversal-----------");
-//        tree.traverse();
-//        System.out.println("------------tree traversal BFS-----------");
-//        tree.traverseBFS();
-//        tree.delete(70);
-//        System.out.println("------------tree traversal-----------");
-//        tree.traverse();
-//
+        Stack pages = new Stack(5);
+
+        System.out.println(toPostFix("(a+b)-c*d"));
+        // trying some operations
+
+        pages.push(5);
+        pages.push(8);
+        pages.push(9);
+        pages.push(3);
+
+        System.out.println(pages.pop()); //prints out 3 because it's the last element
+
+        System.out.println(pages.peek());
+        System.out.println(pages.pop());
+        System.out.println(pages.pop());
+        System.out.println(pages.pop());
+        System.out.println(pages.isEmpty());
+
+        //testing if the stack is safe
+
+        System.out.println(pages.pop());
+        // test 2
+        pages.push(5);
+        pages.push(8);
+        pages.push(9);
+        pages.push(3);
+        pages.push(0);
+        pages.push(4);
 
 
+        //trying generic stack implementation
+        //creating object first (two different constructors)
+
+        GenericArrayBasedStack<Integer> numberStack = new GenericArrayBasedStack<>(10);
+        GenericArrayBasedStack<Integer> numberStack2 = new GenericArrayBasedStack<>();
+
+
+        numberStack.push(5);
+        numberStack.push(9);
+        numberStack.push(0);
+        numberStack.push(2);
+        numberStack.push(3);
+        numberStack.push(8);
+        numberStack.push(4);
+        numberStack.push(1);
+        numberStack.push(6);
+        numberStack.push(21);
+
+
+        numberStack2.push(7);
+        while(!numberStack.isEmpty()){
+            System.out.println(numberStack.pop());
+        }
+
+        Queue track1 = new Queue(10);
+
+        track1.enqueue(4);
+        track1.enqueue(3);
+        track1.enqueue(2);
+        track1.enqueue(10);
+        track1.enqueue(7);
+        track1.enqueue(8);
+        track1.enqueue(0);
+        track1.enqueue(6);
+        track1.enqueue(1);
+        track1.enqueue(5);
+
+
+        for(int i = 0; i < 10;i++){
+            System.out.println(track1.dequeue());
+        }
+        int value;
+        CircularQueue circleQueue = new CircularQueue(5);
+        circleQueue.enqueue(5);
+        circleQueue.enqueue(2);
+        circleQueue.enqueue(4);
+        circleQueue.enqueue(3);
+        circleQueue.enqueue(1);
+        value = circleQueue.dequeue();
+        System.out.println(value);
+        value = circleQueue.dequeue();
+        System.out.println(value);
+        circleQueue.enqueue(10);
+        circleQueue.enqueue(6);
+
+        GenericArrayBasedQueue<String> queries = new GenericArrayBasedQueue<>(5);
+        queries.enqueue("CREATE");
+        queries.enqueue("TABLE");
+        queries.enqueue("students");
+        queries.enqueue("(id INTEGER AUTOINCREMENT, name TEXT, age INTEGER)");
+        queries.enqueue("Hello");
+
+
+        for (int i = 0; i < 5; i++) {
+            System.out.println(queries.dequeue());
+        }
+
+
+
+
+        GenericCircularQueue<Character> password = new GenericCircularQueue<>(7);
+        password.enqueue('Y');
+        password.enqueue('4');
+        password.enqueue('@');
+        password.enqueue('M');
+        password.enqueue('i');
+        password.enqueue('%');
+        password.enqueue('%');
+
+        for (int i = 0; i < 6; i++) {
+            System.out.println(password.dequeue());
+        }
+
+
+        LinkedList list = new LinkedList();
+
+        list.insertFirst(1);
+        list.insertFirst(12);
+        list.insertFirst(9);
+        list.insertFirst(78);
+        list.insertAt(0,50);
+
+        list.removeAt(0);
+        list.removeElement(9);
+
+
+        GenericLinkedList<String> names = new GenericLinkedList<>();
+        names.insertAt(0,"Ali");
+        names.insertAt(1,"Moaaz");
+        names.insertAt(2,"Mudather");
+        names.insertAt(3,"Mahdi");
+        names.insertAt(4,"Mohammed");
+        names.insertAt(5,"Omar");
+
+
+        GenericLinkedList<Double> receipt = new GenericLinkedList<>();
+        receipt.insertAt(0,250.56);
+        receipt.insertAt(1,45.5);
+        receipt.insertAt(2,98.25);
+        receipt.insertAt(3,45.0);
+        receipt.insertAt(4,789.2);
+        receipt.insertAt(5,1000.0);
+
+        receipt.removeAt(2);
+
+        receipt.insert(85.2);
+        receipt.insert(54.2);
+        receipt.insert(842.5);
+
+
+
+        DoublyLinkedList doubleList = new DoublyLinkedList();
+        doubleList.insertFirst(10);
+        doubleList.insertFirst(20);
+        doubleList.append(5);
+        doubleList.insertAt(1, 15);
+        doubleList.removeAt(2);
+        doubleList.removeElement(15);
+
+
+        GenericDoubleLinkedList<Integer> genericDoubleLinkedList = new GenericDoubleLinkedList<>();
+        genericDoubleLinkedList.insertFirst(10);
+        genericDoubleLinkedList.insertFirst(20);
+        genericDoubleLinkedList.append(5);
+        genericDoubleLinkedList.insertAt(1, 15);
+
+        System.out.println("Size: " + genericDoubleLinkedList.size()); // 4
+        genericDoubleLinkedList.removeElement(15);
+        genericDoubleLinkedList.removeElement(5);
+        System.out.println("Size after remove 15: " + genericDoubleLinkedList.size()); // 3
+        genericDoubleLinkedList.removeAt(0);
+        genericDoubleLinkedList.removeAt(1);
+        System.out.println("Size after removeAt(0): " + genericDoubleLinkedList.size()); // 2
+            BinarySearchTree tree = new BinarySearchTree();
+
+            tree.insert(50);
+            tree.insert(30);
+            tree.insert(20);
+            tree.insert(40);
+            tree.insert(70);
+            tree.insert(60);
+            tree.insert(80);
+            tree.insert(10);
+
+        System.out.println(tree.min());
+        System.out.println(tree.max());
+        System.out.println(tree.height());
+        System.out.println("------------tree traversal-----------");
+        tree.traverse();
+        System.out.println("------------tree traversal BFS-----------");
+        tree.traverseBFS();
+        tree.delete(70);
+        System.out.println("------------tree traversal-----------");
+        tree.traverse();
+
+
+        Graph newGraph = getGraph();
+
+        newGraph.BFS(8);
+        System.out.println("----------DFS----------");
+        newGraph.DFS(8);
+        System.out.println(newGraph.isCyclicUndirected(2));
+
+
+        List<Integer> path = newGraph.getShortestPath(0,12);
+
+
+        List<Integer> path2 = newGraph.getShortestPath(0,3);
+        List<Integer> path3 = newGraph.getShortestPath(1,5);
+        List<Integer> path4 = newGraph.getShortestPath(0,6);
+        for(int point: path){
+            System.out.println(point);
+        }
+        for(int point: path2){
+            System.out.println(point);
+        }
+
+        for(int point: path3){
+            System.out.println(point);
+        }
+
+        for(int point: path4){
+            System.out.println(point);
+        }
+
+
+
+        newGraph.isCyclic(1);
+
+        Graph secondGraph= new Graph(10);
+
+        secondGraph.addDirectedEdge(1,5);
+        secondGraph.addDirectedEdge(5,11);
+
+        newGraph.BFS(10);
+    }
+
+    private static Graph getGraph() {
         Graph newGraph = new Graph(13);
         newGraph.addEdge(0,1);
         newGraph.addEdge(1,8);
@@ -265,25 +306,9 @@ public class Main {
         newGraph.addEdge(12,12);
 
 
-
         newGraph.printGraph();
-
-//        newGraph.BFS(8);
-//        System.out.println("----------DFS----------");
-//        newGraph.DFS(8);
-//        System.out.println(newGraph.isCyclicUndirected(2));;
-
-
-        List<Integer> path = newGraph.getShortestPath(0,11);
-
-        for(int point: path){
-            System.out.println(point);
-        }
-
-
+        return newGraph;
     }
-
-
 
 
 }
