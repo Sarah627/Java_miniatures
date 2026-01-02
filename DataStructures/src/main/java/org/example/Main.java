@@ -311,4 +311,7 @@ public class Main {
     }
 
 
+    GraphMatrixBased Dungeon= new GraphMatrixBased(4,4,new int[4][4]);
+
+
 }
