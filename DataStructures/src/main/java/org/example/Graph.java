@@ -2,6 +2,7 @@ package org.example;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
 
 
@@ -108,8 +109,8 @@ public class Graph {
         for (int i = end; i != -1 ; i = prev[i]) {
             path.add(i);
         }
-        List<Integer> reversed = path.reversed();
-        if (reversed.getFirst() == start) return path;
+        Collections.reverse(path);
+        if (path.getFirst() == start) return path;
         return new ArrayList<>();
     }
 

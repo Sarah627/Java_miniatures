@@ -21,6 +21,12 @@ public class GraphMatrixBased {
             this.wall = wall;
         }
 
+        Cell(int r, int c, boolean wall) {
+            this.r = r;
+            this.c = c;
+            this.wall = wall;
+        }
+
     }
 
 
