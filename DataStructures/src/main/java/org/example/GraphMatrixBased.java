@@ -1,14 +1,13 @@
 package org.example;
 
 import java.util.ArrayList;
-
 import java.util.Collections;
 import java.util.List;
 
 
 public class GraphMatrixBased {
 
-    private static class Cell{
+    static class Cell{
     int r, c;
     int value;
     boolean wall;
@@ -69,7 +68,9 @@ public class GraphMatrixBased {
         }
     }
 
-
+    public Cell getCell(int r, int c){
+        return grid[r][c];
+    }
 
     List<Cell> getShortestPath(Cell start, Cell end){
 
