@@ -298,11 +298,14 @@ public class Main {
                 {0,0,1,1,1,0,0,0},
         });
 
-        List<GraphMatrixBased.Cell> matrixPath = Dungeon.getShortestPath(Dungeon.getCell(7,0),Dungeon.getCell(0,7));
-        for (GraphMatrixBased.Cell cell:matrixPath){
-            System.out.println("cell: ("+cell.r +","+cell.c+")");
+//        List<GraphMatrixBased.Cell> matrixPath = Dungeon.getShortestPath(Dungeon.getCell(7,0),Dungeon.getCell(0,7));
+//        for (GraphMatrixBased.Cell cell:matrixPath){
+//            System.out.println("cell: ("+cell.r +","+cell.c+")");
+//
+//        }
+//
 
-        }
+        Dungeon.DFS(Dungeon.getCell(7,0));
 
     }
 
