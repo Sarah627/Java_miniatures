@@ -17,4 +17,25 @@ public class Sorting {
             }
         }
     }
+
+
+    public static <T extends Comparable<T>> void selectionSort(T[] elements){
+        T temp;
+        int minIndex;
+
+
+        for (int i = 0; i < elements.length-1 ; i++) {
+             minIndex = i;
+
+            for (int current = i+1;  current<elements.length  ; current++) {
+                if(elements[minIndex].compareTo(elements[current]) > 0) minIndex = current;
+            }
+
+            temp = elements[i];
+            elements[i] = elements[minIndex];
+            elements[minIndex]=temp;
+
+
+        }
+    }
 }

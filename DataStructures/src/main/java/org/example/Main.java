@@ -1,7 +1,10 @@
 package org.example;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.Random;
+
 import org.example.Sorting.*;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
@@ -323,6 +326,18 @@ public class Main {
             System.out.println(name);
         }
 
+
+        Integer[] numbers = new Integer[1000000];
+        Random random = new Random();
+        for (int i = 0; i < numbers.length; i++) {
+            numbers[i] = random.nextInt(1000);
+        }
+        System.out.println("before we start sorting ....");
+        long startTime = System.currentTimeMillis();
+        Sorting.selectionSort(numbers);
+        long endTime = System.currentTimeMillis();
+        System.out.println("after we finished sorting: "+ (endTime-startTime)/ 1000 + " seconds");
+        System.out.println(Arrays.toString(numbers));
     }
 
     private static Graph getGraph() {
