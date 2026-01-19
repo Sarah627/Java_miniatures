@@ -1,7 +1,7 @@
 package org.example;
 
 public class GenericArrayBasedQueue <T> {
-    private T[] data;
+    private final T[] data;
     private int rear = -1;
     private int front = 0;
 

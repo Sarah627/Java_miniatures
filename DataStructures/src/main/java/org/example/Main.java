@@ -2,7 +2,7 @@ package org.example;
 
 import java.util.ArrayList;
 import java.util.List;
-
+import org.example.Sorting.*;
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
@@ -285,27 +285,43 @@ public class Main {
 //
 //        newGraph.BFS(10);
 
-
-
-        GraphMatrixBased Dungeon= new GraphMatrixBased(8,8, new int[][]{
-                {1,0,1,0,0,0,1,0},
-                {0,0,1,0,0,1,0,0},
-                {0,1,1,0,1,1,0,1},
-                {0,1,1,0,0,1,0,1},
-                {0,1,1,1,0,1,0,1},
-                {0,0,1,1,0,1,0,0},
-                {1,0,0,0,0,0,1,0},
-                {0,0,1,1,1,0,0,0},
-        });
-
-//        List<GraphMatrixBased.Cell> matrixPath = Dungeon.getShortestPath(Dungeon.getCell(7,0),Dungeon.getCell(0,7));
-//        for (GraphMatrixBased.Cell cell:matrixPath){
-//            System.out.println("cell: ("+cell.r +","+cell.c+")");
 //
-//        }
 //
+//        GraphMatrixBased Dungeon= new GraphMatrixBased(8,8, new int[][]{
+//                {1,0,1,0,0,0,1,0},
+//                {0,0,1,0,0,1,0,0},
+//                {0,1,1,0,1,1,0,1},
+//                {0,1,1,0,0,1,0,1},
+//                {0,1,1,1,0,1,0,1},
+//                {0,0,1,1,0,1,0,0},
+//                {1,0,0,0,0,0,1,0},
+//                {0,0,1,1,1,0,0,0},
+//        });
+//
+//        Dungeon.getShortestPath(Dungeon.getCell(7,0),Dungeon.getCell(0,7));
+//
+//
+//        Dungeon.DFS(Dungeon.getCell(7,0));
 
-        Dungeon.DFS(Dungeon.getCell(7,0));
+        String[] studentNames= {
+          "Sarah Ali",
+          "Sandy George",
+          "Reem Mohamed",
+          "Amin Yahya",
+          "Yosef Amr",
+          "Mahmoud Wali",
+          "Wagdi Mostafa",
+          "Beatrice Matrin",
+          "Donia Walid",
+          "Khaled Karim",
+          "Amr Maged"
+        };
+
+        Sorting.bubbleSort(studentNames);
+
+        for (String name: studentNames){
+            System.out.println(name);
+        }
 
     }
 

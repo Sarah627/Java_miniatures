@@ -7,7 +7,7 @@ import java.util.List;
 
 public class GraphMatrixBased {
 
-    public class Cell{
+    private static class Cell{
     int r, c;
     int value;
     boolean wall;
@@ -96,9 +96,15 @@ public class GraphMatrixBased {
 
     }
 
+    public void getShortestPath(Cell start, Cell end){
+        List<Cell> matrixPath = getShortestPathInner(start,end);
+        for (Cell cell:matrixPath){
+            System.out.println("cell: ("+cell.r +","+cell.c+")");
 
+        }
+    }
 
-    public List<Cell> getShortestPath(Cell start, Cell end){
+    private List<Cell> getShortestPathInner(Cell start, Cell end){
 
         Cell[][] prev= new Cell[rows][cols];
         boolean[][] visited = new boolean[rows][cols];
