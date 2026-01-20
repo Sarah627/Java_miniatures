@@ -38,4 +38,17 @@ public class Sorting {
 
         }
     }
+
+    public static <T extends Comparable<T>> void insertionSort(T[] elements){
+        for (int i = 1; i < elements.length ; i++) {
+            T current=elements[i];
+            int j = i;
+            while(j > 0 && elements[j-1].compareTo(current)>0){
+                elements[j] = elements[j-1];
+                j--;
+            }
+            elements[j]=current;
+
+        }
+    }
 }
